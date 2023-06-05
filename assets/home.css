@@ -23,10 +23,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
   justify-content: space-between;
 }
 .f-box__one .f-box__content{
-  max-width:40%;
+  max-width:160px;
 }
 .f-box__two .f-box__content{
-  max-width:50%;
+  max-width:160px;
 }
 .f-box__one .f-box__left{
   max-width:60%;
