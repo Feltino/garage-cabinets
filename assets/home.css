@@ -17,3 +17,6 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
   padding: 14px 30px;
   border: 1px solid #FFFFFF;
 }
+.f-box__content{
+  padding:40px 0 35px 35px;
+}
