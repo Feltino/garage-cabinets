@@ -8,7 +8,7 @@
               <h2 class="f-box__title">{{ section.settings.title }}</h2>
               <a class="f-box__link" href="{{ section.settings.button_link }}">{{ section.settings.btn_title }}</a>
             </div>
-            <img src="{{ section.settings.l_image | image_url: "master" }}">
+            <img src="{{ section.settings.l_image | asset_img_url: "master" }}">
           </div>
         {% endif %}
       </div>
