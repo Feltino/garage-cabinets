@@ -2,20 +2,32 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <div class="f-box">
-          <h2 class="f-box__title">Ulti-MATE Garage Cabinets</h2>
-          <a class="f-box__link" href="#">Browse Here</a>
-        </div>
+        {% if section.settings.title2 != blank %}
+          <div class="f-box f-box__one">
+            <h2 class="f-box__title">{{ section.settings.title }}</h2>
+            <a class="f-box__link" href="{{ section.settings.button_link }}">{{ section.settings.btn_title }}</a>
+          </div>
+        {% endif %}
       </div>
       <div class="col-6">
-        <div class="f-box">
-          <h2 class="f-box__title">Steel Gates</h2>
-          <a class="f-box__link" href="#">Browse Here</a>
-        </div>
+        {% if section.settings.title2 != blank %}
+          <div class="f-box f-box__two">
+              <h2 class="f-box__title" >{{ section.settings.title2 }}</h2>
+              <a class="f-box__link" href="{{ section.settings.button_link2 }}">{{ section.settings.btn_title2 }}</a>
+          </div> 
+        {% endif %}
       </div>
     </div>
   </div>
 </section>
+<style>
+  .f-box__one{
+    background-image:url("{{ section.settings.image | image_url: "master" }}")
+  }
+  .f-box__two{
+    background-image:url("{{ section.settings.image2 | image_url: "master" }}")
+  }
+</style>
 {% schema %}
 {
   "name": "First Section",
@@ -26,6 +38,11 @@
     {
       "type": "header",
       "content": "First Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background"
     },
     {
       "type": "text",
@@ -41,6 +58,11 @@
       "type": "text",
       "id": "btn_title",
       "label": "Button Title"
+    },
+     {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Background"
     },
     {
       "type": "header",
