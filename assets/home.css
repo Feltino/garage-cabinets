@@ -61,3 +61,13 @@ body a:hover {
   line-height: 32px;
   color: #FFFFFF;
 }
+.f-box__three .f-box__link,
+.f-box__four .f-box__link,
+.f-box__five .f-box__link{
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #F6802F;
+}
