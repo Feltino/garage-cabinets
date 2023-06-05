@@ -1,0 +1,15 @@
+<!-- Footer scripts -->
+
+<script async="" src="{{ 'api.jquery.js' | shopify_asset_url }}" type="text/javascript"></script>
+<script async="" src="{{ 'option_selection.js' | shopify_asset_url }}" type="text/javascript"></script>
+{% if template contains 'product' %}
+
+{{ 'jquery.jcarousel.latest.min.js' | asset_url | script_tag }}
+{{ 'jquery.elevateZoom-3.0.8.min.js' | asset_url | script_tag }}
+{% endif %}
+{% if settings.show_multiple_currencies %}
+{%  include 'new-currency' %}
+{% endif %}
+
+<script async="" src="{{ 'gosh-scrip.js' | asset_url }}" type="text/javascript"></script>
+<script  src="{{ 'ajax.jquery.js' | asset_url }}" type="text/javascript"></script>

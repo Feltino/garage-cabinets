@@ -1,0 +1,224 @@
+
+{% if section.blocks.size > 0 %}
+{% for block in section.blocks %}
+<div class="home5-block-collection" style="margin:{{section.settings.home_block_4}}">
+
+  {% if section.settings.enable_block_fullwidth %} 
+  <div class="full-width">
+    {% else  %}
+    <div class="container">
+      {% endif %}
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-1 block-5-title">
+        {% if section.settings.home4_collection_title != blank %}
+        <h2>{{ section.settings.home4_collection_title }} </h2>
+        {% endif %}
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 block-5-content">
+        <div class="row">
+          <div class="home-collection-item home-collection-item-1 col-sm-12 col-xs-12">
+            <div class="home-collection-title-wrapper">
+              <div class="home-collection-title">
+                <h3 class="h5">
+                  <a href="{{ block.settings.home4_collection_1 }}">{{ block.settings.home4_collection_title_1 }}</a>
+                </h3>
+                <p>{{ block.settings.home4_collection_subtitle_1 }}</p>
+              </div>
+            </div>
+            {% if block.settings.bg_home4_collection_1 != blank %}
+            <a href="{{ block.settings.home4_collection_1 }}">
+              {%- assign img_url = block.settings.bg_home4_collection_1 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload image-me" 
+                   src="{{ block.settings.bg_home4_collection_1 | img_url: '2048x'  }}"
+                   data-src="{{ img_url }}"
+                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="{{ block.settings.bg_home4_collection_1.aspect_ratio }}"
+                   data-sizes="auto"
+                   alt="{{ image.alt | escape }}">
+            </a>
+            {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+          <div class="home-collection-item home-collection-3 col-sm-12 col-xs-12 col-md-offset-3">
+            <div class="home-collection-title-wrapper">
+              <div class="home-collection-title">
+                <h3 class="h5">
+                  <a href="{{ block.settings.home4_collection_3 }}">{{ block.settings.home4_collection_title_3 }}</a>
+                </h3>
+                <p>{{ block.settings.home4_collection_subtitle_3 }}</p>
+              </div>
+            </div>
+            {% if block.settings.bg_home4_collection_3 != blank %}
+            <a href="{{ block.settings.home4_collection_3 }}">
+            {%- assign img_url = block.settings.bg_home4_collection_3 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload image-me" 
+                   src="{{ block.settings.bg_home4_collection_3 | img_url: '2048x'  }}"
+                   data-src="{{ img_url }}"
+                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="{{ block.settings.bg_home4_collection_3.aspect_ratio }}"
+                   data-sizes="auto"
+                   alt="{{ image.alt | escape }}">
+            </a>
+            {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1 home-collection-item home-collection-2">
+        {% if block.settings.bg_home4_collection_2 != blank %}
+        <a href="{{ block.settings.home4_collection_2 }}">
+          
+        {%- assign img_url = block.settings.bg_home4_collection_2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload image-me" 
+                   src="{{ block.settings.bg_home4_collection_2 | img_url: '2048x'  }}"
+                   data-src="{{ img_url }}"
+                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="{{ block.settings.bg_home4_collection_2.aspect_ratio }}"
+                   data-sizes="auto"
+                   alt="{{ image.alt | escape }}">
+        </a>
+        {% else %}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+        <div class="home-collection-title-wrapper">
+          <div class="home-collection-title">
+            <h3 class="h5">
+              <a href="{{ block.settings.home4_collection_2 }}">{{ block.settings.home4_collection_title_2 }}</a>
+            </h3>
+            <p>{{ block.settings.home4_collection_subtitle_2 }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if section.settings.home4_collection_button %}
+    <div class="button-bottom">
+      <a href="{{ section.settings.home4_collection }}">{{ section.settings.home4_collection_button }} <span class="cs-font clever-icon-arrow-1"></span></a>          
+    </div>
+    {% endif %}
+ 
+  </div>
+    
+</div>
+
+{% endfor%}
+{% endif %}
+
+{% schema %}
+  {
+  
+	"name": "Gallery Grid",
+    "class": "index-section",
+    "max_blocks": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "home_block_4",
+        "label": "Margin",
+        "default": "0px 0px 0px 0px"
+      },
+	{
+        "type": "checkbox",
+        "id": "enable_block_fullwidth",
+        "label": "Enable Block Full Width "
+      },
+      {
+        "type": "text",
+        "id": "home4_collection_title",
+        "label": "Title",
+        "default": "Block Title"
+      },
+      {
+        "type": "text",
+        "id": "home4_collection_button",
+        "label": "Button Label",
+        "default": "Button"
+      },
+      {
+        "type": "text",
+        "id": "home4_collection",
+        "label": "Link",
+        "default": "#"
+      }
+	],
+    "blocks": [
+        {
+          "type": "block",
+          "name": "Block",
+          "settings": [
+          
+            {
+              "type": "text",
+              "id": "home4_collection_title_1",
+              "label": "Title",
+              "default": "Collection Title"
+            },
+            {
+              "type": "text",
+              "id": "home4_collection_subtitle_1",
+              "label": "Sub Title",
+              "default": "Collection Sub Title"
+            },
+            {
+              "type": "image_picker",
+              "id": "bg_home4_collection_1",
+              "label": "Images"
+            },
+            {
+              "type": "text",
+              "id": "home4_collection_title_2",
+              "label": "Title",
+              "default": "Collection Title"
+            },
+            {
+              "type": "text",
+              "id": "home4_collection_subtitle_2",
+              "label": "Sub Title",
+              "default": "Collection Sub Title"
+            },
+            {
+              "type": "image_picker",
+              "id": "bg_home4_collection_2",
+              "label": "Images"
+            },
+            {
+              "type": "text",
+              "id": "home4_collection_title_3",
+              "label": "Title",
+              "default": "Collection Title"
+            },
+            {
+              "type": "text",
+              "id": "home4_collection_subtitle_3",
+              "label": "Title",
+              "default": "Collection Sub Title"
+            },
+            {
+              "type": "image_picker",
+              "id": "bg_home4_collection_3",
+              "label": "Images"
+            }
+         ]
+      }
+	],
+    "presets": [
+        {
+          "name": "Gallery Grid",
+           "category": "3) Builder",
+          "blocks": [
+            {
+              "type": "block"
+            }
+          ]
+        }
+  	]
+ }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
