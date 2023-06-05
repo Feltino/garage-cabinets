@@ -22,9 +22,12 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
 }
 .f-box__two .f-box__left{
   max-width:60%;
-  max-height:251px;
 }
 .f-box__one .f-box__left{
   max-width:50%;
+}
+.f-box__two .f-box__left,
+.f-box__one .f-box__left{
   max-height:251px;
+  object-fit: contain;
 }
