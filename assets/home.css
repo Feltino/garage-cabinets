@@ -72,4 +72,10 @@ body a:hover {
   color: #F6802F;
   padding: 0;
   max-width: unset;
+  display: block;
+}
+.f-box__three svg,
+.f-box__four svg,
+.f-box__five svg{
+  fill:#fff;
 }
