@@ -78,5 +78,6 @@ body a:hover {
 .f-box__four svg,
 .f-box__five svg{
   fill:#F6802F;
-  margin-top:2px;
+  top: 1px;
+  position: relative;
 }
