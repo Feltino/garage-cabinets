@@ -20,9 +20,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
 .f-box__content{
   padding:40px 0 35px 35px;
 }
-.f-box__two f-box__left{
+.f-box__two .f-box__left{
   max-width:60%
 }
-.f-box__one f-box__left{
+.f-box__one .f-box__left{
   max-width:50%
 }
