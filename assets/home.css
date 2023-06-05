@@ -53,6 +53,9 @@ body a:hover {
   object-fit: contain;
   margin-left: auto;
 }
+.f-box__bottom{
+  margin-top:30px;
+}
 .f-box__three .f-box__title,
 .f-box__four .f-box__title,
 .f-box__five .f-box__title{
