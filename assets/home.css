@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
   max-width: 160px;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 .f-box__content{
   padding:40px 0 35px 35px;
