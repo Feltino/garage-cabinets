@@ -1,0 +1,10 @@
+h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
+  font-family: 'Roboto';
+  font-style: normal;
+}
+.f-box__title{
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
