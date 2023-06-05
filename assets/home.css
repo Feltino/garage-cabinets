@@ -2,6 +2,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
 }
+body a:hover {
+    color: unset;
+    text-decoration: none;
+}
 .f_section{
   margin-top:30px;
 }
