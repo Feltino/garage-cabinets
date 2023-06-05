@@ -19,7 +19,8 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
 .f-box__content{
   padding:40px 0 35px 35px;
   display:flex;
-  align-items:space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .f-box__one .f-box__left{
   max-width:60%;
