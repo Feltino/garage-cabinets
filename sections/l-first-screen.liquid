@@ -28,10 +28,14 @@
 </section>
 <style>
   .f-box__one{
-    background-image:url("{{ section.settings.image | img_url: "master" }}")
+    background-image:url("{{ section.settings.image | img_url: "master" }}");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .f-box__two{
-    background-image:url("{{ section.settings.image2 | img_url: "master" }}")
+    background-image:url("{{ section.settings.image2 | img_url: "master" }}");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 </style>
 {% schema %}
