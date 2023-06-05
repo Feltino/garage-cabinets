@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-6">
         {% if section.settings.title != blank %}
-          <div class="f-box f-box__one">
+          <div class="f-box f-box__one d-flex">
             <div>
               <h2 class="f-box__title">{{ section.settings.title }}</h2>
               <a class="f-box__link" href="{{ section.settings.button_link }}">{{ section.settings.btn_title }}</a>
@@ -14,7 +14,7 @@
       </div>
       <div class="col-6">
         {% if section.settings.title2 != blank %}
-          <div class="f-box f-box__two">
+          <div class="f-box f-box__two d-flex">
             <div>
               <h2 class="f-box__title" >{{ section.settings.title2 }}</h2>
               <a class="f-box__link" href="{{ section.settings.button_link2 }}">{{ section.settings.btn_title2 }}</a>
