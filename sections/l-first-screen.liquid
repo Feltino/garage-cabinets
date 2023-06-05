@@ -25,6 +25,40 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        {% if section.settings.title3 != blank %}
+          <div class="f-box f-box__three d-flex">
+            <div class="f-box__content">
+              <h2 class="f-box__title" >{{ section.settings.title3 }}</h2>
+              <a class="f-box__link" href="{{ section.settings.button_link3 }}">{{ section.settings.btn_title3 }}</a>
+            </div>
+          </div> 
+        {% endif %}
+      </div>
+      <div class="col-4">
+        {% if section.settings.title4 != blank %}
+          <div class="f-box f-box__four d-flex">
+            <div class="f-box__content">
+              <h2 class="f-box__title" >{{ section.settings.title4 }}</h2>
+              <a class="f-box__link" href="{{ section.settings.button_link4 }}">{{ section.settings.btn_title4 }}</a>
+            </div>
+          </div> 
+        {% endif %}
+      </div>
+      <div class="col-4">
+        {% if section.settings.title5 != blank %}
+          <div class="f-box f-box__five d-flex">
+            <div class="f-box__content">
+              <h2 class="f-box__title" >{{ section.settings.title5 }}</h2>
+              <a class="f-box__link" href="{{ section.settings.button_link5 }}">{{ section.settings.btn_title5 }}</a>
+            </div>
+          </div> 
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </section>
 <style>
   .f-box__one{
@@ -34,6 +68,21 @@
   }
   .f-box__two{
     background-image:url("{{ section.settings.image2 | img_url: "master" }}");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .f-box__three{
+    background-image:url("{{ section.settings.image3 | img_url: "master" }}");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .f-box__four{
+    background-image:url("{{ section.settings.image4 | img_url: "master" }}");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .f-box__five{
+    background-image:url("{{ section.settings.image5 | img_url: "master" }}");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -104,6 +153,78 @@
     {
       "type": "text",
       "id": "btn_title2",
+      "label": "Button Title"
+    },
+    {
+      "type": "header",
+      "content": "Third Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Background"
+    },
+    {
+      "type": "text",
+      "id": "title3",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "button_link3",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "btn_title3",
+      "label": "Button Title"
+    },
+        {
+      "type": "header",
+      "content": "Fourth Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "Background"
+    },
+    {
+      "type": "text",
+      "id": "title4",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "button_link4",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "btn_title4",
+      "label": "Button Title"
+    },
+        {
+      "type": "header",
+      "content": "Fifth Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "image5",
+      "label": "Background"
+    },
+    {
+      "type": "text",
+      "id": "title5",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "button_link5",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "btn_title5",
       "label": "Button Title"
     }
   ],
