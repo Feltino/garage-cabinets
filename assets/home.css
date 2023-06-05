@@ -27,6 +27,9 @@ body a:hover {
   justify-content: center;
   text-transform: uppercase;
 }
+.f-box__link:hover{
+  color:#fff;
+}
 .f-box__content{
   padding:40px 0 35px 35px;
   display:flex;
