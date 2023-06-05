@@ -1995,7 +1995,14 @@
       "bb6d85e2-7424-482b-afb7-8da7d223883a": {
         "type": "l-first-screen",
         "settings": {
-          "title": "First Section"
+          "image": "shopify:\/\/shop_images\/bg_1.png",
+          "l_image": "shopify:\/\/shop_images\/ulti-mate-garage-2-0-series-black-metallic-6-piece-kit-931_800x-depositphotos-bgremover_1_1_1.png",
+          "title": "Ulti-MATE Garage Cabinets",
+          "button_link": "",
+          "btn_title": "Browse Here",
+          "title2": "",
+          "button_link2": "",
+          "btn_title2": ""
         }
       }
     },
