@@ -38,6 +38,9 @@
             <p class="f3-banner__sub">{{ section.settings.sub }}</p>
             <h3 class="f3-banner__title">{{ section.settings.title }}</h3>
             <a class="f3-banner__link" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }}</a>
+            {% if section.settings.banner_img != blank %}
+              <img class="f3-banner__image" src="{{ section.settings.banner_img | img_url: "master" }}">
+            {% endif %}
           </div>
         </div>
         <div class="col-8">
@@ -209,6 +212,11 @@
         "type": "text",
         "id": "btn_title",
         "label": "Button Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_img",
+        "label": "Background"
       },
       {
         "type": "header",
