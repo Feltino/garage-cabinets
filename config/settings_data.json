@@ -1414,239 +1414,6 @@
           "home_block_countdown_7": "2020\/12\/31 10:30:00"
         }
       },
-      "1556008263381": {
-        "type": "home-grid-builder",
-        "blocks": {
-          "1556185691198": {
-            "type": "group_slider",
-            "settings": {
-              "for_group": "Slider",
-              "grid": 12,
-              "grid_responsive": "",
-              "margin_top": 0,
-              "reponsive_mt": "",
-              "margin_bottom": 0,
-              "reponsive_bt": "",
-              "gridheight": "600px,500px,400px,350px",
-              "autoplay": true,
-              "autoplay_speed": 6,
-              "pause_on_hover": true,
-              "navigation_type": "navigation_dark",
-              "show_navigation": true,
-              "arrows_type": "arrows_simple",
-              "button_size": "button_size_medium",
-              "show_bullets": true,
-              "style_dots": "dashes_space"
-            }
-          },
-          "1556185733341": {
-            "type": "group_slider_item",
-            "settings": {
-              "for_item": "Slider",
-              "video_mp4_url": "",
-              "video_external_url": "",
-              "video_autoplay": true,
-              "video_controls": false,
-              "alignment": "left",
-              "offset_h": 100,
-              "offset_reverse_h": false,
-              "subheading2_title_alignment": "middle",
-              "offset_v": 0,
-              "offset_reverse_v": false,
-              "style_color_text": "dark",
-              "heading": "",
-              "custom_class_1": "",
-              "subheading": "Workspace with<br> <strong>Minimal Style<\/strong>",
-              "custom_class_2": "",
-              "subheading_1": "New model from 2019, more color, more features",
-              "custom_class_3": "",
-              "button_label": "SHOP NOW",
-              "link": "shopify:\/\/collections\/iphone",
-              "color_button_type": "color_button_type_1",
-              "button_label_1": "",
-              "link_1": "",
-              "color_button_type_1": "color_button_type_1",
-              "text_align": "left",
-              "effect_text": "bounce_in_up",
-              "parallax_effect": false
-            }
-          },
-          "1565663685294": {
-            "type": "group_slider_item",
-            "settings": {
-              "for_item": "Slider",
-              "video_mp4_url": "",
-              "video_external_url": "",
-              "video_autoplay": true,
-              "video_controls": false,
-              "alignment": "center",
-              "offset_h": 0,
-              "offset_reverse_h": false,
-              "subheading2_title_alignment": "middle",
-              "offset_v": 0,
-              "offset_reverse_v": false,
-              "style_color_text": "white",
-              "heading": "",
-              "custom_class_1": "",
-              "subheading": "Better Together<br> <strong>Clever Washer<\/strong>",
-              "custom_class_2": "",
-              "subheading_1": "Feature integrated control panel, TurboWash",
-              "custom_class_3": "",
-              "button_label": "Shop Now",
-              "link": "shopify:\/\/collections\/iphone",
-              "color_button_type": "color_button_type_1",
-              "button_label_1": "",
-              "link_1": "",
-              "color_button_type_1": "color_button_type_1",
-              "text_align": "center",
-              "effect_text": "flip_in_x",
-              "parallax_effect": false
-            }
-          }
-        },
-        "block_order": [
-          "1556185691198",
-          "1556185733341",
-          "1565663685294"
-        ],
-        "settings": {
-          "enable_block_home_icon_full": true,
-          "margin_top": 0,
-          "reponsive_mt": "",
-          "margin_bottom": 0,
-          "reponsive_bt": "",
-          "vertical_align": "top",
-          "min_height": 0,
-          "background_color": "",
-          "parallax_effect": false
-        }
-      },
-      "1556241071613": {
-        "type": "home-grid-builder",
-        "blocks": {
-          "1563159337001": {
-            "type": "promobox",
-            "settings": {
-              "for_item": "",
-              "home_padding_item": "",
-              "grid": 4,
-              "grid_responsive": "",
-              "margin_top": 0,
-              "reponsive_mt": "",
-              "margin_bottom": 0,
-              "reponsive_bt": "",
-              "type": "1",
-              "disable_lazyload": false,
-              "video_mp4_url": "",
-              "video_external_url": "",
-              "video_autoplay": true,
-              "video_controls": false,
-              "url": "shopify:\/\/collections\/smartphone",
-              "text_line_1": "",
-              "custom_class_1": "",
-              "text_line_2": "",
-              "custom_class_2": "",
-              "text_line_3": "",
-              "custom_class_3": "",
-              "button_text": "",
-              "menu": "",
-              "custom_html": "",
-              "color_text_line_1": "",
-              "color_text_line_2": "#ffffff",
-              "color_text_line_3": "#666666",
-              "color_button_link": "#fffdfd",
-              "bg_button_link": "",
-              "color_button_type": "3"
-            }
-          },
-          "1563418695103": {
-            "type": "promobox",
-            "settings": {
-              "for_item": "",
-              "home_padding_item": "",
-              "grid": 4,
-              "grid_responsive": "",
-              "margin_top": 0,
-              "reponsive_mt": "",
-              "margin_bottom": 0,
-              "reponsive_bt": "",
-              "type": "1",
-              "disable_lazyload": false,
-              "video_mp4_url": "",
-              "video_external_url": "",
-              "video_autoplay": true,
-              "video_controls": false,
-              "url": "shopify:\/\/collections\/iphone",
-              "text_line_1": "",
-              "custom_class_1": "",
-              "text_line_2": "",
-              "custom_class_2": "",
-              "text_line_3": "",
-              "custom_class_3": "",
-              "button_text": "",
-              "menu": "",
-              "custom_html": "",
-              "color_text_line_1": "",
-              "color_text_line_2": "#ffffff",
-              "color_text_line_3": "rgba(0,0,0,0)",
-              "color_button_link": "#ffffff",
-              "bg_button_link": "",
-              "color_button_type": "3"
-            }
-          },
-          "1564978059309": {
-            "type": "promobox",
-            "settings": {
-              "for_item": "",
-              "home_padding_item": "",
-              "grid": 4,
-              "grid_responsive": "",
-              "margin_top": 0,
-              "reponsive_mt": "",
-              "margin_bottom": 0,
-              "reponsive_bt": "",
-              "type": "1",
-              "disable_lazyload": false,
-              "video_mp4_url": "",
-              "video_external_url": "",
-              "video_autoplay": true,
-              "video_controls": false,
-              "url": "shopify:\/\/collections\/laptop",
-              "text_line_1": "",
-              "custom_class_1": "",
-              "text_line_2": "",
-              "custom_class_2": "",
-              "text_line_3": "",
-              "custom_class_3": "",
-              "button_text": "",
-              "menu": "",
-              "custom_html": "",
-              "color_text_line_1": "",
-              "color_text_line_2": "#ffffff",
-              "color_text_line_3": "rgba(0,0,0,0)",
-              "color_button_link": "#ffffff",
-              "bg_button_link": "",
-              "color_button_type": "3"
-            }
-          }
-        },
-        "block_order": [
-          "1563159337001",
-          "1563418695103",
-          "1564978059309"
-        ],
-        "settings": {
-          "enable_block_home_icon_full": false,
-          "margin_top": 0,
-          "reponsive_mt": "30,40,50,50",
-          "margin_bottom": 0,
-          "reponsive_bt": "",
-          "vertical_align": "top",
-          "min_height": 0,
-          "background_color": "",
-          "parallax_effect": false
-        }
-      },
       "footer": {
         "type": "footer",
         "blocks": {
@@ -1677,23 +1444,14 @@
               "footercol1": ""
             }
           },
-          "1563434018128": {
-            "type": "newsletter",
-            "settings": {
-              "home_newsletter_title": "BE IN TOUCH WITH US:",
-              "home_newsletter_subtitle": "",
-              "home_newsletter_subtitle_2": "",
-              "mailing_list_form_action": ""
-            }
-          },
           "1563434026534": {
             "type": "iconsocial",
             "settings": {
               "footer_column_3_title": "",
-              "footer_column_4_icon_link_1": true,
-              "footer_column_4_icon_link_2": true,
-              "footer_column_4_icon_link_3": true,
-              "footer_column_4_icon_link_4": true,
+              "footer_column_4_icon_link_1": false,
+              "footer_column_4_icon_link_2": false,
+              "footer_column_4_icon_link_3": false,
+              "footer_column_4_icon_link_4": false,
               "footer_column_4_icon_link_5": false,
               "footer_column_4_icon_link_6": false,
               "footer_column_4_icon_link_8": false
@@ -1717,7 +1475,6 @@
           "1565230801903",
           "1565230815191",
           "1565230824271",
-          "1563434018128",
           "1563434026534",
           "1563765187696",
           "1563765195160"
@@ -1728,63 +1485,6 @@
           "footer_layouts": "footer_layout_2",
           "show_top_border": false,
           "show_button_back_to_top": true
-        }
-      },
-      "1564544498954": {
-        "type": "home-product-carousel",
-        "blocks": {
-          "1564544498954-0": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": true,
-              "title": "",
-              "tabnew_collection": "garage-cabinet-sets"
-            }
-          },
-          "434b9bee-94ac-4b90-ba08-facbb64b5552": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "",
-              "tabnew_collection": ""
-            }
-          },
-          "1a32947a-4490-40f7-bd04-9ad573e12d56": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "",
-              "tabnew_collection": ""
-            }
-          }
-        },
-        "block_order": [
-          "1564544498954-0",
-          "434b9bee-94ac-4b90-ba08-facbb64b5552",
-          "1a32947a-4490-40f7-bd04-9ad573e12d56"
-        ],
-        "settings": {
-          "enable_full_width_load": false,
-          "slide_layouts": "slide_layout_1",
-          "color": "#ffffff",
-          "show_top_separator": false,
-          "grid": 5,
-          "max_count": 6,
-          "grid_responsive": "",
-          "margin_top": 0,
-          "reponsive_mt": "30,40,50,60",
-          "margin_bottom": 0,
-          "reponsive_bt": "",
-          "enable_block_image": false,
-          "autoplay": true,
-          "speed": 5,
-          "arrows": true,
-          "bullets": true,
-          "home_product_title_1": "Product Sales",
-          "subtitle": "",
-          "button": "Shop Now",
-          "button_link": "#",
-          "home_product_timeline": ""
         }
       },
       "1565317815888": {
@@ -1879,135 +1579,6 @@
           "min_height": 0,
           "background_color": "",
           "parallax_effect": false
-        }
-      },
-      "1565664254652": {
-        "type": "home-product-collections",
-        "blocks": {
-          "1565664254652-0": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "New Arrivals",
-              "tabnew_collection": "tablet",
-              "enable_show_all": false,
-              "button": "Show All"
-            }
-          },
-          "1565664254652-1": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "Best Seller",
-              "tabnew_collection": "tablet",
-              "enable_show_all": false,
-              "button": "Show All"
-            }
-          }
-        },
-        "block_order": [
-          "1565664254652-0",
-          "1565664254652-1"
-        ],
-        "settings": {
-          "enable_full_width_load": false,
-          "grid": "4",
-          "max_count": 8,
-          "grid_responsive": "",
-          "margin_top": 0,
-          "reponsive_mt": "30,40,50,60",
-          "margin_bottom": 0,
-          "reponsive_bt": "",
-          "home_product_title_1": "Garden & Kitchen Tool Tree",
-          "subtitle": "",
-          "enable_block_image": false,
-          "tabs_type": "type_1"
-        }
-      },
-      "1565856408964": {
-        "type": "home-product-collections",
-        "blocks": {
-          "1565856408964-0": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "New Arrivals",
-              "tabnew_collection": "smarttv",
-              "enable_show_all": false,
-              "button": "Show All"
-            }
-          },
-          "1565856408964-1": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "Best Seller",
-              "tabnew_collection": "laptop",
-              "enable_show_all": false,
-              "button": "Show All"
-            }
-          }
-        },
-        "block_order": [
-          "1565856408964-0",
-          "1565856408964-1"
-        ],
-        "settings": {
-          "enable_full_width_load": false,
-          "grid": "4",
-          "max_count": 8,
-          "grid_responsive": "",
-          "margin_top": 0,
-          "reponsive_mt": "30,40,50,60",
-          "margin_bottom": 0,
-          "reponsive_bt": "",
-          "home_product_title_1": "Clothing & Apparel",
-          "subtitle": "",
-          "enable_block_image": false,
-          "tabs_type": "type_1"
-        }
-      },
-      "1565856526176": {
-        "type": "home-product-collections",
-        "blocks": {
-          "1565856526176-0": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "New Arrivals",
-              "tabnew_collection": "iphone",
-              "enable_show_all": false,
-              "button": "Show All"
-            }
-          },
-          "1565856526176-1": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "Best Seller",
-              "tabnew_collection": "smartphone",
-              "enable_show_all": false,
-              "button": "Show All"
-            }
-          }
-        },
-        "block_order": [
-          "1565856526176-0",
-          "1565856526176-1"
-        ],
-        "settings": {
-          "enable_full_width_load": false,
-          "grid": "4",
-          "max_count": 8,
-          "grid_responsive": "",
-          "margin_top": 0,
-          "reponsive_mt": "30,40,50,60",
-          "margin_bottom": 0,
-          "reponsive_bt": "",
-          "home_product_title_1": "Orchid Beauty & Spa",
-          "subtitle": "",
-          "enable_block_image": false,
-          "tabs_type": "type_1"
         }
       },
       "bb6d85e2-7424-482b-afb7-8da7d223883a": {
@@ -2347,13 +1918,7 @@
       "47ba4b42-47bb-4c1c-a9f9-1eece687e551",
       "b33f7da0-62e4-4b54-9396-f141b64b00f6",
       "9137e314-d0cb-448b-85f6-b337666e75ac",
-      "be19151f-1df9-4f44-8d6b-246f1670877b",
-      "1556008263381",
-      "1556241071613",
-      "1564544498954",
-      "1565664254652",
-      "1565856526176",
-      "1565856408964"
+      "be19151f-1df9-4f44-8d6b-246f1670877b"
     ]
   },
   "presets": {
