@@ -468,6 +468,11 @@ footer.footer-container.footer_layout_2 {
     padding: 0 0 30px;
     text-align: left;
   }
+  .f-box__three .f-box__link, 
+  .f-box__four .f-box__link, 
+  .f-box__five .f-box__link {
+    margin: 0 0 0 10px;
+  }
 }
 @media (max-width:580px){
   .f-box__one {
