@@ -2288,6 +2288,45 @@
           "button_link": "",
           "btn_title": "Get Now"
         }
+      },
+      "9137e314-d0cb-448b-85f6-b337666e75ac": {
+        "type": "l-fourth-screen",
+        "blocks": {
+          "9137e314-d0cb-448b-85f6-b337666e75ac-1686063124d87cdfb8-0": {
+            "type": "tabs",
+            "settings": {
+              "hide_title": true,
+              "title": "",
+              "tabnew_collection": "outdoor-kitchens"
+            }
+          }
+        },
+        "block_order": [
+          "9137e314-d0cb-448b-85f6-b337666e75ac-1686063124d87cdfb8-0"
+        ],
+        "settings": {
+          "enable_full_width_load": false,
+          "slide_layouts": "slide_layout_1",
+          "color": "#fff",
+          "show_top_separator": true,
+          "grid": 4,
+          "max_count": 10,
+          "grid_responsive": "",
+          "margin_top": 10,
+          "reponsive_mt": "",
+          "margin_bottom": 10,
+          "reponsive_bt": "",
+          "enable_block_image": false,
+          "autoplay": true,
+          "speed": 5,
+          "arrows": true,
+          "bullets": true,
+          "home_product_title_1": "Outdoor Kitchens",
+          "subtitle": "",
+          "button": "",
+          "button_link": "",
+          "home_product_timeline": ""
+        }
       }
     },
     "content_for_index": [
@@ -2299,6 +2338,7 @@
       "e08eca36-2281-42cb-8b01-fe5e9ad79919",
       "47ba4b42-47bb-4c1c-a9f9-1eece687e551",
       "b33f7da0-62e4-4b54-9396-f141b64b00f6",
+      "9137e314-d0cb-448b-85f6-b337666e75ac",
       "1556008263381",
       "1556241071613",
       "1564544498954",
