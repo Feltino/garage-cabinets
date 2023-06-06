@@ -85,3 +85,6 @@ body a:hover {
   top: 1px;
   position: relative;
 }
+.f-box__logo{
+  max-height:35px;
+}
