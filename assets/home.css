@@ -425,4 +425,7 @@ footer.footer-container.footer_layout_2 {
   .f-box__one .f-box__left {
     max-width: 100%;
   }
+  .f-box__content {
+    padding: 30px 0 30px 0;
+  }
 }
