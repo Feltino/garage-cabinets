@@ -375,3 +375,8 @@ footer.footer-container.footer_layout_2 {
   padding: 53px 0;
    margin-bottom: 0;
 }
+@media (max-width:1440px){
+  .f-box__two .f-box__left {
+    max-height: 180px;
+  }
+}
