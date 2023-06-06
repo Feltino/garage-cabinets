@@ -290,3 +290,9 @@ body a:hover {
   text-transform: uppercase;
   color: #000000;
 }
+.f-sixth_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 44px 0;
+}
