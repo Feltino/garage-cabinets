@@ -343,3 +343,12 @@ body a:hover {
   line-height: 26px;
   color: #FFFFFF;
 }
+.f-seventh_section .submit{
+  background: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
