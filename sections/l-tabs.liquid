@@ -20,17 +20,16 @@
 
 
 <script type="text/javascript" >
-  let desk = '{{section.settings.desktop}}';
   $('.f3-box__tabs').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
     responsive:{
         0:{
-            items:1
+            items:{{section.settings.mobile}}
         },
         600:{
-            items:3
+            items:{{section.settings.tablet}}
         },
         1000:{
             items:{{section.settings.desktop}}
@@ -49,6 +48,18 @@
       "id": "desktop",
       "label": "How slide show on desktop",
       "default": 8
+    },
+    {
+      "type": "number",
+      "id": "tablet",
+      "label": "How slide show on desktop",
+      "default": 5
+    },
+    {
+      "type": "number",
+      "id": "mobile",
+      "label": "How slide show on desktop",
+      "default": 3
     }
   ],
   "blocks": [
