@@ -156,3 +156,10 @@ body a:hover {
   font-family: monospace !important;
   font-weight: 200;
 }
+.f3-box__title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
