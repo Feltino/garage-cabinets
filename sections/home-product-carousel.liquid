@@ -23,7 +23,7 @@
 {%- elsif section.settings.margin_bottom != blank -%}
 {% capture margin_bottom %}margin-bottom-{{ section.settings.margin_bottom }}{% endcapture %}
 {%- endif -%}
-<div class="tabs-product-home tabs-product-carousel grid {{section.settings.slide_layouts}}  {{margin_top}} {{margin_bottom}}" style="background:{{section.settings.color}};{%- unless section.settings.reponsive_mt != blank -%}margin-top:{{ section.settings.margin_top }}px;{%endunless %}{%- unless section.settings.reponsive_bt != blank -%}margin-bottom:{{ section.settings.margin_bottom }}px;{%endunless %}">
+<div class="tabs-product-home 1 tabs-product-carousel grid {{section.settings.slide_layouts}}  {{margin_top}} {{margin_bottom}}" style="background:{{section.settings.color}};{%- unless section.settings.reponsive_mt != blank -%}margin-top:{{ section.settings.margin_top }}px;{%endunless %}{%- unless section.settings.reponsive_bt != blank -%}margin-bottom:{{ section.settings.margin_bottom }}px;{%endunless %}">
   {% if section.settings.enable_full_width_load %}
   <div class="full-width">
     {% else %}
