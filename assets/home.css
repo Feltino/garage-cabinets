@@ -330,3 +330,16 @@ body a:hover {
 .f-seventh_section .contact-form{
   display: flex;
 }
+.f-seventh_section h2{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.f-seventh_section p{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
