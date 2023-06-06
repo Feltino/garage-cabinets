@@ -265,3 +265,16 @@ body a:hover {
   font-size: 16px;
   line-height: 19px;
 }
+.f5-price__old{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  color: #707070;
+}
+.f5-price__new{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0369A6;
+}
