@@ -450,4 +450,9 @@ footer.footer-container.footer_layout_2 {
   .f-box__content {
     align-items: flex-start;
   }
+  .f-box__three .f-box__link, 
+  .f-box__four .f-box__link, 
+  .f-box__five .f-box__link {
+    margin: 0 0 0 10px;
+  }
 }
