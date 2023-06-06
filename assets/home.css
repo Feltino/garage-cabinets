@@ -500,4 +500,7 @@ footer.footer-container.footer_layout_2 {
     margin-bottom: 30px;
     text-align: center;
   }
+  .f-seventh_section input[type=email] {
+    min-width: auto;
+  }
 }
