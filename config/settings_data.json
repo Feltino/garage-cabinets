@@ -1736,8 +1736,8 @@
           "1564544498954-0": {
             "type": "tabs",
             "settings": {
-              "hide_title": false,
-              "title": "rt",
+              "hide_title": true,
+              "title": "",
               "tabnew_collection": "garage-cabinet-sets"
             }
           },
@@ -1745,16 +1745,16 @@
             "type": "tabs",
             "settings": {
               "hide_title": false,
-              "title": "tr",
-              "tabnew_collection": "beta-tools"
+              "title": "",
+              "tabnew_collection": ""
             }
           },
           "1a32947a-4490-40f7-bd04-9ad573e12d56": {
             "type": "tabs",
             "settings": {
               "hide_title": false,
-              "title": "tt",
-              "tabnew_collection": "home-furnishings-man-cave-big-neon-signs-in-steel-cans"
+              "title": "",
+              "tabnew_collection": ""
             }
           }
         },
