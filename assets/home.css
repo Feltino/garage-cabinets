@@ -163,3 +163,6 @@ body a:hover {
   line-height: 28px;
   color: #000000;
 }
+.f3-box__border{
+  border-bottom: 1px solid #EAEAEA;
+}
