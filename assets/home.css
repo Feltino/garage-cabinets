@@ -219,3 +219,11 @@ body a:hover {
 .f3-collection .owl-dots{
   display:none !important;
 }
+.product-content h3 a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
