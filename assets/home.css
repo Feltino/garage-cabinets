@@ -307,3 +307,13 @@ body a:hover {
 .f-sixth_section p strong{
   color: #000;
 }
+.f-sixth_section a{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 12px 34px;
+  background-color: #fff;
+}
