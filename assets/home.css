@@ -416,7 +416,7 @@ footer.footer-container.footer_layout_2 {
     justify-content: center;
   }
   .f-box__two .f-box__left, .f-box__one .f-box__left {
-    max-height: 251px;
+    max-height: 100%;
     object-fit: contain;
     margin-left: unset;
   }
