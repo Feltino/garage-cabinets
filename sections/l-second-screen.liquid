@@ -10,7 +10,7 @@
         {% if section.settings.image != blank %}
           <img class="f2-box__image" src="{{ section.settings.image | img_url: "master" }}">
         {% endif %}
-        <div>
+        <div class="d-flex flex-column justify-content-center">
           <h3 class="f2-box__title">{{ section.settings.title_box }}</h3>
           <p class="f2-box__text">{{ section.settings.text_box }}</p>
         </div>
@@ -19,7 +19,7 @@
           {% if section.settings.image2 != blank %}
            <img class="f2-box__image" src="{{ section.settings.image2 | img_url: "master" }}">
           {% endif %}
-          <div>
+          <div class="d-flex flex-column justify-content-center">
             <h3 class="f2-box__title">{{ section.settings.title_box2 }}</h3>
             <p class="f2-box__text">{{ section.settings.text_box2 }}</p>
           </div>
