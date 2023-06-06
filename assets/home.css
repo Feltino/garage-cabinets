@@ -136,7 +136,7 @@ body a:hover {
   margin-bottom:0;
 }
 .f3-box__tabs .item img{
-  max-height: 35px;
+  height: 35px;
   max-width: 120px;
   object-fit: contain;
   margin:0 auto;
