@@ -33,7 +33,13 @@
       <div class="border-top"></div>
       {%- endif -%}
       <div class="product-featured tabs-product row">
-        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="f3-banner">
+            <p class="f3-banner__sub">{{ section.settings.sub }}</p>
+            <h3 class="f3-banner__title">{{ section.settings.title }}</h3>
+            <a class="f3-banner__link" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }}</a>
+          </div>
+        </div>
         <div class="col-8">
 
           <div class="product-featured-content row">
