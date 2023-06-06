@@ -169,8 +169,8 @@ body a:hover {
 }
 .f3-box__border:after{
   content: '';
-  width: 25px;
-  height: 2px;
+  width: 90px;
+  height: 3px;
   background-color: #F6802F;
 }
 .f-tabs_section .owl-theme .owl-nav {
