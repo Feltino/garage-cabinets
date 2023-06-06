@@ -396,4 +396,9 @@ footer.footer-container.footer_layout_2 {
   .f-box__two .f-box__left {
     max-height: 140px;
   }
+  .f-box__three .f-box__title, 
+  .f-box__four .f-box__title, 
+  .f-box__five .f-box__title {
+    margin-bottom: 20px;
+  }
 }
