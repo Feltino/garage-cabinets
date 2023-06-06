@@ -13,8 +13,6 @@
               {% when 'slide' %}
                 {% assign tabs_collection = block.settings.tabnew_collection %}
                 <div class="item d-flex flex-column justify-content-center" {{ block.shopify_attributes }}>
-                  <img src="{{ block.settings.image | img_url: 'master' }}">
-                  <p>{{ block.settings.title }}</p>
                   {% assign owl_id = block.id %}
                    {% include 'carousel-product' %}
                 </div>
@@ -27,25 +25,7 @@
 </section>
 
 
-<script type="text/javascript" >
-  $('.f3-box__tabs').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:false,
-    responsive:{
-        0:{
-            items:{{section.settings.mobile}}
-        },
-        600:{
-            items:{{section.settings.tablet}}
-        },
-        1000:{
-            items:{{section.settings.desktop}}
-        }
-    }
-  })
-</script>
+
 {% schema %}
   {
   "name": "Fourth Screen",
