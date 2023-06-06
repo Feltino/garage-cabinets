@@ -7,7 +7,7 @@
             {% case block.type %}
               {% when 'slide' %}
                 <div class="item" {{ block.shopify_attributes }}>
-                  <img src"{{ block.settings.image | image_url: 'master' | image_tag }}">"
+                  <img src="{{ block.settings.image | image_url: 'master' }}">
                   <p>{{ block.settings.title }}</p>
                 </div>
             {% endcase %}
