@@ -219,7 +219,7 @@ body a:hover {
 .f3-collection .owl-dots{
   display:none !important;
 }
-.product-content h3 a{
+.product-content h3 a.product-title{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
