@@ -2194,27 +2194,6 @@
           "button_link": "",
           "home_product_timeline": ""
         }
-      },
-      "3ba75281-db2d-4ab3-a798-b085e3e0dd71": {
-        "type": "l-fourth-screen",
-        "blocks": {
-          "a0682f57-940c-43a9-97dc-2fff1cac8c1a": {
-            "type": "slide",
-            "settings": {
-              "title": "ffff",
-              "tabnew_collection": "beta-tools"
-            }
-          }
-        },
-        "block_order": [
-          "a0682f57-940c-43a9-97dc-2fff1cac8c1a"
-        ],
-        "settings": {
-          "title": "",
-          "desktop": 8,
-          "tablet": 5,
-          "mobile": 3
-        }
       }
     },
     "content_for_index": [
@@ -2223,7 +2202,6 @@
       "b91c0435-a80f-49f1-90fe-bd2dfa600bcc",
       "98ab90bf-95e7-4fe7-aaab-1456ba30b8ad",
       "82fa5b7a-39f3-408b-a2af-26f0fdc13321",
-      "3ba75281-db2d-4ab3-a798-b085e3e0dd71",
       "1556008263381",
       "1556241071613",
       "1564544498954",
