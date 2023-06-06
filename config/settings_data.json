@@ -2279,6 +2279,15 @@
           "button_link": "",
           "home_product_timeline": ""
         }
+      },
+      "b33f7da0-62e4-4b54-9396-f141b64b00f6": {
+        "type": "l-sixth-screen",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/bg_4.png",
+          "title": "<p>RECEIVE A <strong>FREE GLADIATOR GEAR TRACK WITH 5 HOOKS<\/strong> ON ANY ULTI-MATE 2.0 CABINET SET OVER $1500.00<\/p>",
+          "button_link": "",
+          "btn_title": "Get Now"
+        }
       }
     },
     "content_for_index": [
@@ -2289,6 +2298,7 @@
       "82fa5b7a-39f3-408b-a2af-26f0fdc13321",
       "e08eca36-2281-42cb-8b01-fe5e9ad79919",
       "47ba4b42-47bb-4c1c-a9f9-1eece687e551",
+      "b33f7da0-62e4-4b54-9396-f141b64b00f6",
       "1556008263381",
       "1556241071613",
       "1564544498954",
