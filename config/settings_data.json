@@ -2201,9 +2201,9 @@
           "e08eca36-2281-42cb-8b01-fe5e9ad79919-168605932026cca879-0": {
             "type": "tabs",
             "settings": {
-              "hide_title": false,
+              "hide_title": true,
               "title": "",
-              "tabnew_collection": ""
+              "tabnew_collection": "gates"
             }
           }
         },
@@ -2227,11 +2227,11 @@
           "speed": 5,
           "arrows": true,
           "bullets": true,
-          "home_product_title_1": "This is the heading",
-          "subtitle": "Latest Product & New Collection",
-          "button": "Shop Now",
-          "button_link": "#",
-          "home_product_timeline": "2019\/12\/31 10:30:00"
+          "home_product_title_1": "Gates",
+          "subtitle": "",
+          "button": "",
+          "button_link": "",
+          "home_product_timeline": ""
         }
       }
     },
