@@ -25,9 +25,9 @@
 {%- endif -%}
 <div class="tabs-product-home tabs-product-carousel grid {{section.settings.slide_layouts}}  {{margin_top}} {{margin_bottom}}" style="background:{{section.settings.color}};{%- unless section.settings.reponsive_mt != blank -%}margin-top:{{ section.settings.margin_top }}px;{%endunless %}{%- unless section.settings.reponsive_bt != blank -%}margin-bottom:{{ section.settings.margin_bottom }}px;{%endunless %}">
   {% if section.settings.enable_full_width_load %}
-  <div class="full-width f3-collection">
+  <div class="full-width">
     {% else %}
-    <div class="container">
+    <div class="container f3-collection">
       {% endif  %}
       {%- if section.settings.show_top_separator -%}
       <div class="border-top"></div>
