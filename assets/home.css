@@ -343,7 +343,7 @@ body a:hover {
   line-height: 26px;
   color: #FFFFFF;
 }
-.f-seventh_section .submit{
+.f-seventh_section .submit input{
   background: #000000;
   font-weight: 600;
   font-size: 14px;
