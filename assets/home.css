@@ -415,7 +415,8 @@ footer.footer-container.footer_layout_2 {
     flex-direction: column;
     justify-content: center;
   }
-  .f-box__two .f-box__left, .f-box__one .f-box__left {
+  .f-box__two .f-box__left, 
+  .f-box__one .f-box__left {
     max-height: 100%;
     object-fit: contain;
     margin-left: unset;
