@@ -443,4 +443,8 @@ footer.footer-container.footer_layout_2 {
   .f-box__three{
     margin-bottom: 30px;
   }
+  .f-box__three .f-box__title, .f-box__four .f-box__title, .f-box__five .f-box__title {
+    text-align: left;
+    padding: 10px;
+  }
 }
