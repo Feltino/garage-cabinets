@@ -7,29 +7,45 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="f4-box__tabs tab-content">
-          {% if section.blocks.size > 0 %}
-                {% for block in section.blocks %}
+        <div class="owl-carousel owl-theme f3-box__tabs">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'slide' %}
                 {% assign tabs_collection = block.settings.tabnew_collection %}
-                <div class="tab-pane tabs-content fade {% if forloop.first %} in active show{% endif %}" id="{{block.id }}{{ forloop.index }}" {{ block.shopify_attributes }}>
+                <div class="item d-flex flex-column justify-content-center" {{ block.shopify_attributes }}>
+                  <img src="{{ block.settings.image | img_url: 'master' }}">
+                  <p>{{ block.settings.title }}</p>
                   {% assign owl_id = block.id %}
                    {% include 'carousel-product' %}
                 </div>
+            {% endcase %}
           {% endfor %}
-            {% endif %}
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<script type="text/javascript" >
-        $('.tabs-product .nav-tabs a').click(function (e) {
-          e.preventDefault()
-          $(this).tab('show')
-        })
-      </script>
 
+<script type="text/javascript" >
+  $('.f3-box__tabs').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:{{section.settings.mobile}}
+        },
+        600:{
+            items:{{section.settings.tablet}}
+        },
+        1000:{
+            items:{{section.settings.desktop}}
+        }
+    }
+  })
+</script>
 {% schema %}
   {
   "name": "Fourth Screen",
