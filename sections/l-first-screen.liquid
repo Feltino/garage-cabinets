@@ -59,6 +59,16 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="f-box__six">
+          <img class="f-box__logo" src="{{ section.settings.logo | img_url: "master" }}">
+          <h2 class="f-box__title">{{ section.settings.title6 }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <style>
   .f-box__one{
@@ -83,6 +93,11 @@
   }
   .f-box__five{
     background-image:url("{{ section.settings.image5 | img_url: "master" }}");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .f-box__six{
+    background-image:url("{{ section.settings.image6 | img_url: "master" }}");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -226,6 +241,25 @@
       "type": "text",
       "id": "btn_title5",
       "label": "Button Title"
+    },
+        {
+      "type": "header",
+      "content": "Sixth Banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "image6",
+      "label": "Background"
+    },
+     {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "btn_title6",
+      "label": "Title"
     }
   ],
   "presets": [
