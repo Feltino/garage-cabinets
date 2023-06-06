@@ -1738,12 +1738,21 @@
             "settings": {
               "hide_title": true,
               "title": "",
-              "tabnew_collection": "cameras"
+              "tabnew_collection": "garage-cabinet-sets"
+            }
+          },
+          "434b9bee-94ac-4b90-ba08-facbb64b5552": {
+            "type": "tabs",
+            "settings": {
+              "hide_title": false,
+              "title": "",
+              "tabnew_collection": "beta-tools"
             }
           }
         },
         "block_order": [
-          "1564544498954-0"
+          "1564544498954-0",
+          "434b9bee-94ac-4b90-ba08-facbb64b5552"
         ],
         "settings": {
           "enable_full_width_load": false,
