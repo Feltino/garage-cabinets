@@ -2039,7 +2039,54 @@
       },
       "98ab90bf-95e7-4fe7-aaab-1456ba30b8ad": {
         "type": "l-tabs",
+        "blocks": {
+          "a6da3e10-1944-4dc9-854b-6adfb1db892b": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_35_1.png",
+              "title": "Aleko Products"
+            }
+          },
+          "c2545e7f-752a-49be-bf3c-1bc5ad736966": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_35_2.png",
+              "title": "Amazing Gates"
+            }
+          },
+          "51d1c0f8-f730-4164-8d6d-b4062d731d99": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_36_1.png",
+              "title": "Beta Tools"
+            }
+          },
+          "17d1e410-b158-418c-917e-913e422ef54f": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_37_1.png",
+              "title": "Better Life Technology"
+            }
+          },
+          "a0d47f5a-7938-47f4-bf5e-30d7868faa5f": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_38_1.png",
+              "title": "Blaze Grills"
+            }
+          }
+        },
+        "block_order": [
+          "a6da3e10-1944-4dc9-854b-6adfb1db892b",
+          "c2545e7f-752a-49be-bf3c-1bc5ad736966",
+          "51d1c0f8-f730-4164-8d6d-b4062d731d99",
+          "17d1e410-b158-418c-917e-913e422ef54f",
+          "a0d47f5a-7938-47f4-bf5e-30d7868faa5f"
+        ],
         "settings": {
+          "desktop": 8,
+          "tablet": 5,
+          "mobile": 3
         }
       }
     },
