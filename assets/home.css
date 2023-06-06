@@ -177,5 +177,6 @@ body a:hover {
   position: absolute;
 }
 .f-tabs_section .owl-theme .owl-nav {
-    top: -97px;
+  top: -97px;
+  right: 22px;
 }
