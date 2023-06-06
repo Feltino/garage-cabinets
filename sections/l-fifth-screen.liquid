@@ -167,7 +167,7 @@
     </div>
     <div class="col-3">
       <div class="f3-banner f3-banner5">
-        <p class="f3-banner__sub">{{ section.settings.sub }}</p>
+        <p class="f3-banner__sub"><span class="f5-price__old">{{ section.settings.sub }}</span><span class="f5-price__new">{{ section.settings.sub2 }}</span></p>
         <h3 class="f3-banner__title">{{ section.settings.title }}</h3>
         <a class="f3-banner__link" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }} {% render 'icon-arrow' %}</a>
         {% if section.settings.banner_img != blank %}
@@ -196,7 +196,12 @@
       {
         "type": "text",
         "id": "sub",
-        "label": "Subtitle Banner"
+        "label": "Old Price"
+      },
+       {
+        "type": "text",
+        "id": "sub2",
+        "label": "New Price"
       },
       {
         "type": "text",
