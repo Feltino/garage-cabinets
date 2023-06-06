@@ -36,7 +36,7 @@
         <div class="col-4">
           <div class="f3-banner">
             <p class="f3-banner__sub">{{ section.settings.sub }}</p>
-            <h3 class="f3-banner__title">{{ section.settings.title }}</h3>
+            <h3 class="f3-banner__title">{{ section.settings.banner_title }}</h3>
             <a class="f3-banner__link" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }}</a>
           </div>
         </div>
@@ -164,6 +164,13 @@
           $(this).tab('show')
         })
       </script>
+      <style>
+        .f3-banner{
+          background-image:url("{{ section.settings.banner_bg | img_url: "master" }}");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
     </div>
   </div>
 
@@ -174,6 +181,39 @@
     "class": "index-section section",
     "max_blocks": 5,
     "settings": [
+      {
+        "type": "header",
+        "content": "Banner"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_bg",
+        "label": "Background"
+      },
+      {
+        "type": "text",
+        "id": "sub",
+        "label": "Subtitle Banner"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title Banner"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "banner_title",
+        "label": "Button Title"
+      },
+      {
+        "type": "header",
+        "content": "Collection"
+      },
 		{
           "type": "checkbox",
           "id": "enable_full_width_load",
