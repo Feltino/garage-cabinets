@@ -37,7 +37,7 @@
           <div class="f3-banner">
             <p class="f3-banner__sub">{{ section.settings.sub }}</p>
             <h3 class="f3-banner__title">{{ section.settings.title }}</h3>
-            <a class="f3-banner__link" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }}</a>
+            <a class="f3-banner__link" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }} {% render 'icon-arrow' %}</a>
             {% if section.settings.banner_img != blank %}
               <img class="f3-banner__image" src="{{ section.settings.banner_img | img_url: "master" }}">
             {% endif %}
