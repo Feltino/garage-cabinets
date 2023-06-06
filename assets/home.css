@@ -468,4 +468,7 @@ footer.footer-container.footer_layout_2 {
     font-size: 25px;
     line-height: 30px;
   }
+  .f2-box__sm{
+    flex-direction:column;
+  }
 }
