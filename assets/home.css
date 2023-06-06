@@ -215,3 +215,6 @@ body a:hover {
   top: 1px;
   position: relative;
 }
+.f3-collection .owl-nav{
+  display:none;
+}
