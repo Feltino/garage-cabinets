@@ -432,4 +432,7 @@ footer.footer-container.footer_layout_2 {
   .f-box__link {
     margin: 0 auto;
   }
+  .f-box__one .f-box__left {
+    padding: 0;
+  }
 }
