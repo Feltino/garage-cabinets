@@ -408,6 +408,11 @@ footer.footer-container.footer_layout_2 {
   .f-box__five .f-box__link {
     font-size: 13px;
   }
+  .f2-box__sm{
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width:768px){
   .f-box__two,
