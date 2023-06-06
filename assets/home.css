@@ -451,6 +451,9 @@ footer.footer-container.footer_layout_2 {
   .f2-box__title {
     text-align: center;
   }
+  .f-box__one {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width:580px){
   .f-box__one {
