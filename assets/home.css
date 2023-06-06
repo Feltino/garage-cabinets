@@ -257,3 +257,6 @@ body a:hover {
 .tabs-product-home .main-heading .heading-tabs .nav-tabs li.active a.active{
     color: #fc6a21 !important;
 }
+.tabs-product-home .main-heading:after {
+    border-bottom: 3px solid #fc6a21;
+}
