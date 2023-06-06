@@ -135,3 +135,6 @@ body a:hover {
   color: #000000;
   margin-bottom:0;
 }
+.f3-box__tabs .item img{
+  max-height: 35px;
+}
