@@ -19,7 +19,6 @@
                     
                       <div id="{{ owl_id }}">
                          {% assign number_colum = section.settings.grid %}
-                        <div class="slider owl-carousel owl-theme" data-limit="{{number_colum}}" data-dots="{{section.settings.bullets}}" data-button="{{section.settings.arrows}}" data-autoplay="{{section.settings.autoplay}}" data-speed="{{section.settings.speed }}">
                         {% for product in collections[tabs_collection].products limit: section.settings.max_count %}          
                         {% assign current_collection = collections[tabs_collection] %}
                        
@@ -55,7 +54,6 @@
                         {% endfor %}
                           
                         {% endfor %}
-                          </div>
                       </div>
 
 
