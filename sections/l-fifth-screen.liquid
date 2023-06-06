@@ -1,7 +1,427 @@
+{% assign home_tabs_margin = section.settings.home_tabs_margin %}
+{% assign limit_of_columns_product = section.settings.limit_of_columns_product_1 %}
+{% assign row_limit_setting = section.settings.tabs_visible_item %}
+
+{% assign show_tabs_boxed = section.settings.show_tabs_boxed %}
+{% assign number_colum_layout = section.settings.show_carousel_layout_tabs %}
+{% assign number_colum = section.settings.grid %}
+
+{%- if section.settings.grid_responsive != blank -%}
+{%- assign grid_responsive = section.settings.grid_responsive | split: ',' -%}
+{% capture class_grid %}col col-{{ grid_responsive[4] }} col-sm-{{ grid_responsive[3] }} col-md-{{ grid_responsive[2] }} col-lg-{{ grid_responsive[1] }} col-xl-{{ grid_responsive[0] }}{% endcapture %}
+{%- else -%}
+{% capture class_grid %}col-6 col-sm-6 col-md-4 col-lg-{{ 12 | divided_by: section.settings.grid }}{% endcapture %}
+{%- endif -%}
+{%- if section.settings.reponsive_mt != blank -%}
+{%- assign margin_top_responsive = section.settings.reponsive_mt | split: ',' -%}
+{% capture margin_top %}mt-{{ margin_top_responsive[0] }} mt-sm-{{ margin_top_responsive[1] }} mt-md-{{ margin_top_responsive[2] }} mt-lg-{{ margin_top_responsive[3] }} {% endcapture %}
+
+{%- endif -%}
+{%- if section.settings.reponsive_bt != blank -%}
+{%- assign margin_bottom_responsive = section.settings.reponsive_bt | split: ',' -%}
+{% capture margin_bottom %}mb-{{ margin_bottom_responsive[0] }} mb-sm-{{ margin_bottom_responsive[1] }} mb-md-{{ margin_bottom_responsive[2] }} mb-lg-{{ margin_bottom_responsive[3] }} {% endcapture %}
+{%- elsif section.settings.margin_bottom != blank -%}
+{% capture margin_bottom %}margin-bottom-{{ section.settings.margin_bottom }}{% endcapture %}
+{%- endif -%}
+<div class="tabs-product-home tabs-product-carousel grid {{section.settings.slide_layouts}}  {{margin_top}} {{margin_bottom}}" style="background:{{section.settings.color}};{%- unless section.settings.reponsive_mt != blank -%}margin-top:{{ section.settings.margin_top }}px;{%endunless %}{%- unless section.settings.reponsive_bt != blank -%}margin-bottom:{{ section.settings.margin_bottom }}px;{%endunless %}">
+  {% if section.settings.enable_full_width_load %}
+  <div class="full-width">
+    {% else %}
+    <div class="container f3-collection">
+      {% endif  %}
+      {%- if section.settings.show_top_separator -%}
+      <div class="border-top"></div>
+      {%- endif -%}
+      <div class="product-featured tabs-product row">
+        <div class="col-9">
+
+          <div class="product-featured-content row">
+             {% if section.settings.slide_layouts == 'slide_layout_2' %}
+            {% if section.settings.enable_block_image %}
+
+            <div class="col-12 col-md-3">
+              {% if section.settings.image != blank %}
+              <img src="{{ section.settings.image | img_url:'master' }}" />
+              {% else %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+            </div>
+             <div class="col-md-9 col-12">
+            {% endif %}
+             {% endif %}
+             {% if section.settings.slide_layouts == 'slide_layout_3' %}
+              <div class="col-12 col-md-3">
+              <div class="main-heading">
+                {% if section.settings.home_product_title_1 != blank %}
+                <div class="heading-block">
+                  <h3 class="title">
+                    {{ section.settings.home_product_title_1 }}
+                  </h3>
+                  {% if section.settings.home_product_timeline != blank %}
+                  <div id="cntdwn" class="timeline-block" data-time="{{ section.settings.home_product_timeline }}"></div>
+                  {% endif %}
+                  {% if section.settings.subtitle %}
+                  <p class="subtitle">{{ section.settings.subtitle }}</p>
+                  {% endif %}
+           {% if section.settings.button != blank %}
+                  <p class="viewmore"><a href="section.settings.button_link">{{section.settings.button}}</a></p>
+                 {% endif %}
+                </div>
+                {% endif %}
+                <div class="heading-tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                    {% if section.blocks.size > 0 %}
+                    {% for block in section.blocks %}
+                    {% assign items_tab = block.settings.title %}
+
+                    {% unless block.settings.hide_title  %}
+                    <li role="presentation" class="{% if forloop.first %} active{% endif %}" ><a href="#{{block.id }}{{ forloop.index }}" role="tab" data-toggle="tab">
+                      {% if block.settings.title != blank %}
+                      {{ items_tab  }}
+                      {% else %}
+                      {{ collections[block.settings.tabnew_collection].title }}
+                      {% endif %}
+                      </a>
+                    </li>
+                    {% endunless %}
+                    {% endfor %}
+                    {% endif %}
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-9 col-12">
+              {% endif %}
+           
+              {% if section.settings.slide_layouts == 'slide_layout_1' %}
+                <div class=" col-12">
+              <div class="main-heading">
+                {% if section.settings.home_product_title_1 != blank %}
+                <div class="heading-block">
+                  <h3 class="title">
+                    {{ section.settings.home_product_title_1 }}
+                  </h3>
+                  {% if section.settings.home_product_timeline != blank %}
+                  <div id="cntdwn" class="timeline-block" data-time="{{ section.settings.home_product_timeline }}"></div>
+                  {% endif %}
+                  {% if section.settings.subtitle %}
+                  <p class="subtitle">{{ section.settings.subtitle }}</p>
+                  {% endif %}
+                </div>
+                {% endif %}
+                <div class="heading-tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                    {% if section.blocks.size > 0 %}
+                    {% for block in section.blocks %}
+                    {% assign items_tab = block.settings.title %}
+
+                    {% unless block.settings.hide_title  %}
+                    <li role="presentation" class="{% if forloop.first %} active{% endif %}" ><a href="#{{block.id }}{{ forloop.index }}" role="tab" data-toggle="tab">
+                      {% if block.settings.title != blank %}
+                      {{ items_tab  }}
+                      {% else %}
+                      {{ collections[block.settings.tabnew_collection].title }}
+                      {% endif %}
+                      </a>
+                    </li>
+                    {% endunless %}
+                    {% endfor %}
+                    {% endif %}
+
+                  </ul>
+                </div>
+              </div>
+              {% endif %}
+              <div class="tab-content">
+                {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+                {% assign tabs_collection = block.settings.tabnew_collection %}
+                <div class="tab-pane tabs-content fade {% if forloop.first %} in active show{% endif %}" id="{{block.id }}{{ forloop.index }}">
+                  {% assign owl_id = block.id %}
+                  {% include 'carousel-product' %}
+
+                </div>
+                {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <script type="text/javascript" >
+        $('.tabs-product .nav-tabs a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+      </script>
+      <style>
+        .f3-banner5{
+          background-image:url("{{ section.settings.banner_bg | img_url: "master" }}");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+    </div>
+    <div class="col-3">
+      <div class="f3-banner f3-banner5">
+        <p class="f3-banner__sub">{{ section.settings.sub }}</p>
+        <h3 class="f3-banner__title">{{ section.settings.title }}</h3>
+        <a class="f3-banner__link" href="{{ section.settings.btn_link }}">{{ section.settings.btn_title }} {% render 'icon-arrow' %}</a>
+        {% if section.settings.banner_img != blank %}
+          <img class="f3-banner__image" src="{{ section.settings.banner_img | img_url: "master" }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Collection custom five",
+    "class": "index-section section",
+    "max_blocks": 5,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Banner"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_bg",
+        "label": "Background"
+      },
+      {
+        "type": "text",
+        "id": "sub",
+        "label": "Subtitle Banner"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title Banner"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "btn_title",
+        "label": "Button Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_img",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Collection"
+      },
+		{
+          "type": "checkbox",
+          "id": "enable_full_width_load",
+          "label": "Enable Full Width"
+        },
+  
+{
+                 "type": "select",
+                 "id": "slide_layouts",
+                 "label": "Type",
+                 "options": [
+                   {
+                     "value": "slide_layout_1",
+                     "label": "Type #1"
+                   },
+                   {
+                     "value": "slide_layout_2",
+                     "label": "Type #2"
+                   },
+                   {
+                     "value": "slide_layout_3",
+                     "label": "Type #2"
+                   }
+                 ]
+               },
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Background Color",
+        "default": "#fff"
+      },
+  
+        {
+            "type": "checkbox",
+            "id": "show_top_separator",
+            "label": "Show top separator",
+            "default": true
+        },
+      {
+        "type": "range",
+        "id": "grid",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "label": "Item per row",
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "max_count",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "label": "Max Count Products",
+        "default": 10
+      },
+        {
+            "type": "text",
+            "id": "grid_responsive",
+            "label": "Responsive size",
+            "info": "Example is '12,12,12,12', 1 < value < 12"
+        },
+	{
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+            "unit": "px",
+        "label": "Margin Top",
+        "default": 10
+      },
+        {
+            "type": "text",
+            "id": "reponsive_mt",
+            "label": "Responsive Margin Top",
+            "info": "Example is '20,30,40,60'"
+        },
+	{
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+            "unit": "px",
+        "label": "Margin Bottom",
+        "default": 10
+      },
+        {
+            "type": "text",
+            "id": "reponsive_bt",
+            "label": "Responsive Margin Bottom",
+            "info": "Example is '20,30,40,60'"
+        },
+  
+
+	{
+        "type": "checkbox",
+        "id": "enable_block_image",
+        "label": "Enable  Image"
+      },
+       {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+        {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": "Autoplay",
+            "default": true
+        },
+        {
+            "type": "range",
+            "id": "speed",
+            "min": 2,
+            "max": 10,
+            "step": 1,
+            "unit": "sec",
+            "label": "Autoplay speed",
+            "default": 5
+        },
+        {
+            "type": "checkbox",
+            "id": "arrows",
+            "label": "Arrows",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "bullets",
+            "label": "Bullets",
+            "default": true
+        },
+	{
+        "type": "text",
+        "id": "home_product_title_1",
+        "label": "Heading",
+        "default": "This is the heading"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Sub Title",
+        "default": "Latest Product & New Collection"
+      },
+	{
+        "type": "text",
+        "id": "button",
+        "label": "Button lable",
+        "default": "Shop Now"
+      },
+      {
+        "type": "text",
+        "id": "button_link",
+        "label": "Button Link",
+        "default": "#"
+      },
+      
+      {
+        "type": "text",
+        "id": "home_product_timeline",
+        "label": "Timeline",
+       "default": "2019\/12\/31 10:30:00"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "tabs",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "hide_title",
+            "label": "Hide Title"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "collection",
+            "id": "tabnew_collection",
+            "label": "Collection"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Fifth Screen",
+        "category": "2) Collection",
+        "blocks": [
+          {
+            "type": "tabs"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
