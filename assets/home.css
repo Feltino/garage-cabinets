@@ -149,3 +149,8 @@ body a:hover {
   color: #959595;
   margin-top: 15px;
 }
+.f3-box__tabs span[aria-label="Next"],
+.f3-box__tabs span[aria-label="Previous"]{
+  font-size: 40px;
+  color: #000;
+}
