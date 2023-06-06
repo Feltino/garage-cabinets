@@ -87,7 +87,9 @@ body a:hover {
 }
 .f-box__logo{
   max-height:35px;
-  padding:8px 0 17px 0;
+}
+.f-box__six {
+  padding:8px 0 11px 0;
 }
 .f-box__six .f-box__title{
   font-weight: 600;
