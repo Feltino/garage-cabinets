@@ -2021,10 +2021,26 @@
           "logo": "shopify:\/\/shop_images\/image_60_1.png",
           "btn_title6": "Pay over time"
         }
+      },
+      "b91c0435-a80f-49f1-90fe-bd2dfa600bcc": {
+        "type": "l-second-screen",
+        "settings": {
+          "title": "YOUR #1 TRUSTED SOURCEFOR GARAGE CABINETS AND STORAGE",
+          "image": "shopify:\/\/shop_images\/Group_50_1.png",
+          "title_box": "Original products",
+          "text_box": "In our store only original products.",
+          "image2": "shopify:\/\/shop_images\/Group_48_1.png",
+          "title_box2": "Fast and Free delivery",
+          "text_box2": "Get free shipping any order over $100.",
+          "image3": "shopify:\/\/shop_images\/Group_49_1.png",
+          "title_box3": "Dedicated support",
+          "text_box3": "Quality assistance from our experts."
+        }
       }
     },
     "content_for_index": [
       "bb6d85e2-7424-482b-afb7-8da7d223883a",
+      "b91c0435-a80f-49f1-90fe-bd2dfa600bcc",
       "1565317815888",
       "1556008263381",
       "1556241071613",
