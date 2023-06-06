@@ -11,9 +11,11 @@
           {% for block in section.blocks %}
             {% case block.type %}
               {% when 'slide' %}
+                {% assign tabs_collection = block.settings.tabnew_collection %}
                 <div class="item d-flex flex-column justify-content-center" {{ block.shopify_attributes }}>
                   <img src="{{ block.settings.image | img_url: 'master' }}">
                   <p>{{ block.settings.title }}</p>
+                  {% assign owl_id = block.id %}
                    {% include 'carousel-product' %}
                 </div>
             {% endcase %}
