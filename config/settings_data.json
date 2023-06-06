@@ -2074,6 +2074,27 @@
               "image": "shopify:\/\/shop_images\/image_38_1.png",
               "title": "Blaze Grills"
             }
+          },
+          "6fea4fbf-7ffd-4c1f-8091-c6813965dcf5": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_39_1.png",
+              "title": "Bull Outdoor"
+            }
+          },
+          "1865dfc8-b612-4f1a-a600-1d890c81b837": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_40_1.png",
+              "title": "Collectable Sign and Clock"
+            }
+          },
+          "487e2e9c-5179-442d-923e-e840f3211b70": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image_41_1.png",
+              "title": "Coyote"
+            }
           }
         },
         "block_order": [
@@ -2081,7 +2102,10 @@
           "c2545e7f-752a-49be-bf3c-1bc5ad736966",
           "51d1c0f8-f730-4164-8d6d-b4062d731d99",
           "17d1e410-b158-418c-917e-913e422ef54f",
-          "a0d47f5a-7938-47f4-bf5e-30d7868faa5f"
+          "a0d47f5a-7938-47f4-bf5e-30d7868faa5f",
+          "6fea4fbf-7ffd-4c1f-8091-c6813965dcf5",
+          "1865dfc8-b612-4f1a-a600-1d890c81b837",
+          "487e2e9c-5179-442d-923e-e840f3211b70"
         ],
         "settings": {
           "desktop": 8,
