@@ -258,5 +258,5 @@ body a:hover {
     color: #fc6a21 !important;
 }
 .tabs-product-home .main-heading:after {
-    border-bottom: 3px solid #fc6a21;
+    border-bottom: 3px solid #fc6a21 !important;
 }
