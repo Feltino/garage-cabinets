@@ -244,4 +244,5 @@ body a:hover {
 }
 .grid-item .product-inner .product-image .add-to-cartS button{
   background: #F6802F!important;
+  border: none;
 }
