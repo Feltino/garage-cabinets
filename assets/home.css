@@ -302,6 +302,7 @@ body a:hover {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 0;
 }
 .f-sixth_section p strong{
   color: #000;
