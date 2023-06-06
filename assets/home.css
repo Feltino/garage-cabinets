@@ -122,3 +122,10 @@ body a:hover {
   line-height: 23px;
   color: #000000;
 }
+.f2-box__text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
