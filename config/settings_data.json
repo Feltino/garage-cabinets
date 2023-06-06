@@ -2194,6 +2194,27 @@
           "button_link": "",
           "home_product_timeline": ""
         }
+      },
+      "3ba75281-db2d-4ab3-a798-b085e3e0dd71": {
+        "type": "l-fourth-screen",
+        "blocks": {
+          "a0682f57-940c-43a9-97dc-2fff1cac8c1a": {
+            "type": "slide",
+            "settings": {
+              "title": "ffff",
+              "tabnew_collection": "all"
+            }
+          }
+        },
+        "block_order": [
+          "a0682f57-940c-43a9-97dc-2fff1cac8c1a"
+        ],
+        "settings": {
+          "title": "",
+          "desktop": 8,
+          "tablet": 5,
+          "mobile": 3
+        }
       }
     },
     "content_for_index": [
@@ -2207,7 +2228,8 @@
       "1564544498954",
       "1565664254652",
       "1565856526176",
-      "1565856408964"
+      "1565856408964",
+      "3ba75281-db2d-4ab3-a798-b085e3e0dd71"
     ]
   },
   "presets": {
