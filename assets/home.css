@@ -140,3 +140,10 @@ body a:hover {
   object-fit: contain;
   margin-bottom: 15px;
 }
+.f3-box__tabs p{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #959595;
+}
