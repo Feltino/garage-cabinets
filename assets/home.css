@@ -217,5 +217,5 @@ body a:hover {
 }
 .f3-collection .owl-nav,
 .f3-collection .owl-dots{
-  display:none;
+  display:none !important;
 }
