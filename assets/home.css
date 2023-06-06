@@ -227,3 +227,11 @@ body a:hover {
   text-align: center;
   color: #000000;
 }
+.price-box .old-price{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration-line: line-through;
+  color: #959595;
+}
