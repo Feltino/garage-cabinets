@@ -24,7 +24,7 @@
             <p class="f2-box__text">{{ section.settings.text_box2 }}</p>
           </div>
       </div>
-      <div class="col-4">
+      <div class="col-4 d-flex">
         {% if section.settings.image3 != blank %}
          <img class="f2-box__image" src="{{ section.settings.image3 | img_url: "master" }}">
         {% endif %}
