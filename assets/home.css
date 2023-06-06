@@ -388,4 +388,7 @@ footer.footer-container.footer_layout_2 {
   .f-box__five .f-box__title {
     margin-bottom: 50px;
   }
+  .f-box__content {
+    padding: 30px 0 30px 23px;
+  }
 }
