@@ -2148,9 +2148,14 @@
           "82fa5b7a-39f3-408b-a2af-26f0fdc13321-1686054268efca1fad-0"
         ],
         "settings": {
+          "banner_bg": "shopify:\/\/shop_images\/pattern_1.png",
+          "sub": "Save up to 30%",
+          "title": "Ulti-MATE Garage 2.0",
+          "btn_link": "",
+          "banner_title": "Learn More",
           "enable_full_width_load": false,
           "slide_layouts": "slide_layout_1",
-          "color": "#fff",
+          "color": "#ffffff",
           "show_top_separator": true,
           "grid": 4,
           "max_count": 10,
