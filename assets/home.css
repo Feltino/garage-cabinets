@@ -321,3 +321,6 @@ body a:hover {
   top: 1px;
   position: relative;
 }
+.f6-box__title{
+  margin-bottom: 40px;
+}
