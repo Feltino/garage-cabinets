@@ -472,4 +472,7 @@ footer.footer-container.footer_layout_2 {
     flex-direction:column;
     align-items: center;
   }
+  .f2-box__title {
+    text-align: center;
+  }
 }
