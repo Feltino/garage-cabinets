@@ -403,4 +403,21 @@ footer.footer-container.footer_layout_2 {
     font-size: 18px;
     line-height: 27px;
   }
+  .f-box__three .f-box__link, 
+  .f-box__four .f-box__link, 
+  .f-box__five .f-box__link {
+    font-size: 13px;
+  }
+}
+@media (max-width:768px){
+  .f-box__two,
+  .f-box__one{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .f-box__two .f-box__left, .f-box__one .f-box__left {
+    max-height: 251px;
+    object-fit: contain;
+    margin-left: unset;
+  }
 }
