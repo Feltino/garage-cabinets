@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="f4-box__tabs">
+        <div class="f4-box__tabs tab-content">
           {% if section.blocks.size > 0 %}
                 {% for block in section.blocks %}
                 {% assign tabs_collection = block.settings.tabnew_collection %}
@@ -23,7 +23,12 @@
   </div>
 </section>
 
-
+<script type="text/javascript" >
+        $('.tabs-product .nav-tabs a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+      </script>
 
 {% schema %}
   {
