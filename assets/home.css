@@ -167,3 +167,6 @@ body a:hover {
   border-bottom: 1px solid #EAEAEA;
   margin-bottom: 40px;
 }
+.f3-box__tabs .owl-theme .owl-nav {
+    top: -97px;
+}
