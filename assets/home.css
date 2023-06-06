@@ -413,6 +413,9 @@ footer.footer-container.footer_layout_2 {
     align-items: center;
     margin-bottom: 30px;
   }
+  .f2-box__title {
+    text-align: center;
+  }
 }
 @media (max-width:768px){
   .f-box__two,
@@ -444,6 +447,9 @@ footer.footer-container.footer_layout_2 {
     flex-direction:column;
     align-items: center;
     margin-bottom: 30px;
+  }
+  .f2-box__title {
+    text-align: center;
   }
 }
 @media (max-width:580px){
