@@ -1736,7 +1736,7 @@
           "1564544498954-0": {
             "type": "tabs",
             "settings": {
-              "hide_title": true,
+              "hide_title": false,
               "title": "rt",
               "tabnew_collection": "garage-cabinet-sets"
             }
