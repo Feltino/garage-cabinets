@@ -1879,7 +1879,7 @@
           "enable_full_width_load": false,
           "slide_layouts": "slide_layout_1",
           "color": "#ffffff",
-          "show_top_separator": true,
+          "show_top_separator": false,
           "grid": 4,
           "max_count": 10,
           "grid_responsive": "",
