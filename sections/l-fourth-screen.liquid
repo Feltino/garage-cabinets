@@ -1,12 +1,101 @@
+<section>
+  <div class="container">
+    <div class="f3-box__border">
+      <div>
+      <h2 class="f3-box__title">{{ section.settings.title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="owl-carousel owl-theme f3-box__tabs">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'slide' %}
+                <div class="item d-flex flex-column justify-content-center" {{ block.shopify_attributes }}>
+                  <img src="{{ block.settings.image | img_url: 'master' }}">
+                  <p>{{ block.settings.title }}</p>
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript" >
+  $('.f3-box__tabs').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:{{section.settings.mobile}}
+        },
+        600:{
+            items:{{section.settings.tablet}}
+        },
+        1000:{
+            items:{{section.settings.desktop}}
+        }
+    }
+  })
+</script>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+  "name": "Fourth Screen",
+  "tag": "section",
+  "class": "f-tabs_section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "number",
+      "id": "desktop",
+      "label": "How slide show on desktop",
+      "default": 8
+    },
+    {
+      "type": "number",
+      "id": "tablet",
+      "label": "How slide show on desktop",
+      "default": 5
+    },
+    {
+      "type": "number",
+      "id": "mobile",
+      "label": "How slide show on desktop",
+      "default": 3
+    }
+  ],
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+         {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+       ]
+     }
+   ],
+  "presets": [
+    {
+      "name": "Fourth Screen"
+    }
+  ]
+  
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
