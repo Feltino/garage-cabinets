@@ -2131,19 +2131,59 @@
           "tablet": 5,
           "mobile": 3
         }
+      },
+      "82fa5b7a-39f3-408b-a2af-26f0fdc13321": {
+        "type": "l-third-screen",
+        "blocks": {
+          "82fa5b7a-39f3-408b-a2af-26f0fdc13321-1686054268efca1fad-0": {
+            "type": "tabs",
+            "settings": {
+              "hide_title": false,
+              "title": "",
+              "tabnew_collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "82fa5b7a-39f3-408b-a2af-26f0fdc13321-1686054268efca1fad-0"
+        ],
+        "settings": {
+          "enable_full_width_load": false,
+          "slide_layouts": "slide_layout_1",
+          "color": "#fff",
+          "show_top_separator": true,
+          "grid": 4,
+          "max_count": 10,
+          "grid_responsive": "",
+          "margin_top": 10,
+          "reponsive_mt": "",
+          "margin_bottom": 10,
+          "reponsive_bt": "",
+          "enable_block_image": false,
+          "autoplay": true,
+          "speed": 5,
+          "arrows": true,
+          "bullets": true,
+          "home_product_title_1": "This is the heading",
+          "subtitle": "Latest Product & New Collection",
+          "button": "Shop Now",
+          "button_link": "#",
+          "home_product_timeline": "2019\/12\/31 10:30:00"
+        }
       }
     },
     "content_for_index": [
       "bb6d85e2-7424-482b-afb7-8da7d223883a",
       "b91c0435-a80f-49f1-90fe-bd2dfa600bcc",
       "98ab90bf-95e7-4fe7-aaab-1456ba30b8ad",
+      "1565664254652",
       "1565317815888",
       "1556008263381",
       "1556241071613",
       "1564544498954",
-      "1565664254652",
       "1565856526176",
-      "1565856408964"
+      "1565856408964",
+      "82fa5b7a-39f3-408b-a2af-26f0fdc13321"
     ]
   },
   "presets": {
