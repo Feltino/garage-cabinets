@@ -22,12 +22,8 @@
                         {% for product in collections[tabs_collection].products limit: section.settings.max_count %}          
                         {% assign current_collection = collections[tabs_collection] %}
                        
-                        {% include 'product-item-new' %}
-                        
                         {% else %}
                         {% for i in (1..4) %}
-                        <div class="grid__item_add col-md-12">
-                          <div class="grid-view-item">
                             <a href="#" class="grid-view-item__link">
                               {% if product.title %}
                               {%- assign compare_at_price = product.compare_at_price -%}
@@ -49,8 +45,6 @@
                                 <s class="product-price__price">{{ compare_at_price | money }}</s>
                               </div>
                             </a>
-                          </div>
-                        </div>
                         {% endfor %}
                           
                         {% endfor %}
