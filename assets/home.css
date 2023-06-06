@@ -353,6 +353,7 @@ body a:hover {
   color: #FFFFFF;
   padding:17px 30px;
   border: none;
+  margin-left: 10px;
 }
 .f-seventh_section input[type=email]{
   background: #FFFFFF;
