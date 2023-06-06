@@ -1,8 +1,62 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.text }}</p>
+        {% form 'customer' %}
+          <div class="email">
+            <input type="email" name="contact[email]" placeholder="Enter Your Email Address" />
+          </div>
+          <div class="submit">
+            <input type="submit" value="Subscribe" />
+          </div>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .f-seventh_section{
+    background-image:url("{{ section.settings.image | img_url: "master" }}");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+</style>
+{% schema %}
+ {
+  "name": "Seventh Section",
+  "tag": "section",
+  "class": "f-sixth_section f-seventh_section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "btn_title",
+      "label": "Button Title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Seventh Section"
+    }
+  ]
+  
+}
 {% endschema %}
 
 {% stylesheet %}
