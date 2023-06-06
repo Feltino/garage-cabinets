@@ -352,6 +352,7 @@ body a:hover {
   text-transform: uppercase;
   color: #FFFFFF;
   padding:17px 30px;
+  border: none;
 }
 .f-seventh_section input[type=email]{
   background: #FFFFFF;
