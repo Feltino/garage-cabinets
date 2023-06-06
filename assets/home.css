@@ -379,4 +379,7 @@ footer.footer-container.footer_layout_2 {
   .f-box__two .f-box__left {
     max-height: 180px;
   }
+  .f-box__two {
+    height: 100%;
+  }
 }
