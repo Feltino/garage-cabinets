@@ -444,7 +444,14 @@ footer.footer-container.footer_layout_2 {
   .f-box__four{
     margin-bottom: 30px;
   }
-  .f-box__three .f-box__title, .f-box__four .f-box__title, .f-box__five .f-box__title {
+  .f-box__three .f-box__content,
+  .f-box__four .f-box__content,
+  .f-box__five .f-box__content{
+    align-items: center;
+  }
+  .f-box__three .f-box__title, 
+  .f-box__four .f-box__title, 
+  .f-box__five .f-box__title {
     text-align: left;
     padding: 10px;
   }
