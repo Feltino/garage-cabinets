@@ -8,16 +8,15 @@
     <div class="row">
       <div class="col-12">
         <div class="f4-box__tabs">
-          {% for block in section.blocks %}
-            {% case block.type %}
-              {% when 'slide' %}
+          {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
                 {% assign tabs_collection = block.settings.tabnew_collection %}
-                <div class="item d-flex flex-column justify-content-center" {{ block.shopify_attributes }}>
+                <div class="tab-pane tabs-content fade {% if forloop.first %} in active show{% endif %}" id="{{block.id }}{{ forloop.index }}" {{ block.shopify_attributes }}>
                   {% assign owl_id = block.id %}
                    {% include 'carousel-product' %}
                 </div>
-            {% endcase %}
           {% endfor %}
+            {% endif %}
         </div>
       </div>
     </div>
