@@ -1,6 +1,9 @@
 <section>
   <div class="container">
     <div class="row">
+      <div class="col-12">{{ section.settings.title }}</div>
+    </div>
+    <div class="row">
       <div class="col-12">
         <div class="owl-carousel owl-theme f3-box__tabs">
           {% for block in section.blocks %}
@@ -43,6 +46,11 @@
   "tag": "section",
   "class": "f-tabs_section",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
     {
       "type": "number",
       "id": "desktop",
