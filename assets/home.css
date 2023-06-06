@@ -163,6 +163,8 @@ body a:hover {
   line-height: 28px;
   color: #000000;
   margin-bottom: 0;
+  top: 8px;
+  position: relative;
 }
 .f3-box__border{
   border-bottom: 1px solid #EAEAEA;
@@ -177,6 +179,7 @@ body a:hover {
   background-color: #F6802F;
   display: inline-block;
   position: absolute;
+  bottom: 0;
 }
 .f-tabs_section .owl-theme .owl-nav {
   top: -97px;
