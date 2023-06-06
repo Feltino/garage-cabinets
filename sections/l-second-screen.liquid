@@ -7,21 +7,27 @@
     </div>
     <div class="row">
       <div class="col-4">
-        <img class="f2-box__image" src="{{ section.settings.image | img_url: "master" }}">
+        {% if section.settings.image != blank %}
+          <img class="f2-box__image" src="{{ section.settings.image | img_url: "master" }}">
+        {% endif %}
         <div>
           <h3 class="f2-box__title">{{ section.settings.title_box }}</h3>
           <p class="f2-box__text">{{ section.settings.text_box }}</p>
         </div>
       </div>
       <div class="col-4">
-         <img class="f2-box__image" src="{{ section.settings.image2 | img_url: "master" }}">
+          {% if section.settings.image2 != blank %}
+           <img class="f2-box__image" src="{{ section.settings.image2 | img_url: "master" }}">
+          {% endif %}
           <div>
             <h3 class="f2-box__title">{{ section.settings.title_box2 }}</h3>
             <p class="f2-box__text">{{ section.settings.text_box2 }}</p>
           </div>
       </div>
       <div class="col-4">
+        {% if section.settings.image3 != blank %}
          <img class="f2-box__image" src="{{ section.settings.image3 | img_url: "master" }}">
+        {% endif %}
         <div>
           <h3 class="f2-box__title">{{ section.settings.title_box3 }}</h3>
           <p class="f2-box__text">{{ section.settings.text_box3 }}</p>
