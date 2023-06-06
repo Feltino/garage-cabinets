@@ -252,6 +252,8 @@ body a:hover {
 .tabs-product-home .main-heading .heading-tabs .nav-tabs li.active a {
     color: unset !important;
 }
-.tabs-product-home .main-heading .heading-tabs .nav-tabs li a:hover, .tabs-product-home .main-heading .heading-tabs .nav-tabs li a.active {
+.tabs-product-home .main-heading .heading-tabs .nav-tabs li a:hover, 
+.tabs-product-home .main-heading .heading-tabs .nav-tabs li a.active,
+.tabs-product-home .main-heading .heading-tabs .nav-tabs li.active a.active{
     color: #fc6a21 !important;
 }
