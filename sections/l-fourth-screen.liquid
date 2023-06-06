@@ -12,8 +12,6 @@
             {% case block.type %}
               {% when 'slide' %}
                 {% assign tabs_collection = block.settings.tabnew_collection %}
-                  <img src="{{ block.settings.image | img_url: 'master' }}">
-                  <p>{{ block.settings.title }}</p>
                   {% assign owl_id = block.id %}
                    {% capture row_limit %}
                     {{ row_limit_setting | times: 5 }}
