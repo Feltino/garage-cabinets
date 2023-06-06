@@ -383,4 +383,9 @@ footer.footer-container.footer_layout_2 {
     height: 100%;
     align-items: center;
   }
+  .f-box__three .f-box__title, 
+  .f-box__four .f-box__title, 
+  .f-box__five .f-box__title {
+    margin-bottom: 50px;
+  }
 }
