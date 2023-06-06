@@ -166,12 +166,15 @@ body a:hover {
 .f3-box__border{
   border-bottom: 1px solid #EAEAEA;
   margin-bottom: 40px;
+  padding: 15px 0;
 }
 .f3-box__border:after{
   content: '';
   width: 90px;
   height: 3px;
   background-color: #F6802F;
+  display: inline-block;
+  position: absolute;
 }
 .f-tabs_section .owl-theme .owl-nav {
     top: -97px;
