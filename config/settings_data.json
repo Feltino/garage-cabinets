@@ -2165,25 +2165,25 @@
           "arrows": true,
           "bullets": true,
           "home_product_title_1": "This is the heading",
-          "subtitle": "Latest Product & New Collection",
-          "button": "Shop Now",
-          "button_link": "#",
-          "home_product_timeline": "2019\/12\/31 10:30:00"
+          "subtitle": "",
+          "button": "",
+          "button_link": "",
+          "home_product_timeline": ""
         }
       }
     },
     "content_for_index": [
+      "1565317815888",
       "bb6d85e2-7424-482b-afb7-8da7d223883a",
       "b91c0435-a80f-49f1-90fe-bd2dfa600bcc",
       "98ab90bf-95e7-4fe7-aaab-1456ba30b8ad",
-      "1565664254652",
-      "1565317815888",
+      "82fa5b7a-39f3-408b-a2af-26f0fdc13321",
       "1556008263381",
       "1556241071613",
       "1564544498954",
+      "1565664254652",
       "1565856526176",
-      "1565856408964",
-      "82fa5b7a-39f3-408b-a2af-26f0fdc13321"
+      "1565856408964"
     ]
   },
   "presets": {
