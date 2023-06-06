@@ -250,7 +250,7 @@ body a:hover {
   border: none;
 }
 .tabs-product-home .main-heading .heading-tabs .nav-tabs li.active a {
-    color: unset !important;
+    color: #000 !important;
 }
 .tabs-product-home .main-heading .heading-tabs .nav-tabs li a:hover, 
 .tabs-product-home .main-heading .heading-tabs .nav-tabs li a.active,
