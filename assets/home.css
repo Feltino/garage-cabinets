@@ -327,3 +327,6 @@ body a:hover {
 .f-sixth_section a:hover {
     color: #000;
 }
+.f-seventh_section .contact-form{
+  display: flex;
+}
