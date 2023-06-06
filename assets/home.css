@@ -95,4 +95,7 @@ body a:hover {
   font-weight: 600;
   font-size: 28px;
   line-height: 33px;
+  position: relative;
+  top: 11px;
+  margin-left: 11px;
 }
