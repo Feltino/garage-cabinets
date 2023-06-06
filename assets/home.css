@@ -436,7 +436,7 @@ footer.footer-container.footer_layout_2 {
     padding: 0;
   }
 }
-@media (max-width:580){
+@media (max-width:580px){
   .f-box__one {
     margin-bottom: 30px;
   }
