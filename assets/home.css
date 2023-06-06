@@ -296,3 +296,13 @@ body a:hover {
   align-items: center;
   padding: 44px 0;
 }
+.f-sixth_section p{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.f-sixth_section p strong{
+  color: #000;
+}
