@@ -2307,7 +2307,7 @@
         "settings": {
           "enable_full_width_load": false,
           "slide_layouts": "slide_layout_1",
-          "color": "#fff",
+          "color": "#ffffff",
           "show_top_separator": true,
           "grid": 4,
           "max_count": 10,
@@ -2327,6 +2327,14 @@
           "button_link": "",
           "home_product_timeline": ""
         }
+      },
+      "be19151f-1df9-4f44-8d6b-246f1670877b": {
+        "type": "l-seventh-screen",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/bg_5.png",
+          "title": "Newsletter",
+          "text": "Subscribe now to get daily updates"
+        }
       }
     },
     "content_for_index": [
@@ -2339,6 +2347,7 @@
       "47ba4b42-47bb-4c1c-a9f9-1eece687e551",
       "b33f7da0-62e4-4b54-9396-f141b64b00f6",
       "9137e314-d0cb-448b-85f6-b337666e75ac",
+      "be19151f-1df9-4f44-8d6b-246f1670877b",
       "1556008263381",
       "1556241071613",
       "1564544498954",
