@@ -1,4 +1,35 @@
-<section></section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img class="f2-box__image" src="{{ section.settings.image | img_url: "master" }}">
+        <div>
+          <h3 class="f2-box__title">{{ section.settings.title_box }}</h3>
+          <p class="f2-box__text">{{ section.settings.text_box }}</p>
+        </div>
+      </div>
+      <div class="col-4">
+         <img class="f2-box__image" src="{{ section.settings.image2 | img_url: "master" }}">
+          <div>
+            <h3 class="f2-box__title">{{ section.settings.title_box2 }}</h3>
+            <p class="f2-box__text">{{ section.settings.text_box2 }}</p>
+          </div>
+      </div>
+      <div class="col-4">
+         <img class="f2-box__image" src="{{ section.settings.image3 | img_url: "master" }}">
+        <div>
+          <h3 class="f2-box__title">{{ section.settings.title_box3 }}</h3>
+          <p class="f2-box__text">{{ section.settings.text_box3 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% schema %}
  {
   "name": "Second Section",
@@ -7,8 +38,66 @@
   "limit": 1,
   "settings": [
     {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
       "type": "header",
-      "content": "First Banner"
+      "content": "First Advantage"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "title_box",
+      "label": "Title Advantage"
+    },
+    {
+      "type": "text",
+      "id": "text_box",
+      "label": "Text Advantage"
+    },
+    {
+      "type": "header",
+      "content": "Second Advantage"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "title_box2",
+      "label": "Title Advantage"
+    },
+    {
+      "type": "text",
+      "id": "text_box2",
+      "label": "Text Advantage"
+    },
+    {
+      "type": "header",
+      "content": "Third Advantage"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "title_box3",
+      "label": "Title Advantage"
+    },
+    {
+      "type": "text",
+      "id": "text_box3",
+      "label": "Text Advantage"
     }
   ],
   "presets": [
