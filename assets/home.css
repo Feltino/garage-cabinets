@@ -139,7 +139,7 @@ body a:hover {
   max-height: 35px;
   max-width: 120px;
   object-fit: contain;
-  margin:0 auto 15px auto;
+  margin:0 auto;
 }
 .f3-box__tabs p{
   font-weight: 600;
