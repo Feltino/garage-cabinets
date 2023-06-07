@@ -196,4 +196,14 @@ body .price-box .old-price{
 .product-question{
   background: #F5F5F5;
   border: 1px solid #F0F0F0;
+  position: relative;
+}
+.product-question:after{
+  content: '';
+  width:1px;
+  height:100%;
+  background: #1E5586;
+  position: absolute;
+  left:0;
+  top: 0;
 }
