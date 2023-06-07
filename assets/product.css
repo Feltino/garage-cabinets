@@ -42,6 +42,7 @@ body #add-to-cart-form #product-add-to-cart{
 body .shopify-cleanslate div[role="button"]{
   background: #1E5586 !important;
   border:none !important;
+  margin-top: 30px;
 }
 body .product_meta>p span, 
 body .product_meta>p a {
