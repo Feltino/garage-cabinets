@@ -47,6 +47,7 @@
           </div>
         <div class="products-grid row" id="recently-viewed-products-grid">
           {% for product in recentlyViewedProducts %}
+            {{ recentlyViewedProducts }}
             {% form 'product', product, class: 'form-add-cart', data-js-product-form: '' %}
               {% section 'recently-viewed-products' %}
             {% endform %}
