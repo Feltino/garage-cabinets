@@ -65,3 +65,13 @@ body .product-tabs .nav-tabs>li>a:hover {
     border-bottom: 3px solid #F6802F;
     background: transparent;
 }
+body .related-heading {
+  border-bottom: 3px solid #F6802F;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: left;
+}
