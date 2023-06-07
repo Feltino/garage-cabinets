@@ -137,3 +137,6 @@ body .price-box .old-price{
   width: 100%;
   align-items: center;
 }
+.pr-view-countdown{
+  display: none;
+}
