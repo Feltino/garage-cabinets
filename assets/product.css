@@ -209,6 +209,8 @@ body .price-box .old-price{
 }
 .product-question img{
   width:47px;
+  margin-left: 13px;
+  margin-right: 10px;
 }
 .product-question p{
   margin-bottom: 0;
