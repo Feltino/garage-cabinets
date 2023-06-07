@@ -269,6 +269,14 @@ body .price-box .old-price{
   line-height: 19px;
   color: #000000;
 }
+.prodcuct-vendor span {
+  color: #000;
+  padding-left: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1E5586;
+}
 @media (max-width:1440px){
   .product-custom__add-to-cart{
     display: flex;
