@@ -238,3 +238,8 @@ body .price-box .old-price{
   line-height: 19px;
   color: #666666;
 }
+.product-custom-dealer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
