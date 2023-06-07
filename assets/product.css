@@ -1,4 +1,6 @@
-
+body{
+  font-family: 'Roboto',sans-serif !important;
+}
 body.template-product .product-label-wr .product-label, 
 body.template-product .product-label-wr .label-new{
   font-family: 'Roboto',sans-serif;
