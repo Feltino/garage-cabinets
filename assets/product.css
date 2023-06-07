@@ -22,3 +22,10 @@ body .product-shop .prices .compare-price{
   text-decoration-line: line-through;
   color: #666666;
 }
+body .quick-view .product-shop .price, 
+body .product-shop span.price.on-sale {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1E5586;
+}
