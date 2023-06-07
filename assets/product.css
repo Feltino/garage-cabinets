@@ -146,6 +146,7 @@ body .price-box .old-price{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 .product-custom__guarante h4{
   font-weight: 700;
