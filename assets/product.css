@@ -273,5 +273,6 @@ body .price-box .old-price{
   }
   .template-product #add-to-cart-form #product-add-to-cart{
     width: 100%;
+    margin-top: 10px;
   }
 }
