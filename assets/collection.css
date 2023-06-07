@@ -6,7 +6,7 @@ body .sidebar-links .widget-content>ul {
     max-height: none;
 }
 body .sidebar-product .heading-block h3,
-body .related-heading h3 span{
+body .related-heading h2 span{
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
