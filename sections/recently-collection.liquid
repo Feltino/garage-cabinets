@@ -77,7 +77,7 @@
     {% endraw %}
 
 
-{% for product in recordRecentlyViewed %}
+{% for product in recentlyViewedProducts %}
      {% form 'product', product, class: 'form-add-cart', data-js-product-form: '' %}
     {% raw %}
       <div class="product-top">
@@ -152,7 +152,7 @@
 
 <script>
   Shopify.Products.showRecentlyViewed({ 
-    howManyToShow: {{ section.settings.number_of_recently_viewed_products }}, 
+    howManyToShow: 8, 
     wrapperId: 'recently-viewed-products-grid', 
     templateId: 'recently-viewed-product-grid-template',
     onComplete: function() {
