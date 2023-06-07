@@ -138,7 +138,7 @@ body .price-box .old-price{
   align-items: center;
 }
 .product-shop .buy-now .compare-detail{
-  display: none;
+  display: none !important;
 }
 .product-custom__guarante {
   border: 1px solid #F0F0F0;
