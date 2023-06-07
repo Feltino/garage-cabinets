@@ -388,6 +388,9 @@ body .footer-container .footer-center {
 body .footer-container h3.module-title {
   color: #fff;
 }
+footer-logo img{
+  height:40px;
+}
 @media (max-width:1440px){
   .f-box__two .f-box__left {
     max-height: 180px;
