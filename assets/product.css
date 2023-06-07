@@ -243,3 +243,8 @@ body .price-box .old-price{
     justify-content: space-around;
     align-items: center;
 }
+.pr_c_m{
+  align-items: center;
+  display: flex;
+}
+}
