@@ -296,4 +296,7 @@ body .price-box .old-price{
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .product-question img{
+    margin-bottom: 10px;
+  }
 }
