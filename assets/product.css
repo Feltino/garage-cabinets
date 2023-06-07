@@ -193,3 +193,7 @@ body .price-box .old-price{
 .prices-wr {
     margin-top: 10px;
 }
+.product-question{
+  background: #F5F5F5;
+  border: 1px solid #F0F0F0;
+}
