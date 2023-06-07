@@ -77,7 +77,7 @@
     {% endraw %}
 
 
-
+{% for product in recentlyViewedProducts %}
      {% form 'product', product, class: 'form-add-cart', data-js-product-form: '' %}
     {% raw %}
       <div class="product-top">
@@ -143,6 +143,7 @@
   </div>
     {% endraw %}
      {% endform %}
+  {% endfor %}
       {% raw %}
   </div>
   </div>
