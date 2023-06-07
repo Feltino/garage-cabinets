@@ -1,7 +1,8 @@
 #wapper-popup\,
 #header-content,
 #popup-newsletter .newsletter-content,
-#popup-newsletter {
+#popup-newsletter,
+.header-wrapper{
     display: none !important;
 }
 body{
