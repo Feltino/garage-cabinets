@@ -161,6 +161,9 @@ body .price-box .old-price{
 .product-custom__guarante h4 span{
   color:#8EBC4A;
 }
+.product-custom__deliver{
+  margin-top: 12px;
+}
 .product-custom__deliver img{
   height: 28px;
   padding: 0 10px 0 8px;
@@ -183,4 +186,10 @@ body .price-box .old-price{
   font-size: 16px;
   line-height: 19px;
   color: #F6802F;
+}
+.product-shop .prices {
+  margin-bottom: 0;
+}
+.prices-wr {
+    margin-top: 30px;
 }
