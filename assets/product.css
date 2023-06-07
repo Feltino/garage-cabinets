@@ -140,3 +140,6 @@ body .price-box .old-price{
 .pr-view-countdown{
   display: none;
 }
+.product-custom__guarante {
+  border: 1px solid #F0F0F0;
+}
