@@ -6,9 +6,10 @@
 
 {{ '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js' | script_tag }}
 {{ 'jquery.products.min.js' | asset_url | script_tag }}
+<script  src="{{ 'jq-product.js' | asset_url}}" type="text/javascript"></script>
 
 <script>
 Shopify.Products.recordRecentlyViewed();
 </script>
 
-
+{% include 'hewly-viewed' %}
