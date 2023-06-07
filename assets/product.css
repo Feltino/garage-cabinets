@@ -210,3 +210,6 @@ body .price-box .old-price{
 .product-question img{
   width:47px;
 }
+.product-question p{
+  margin-bottom: 0;
+}
