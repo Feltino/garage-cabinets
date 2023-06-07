@@ -512,7 +512,7 @@ body .footer-container h3.module-title {
   .f-box__four .f-box__title, 
   .f-box__five .f-box__title {
     text-align: left;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     margin-bottom: 10px;
     margin-top: 10px;
   }
