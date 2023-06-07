@@ -1050,7 +1050,7 @@
           "enable_wishlist": false,
           "enable_payment_button": true,
           "display_spend_shipping": false,
-          "product_bagde_image": true,
+          "product_bagde_image": false,
           "product_flash_sold_enable": false,
           "show_visitors": false,
           "show_text_countdown": false,
