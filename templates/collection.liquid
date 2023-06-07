@@ -14,6 +14,7 @@
           {% for product in recentlyViewedProducts %}
             {% assign current_variant = product.selected_or_first_available_variant %}
             {% assign current_variant_id = current_variant.id %}
+            {{ current_variant_id }}
             {% form 'product', product, id: current_variant_id, class: 'form-add-cart', data-js-product-form: '' %}
               {% section 'recently-viewed-products' %}
             {% endform %}
