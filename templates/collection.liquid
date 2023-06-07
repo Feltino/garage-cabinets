@@ -22,5 +22,22 @@
         </div>
       </div>
     </section>
+    <section class="recently-viewed-products">
+      <div class="container">
+        {% if section.settings.recently_viewed_products_title != '' %}
+          <div class="related-heading">
+            <h2><span>{{ section.settings.recently_viewed_products_title }}</span></h2>
+          </div>
+        {% endif %}
+        <div class="products-grid row" id="recently-viewed-products-grid">
+          {% for product in recentlyViewedProducts %}
+            {% assign current_variant = product.selected_or_first_available_variant %}
+            {% form 'product', product, class: 'form-add-cart', data-js-product-form: '' %}
+              {% section 'recently-viewed-products' %}
+            {% endform %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
 
 
