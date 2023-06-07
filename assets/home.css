@@ -382,9 +382,7 @@ footer.footer-container.footer_layout_2 {
    margin-bottom: 0;
 }
 .footer-container .footer-center {
-    padding-top: 30px;
     background-color: #252525;
-    padding-bottom: 30px;
     color: #aaa;
 }
 @media (max-width:1440px){
