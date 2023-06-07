@@ -26,3 +26,7 @@ body .heading-block:after {    position: absolute;
 body .collections-pages .page-header{
   display:none;
 }
+body .block_newsletter .input-group .input-group-btn input.btn{
+  background-color:#F6802F;
+  border: 1px solid #F6802F;
+}
