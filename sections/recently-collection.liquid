@@ -77,7 +77,7 @@
     {% endraw %}
 
 
-{% for product in recentlyViewedProducts %}
+{% for product in recordRecentlyViewed %}
      {% form 'product', product, class: 'form-add-cart', data-js-product-form: '' %}
     {% raw %}
       <div class="product-top">
