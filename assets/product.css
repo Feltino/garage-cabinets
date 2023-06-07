@@ -29,3 +29,6 @@ body .product-shop span.price.on-sale {
   line-height: 28px;
   color: #1E5586;
 }
+body #add-to-cart-form #product-add-to-cart{
+  background: #F6802F;
+}
