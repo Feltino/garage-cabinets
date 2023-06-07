@@ -13,3 +13,9 @@ body .sidebar-product .heading-block h3{
   text-transform: uppercase;
   color: #000000;
 }
+body .product-label {
+  background: #F6802F;
+  border: none;
+  color: #fff;
+  box-shadow: none;
+}
