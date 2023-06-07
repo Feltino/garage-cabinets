@@ -281,3 +281,11 @@ body .price-box .old-price{
     text-align: center;
   }
 }
+@media (max-width:580px){
+  .product-custom {
+    align-items: flex-start;
+  }
+  .product-custom h3 {
+    text-align: left;
+  }
+}
