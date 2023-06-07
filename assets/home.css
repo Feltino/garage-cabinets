@@ -391,12 +391,12 @@ body .footer-container h3.module-title {
 .footer-logo img{
   height:40px;
 }
-.tabs-product-home .owl-carousel .owl-nav button.owl-prev:hover, 
-.tabs-product-home .owl-carousel .owl-nav button.owl-next:hover, 
-.instagram-bottom .owl-carousel .owl-nav button.owl-prev:hover, 
-.instagram-bottom .owl-carousel .owl-nav button.owl-next:hover, 
-.main-brand .owl-carousel .owl-nav button.owl-prev:hover, 
-.main-brand .owl-carousel .owl-nav button.owl-next:hover {
+body .tabs-product-home .owl-carousel .owl-nav button.owl-prev:hover, 
+body .tabs-product-home .owl-carousel .owl-nav button.owl-next:hover, 
+body .instagram-bottom .owl-carousel .owl-nav button.owl-prev:hover, 
+body .instagram-bottom .owl-carousel .owl-nav button.owl-next:hover, 
+body .main-brand .owl-carousel .owl-nav button.owl-prev:hover, 
+body.main-brand .owl-carousel .owl-nav button.owl-next:hover {
     background: transparent !important;
     color: #fc6a21!important;
 }
