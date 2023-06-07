@@ -14,6 +14,12 @@ body .related-heading h2 span{
   text-transform: uppercase;
   color: #000000;
 }
+body .related-heading h2{
+  border-bottom: 3px solid #fc6a21;
+}
+body .related-heading {
+  text-align: left;
+}
 body .product-label {
   background: #F6802F;
   border: none;
