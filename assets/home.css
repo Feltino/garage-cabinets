@@ -2,6 +2,12 @@
 .header-wrapper{
   display:none !important;
 }
+body .product-label {
+  background: #F6802F;
+  border: none;
+  color: #fff;
+  box-shadow: none;
+}
 h1,h2,h3,h4,h5,h6,p,a,span,ul,li{
   font-family: 'Roboto', sans-serif !important;
   font-style: normal;
