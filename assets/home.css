@@ -550,4 +550,8 @@ body .footer-container h3.module-title {
   .f-tabs_section .owl-theme .owl-nav {
     top: -75px;
   }
+  .f3-collection,
+  .f-second_section{
+    margin: 40px 0;
+  }
 }
