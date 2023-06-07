@@ -239,9 +239,10 @@ body .price-box .old-price{
   color: #666666;
 }
 .product-custom-dealer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 .pr_c_m{
   align-items: center;
