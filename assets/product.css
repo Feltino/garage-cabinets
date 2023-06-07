@@ -55,4 +55,13 @@ body .product-tabs .nav-tabs li a{
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #000000;
+  height: 35px;
+}
+body .nav-tabs>li>a.active, 
+body .nav-tabs>li>a.active:focus, 
+body .nav-tabs>li>a.active:hover, 
+body .product-tabs .nav-tabs>li>a:hover {
+    color: #000;
+    border-bottom: 3px solid #F6802F;
+    background: transparent;
 }
