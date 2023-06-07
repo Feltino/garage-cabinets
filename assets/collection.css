@@ -19,3 +19,7 @@ body .product-label {
   color: #fff;
   box-shadow: none;
 }
+body .heading-block:after {    position: absolute;
+  content: "";
+  border-bottom: 3px solid #fc6a21;
+}
