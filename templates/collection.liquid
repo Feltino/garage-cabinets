@@ -32,6 +32,7 @@
         <div class="products-grid row" id="recently-viewed-products-grid">
           {% for product in recentlyViewedProducts %}
             {% assign current_variant = product.selected_or_first_available_variant %}
+            {{ current_variant }}
             {% form 'product', product, class: 'form-add-cart', data-js-product-form: '' %}
               {% section 'recently-viewed-products' %}
             {% endform %}
