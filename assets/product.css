@@ -2,8 +2,8 @@ body{
   font-family: 'Roboto',sans-serif !important;
 }
 body.template-product .product-label-wr .product-label, 
-body.template-product .product-label-wr .label-new{
-  font-family: 'Roboto',sans-serif;
+body.template-product .product-label-wr .label-new,
+body.template-product .product-label-wr .availability .product-inventory span{
   font-weight: 500;
   font-size: 13px;
   text-transform: uppercase;
