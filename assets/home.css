@@ -1,4 +1,7 @@
-
+div#wapper-popup,
+div#header-content{
+    display: none;
+}
 body .product-label {
   background: #F6802F;
   border: none;
