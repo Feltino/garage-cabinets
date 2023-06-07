@@ -9,3 +9,9 @@ body.template-product .product-label-wr .availability .product-inventory span{
   text-transform: uppercase;
   color: #FFFFFF;
 }
+body .product-shop .product-title h1{
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
