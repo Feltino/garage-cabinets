@@ -167,7 +167,7 @@ body .price-box .old-price{
 }
 .pr-custom__title,
 .product-shop .product-sku{
-  font-weight: 400;
+  font-weight: 400 !important;
   font-size: 16px;
   line-height: 19px;
   color: #666666;
