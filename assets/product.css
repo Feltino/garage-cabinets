@@ -291,4 +291,9 @@ body .price-box .old-price{
   .product-question {
     flex-direction: column;
   }
+  .product-question a {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
