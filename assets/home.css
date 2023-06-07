@@ -382,11 +382,11 @@ footer.footer-container.footer_layout_2 {
    margin-bottom: 0;
 }
 body .footer-container .footer-center {
-    background-color: #252525;
-    color: #aaa;
+  background-color: #252525;
+  color: #aaa;
 }
 body .footer-container h3.module-title {
-    color: #fff;
+  color: #fff;
 }
 @media (max-width:1440px){
   .f-box__two .f-box__left {
