@@ -381,7 +381,7 @@ footer.footer-container.footer_layout_2 {
   padding: 53px 0;
    margin-bottom: 0;
 }
-.footer-container .footer-center {
+body .footer-container .footer-center {
     background-color: #252525;
     color: #aaa;
 }
