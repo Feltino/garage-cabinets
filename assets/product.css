@@ -288,4 +288,7 @@ body .price-box .old-price{
   .product-custom h3 {
     text-align: left;
   }
+  .product-question {
+    flex-direction: column;
+  }
 }
