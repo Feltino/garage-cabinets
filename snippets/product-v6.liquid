@@ -229,6 +229,11 @@ Check if the product is sold out and set a variable to be used below.
                         {% if section.settings.show_sku %}
                         <div class="product-sku">SKU: <span class="variant-sku">{{ current_variant.sku }}</span></div>
                         {% endif %}
+                        <div class="product-custom__deliver">
+                          <span>Shipping:</span>
+                          <img src="" alt="free-shipping">
+                          <div><span>on Orders over $100</span></div>
+                        </div>
                       </div>
                       <div class="col-6">
                         <div class="producttop-meta">
