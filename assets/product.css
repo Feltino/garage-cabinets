@@ -126,6 +126,12 @@ body .price-box .old-price{
 .product-custom__img1{
   height:58px;
 }
-.product-custom__img1{
+.product-custom__img2{
   height: 74px;
+}
+.product-custom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
