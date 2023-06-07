@@ -985,7 +985,6 @@
             "settings": {
               "title": "Spring Season",
               "url": "shopify:\/\/collections\/laptop",
-              "image": "shopify:\/\/shop_images\/camaro-3.jpg",
               "custom_html": "New Women Collection",
               "button_text": "View More"
             }
@@ -1036,7 +1035,7 @@
           "1553853791627"
         ],
         "settings": {
-          "product_layouts": "product-v5",
+          "product_layouts": "product-v6",
           "enable_product_image_zoom": true,
           "show_quantity_selector": true,
           "show_vendor": true,
@@ -1059,7 +1058,6 @@
           "product_conditions": true,
           "product_conditions_title": "I agree with terms and conditions",
           "enable_sizeguide": true,
-          "image": "shopify:\/\/shop_images\/size.png",
           "enable_delivery": true,
           "delivery_lable": "Delivery & Return",
           "delivery_content": "<h6>SHIPPING<\/h6>\n<ul>\n    <li>Complimentary ground shipping within 1 to 7 business days<\/li>\n    <li>In-store collection available within 1 to 7 business days<\/li>\n    <li>Next-day and Express delivery options also available<\/li>\n    <li>Purchases are delivered in an orange box tied with a Bolduc ribbon, with the exception of certain items<\/li>\n    <li>See the delivery FAQs for details on shipping methods, costs and delivery times<\/li>\n<\/ul>\n<h6>RETURNS AND EXCHANGES<\/h6>\n<ul>\n    <li>Easy and complimentary, within 14 days<\/li>\n    <li>See conditions and procedure in our return FAQs<\/li>\n<\/ul>",
