@@ -152,6 +152,9 @@ body .price-box .old-price{
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  margin-top: -32px;
+  background: #fff;
+  padding: 0 10px;
 }
 .product-custom__guarante h4 span{
   color:#8EBC4A;
