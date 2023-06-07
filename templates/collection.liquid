@@ -3,4 +3,20 @@
 {% endcomment %}
 
 {% include 'collection-template' %}
-{% section 'recently-viewed-products' %}
+{% if section.settings.display_recently_viewed_products %}
+  {% if recentlyViewedProducts.size > 0 %}
+    <section class="recently-viewed-products">
+      <div class="container">
+        {% if section.settings.recently_viewed_products_title != '' %}
+          <div class="related-heading">
+            <h2><span>{{ section.settings.recently_viewed_products_title }}</span></h2>
+          </div>
+        {% endif %}
+        <div class="products-grid row" id="recently-viewed-products-grid">
+          {% include 'recently-viewed-product-grid-template' %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
