@@ -1,6 +1,6 @@
 div#wapper-popup\,
 div#header-content{
-    display: none;
+    display: none !important;
 }
 body .product-label {
   background: #F6802F;
