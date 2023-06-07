@@ -1018,14 +1018,14 @@
           "1553853743067": {
             "type": "custom_tabs",
             "settings": {
-              "for_group": "Custom Tab 1",
+              "for_group": "Specifications",
               "tabs_content": "<p>We are proud to present our best premium Shopify theme - Ciao.<\/p> <p>This is multi-purpose software that can be used for any type of the store. Great variety of available options will make customization process very easy.<\/p> <p>Please, take a look at feature list and compare with our competitors.<\/p> <p>You can buy our theme and start your business online with minimal time investments.<\/p> <p>Ciao support DropShipping app Oberlo.<br> Ciao Shopify theme is powerfool tool to create personal webshop.<\/p>"
             }
           },
           "1553853791627": {
             "type": "custom_tabs",
             "settings": {
-              "for_group": "Custom Tab 2",
+              "for_group": "Warranty",
               "tabs_content": "<p>We are proud to present our best premium Shopify theme - Ciao.<\/p> <p>This is multi-purpose software that can be used for any type of the store. Great variety of available options will make customization process very easy.<\/p> <p>Please, take a look at feature list and compare with our competitors.<\/p> <p>You can buy our theme and start your business online with minimal time investments.<\/p> <p>Ciao support DropShipping app Oberlo.<br> Ciao Shopify theme is powerfool tool to create personal webshop.<\/p>"
             }
           }
@@ -1069,7 +1069,7 @@
           "icon_isocal_2": true,
           "icon_isocal_3": true,
           "display_product_detail_description": true,
-          "display_product_reviews": true
+          "display_product_reviews": false
         }
       },
       "blog-template": {
