@@ -275,9 +275,9 @@ body .price-box .old-price{
     width: 100%;
     margin-top: 10px;
   }
-  .product-custom-dealer p,
-  .product-custom-dealer span,
-  .product-custom-dealer a{
+  .product-question p,
+  .product-question span,
+  .product-question a{
     text-align: center;
   }
 }
