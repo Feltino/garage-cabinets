@@ -290,8 +290,9 @@ Check if the product is sold out and set a variable to be used below.
 </div> -->
 
                   {%endif %}
-
-                  <div class="form-wr">
+                  <div class="row">
+                    <div class="col-6">
+                                        <div class="form-wr">
                     {% form 'product', product, id: "add-to-cart-form" %}
                     {% assign variantCount = product.variants | size %}
                     {% assign variantCounts = product.options | size %}
@@ -423,6 +424,10 @@ Check if the product is sold out and set a variable to be used below.
                     </div>
                     {% endif %}  
                   </div>
+                    </div>
+                    <div class="col-6"></div>
+                  </div>
+
                   {% if section.settings.show_text_countdown %}
                   <div class="pr-view-countdown">
                     <div class="text-countdowns auto-countdown" >
