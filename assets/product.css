@@ -36,3 +36,9 @@ body .shopify-cleanslate div[role="button"]{
   background: #1E5586 !important;
   border:none !important;
 }
+body .product_meta>p span, 
+body .product_meta>p a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
