@@ -1464,7 +1464,8 @@
           "1563765195160": {
             "type": "logo",
             "settings": {
-              "margin_logo": "0px 0px 0px 0px"
+              "margin_logo": "0px 0px 0px 0px",
+              "logo": "shopify:\/\/shop_images\/Mask_group-removebg-preview_1.png"
             }
           }
         },
