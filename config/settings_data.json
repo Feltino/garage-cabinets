@@ -1051,7 +1051,7 @@
           "enable_payment_button": true,
           "display_spend_shipping": true,
           "product_bagde_image": true,
-          "product_flash_sold_enable": true,
+          "product_flash_sold_enable": false,
           "show_visitors": true,
           "show_text_countdown": true,
           "height_button": 40,
