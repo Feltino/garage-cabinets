@@ -74,3 +74,6 @@ body .related-heading {
   color: #000000;
   text-align: left;
 }
+body .related-heading h2{
+  border-bottom: 3px solid #F6802F;
+}
