@@ -247,4 +247,6 @@ body .price-box .old-price{
   align-items: center;
   display: flex;
 }
+.pr_c_m-item{
+  width: 50%;
 }
