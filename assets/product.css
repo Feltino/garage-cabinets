@@ -255,3 +255,10 @@ body .price-box .old-price{
   width: 24px;
   margin-bottom: 10px;
 }
+.product-custom-dealer p{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+}
