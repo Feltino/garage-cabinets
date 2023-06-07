@@ -42,3 +42,9 @@ body .product_meta>p a {
     font-size: 14px;
     line-height: 16px;
 }
+body .product_meta>p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
