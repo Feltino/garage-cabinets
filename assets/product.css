@@ -2,7 +2,6 @@ body.template-product .product-label-wr .product-label,
 body.template-product .product-label-wr .label-new{
   font-weight: 500;
   font-size: 13px;
-  line-height: 15px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
