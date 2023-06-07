@@ -172,3 +172,9 @@ body .price-box .old-price{
   line-height: 19px;
   color: #666666;
 }
+.pr-custom__nxt{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+}
