@@ -268,7 +268,7 @@ body .price-box .old-price{
     display: flex;
     flex-direction: column;
   }
-  #add-to-cart-form #quantity {
+  body #add-to-cart-form #quantity {
     width: 100%;
   }
   .template-product #add-to-cart-form #product-add-to-cart{
