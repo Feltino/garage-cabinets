@@ -178,3 +178,9 @@ body .price-box .old-price{
   line-height: 14px;
   color: #666666;
 }
+.product-custom__order{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F6802F;
+}
