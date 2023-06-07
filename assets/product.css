@@ -34,4 +34,5 @@ body #add-to-cart-form #product-add-to-cart{
 }
 body .shopify-cleanslate div[role="button"]{
   background: #1E5586 !important;
+  border:none;
 }
