@@ -1,3 +1,7 @@
+#wapper-popup\,
+#header-content{
+    display: none !important;
+}
 body{
   font-family: 'Roboto',sans-serif !important;
 }
