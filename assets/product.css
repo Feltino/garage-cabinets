@@ -263,6 +263,12 @@ body .price-box .old-price{
   text-align: center;
   color: #666666;
 }
+.product-shop .product-sku span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
 @media (max-width:1440px){
   .product-custom__add-to-cart{
     display: flex;
