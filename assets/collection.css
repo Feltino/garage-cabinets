@@ -1,3 +1,11 @@
 body .breadcrumb-wrap {
     margin-bottom: 40px;
 }
+body .sidebar-custom.sidebar-tag .content .widget-content, 
+body .sidebar-links .widget-content>ul {
+    border: 0;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-height: none;
