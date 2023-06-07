@@ -229,3 +229,9 @@ body .price-box .old-price{
   text-decoration-line: underline;
   color: #1E5586;
 }
+.product-question p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
