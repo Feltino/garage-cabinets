@@ -48,3 +48,11 @@ body .product_meta>p{
   line-height: 19px;
   color: #666666;
 }
+body .product-tabs .nav-tabs li a{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
