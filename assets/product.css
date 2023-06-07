@@ -161,3 +161,6 @@ body .price-box .old-price{
 .product-custom__guarante h4 span{
   color:#8EBC4A;
 }
+.product-custom__deliver img{
+  height: 28px;
+}
