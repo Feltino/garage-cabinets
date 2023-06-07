@@ -220,26 +220,33 @@ Check if the product is sold out and set a variable to be used below.
                     <header class="product-title {% if collection.previous_product or collection.next_product and section.settings.display_prev_next_product and collection %}has-btn{% endif %}">
                       <h1 itemprop="name">{{ product.title }}</h1>
                     </header>
-                    <div class="producttop-meta">
-                      {% if section.settings.display_product_reviews %} 
-                      <div class="product-reviews">
-                        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                    <div class="row">
+                      <div class="col-6">
+                        {% if section.settings.show_vendor %}
+                        <div class="prodcuct-vendor">Vendor: <span>{{ product.vendor }}</span></div>
+                        {% endif %}
+                        {% assign current_variant = product.selected_or_first_available_variant %}
+                        {% if section.settings.show_sku %}
+                        <div class="product-sku">SKU: <span class="variant-sku">{{ current_variant.sku }}</span></div>
+                        {% endif %}
                       </div>
-                      {% endif %}
-                      {% if section.settings.product_flash_sold_enable %}
-                      <div class="total-sold-pr">
-                        <i class="cs-font clever-icon-fire"></i>
-                        <span class="number-solid"></span> sold in last <span class="add-hours-solid"></span> hours
-                      </div>
-                      {% endif %}
+                      <div class="col-6">
+                        <div class="producttop-meta">
+                            {% if section.settings.display_product_reviews %} 
+                            <div class="product-reviews">
+                              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                            </div>
+                            {% endif %}
+                            {% if section.settings.product_flash_sold_enable %}
+                            <div class="total-sold-pr">
+                              <i class="cs-font clever-icon-fire"></i>
+                              <span class="number-solid"></span> sold in last <span class="add-hours-solid"></span> hours
+                            </div>
+                            {% endif %}
+                          </div>
+                        </div>
                     </div>
-                    {% if section.settings.show_vendor %}
-                    <div class="prodcuct-vendor">Vendor: <span>{{ product.vendor }}</span></div>
-                    {% endif %}
-                    {% assign current_variant = product.selected_or_first_available_variant %}
-                    {% if section.settings.show_sku %}
-                    <div class="product-sku">SKU: <span class="variant-sku">{{ current_variant.sku }}</span></div>
-                    {% endif %}
+
                     <div class="prices-wr">
                       <div class="prices">
                         {% if product.compare_at_price > product.price %}                      
