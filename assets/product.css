@@ -197,6 +197,7 @@ body .price-box .old-price{
   background: #F5F5F5;
   border: 1px solid #F0F0F0;
   position: relative;
+  margin-top: 30px;
 }
 .product-question:after{
   content: '';
