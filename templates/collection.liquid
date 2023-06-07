@@ -4,5 +4,11 @@
 
 {% include 'collection-template' %}
 
+{{ '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js' | script_tag }}
+{{ 'jquery.products.min.js' | asset_url | script_tag }}
+
+<script>
+Shopify.Products.recordRecentlyViewed();
+</script>
 
 
