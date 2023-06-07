@@ -547,4 +547,7 @@ body .footer-container h3.module-title {
   .f-seventh_section input[type=email] {
     min-width: auto;
   }
+  .f-tabs_section .owl-theme .owl-nav {
+    top: -75px;
+  }
 }
