@@ -32,3 +32,6 @@ body .product-shop span.price.on-sale {
 body #add-to-cart-form #product-add-to-cart{
   background: #F6802F;
 }
+body .shopify-cleanslate > div{
+  background: #1E5586;
+}
