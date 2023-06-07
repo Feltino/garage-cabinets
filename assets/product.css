@@ -98,3 +98,11 @@ body .tab-content h5{
   text-transform: uppercase;
   color: #000000;
 }
+body .price-box .old-price{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration-line: line-through;
+  color: #959595;
+}
