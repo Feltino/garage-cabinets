@@ -60,6 +60,9 @@ body .related-heading.col-rel_heding{
   max-width: 20%;
   margin-right: 10px;
 }
+.col-item:hover{
+  border: 1px solid #F6802F;
+}
 .col-item p{
   text-align: center;
 }
