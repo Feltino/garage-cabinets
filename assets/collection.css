@@ -45,3 +45,6 @@ body .grid-item .product-inner .product-image .add-to-cartS button {
 body .related-heading.col-rel_heding{
   margin-bottom: 30px;
 }
+.toolbar .showing{
+  font-family: "Roboto", sans-serif;
+}
