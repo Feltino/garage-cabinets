@@ -9,7 +9,6 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div class="d-flex">
-    {{ collection.metafields.custom.collection.mixed_reference_field }}
     {% assign mixed_reference = collection.metafields.custom.collection %}
     {{ mixed_reference }}
 {% assign referenced_object = mixed_reference | reference %}
