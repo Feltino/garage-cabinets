@@ -19,6 +19,11 @@
 
 {{ referenced_metafield.value }}
 
+{% assign mixed_reference = collection.metafields.custom.collection %}
+{% assign referenced_metaobject = mixed_reference | reference %}
+
+Referenced Object Title: {{ referenced_metaobject.title }}
+Referenced Object Description: {{ referenced_metaobject.description }}
 
 
   </div>
