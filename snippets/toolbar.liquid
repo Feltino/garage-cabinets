@@ -23,7 +23,8 @@
     {{ metaobject.system.handle }}
 {% endfor %}
 
-
+{%- assign product_list = collection.metafields.custom.collection | split: ',' | uniq -%}
+{{ product_list.size }}
 
   </div>
   <div class="toolbar-mode">
