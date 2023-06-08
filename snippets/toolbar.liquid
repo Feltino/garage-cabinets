@@ -5,7 +5,9 @@
   {% endif %}
   
   {% endpaginate %}
-  {{ collection.metafields.custom.top_description | metafield_tag }}
+  <div class="cole-title">
+    {{ collection.metafields.custom.top_description | metafield_tag }}
+  </div>
   <div class="toolbar-mode">
     {% if section.settings.colection_view %}
     <div class="collection-view">
