@@ -19,11 +19,14 @@
 
 {{ referenced_metafield.value }}
 
-{% assign mixed_reference = collection.metafields.custom.collection %}
-{% assign referenced_metaobject = mixed_reference | reference %}
+{% for metaobject in product.metafields.custom.mixed_metaobject_list.value %}
+  {% if metaobject.system.type == "testimonial" %}
+    {% render 'testimonial' with metaobject as testimonial  %}
+  {% else %}
+    {{ metaobject.system.handle }}
+  {% endif %}
+{% endfor %}
 
-Referenced Object Title: {{ referenced_metaobject.title }}
-Referenced Object Description: {{ referenced_metaobject.description }}
 
 
   </div>
