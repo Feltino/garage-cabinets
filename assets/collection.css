@@ -66,3 +66,6 @@ body .related-heading.col-rel_heding{
 .col-item p{
   text-align: center;
 }
+.col-item:hover p{
+  color: #000;
+}
