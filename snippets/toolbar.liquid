@@ -24,7 +24,7 @@
 {% endfor %}
 
 {%- assign product_list = collection.metafields.custom.collection | split: ',' | uniq -%}
-{{ product_list.value }}
+{{ product_list.value[0] }}
 
   </div>
   <div class="toolbar-mode">
