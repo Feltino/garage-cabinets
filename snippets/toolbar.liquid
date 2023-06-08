@@ -17,7 +17,7 @@
 {% assign referenced_metaobject = mixed_reference | reference %}
 {% assign referenced_metafield = referenced_metaobject | metafield: 'field_key' %}
 
-{{ referenced_metafield.value }}
+{{ referenced_metafield.definition }}
 
 {% for metaobject in referenced_metafield.value %}
     {{ metaobject.system.handle }}
