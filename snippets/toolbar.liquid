@@ -22,6 +22,12 @@
         {%- include 'collection-grid-item', collection: collections[featured] -%}
       {%- endif -%}
     {%- endfor -%}
+    {% assign collection_urls = collection.metafields.custom.collection %}
+
+{% for collection_url in collection_urls %}
+  {{ collection_url }}
+{% endfor %}
+
   </div>
   <div class="toolbar-mode">
     {% if section.settings.colection_view %}
