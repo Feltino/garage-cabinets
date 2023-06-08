@@ -81,6 +81,9 @@ body .related-heading.col-rel_heding{
 .cols_box{
   margin-bottom: 30px;
 }
+.padding {
+    display: none;
+}
 @media (max-width:768px){
   .cols_box{
     flex-wrap: wrap;
