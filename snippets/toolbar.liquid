@@ -8,13 +8,45 @@
   <div class="cole-title">
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
-  <div><h2>{{ collection.metafields.custom.sub_category_title }}</h2></div>
+  <div><h2>{{ collection.metafields.custom.sub_category_title.value }}</h2></div>
   <div class="d-flex">
     {% if collection.metafields.custom.first_collection_name != blank %}
     <div class="col-item">
       <a href="{{ collection.metafields.custom.first_collection_link.value }}">
         <img src="{{ collection.metafields.custom.first_collection_image.value | img_url: "master" }}">
         <p>{{ collection.metafields.custom.first_collection_name.value }}</p>
+      </a>
+    </div>
+   {% endif %}
+   {% if collection.metafields.custom.second_collection_name != blank %}
+    <div class="col-item">
+      <a href="{{ collection.metafields.custom.second_collection_url.value }}">
+        <img src="{{ collection.metafields.custom.second_collection_image.value | img_url: "master" }}">
+        <p>{{ collection.metafields.custom.second_collection_name.value }}</p>
+      </a>
+    </div>
+   {% endif %}
+   {% if collection.metafields.custom.third_collection_name != blank %}
+    <div class="col-item">
+      <a href="{{ collection.metafields.custom.third_collection_url.value }}">
+        <img src="{{ collection.metafields.custom.third_collection_image.value | img_url: "master" }}">
+        <p>{{ collection.metafields.custom.third_collection_name.value }}</p>
+      </a>
+    </div>
+   {% endif %}
+   {% if collection.metafields.custom.fourth_collection_name != blank %}
+    <div class="col-item">
+      <a href="{{ collection.metafields.custom.fourth_collection_url.value }}">
+        <img src="{{ collection.metafields.custom.fourth_collection_image.value | img_url: "master" }}">
+        <p>{{ collection.metafields.custom.fourth_collection_name.value }}</p>
+      </a>
+    </div>
+   {% endif %}
+   {% if collection.metafields.custom.fifth_collection_name != blank %}
+    <div class="col-item">
+      <a href="{{ collection.metafields.custom.fifth_collection_url.value }}">
+        <img src="{{ collection.metafields.custom.fifth_collection_image.value | img_url: "master" }}">
+        <p>{{ collection.metafields.custom.fifth_collection_name.value }}</p>
       </a>
     </div>
    {% endif %}
