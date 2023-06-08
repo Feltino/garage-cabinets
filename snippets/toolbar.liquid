@@ -3,9 +3,7 @@
   {% if section.settings.colection_title %}
   <div class="showing">{{ collection.title }} ({{ paginate.items }})</div>
   {% endif %}
-  {% if section.settings.colection_decription %}
-  <div class="description">{{ collection.description }}</div>
-  {% endif %}
+  
   {% endpaginate %}
   <div class="toolbar-mode">
     {% if section.settings.colection_view %}
