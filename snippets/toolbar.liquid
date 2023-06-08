@@ -9,12 +9,13 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div class="d-flex">
+    {{ collection.metafields.custom.collection }}
     {% assign collection_urls = collection.metafields.custom.collection %}
-{% assign collection_list = collections.all | where: 'global_id', 'in', collection_urls %}
-
-{% for collection in collection_list %}
-  <a href="{{ collection.url }}">{{ collection.title }}</a>
-{% endfor %}
+    {% assign collection_list = collections.all | where: 'global_id', 'in', collection_urls %}
+    {{ collection_urls }}
+    {% for collection in collection_list %}
+      <a href="{{ collection.url }}">{{ collection.title }}</a>
+    {% endfor %}
 
     {%- for link in linklists[page.handle].links -%}
       {%- if link.type == 'collection_link' -%}
