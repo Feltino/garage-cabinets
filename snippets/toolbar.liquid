@@ -9,7 +9,7 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div class="d-flex">
-    {{ collection.metafields.custom.collection.collection.name_collection }}
+    {{ collection.metafields.custom.collection.name_collection }}
     {% assign collection_list = collections.all | where: 'metafields.custom.collection', collection.handle %}
 
 {% for collection in collection_list %}
