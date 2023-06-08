@@ -69,3 +69,13 @@ body .related-heading.col-rel_heding{
 .col-item:hover p{
   color: #000;
 }
+.cols_title{
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
+}
