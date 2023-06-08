@@ -71,13 +71,12 @@ body .related-heading.col-rel_heding{
 }
 .cols_title{
   font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-text-transform: uppercase;
-
-color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .cols_box{
   margin-bottom: 30px;
