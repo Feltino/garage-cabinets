@@ -26,6 +26,11 @@
 {%- assign product_list = collection.metafields.custom.collection | split: ',' | uniq -%}
 {{ product_list.value[0] }}
 
+
+    {% for testimonial in collection.metafields.custom.collection.values %}
+  {{ testimonial.author.value }}
+{% endfor %}
+
   </div>
   <div class="toolbar-mode">
     {% if section.settings.colection_view %}
