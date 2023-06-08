@@ -9,7 +9,7 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div class="d-flex">
-    {{ collection.metafields.custom.collection.value }}
+    {{ collection.metafields.custom.collection.key }}
     {%- for link in linklists[page.handle].links -%}
       {%- if link.type == 'collection_link' -%}
         {%- assign featured = link.object.handle -%}
