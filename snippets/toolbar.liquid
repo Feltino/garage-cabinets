@@ -9,10 +9,11 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div class="d-flex">
+    {{ collection.metafields.custom.collection }}
     {% assign collection_urls = collection.metafields.custom.collection %}
     {% assign collection_list = collections.all | where: 'global_id', 'in', collection_urls %}
 
-    {% for collection in collection_list %}
+    {% for collection in collection.metafields.custom.collection %}
       <a href="{{ collection.url }}">{{ collection.title }}</a>
     {% endfor %}
 
@@ -22,12 +23,6 @@
         {%- include 'collection-grid-item', collection: collections[featured] -%}
       {%- endif -%}
     {%- endfor -%}
-    {% assign collection_urls = collection.metafields.custom.collection %}
-
-{% for collection_url in collection_urls %}
-  {{ collection_url }}
-{% endfor %}
-
   </div>
   <div class="toolbar-mode">
     {% if section.settings.colection_view %}
