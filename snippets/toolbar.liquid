@@ -9,27 +9,8 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div class="d-flex">
-    {% assign mixed_reference = collection.metafields.custom.collection %}
-    
-{% assign referenced_object = mixed_reference | reference %}
-{{ referenced_object.value }}
-{% assign mixed_reference = collection.metafields.custom.collection %}
-{% assign referenced_metaobject = mixed_reference | reference %}
-{% assign referenced_metafield = referenced_metaobject | metafield: 'field_key' %}
-
-{{ referenced_metafield.list.collection_reference }}
-
-{% for metaobject in referenced_metafield.value %}
-    {{ metaobject.system.handle }}
-{% endfor %}
-
-{%- assign product_list = collection.metafields.custom.collection | split: ',' | uniq -%}
-{{ product_list.value[0] }}
-
-
-    {% for testimonial in collection.metafields.custom.collection.values %}
-  {{ testimonial.author.value }}
-{% endfor %}
+    {{ collection.metafields.custom.collection.list.collection_reference }}
+   
 
   </div>
   <div class="toolbar-mode">
