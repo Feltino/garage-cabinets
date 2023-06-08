@@ -8,9 +8,9 @@
   <div class="cole-title">
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
-  <div class="d-flex">
+  <div class="row">
     {% if collection.metafields.custom.first_collection_name != blank %}
-    <div class="col-item">
+    <div class="col-item col-xl-3">
       <a href="{{ collection.metafields.custom.first_collection_link.value }}">
         <img src="{{ collection.metafields.custom.first_collection_image.value | img_url: "master" }}">
         <p>{{ collection.metafields.custom.first_collection_name.value }}</p>
