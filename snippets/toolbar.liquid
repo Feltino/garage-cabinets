@@ -19,7 +19,7 @@
 
 {{ referenced_metafield.value }}
 
-{% for metaobject in product.metafields.custom.mixed_metaobject_list.value %}
+{% for metaobject in mixed_reference.value %}
   {% if metaobject.system.type == "testimonial" %}
     {% render 'testimonial' with metaobject as testimonial  %}
   {% else %}
