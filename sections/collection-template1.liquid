@@ -64,7 +64,9 @@
 
       </div>
     </div>
-
+{% if section.settings.colection_decription %}
+  <div class="description">{{ collection.description }}</div>
+  {% endif %}
 <script>
   {% if section.settings.enable_full%}
   jQuery('.collections-pages').addClass('full-width');
