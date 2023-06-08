@@ -12,7 +12,7 @@
     {% assign mixed_reference = collection.metafields.custom.collection %}
     
 {% assign referenced_object = mixed_reference | reference %}
-{{ referenced_object }}
+{{ referenced_object.value }}
 
 Referenced Object Title: {{ referenced_object.title }}
 Referenced Object Description: {{ referenced_object.description }}
