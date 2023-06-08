@@ -41,6 +41,7 @@ body .grid-item .product-inner .product-image .add-to-cartS button {
     background: #252525 !important;
     border: none;
 }
-.col-rel_heding{
+
+body .related-heading.col-rel_heding h2 span{
   margin-bottom: 30px;
 }
