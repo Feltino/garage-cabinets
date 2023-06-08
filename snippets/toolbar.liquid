@@ -9,7 +9,7 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div class="d-flex">
-    {{ collection.metafields.custom.collection.pickup_locations.value[0] }}
+    {{ collection.metafields.custom.collection }}
     {% assign collection_list = collections.all | where: 'metafields.custom.collection', collection.handle %}
 
 {% for collection in collection_list %}
