@@ -53,4 +53,8 @@ body .related-heading.col-rel_heding{
 .col-item{
   border: 1px solid #EBEBEB;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
