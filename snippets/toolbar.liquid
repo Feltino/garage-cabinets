@@ -17,11 +17,9 @@
 {% assign referenced_metaobject = mixed_reference | reference %}
 {% assign referenced_metafield = referenced_metaobject | metafield: 'field_key' %}
 
-Referenced Metafield Value: {{ referenced_metafield.value }}
+{{ referenced_metafield.value }}
 
 
-Referenced Object Title: {{ referenced_object.title }}
-Referenced Object Description: {{ referenced_object.description }}
 
   </div>
   <div class="toolbar-mode">
