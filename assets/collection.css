@@ -58,3 +58,6 @@ body .related-heading.col-rel_heding{
   justify-content: center;
   align-items: center;
 }
+.col-item p{
+  text-align: center;
+}
