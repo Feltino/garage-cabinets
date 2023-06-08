@@ -91,6 +91,6 @@ body .related-heading.col-rel_heding{
 }
 @media (max-width:580px){
   .col-item{
-    max-width: 50%;
+    max-width: calc(50% - 20px);
   }
 }
