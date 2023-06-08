@@ -12,7 +12,7 @@
     {{ collection.metafields.custom.collection }}
     {% assign collection_urls = collection.metafields.custom.collection %}
     {% assign collection_list = collections.all | where: 'global_id', 'in', collection_urls %}
-    {{ collection_list }}
+
     {% for collection in collection_list %}
       <a href="{{ collection.url }}">{{ collection.title }}</a>
     {% endfor %}
