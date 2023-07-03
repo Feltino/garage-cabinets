@@ -886,7 +886,7 @@
           "logo_height_a": 30,
           "enable_header_logosvg": false,
           "header_logo_svg": "",
-          "enable_header_fullwidth": false,
+          "enable_header_fullwidth": true,
           "enable_header_transparency": false,
           "display_ticky_menu": false,
           "enable_header_logotickysvg": false,
