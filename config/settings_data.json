@@ -905,12 +905,12 @@
           "show_header_account": true,
           "show_header_wishlist": false,
           "show_header_compare": true,
-          "show_header_currency": true,
+          "show_header_currency": false,
           "show_button_language": false,
           "language_app": "weglot",
           "language_link_list": "",
           "show_header_cart": true,
-          "header_icon_carttype": "cart_type_1",
+          "header_icon_carttype": "cart_type_2",
           "header_icon_cart": "clever-icon-cart-15"
         }
       },
