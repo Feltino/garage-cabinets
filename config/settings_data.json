@@ -898,7 +898,7 @@
           "enable_header_topbar": true,
           "header_topbar_left": "RECEIVE A FREE GLADIATOR GEAR TRACK WITH 5 HOOKS ON ANY ULTI-MATE 2.0 CABINET SET OVER $1500.00",
           "enable_custom_content": true,
-          "custom_content": "<a hreft=\"tel:8009608341\">Have questions? Call us: 800-960-8341<\/a>",
+          "custom_content": "Have questions?<br><a hreft=\"tel:8009608341\"> Call us: 800-960-8341<\/a>",
           "header_topbar_menu": "",
           "menu": "main-menu",
           "show_header_search": true,
