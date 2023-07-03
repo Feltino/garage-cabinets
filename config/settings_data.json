@@ -96,7 +96,7 @@
     "verticalmenu_enable": true,
     "verticalmenu_background_color": "#fc6a21",
     "verticalmenu_text_color": "#ffffff",
-    "menu_headers": "vertical-menu",
+    "menu_headers": "category",
     "vermenuicon_enable": true,
     "vermenuicon_color": "#000000",
     "vermenuicon_font_1": "cs-font clever-icon-small-diamond",
