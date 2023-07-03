@@ -1425,22 +1425,22 @@
           "1565230801903": {
             "type": "menu",
             "settings": {
-              "footer_heading": "My Account",
-              "footercol1": ""
+              "footer_heading": "Account",
+              "footercol1": "footer"
             }
           },
           "1565230815191": {
             "type": "menu",
             "settings": {
-              "footer_heading": "Infomation",
-              "footercol1": ""
+              "footer_heading": "Shipping & Returns",
+              "footercol1": "shipping-returns"
             }
           },
           "1565230824271": {
             "type": "menu",
             "settings": {
-              "footer_heading": "How To Buy",
-              "footercol1": ""
+              "footer_heading": "Business Center",
+              "footercol1": "business-center"
             }
           },
           "1563434026534": {
