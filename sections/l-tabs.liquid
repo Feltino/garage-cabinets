@@ -11,10 +11,10 @@
           {% for block in section.blocks %}
             {% case block.type %}
               {% when 'slide' %}
-                <div class="item d-flex flex-column justify-content-center" {{ block.shopify_attributes }}>
+                <a class="item d-flex flex-column justify-content-center" {{ block.shopify_attributes }}>
                   <img src="{{ block.settings.image | img_url: 'master' }}">
                   <p>{{ block.settings.title }}</p>
-                </div>
+                </a>
             {% endcase %}
           {% endfor %}
         </div>
