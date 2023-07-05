@@ -701,45 +701,42 @@
  <script type="text/javascript">
     jQuery(document).ready(function($){setTimeout(function(){ $(window).scroll(function () {var scroll = jQuery(window).scrollTop();  var ofset_top = $('.grid-builder-{{section.id}}').offset().top;var ofset_to = ofset_top - 250 ;var height = $( window ).height() + 30;var ofset_tr = ofset_top - height ;if(scroll > ofset_tr){if ($('.grid-builder-{{section.id}}').hasClass('parallax_effect--true')){if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 300) {skrollr.init({forceHeight: false});var s = skrollr.init({forceHeight: false});s.refresh($(".grid-builder-{{section.id}} .bcg"));} else if ($(window).width() > 300) {$('.grid-builder-{{section.id}}').removeClass('parallax_effect--true').addClass('parallax_effect--false');}}}});}, 1000);});
   </script>
-<section>
-  <div class="container">
-    <div class="f3-box__border">
-      <div>
-      <h2 class="f3-box__title">{{ section.settings.title }}</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="owl-carousel owl-theme f3-box__tabs1">
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
+<div class="l-m-fr owl-carousel owl-theme ">
+    <div>
+        <div class="block-icon">
+          <i class="cs-font clever-icon-truck" style="font-size:18px;transform: rotate(0deg);"></i>
         </div>
-      </div>
+       <div class="icon-content-text">
+          <div class="sub-heading" style="color:#666666">Free Ship with order over %99</div>
+       </div>
     </div>
-  </div>
-</section>
-
-
-<script type="text/javascript" >
-  $('.f3-box__tabs1').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:false,
-    navText: ["<i class='cs-font clever-icon-prev'></i>","<i class='cs-font clever-icon-next'></i>"],
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:2
-        }
-    }
+    <div>
+        <div class="block-icon">
+          <i class="cs-font clever-icon-refresh-4" style="font-size:18px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="icon-content-text">
+            <div class="sub-heading" style="color:#666666">100% Satisfaction Guarantee</div>
+        </div>
+    </div>
+    <div>
+        <div class="block-icon">
+          <i class="cs-font clever-icon-wallet" style="font-size:18px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="icon-content-text">
+            <div class="sub-heading" style="color:#666666">Shop with Confidence</div>
+        </div>
+    </div>
+    <div>
+        <div class="block-icon">
+          <i class="cs-font clever-icon-support" style="font-size:18px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="icon-content-text">
+            <div class="sub-heading" style="color:#666666">24/7 Support</div>
+        </div>
+    </div>
+</div>
+  <script type="text/javascript" >
+  $('.l-m-fr').owlCarousel({
   })
 </script>
 {% schema %}
