@@ -663,21 +663,6 @@
               "second_level_column_size": 50
             }
           },
-          "1550221074626": {
-            "type": "megamenu_promobox",
-            "settings": {
-              "for_item": "Garage cabinets",
-              "for_group": "",
-              "grid": 2,
-              "float": "right",
-              "stype": "style_4",
-              "title": "",
-              "url": "shopify:\/\/collections\/laptop",
-              "image": "shopify:\/\/shop_images\/Garage_Cabinet_Sets_2.png",
-              "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%<\/p>\n            <h3 class=\"f3-banner__title\">Ulti-MATE Garage 2.0<\/h3>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"><\/path>\n<\/svg>\n<\/a>\n<\/div>",
-              "button_text": ""
-            }
-          },
           "b12dd31a-9e8d-47e6-9e10-d8deac9be812": {
             "type": "megamenu_custom_html",
             "settings": {
@@ -701,13 +686,41 @@
               "url": "",
               "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/gladiatorgarageworksorganizers\"><storng>Gladiator Garage Works<\/storng><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/montezuma\"><storng>Montezuma<\/storng><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/beta-tools\"><storng>Beta Tools<\/storng><\/a>"
             }
+          },
+          "532f2477-9b21-4209-be16-1454ab0636be": {
+            "type": "megamenu_custom_html",
+            "settings": {
+              "for_item": "Garage cabinets",
+              "for_group": "",
+              "grid": 2,
+              "float": "right",
+              "title": "",
+              "url": "",
+              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/proslat-cabinets\"><storng>Proslat Cabinets<\/storng><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/proslat-fusion-series-cabinets\">Proslat Fusion Series<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/proslat-fusion-plus-series-cabinets\">Proslat FusionPlus Series<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/prepac-elite-storage\">Prepac Elite Storage<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/quantum-storage-cabinets\">Quantum Storage Systems<\/a>"
+            }
+          },
+          "1550221074626": {
+            "type": "megamenu_promobox",
+            "settings": {
+              "for_item": "Garage cabinets",
+              "for_group": "",
+              "grid": 2,
+              "float": "right",
+              "stype": "style_4",
+              "title": "",
+              "url": "shopify:\/\/collections\/laptop",
+              "image": "shopify:\/\/shop_images\/Garage_Cabinet_Sets_2.png",
+              "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%<\/p>\n            <h3 class=\"f3-banner__title\">Ulti-MATE Garage 2.0<\/h3>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"><\/path>\n<\/svg>\n<\/a>\n<\/div>",
+              "button_text": ""
+            }
           }
         },
         "block_order": [
           "1550128526428",
-          "1550221074626",
           "b12dd31a-9e8d-47e6-9e10-d8deac9be812",
-          "13802903-f35f-41ab-a567-556cddfcf302"
+          "13802903-f35f-41ab-a567-556cddfcf302",
+          "532f2477-9b21-4209-be16-1454ab0636be",
+          "1550221074626"
         ],
         "settings": {
           "header_layout": "header-layout-01",
