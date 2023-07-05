@@ -657,228 +657,44 @@
           "1550128526428": {
             "type": "megamenu",
             "settings": {
-              "for_item": "Home",
-              "grid": 4,
+              "for_item": "Garage cabinets",
+              "grid": 8,
               "second_level_column": true,
-              "second_level_column_size": 6
-            }
-          },
-          "1550543694174": {
-            "type": "megamenu_label",
-            "settings": {
-              "for_item": "Home+Home page 7",
-              "type": "sale",
-              "text": "Hot"
-            }
-          },
-          "1550220988902": {
-            "type": "megamenu_promobox",
-            "settings": {
-              "for_item": "Home",
-              "for_group": "",
-              "grid": 4,
-              "float": "right",
-              "stype": "style_1",
-              "title": "",
-              "url": "shopify:\/\/collections\/cameras",
-              "custom_html": "<h4>NEW ARRIVALS<\/h4>\n<p>Summer 2019 Collection<\/p>",
-              "button_text": ""
+              "second_level_column_size": 50
             }
           },
           "1550221074626": {
             "type": "megamenu_promobox",
             "settings": {
-              "for_item": "Home",
+              "for_item": "Garage cabinets",
               "for_group": "",
               "grid": 4,
               "float": "right",
               "stype": "style_2",
               "title": "",
               "url": "shopify:\/\/collections\/laptop",
-              "custom_html": "<h4>CLEARANCE SALES<\/h4>\n<p>Get Up to 50% Off<\/p>",
+              "image": "shopify:\/\/shop_images\/Garage_Cabinet_Sets_2.png",
+              "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%<\/p>\n            <h3 class=\"f3-banner__title\">Ulti-MATE Garage 2.0<\/h3>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"><\/path>\n<\/svg>\n<\/a>\n<\/div>",
               "button_text": ""
             }
           },
-          "1550213605541": {
-            "type": "megamenu",
-            "settings": {
-              "for_item": "shop",
-              "grid": 2,
-              "second_level_column": false,
-              "second_level_column_size": 20
-            }
-          },
-          "1550213451367": {
-            "type": "megamenu_label",
-            "settings": {
-              "for_item": "shop",
-              "type": "new",
-              "text": ""
-            }
-          },
-          "1552266712875": {
+          "b12dd31a-9e8d-47e6-9e10-d8deac9be812": {
             "type": "megamenu_custom_html",
             "settings": {
-              "for_item": "shop",
-              "for_group": "",
-              "grid": 1,
+              "for_item": "Garage cabinets",
+              "for_group": "Garage cabinets",
+              "grid": 4,
               "float": "right",
               "title": "",
-              "url": "",
-              "content": ""
-            }
-          },
-          "1552103538319": {
-            "type": "megamenu_group",
-            "settings": {
-              "for_item": "shop",
-              "name": "banner",
-              "grid": 5,
-              "float": "right",
-              "title": "Banner",
-              "url": "shopify:\/\/collections\/frontpage"
-            }
-          },
-          "1550549185335": {
-            "type": "megamenu_promobox",
-            "settings": {
-              "for_item": "shop",
-              "for_group": "banner",
-              "grid": 6,
-              "float": "right",
-              "stype": "style_2",
-              "title": "",
-              "url": "shopify:\/\/collections\/cameras",
-              "custom_html": "<h3>Spring Season<\/h3>\n<p>New Women Collection<\/p>",
-              "button_text": ""
-            }
-          },
-          "1552104099304": {
-            "type": "megamenu_promobox",
-            "settings": {
-              "for_item": "shop",
-              "for_group": "banner",
-              "grid": 6,
-              "float": "right",
-              "stype": "style_4",
-              "title": "",
-              "url": "shopify:\/\/collections\/headphone",
-              "custom_html": "<h3>leather shoes<\/h3>\n<p>50% Discount<\/p>",
-              "button_text": ""
-            }
-          },
-          "1550221346236": {
-            "type": "megamenu",
-            "settings": {
-              "for_item": "Products",
-              "grid": 2,
-              "second_level_column": false,
-              "second_level_column_size": 20
-            }
-          },
-          "1552105579844": {
-            "type": "megamenu_products",
-            "settings": {
-              "for_item": "Products",
-              "for_group": "",
-              "grid": 10,
-              "float": "right",
-              "title": "Featured products",
-              "collection": "tablet",
-              "products_per_row": "5",
-              "products_rows": 1
-            }
-          },
-          "1550222985173": {
-            "type": "megamenu",
-            "settings": {
-              "for_item": "Buy",
-              "grid": 2,
-              "second_level_column": false,
-              "second_level_column_size": 20
-            }
-          },
-          "1552279474380": {
-            "type": "megamenu_label",
-            "settings": {
-              "for_item": "Pages",
-              "type": "hot",
-              "text": ""
-            }
-          },
-          "1550223637734": {
-            "type": "megamenu_title_image",
-            "settings": {
-              "for_item": "Buy+Women's",
-              "url": "shopify:\/\/collections\/laptop"
-            }
-          },
-          "1550223677685": {
-            "type": "megamenu_title_image",
-            "settings": {
-              "for_item": "Buy+bag",
-              "url": "shopify:\/\/collections\/laptop"
-            }
-          },
-          "1550223694133": {
-            "type": "megamenu_title_image",
-            "settings": {
-              "for_item": "Buy+hat",
-              "url": "shopify:\/\/collections\/smartphone"
-            }
-          },
-          "1552116243244": {
-            "type": "megamenu_title_image",
-            "settings": {
-              "for_item": "Buy+shose",
-              "url": "shopify:\/\/collections\/laptop"
-            }
-          },
-          "1552116265705": {
-            "type": "megamenu_title_image",
-            "settings": {
-              "for_item": "Buy+Men's Clothing",
-              "url": "shopify:\/\/collections\/smartphone"
-            }
-          },
-          "1552116291693": {
-            "type": "megamenu_title_image",
-            "settings": {
-              "for_item": "Buy+watch",
-              "url": "shopify:\/\/collections\/smarttv"
-            }
-          },
-          "1552279526308": {
-            "type": "megamenu_label",
-            "settings": {
-              "for_item": "Buy",
-              "type": "sale",
-              "text": ""
+              "url": "shopify:\/\/collections\/better-life-technology-garage-flooring",
+              "content": "<p>Custom html content<\/p>"
             }
           }
         },
         "block_order": [
           "1550128526428",
-          "1550543694174",
-          "1550220988902",
           "1550221074626",
-          "1550213605541",
-          "1550213451367",
-          "1552266712875",
-          "1552103538319",
-          "1550549185335",
-          "1552104099304",
-          "1550221346236",
-          "1552105579844",
-          "1550222985173",
-          "1552279474380",
-          "1550223637734",
-          "1550223677685",
-          "1550223694133",
-          "1552116243244",
-          "1552116265705",
-          "1552116291693",
-          "1552279526308"
+          "b12dd31a-9e8d-47e6-9e10-d8deac9be812"
         ],
         "settings": {
           "header_layout": "header-layout-01",
