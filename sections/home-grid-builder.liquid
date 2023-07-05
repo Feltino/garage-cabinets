@@ -713,7 +713,9 @@
   <script type="text/javascript" >
   $('#owl-corousel').owlCarousel({
   })
-    
+    window.addEventListener('touchstart', function() {
+    // some logic
+}, {passive:false}); // <-- mark the event listerner as NOT passive
 </script>
 {% schema %}
 {
