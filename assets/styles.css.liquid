@@ -11180,7 +11180,7 @@ h3.f3-banner__title{
   }
   .product-question.d-flex.align-items-center {
     display: grid !important;
-    grid-template-columns: 70px 160px 1fr;
+    grid-template-columns: 65px 140px 1fr;
   }
   .product-question img {
     grid-column: 1/2;
@@ -11189,5 +11189,10 @@ h3.f3-banner__title{
   }
   .product-question span {
     grid-column: 2/-1;
+  }
+}
+@media (max-width:375px){
+  .product-question.d-flex.align-items-center{
+    display:flex !important;
   }
 }
