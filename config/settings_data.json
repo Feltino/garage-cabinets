@@ -658,7 +658,7 @@
             "type": "megamenu",
             "settings": {
               "for_item": "Garage cabinets",
-              "grid": 4,
+              "grid": 2,
               "second_level_column": true,
               "second_level_column_size": 50
             }
@@ -668,7 +668,7 @@
             "settings": {
               "for_item": "Garage cabinets",
               "for_group": "",
-              "grid": 3,
+              "grid": 2,
               "float": "right",
               "stype": "style_4",
               "title": "",
@@ -683,18 +683,31 @@
             "settings": {
               "for_item": "Garage cabinets",
               "for_group": "",
-              "grid": 4,
+              "grid": 2,
               "float": "right",
               "title": "Ulti-MATE 2.0 Series",
               "url": "",
               "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-garage-cabinets\">Ulti-MATE 2.0 Series - Black<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-graphite-grey\">Ulti-MATE 2.0 Series - Graphite Grey<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-red\">Ulti-MATE 2.0 Series - Red<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-silver\">Ulti-MATE 2.0 Series - Silver<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-white\">Ulti-MATE 2.0 Series - White<\/a>"
+            }
+          },
+          "13802903-f35f-41ab-a567-556cddfcf302": {
+            "type": "megamenu_custom_html",
+            "settings": {
+              "for_item": "Garage cabinets",
+              "for_group": "",
+              "grid": 2,
+              "float": "right",
+              "title": "",
+              "url": "",
+              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/gladiatorgarageworksorganizers\"><storng>Gladiator Garage Works<\/storng><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/montezuma\"><storng>Montezuma<\/storng><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/beta-tools\"><storng>Beta Tools<\/storng><\/a>"
             }
           }
         },
         "block_order": [
           "1550128526428",
           "1550221074626",
-          "b12dd31a-9e8d-47e6-9e10-d8deac9be812"
+          "b12dd31a-9e8d-47e6-9e10-d8deac9be812",
+          "13802903-f35f-41ab-a567-556cddfcf302"
         ],
         "settings": {
           "header_layout": "header-layout-01",
