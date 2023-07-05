@@ -21,7 +21,7 @@
        data-top-bottom="background-position: 50% -20vh;"
        {% endif %}
        >
-      <div class="l-m-fr row align-horizontal-{{section.settings.horizontal_align}} align-vertical-{{section.settings.vertical_align}}" style="min-height:{{section.settings.min_height}}px">
+      <div class="row align-horizontal-{{section.settings.horizontal_align}} align-vertical-{{section.settings.vertical_align}}" style="min-height:{{section.settings.min_height}}px">
 
         {%- assign block_types = 'product_countdown,featured_product,product_navigation,product_list,instagram_shop,heading,newsletter,spacer,countdown,group_incol,block,carousel_slide,text,promobox,group_slider,group_slider_item,block_icon,group_testimonial,group_testimonial_item' | split: ',' -%}
         {%- for block in section.blocks -%}
