@@ -658,7 +658,7 @@
             "type": "megamenu",
             "settings": {
               "for_item": "Garage cabinets",
-              "grid": 8,
+              "grid": 4,
               "second_level_column": true,
               "second_level_column_size": 50
             }
