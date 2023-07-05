@@ -668,9 +668,9 @@
             "settings": {
               "for_item": "Garage cabinets",
               "for_group": "",
-              "grid": 4,
+              "grid": 3,
               "float": "right",
-              "stype": "style_2",
+              "stype": "style_4",
               "title": "",
               "url": "shopify:\/\/collections\/laptop",
               "image": "shopify:\/\/shop_images\/Garage_Cabinet_Sets_2.png",
@@ -682,12 +682,12 @@
             "type": "megamenu_custom_html",
             "settings": {
               "for_item": "Garage cabinets",
-              "for_group": "Garage cabinets",
+              "for_group": "",
               "grid": 4,
               "float": "right",
-              "title": "",
-              "url": "shopify:\/\/collections\/better-life-technology-garage-flooring",
-              "content": "<p>Custom html content<\/p>"
+              "title": "fdfdf",
+              "url": "\/",
+              "content": "<a href=\"#\">Ulti-MATE 2.0 Series<\/a>"
             }
           }
         },
