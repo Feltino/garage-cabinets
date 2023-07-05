@@ -701,22 +701,7 @@
  <script type="text/javascript">
     jQuery(document).ready(function($){setTimeout(function(){ $(window).scroll(function () {var scroll = jQuery(window).scrollTop();  var ofset_top = $('.grid-builder-{{section.id}}').offset().top;var ofset_to = ofset_top - 250 ;var height = $( window ).height() + 30;var ofset_tr = ofset_top - height ;if(scroll > ofset_tr){if ($('.grid-builder-{{section.id}}').hasClass('parallax_effect--true')){if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 300) {skrollr.init({forceHeight: false});var s = skrollr.init({forceHeight: false});s.refresh($(".grid-builder-{{section.id}} .bcg"));} else if ($(window).width() > 300) {$('.grid-builder-{{section.id}}').removeClass('parallax_effect--true').addClass('parallax_effect--false');}}}});}, 1000);});
   </script>
-<div id="owl-corousel">
-      <div class="sub-heading" style="color:#666666">Free Ship with order over %99</div>
 
-        <div class="sub-heading" style="color:#666666">100% Satisfaction Guarantee</div>
-
-        <div class="sub-heading" style="color:#666666">Shop with Confidence</div>
-
-        <div class="sub-heading" style="color:#666666">24/7 Support</div>
-</div>
-  <script type="text/javascript" >
-  $('#owl-corousel').owlCarousel({
-  })
-</script>
-        <style>
-        .owl-carousel { touch-action: none; }  
-        </style>
 {% schema %}
 {
   "name": "Grid Builder",
