@@ -7,13 +7,13 @@ Documentation - http://docs.shopify.com/support/your-website/navigation/creating
   <div class="breadcrumb">
     <div class="container">
 
-      <div class="breadcrumb_position">
+      <div class="breadcrumb_position 1">
         <a href="/" title="Back to the frontpage">Home</a>  
         {% if template contains 'product' %}  
         {% if collection %}
         <span class="icon"></span>  
         {% if collection.handle %}
-        {% capture url %}/collections1/{{ collection.handle }}{% endcapture %}
+        {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url }}
         {% endif %}
         {% endif %}
