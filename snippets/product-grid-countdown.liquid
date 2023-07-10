@@ -111,7 +111,7 @@ Check if the product is sold out and set a variable to be used below.
       </a>
       {% include 'add-to-link' %}
       {%- if show_button_add_to_cart -%}
-      <div class="add-to-cartS 1">
+      <div class="add-to-cartS">
         <button type="submit" class="btn btn--status js-product-button-add-to-cart" name="add" data-js-product-button-add-to-cart{% unless current_variant.available %} disabled="disabled" data-button-status="sold-out"{% endunless %}>
           {{ render 'icon-arrow' }}<span class="text-button-cart">{{ 'products.product.add_to_cart.title' | t }}</span>
           <span class="text-button-added" data-button-content="added">{{ 'products.product.add_to_cart.added' | t }}</span>
