@@ -69,7 +69,9 @@ Check if the product is sold out and set a variable to be used below.
         Sale
         {% endif %}
         {% endif %}
- 
+        {% if lable_out %}
+        <span 1>{{ 'product.out_of_stock' | t }}</span>
+        {% endif %}
       </div>
       {% endif %}
       {% endif %}
