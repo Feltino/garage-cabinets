@@ -65,7 +65,14 @@
       </div>
     </div>
     
-
+{% if section.settings.colection_decription %}
+  {% if section.settings.colection_title %}
+  <div class="related-heading col-rel_heding">
+      <h2><span> {{ collection.title }}</span></h2>
+    </div>
+    {% endif %}
+  <div class="description">{{ collection.description }}</div>
+  {% endif %}
 <script>
   {% if section.settings.enable_full%}
   jQuery('.collections-pages').addClass('full-width');
