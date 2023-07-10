@@ -199,7 +199,7 @@ Check if the product is sold out and set a variable to be used below.
                       {% if lable_sale  %}
                       <div class="product-label">
                         {% if lable_sale %}
-                        -{{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max |round: 0 }}%
+                        Save -{{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max |round: 0 }}% Today
                         {% endif %}
                       </div>
                       {% endif %}
