@@ -22,6 +22,7 @@
     
     <div class=" col-12 col-left" id="filter-sidebar"> 
     {% section 'collection-template' %}
+       {% include 'pagination-page' %}
   </div>
     {% endif %}
     <div class="loadding-collection" style="display:none;"> <img src="{{ 'loadding-icon.gif' | asset_url }}" alt="brand{{ i }}" /></div>
@@ -36,7 +37,7 @@
      {% section 'collection-template1' %}
     {% if paginate.pages > 1 %}
     <div class="padding">
-      {% include 'pagination-page' %}
+      
     </div>
     {% endif %}
     {% endpaginate %}
