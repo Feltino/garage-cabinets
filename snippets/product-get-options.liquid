@@ -79,7 +79,7 @@
 
       {% include 'product-get-options-res-status' %}
       {% if hide_options_without_availability != true or disabled_value != true %}
-      <div class="1 option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }} style=" {% for i in (1..10) %}
+      <div class="option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }} style=" {% for i in (1..10) %}
                                                                             {% capture material_name %}material_name_{{ i }}{% endcapture %} 
                                                                             {% assign material_name = settings[material_name] %}  
                                                                             {% assign material_name = material_name | downcase |strip %}  
@@ -89,6 +89,7 @@
                                                                             {% if materia == material_name %} 
                                                                             font-size:0;background-image: url(http:{{material_image | img_url: '160x160' }}); 
                                                                             {%endif %}
+        background-color:{{ value}}
                                                                             {% endfor %}">{{ value }}</div>
       {% endif %}
       {% endfor %}
