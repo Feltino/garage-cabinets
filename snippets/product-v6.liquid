@@ -23,7 +23,7 @@ Check if the product is sold out and set a variable to be used below.
         <a href="/" title="Back to the frontpage">Home</a>  
         {% if template contains 'product' %}  
         <span class="icon">/</span>
-        {% for collection in product.collections limit:3 %}
+        {% for collection in product.collections limit:5 %}
         <a href="{{ collection.url }}"> {{ collection.title }}<span>,</span> </a>
         {% endfor %}
         <span class="icon"></span>
