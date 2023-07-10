@@ -54,7 +54,7 @@ Check if the product is sold out and set a variable to be used below.
     {% include 'wishlist-product' %}
     {% if settings.enable_product_compare %}
     <div class="compare-wr">
-      <a class="btn add-to-compare add-product-compare" data-handle-product="{{product.handle}}" href="javascript:void(0);" title="Compare"><i class="cs-font clever-icon-law-1"></i><span>Add to Compare<em>Added to Compare</em></span></a>
+      <a class="btn add-to-compare add-product-compare" data-handle-product="{{product.handle}}" href="javascript:void(0);" title="Compare">{{ render 'icon-arrow' }}<span>Add to Compare<em>Added to Compare</em></span></a>
     </div>
     {% endif %} 
     {% form "product", product, id: null, class: "form-add-cart", data-js-product-form: '' %}
