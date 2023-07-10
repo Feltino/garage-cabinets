@@ -40,6 +40,10 @@
     </div>
     {% endif %}
     {% endpaginate %}
+      <div class="related-heading col-rel_heding">
+      <h2><span> {{ collection.title }}</span></h2>
+    </div>
+  <div class="description">{{ collection.description }}</div>
     {% if collection_infinite_scrolling == 'auto_loadmore' %}
     {% paginate collection.products by product_per_page %}
     <div class="component-pagination" style="display: none;">
