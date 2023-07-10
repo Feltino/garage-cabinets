@@ -46,7 +46,7 @@
       {% for value in option.values %}
       {% include 'product-get-options-res-status' %}
       {% if hide_options_without_availability != true or disabled_value != true %}
-      <div class="1 option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }}>{{ value }}</div>
+      <div class="option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }}>{{ value }}</div>
       {% endif -%}
       {% endfor -%}
     </div>
@@ -79,7 +79,7 @@
 
       {% include 'product-get-options-res-status' %}
       {% if hide_options_without_availability != true or disabled_value != true %}
-      <div class="option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }} style=" {% for i in (1..10) %}
+      <div class="1 option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }} style=" {% for i in (1..10) %}
                                                                             {% capture material_name %}material_name_{{ i }}{% endcapture %} 
                                                                             {% assign material_name = settings[material_name] %}  
                                                                             {% assign material_name = material_name | downcase |strip %}  
