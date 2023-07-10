@@ -726,6 +726,16 @@ Check if the product is sold out and set a variable to be used below.
           jQuery(".thumbs").css("visibility", "visible")
         });
       }
+
+      // Find the element with class ".breadcrumb_position"
+var breadcrumbElement = document.querySelector('.breadcrumb_position');
+
+// Find the last <a> tag within the breadcrumb element
+var lastATag = breadcrumbElement.querySelector('a:last-child');
+
+// Hide the last <a> tag
+lastATag.style.display = 'none';
+
     });
   </script>
 
