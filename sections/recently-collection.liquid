@@ -117,7 +117,7 @@
           <span class="old-price"> {{html Shopify.formatMoney(compare_at_price_min, window.money_format)}}</span>
           <span class="special-price">
   {{if price_varies}}
-    <em {% if settings.enable_multilang %} data-translate="products.product.from"{% endif %}>{{ 'products.product.from' | t}}</em>
+    <em>{{ 'products.product.from' | t}}</em>
   {{/if}}
   {{html Shopify.formatMoney(price_min, window.money_format)}}
 </span>
