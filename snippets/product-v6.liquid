@@ -23,10 +23,13 @@ Check if the product is sold out and set a variable to be used below.
         <a href="/" title="Back to the frontpage">Home</a>  
         {% if template contains 'product' %}  
         <span class="icon">/</span>
-          {% assign collection_count = product.collections.size %}
-        {% for collection in product.collections limit:collection_count | minus:3 offset:collection_count | minus:3  %}
-        <a href="{{ collection.url }}"> {{ collection.title }}<span>,</span> </a>
-        {% endfor %}
+      {% assign collection_count = product.collections.size %}
+{% for collection in product.collections limit:collection_count | minus:3 %}
+    {% if forloop.last %}
+        <a href="{{ collection.url }}">{{ collection.title }}<span>,</span></a>
+    {% endif %}
+{% endfor %}
+
         <span class="icon"></span>
         {{ product.title }}
         {% elsif template contains 'collection' and collection.handle %}
