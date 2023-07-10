@@ -13,7 +13,7 @@ Documentation - http://docs.shopify.com/support/your-website/navigation/creating
         {% if collection %}
         <span class="icon"></span>  
         {% if collection.handle %}
-        {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+        {% capture url %}/collections1/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url }}
         {% endif %}
         {% endif %}
@@ -25,7 +25,7 @@ Documentation - http://docs.shopify.com/support/your-website/navigation/creating
 
         {% if current_tags %}
         <span class="icon"></span>
-        {% capture url %}/collections1/{{ collection.handle }}{% endcapture %}
+        {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url }}
         <span class="icon"></span>
         <strong>{{ current_tags.first }}</strong>
