@@ -728,19 +728,6 @@ Check if the product is sold out and set a variable to be used below.
       }
 
 
-
-      var breadcrumbElement = document.querySelector('.breadcrumb-change .breadcrumb_position');
-var lastATag = breadcrumbElement.querySelector('a:last-child span');
-var lastATagCount = lastATag.length;
-
-if (lastATagCount > 0) {
-  var lastATagElement = lastATag[lastATagCount - 1];
-  console.log(lastATagElement); // Output: <a href="/collections/all">All Products<span>,</span></a>
-} else {
-  console.log('No <a> tags found within the breadcrumb element.');
-}
-
-
     });
   </script>
 
