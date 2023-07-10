@@ -247,7 +247,6 @@ Check if the product is sold out and set a variable to be used below.
                         <h3 class="product-custom__order">Order Today & Save! Price going up soon.</h3>
                         
                       </div>
-                      <p class="affirm-as-low-as" data-page-type="product" data-amount="{{ product.price}}"></p>
                       <div class="col-12 col-md-6 col-lg-12 col-xl-6">
                         <div class="producttop-meta">
                             {% if section.settings.display_product_reviews %} 
@@ -272,6 +271,7 @@ Check if the product is sold out and set a variable to be used below.
                         </div>
                         </div>
                     </div>
+                    <p class="affirm-as-low-as" data-page-type="product" data-amount="{{ product.price}}"></p>
                   </div>
 
                   {% assign instructions = product.metafields.meta %}
