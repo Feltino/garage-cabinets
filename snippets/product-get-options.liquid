@@ -30,10 +30,11 @@
       {% if option_image == null %}
 
       {% endif %}
-      <div class="option-{{ value | handleize }}{% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }}
-           style=" 
+      <div class="1 option-{{ value | handleize }}{% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }}
+           style=" {% if option_image != blank %}background-image: url({{ option_image | img_url }});
+                  {%else%}
                   background-image: url({{ value | downcase | strip_newlines | strip_html | remove: '  ' | append: '.png' | replace: ' ', '-' | asset_url }});
-                  background-color:{{ value}};
+                  background-color:{{ value}};{% endif %}
                   ">
         <span class="tooltip">{{ value }}</span>{{ value }} 
       </div>
