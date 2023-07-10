@@ -89,8 +89,7 @@
                                                                             {% if materia == material_name %} 
                                                                             font-size:0;background-image: url(http:{{material_image | img_url: '160x160' }}); 
                                                                             {%endif %}
-        background-color:{{ value}}
-                                                                            {% endfor %}">{{ value }}</div>
+                                                                            {% endfor %} background-color:{{ value}}">{{ value }}</div>
       {% endif %}
       {% endfor %}
     </div>
