@@ -25,21 +25,9 @@
   </div>
     {% endif %}
     <div class="loadding-collection" style="display:none;"> <img src="{{ 'loadding-icon.gif' | asset_url }}" alt="brand{{ i }}" /></div>
-    {% paginate collection.products by product_per_page %}
-    {% comment %}
-    Use .grid--rev so that the collection tags appear below the products on mobile
-    {% endcomment %}
-    {% comment %}
-    Use class grid-uniform to have evenly sized columns clear
-    each other properly at each breakpoint.
-    {% endcomment %}
+
      {% section 'collection-template1' %}
-    {% if paginate.pages > 1 %}
-    <div class="padding">
-      {% include 'pagination-page' %}
-    </div>
-    {% endif %}
-    {% endpaginate %}
+
     {% if collection_infinite_scrolling == 'auto_loadmore' %}
     {% paginate collection.products by product_per_page %}
     <div class="component-pagination" style="display: none;">
