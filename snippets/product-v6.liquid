@@ -734,7 +734,9 @@ Check if the product is sold out and set a variable to be used below.
       var lastATag = breadcrumbElement.querySelector('a:last-child span');
       
       // Hide the last <a> tag
-      lastATag.style.display = 'none';
+      if (lastATag) {
+        lastATag.style.display = 'none';
+      }
 
     });
   </script>
