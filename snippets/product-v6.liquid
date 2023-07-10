@@ -727,20 +727,10 @@ Check if the product is sold out and set a variable to be used below.
         });
       }
 
-      // Find the element with class ".breadcrumb_position"
-      var breadcrumbElement = document.querySelector('.breadcrumb-change .breadcrumb_position');
-      
-      // Find the last <a> tag within the breadcrumb element
-      var lastATag = breadcrumbElement.querySelector('a:last-child span');
-      
-      // Hide the last <a> tag
-      if (lastATag) {
-        lastATag.style.display = 'none';
-      }
 
 
       var breadcrumbElement = document.querySelector('.breadcrumb-change .breadcrumb_position');
-var lastATag = breadcrumbElement.getElementsByTagName('a');
+var lastATag = breadcrumbElement.querySelector('a:last-child span');
 var lastATagCount = lastATag.length;
 
 if (lastATagCount > 0) {
