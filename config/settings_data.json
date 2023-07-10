@@ -801,7 +801,7 @@
               "open_tabs": true,
               "style_filter": "button",
               "title": "Size",
-              "shop_by_tags_2_list_tags": "X, XS, M, L, XL"
+              "shop_by_tags_2_list_tags": "X, XS, M, L, XL, temp slatwall"
             }
           },
           "1544175890491": {
@@ -1755,6 +1755,14 @@
           "image": "shopify:\/\/shop_images\/bg_5.png",
           "title": "Newsletter",
           "text": "Subscribe now to get daily updates"
+        }
+      },
+      "recently-collection": {
+        "type": "recently-collection",
+        "settings": {
+          "display_recently_viewed_products": true,
+          "recently_viewed_products_title": "Recently Viewed Products",
+          "number_of_recently_viewed_products": "8"
         }
       }
     },
