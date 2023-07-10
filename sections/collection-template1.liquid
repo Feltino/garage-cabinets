@@ -64,20 +64,7 @@
 
       </div>
     </div>
-        {% paginate collection.products by product_per_page %}
-    {% comment %}
-    Use .grid--rev so that the collection tags appear below the products on mobile
-    {% endcomment %}
-    {% comment %}
-    Use class grid-uniform to have evenly sized columns clear
-    each other properly at each breakpoint.
-    {% endcomment %}
-    {% if paginate.pages > 1 %}
-    <div class="padding">
-      {% include 'pagination-page' %}
-    </div>
-    {% endif %}
-    {% endpaginate %}
+    
 {% if section.settings.colection_decription %}
   {% if section.settings.colection_title %}
   <div class="related-heading col-rel_heding">
