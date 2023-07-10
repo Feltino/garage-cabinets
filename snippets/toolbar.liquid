@@ -118,12 +118,21 @@
     }
   });
 
-  jQuery('.sort-by')
-  .val('{{ collection.sort_by | default: collection.default_sort_by  }}')
-       .bind('change', function() {
-    Shopify.queryParams.sort_by = jQuery(this).val();
+jQuery('.sort-by')
+  .val('{{ collection.sort_by | default: collection.default_sort_by }}')
+  .bind('change', function() {
+    var selectedValue = jQuery(this).val();
+
+    // Check if the selected value is 'price-descending'
+    if (selectedValue === 'price-descending') {
+      // Modify the selected value to sort by price in descending order
+      selectedValue = 'price:desc';
+    }
+
+    Shopify.queryParams.sort_by = selectedValue;
     location.search = jQuery.param(Shopify.queryParams).replace(/\+/g, '%20');
   });
+
   jQuery(function() {
     $('.hidden-sidebar  #filter-sidebar').hide();
     $('.hidden-sidebar .filter-collection-left > a').click( function(){
