@@ -26,8 +26,10 @@ Check if the product is sold out and set a variable to be used below.
 {% assign collection_count = product.collections.size %}
 {% assign reversed_collections = product.collections | reverse %}
 {% for collection in reversed_collections limit:3 %}
-    <a href="{{ collection.url }}">{{ collection.title }}<span>,</span></a>
+    <a href="{{ collection.url }}">{{ collection.title }}</a>
+    {% unless forloop.last %},{% endunless %}
 {% endfor %}
+
 
 
         <span class="icon"></span>
