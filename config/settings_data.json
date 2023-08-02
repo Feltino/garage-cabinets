@@ -758,13 +758,6 @@
       "collection-template": {
         "type": "collection-template",
         "blocks": {
-          "1553488951104": {
-            "type": "block_filter_categories",
-            "settings": {
-              "sidebar_categories_title": "Collections",
-              "open_tabs": true
-            }
-          },
           "1553327415303": {
             "type": "block_filter_size",
             "settings": {
@@ -833,7 +826,6 @@
           }
         },
         "block_order": [
-          "1553488951104",
           "1553327415303",
           "1553433843663",
           "1544175805190",
