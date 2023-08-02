@@ -82,10 +82,10 @@
           </div>
         </div>
         {% endif %}
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12 shipping-calculator-wr">
+        <!-- <div class="col-lg-4 col-md-12 col-sm-12 col-12 shipping-calculator-wr">
           {% include 'shipping-calculator' %}
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12 cart-comment-wr">
+        </div> -->
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 cart-comment-wr">
           <div class="cart-comment">
             {% if settings.cart_notes %}
             <h3 class="add-comments">{{ 'page_cart.comments' | t }}</h3>
@@ -102,7 +102,7 @@
             {% endcomment %}
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12 subtotal-wr">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 subtotal-wr">
           <div class="subtotal-container">
             <div class="subtotal"><p class="t-title">{{ 'page_cart.total_price' | t }} :</p>
               <p class="price"><span class="total"><strong>{{ cart.total_price | money }}</strong></span></p>
