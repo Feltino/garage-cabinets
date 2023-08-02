@@ -709,7 +709,7 @@
               "title": "",
               "url": "shopify:\/\/collections\/laptop",
               "image": "shopify:\/\/shop_images\/Garage_Cabinet_Sets_2.png",
-              "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%<\/p>\n            <h3 class=\"f3-banner__title\">Ulti-MATE Garage 2.0<\/h3>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"><\/path>\n<\/svg>\n<\/a>\n<\/div>",
+              "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%<\/p>\n            <span class=\"f3-banner__title\">Ulti-MATE Garage 2.0<\/span>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"><\/path>\n<\/svg>\n<\/a>\n<\/div>",
               "button_text": ""
             }
           }
