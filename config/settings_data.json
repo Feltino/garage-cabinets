@@ -813,20 +813,12 @@
               "shop_by_tags_2_list_tags": "Gucci, Nike, Zalo, PoloClub, Armani, Adidas, Brand"
             }
           },
-          "1553306817787": {
-            "type": "block_newsletter",
-            "settings": {
-              "home_newsletter_title": "Newsletter",
-              "home_newsletter_subtitle": "Subscribe now to get daily updates",
-              "footer_newsletter_go": "Subscribe",
-              "mailing_list_form_action": ""
-            }
-          },
           "1553306428261": {
             "type": "block_promobox",
             "settings": {
               "title": "Spring Season",
               "url": "shopify:\/\/collections\/laptop",
+              "image": "shopify:\/\/shop_images\/vidaxl-2-piece-patio-sofa-set-with-cushions-solid-wood-acacia-outdoor-sectional-units-474.jpg",
               "custom_html": "New Women Collection",
               "button_text": "View More"
             }
@@ -847,7 +839,6 @@
           "1544175805190",
           "1553333108111",
           "1544175890491",
-          "1553306817787",
           "1553306428261",
           "1553306850346"
         ],
