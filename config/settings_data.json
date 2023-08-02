@@ -226,7 +226,7 @@
     "ajax_cart": true,
     "ajax_bagde": true,
     "calculte_free_shipping": true,
-    "calculte_agree_terms": true,
+    "calculte_agree_terms": false,
     "page_id": "",
     "enable_might_like": true,
     "might_like_title": "You might also like",
