@@ -33,7 +33,15 @@ Set grid_results to true and see your updated results page for the new layout.
   {% endcomment %}
 
   {% if search.results_count == 0 %}
-
+  <header class="page-header">
+    <h2>Your search for "{{ search.terms }}" did not yield any results.</h2>
+    <div class="wrapper-search-bar">{% include 'search-bar' %}</div>
+  </header>
+  {% else %}
+  <header class="page-header">
+    <h2>Your search for "{{ search.terms }}" revealed the following:</h2>
+    <div class="wrapper-search-bar">{% include 'search-bar' %}</div>
+  </header>
 
   {% comment %}
   Each result template, based on the grid_layout variable above
