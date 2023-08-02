@@ -827,8 +827,8 @@
             "type": "block_product",
             "settings": {
               "tabs_title_block": "FEATURED PRODUCTS",
-              "tabnew_collection": "laptop",
-              "products_limit": 3
+              "tabnew_collection": "accessories",
+              "products_limit": 1
             }
           }
         },
