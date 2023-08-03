@@ -1,7 +1,7 @@
 <div class="toolbar">
   {% paginate collection.products by product_per_page %}
   {% if section.settings.colection_title %}
-  <h1 class="showing">{{ collection.title }} ({{ paginate.items }})</h1>
+  <div class="showing">{{ collection.title }} ({{ paginate.items }})</div>
   {% endif %}
   
   {% endpaginate %}
