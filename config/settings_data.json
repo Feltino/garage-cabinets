@@ -222,7 +222,7 @@
     "shipping_calculator_default_country": "United States",
     "shipping_calculator_submit_button_label": "Calculate shipping",
     "shipping_calculator_submit_button_label_disabled": "Calculating...",
-    "cart_notes": false,
+    "cart_notes": true,
     "ajax_cart": true,
     "ajax_bagde": true,
     "calculte_free_shipping": true,
