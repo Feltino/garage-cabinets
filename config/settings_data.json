@@ -809,10 +809,10 @@
           "1553306428261": {
             "type": "block_promobox",
             "settings": {
-              "title": "Spring Season",
-              "url": "shopify:\/\/collections\/laptop",
-              "image": "shopify:\/\/shop_images\/vidaxl-2-piece-patio-sofa-set-with-cushions-solid-wood-acacia-outdoor-sectional-units-474.jpg",
-              "custom_html": "New Collection",
+              "title": "Ulti-MATE Garage",
+              "url": "https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-white",
+              "image": "shopify:\/\/shop_images\/ulti-mate-garage-2-0-series-black-metallic-6-piece-kit-931_800x-depositphotos-bgremover_1_1_1.png",
+              "custom_html": "",
               "button_text": "View More"
             }
           },
