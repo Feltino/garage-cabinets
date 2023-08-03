@@ -1063,7 +1063,7 @@
       "popups": {
         "type": "popups",
         "settings": {
-          "notify_product": true,
+          "notify_product": false,
           "notify_product_collection": "",
           "notify_product_limit": "4",
           "notify_product_text_line_1": "Someone purched a",
