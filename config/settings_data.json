@@ -712,6 +712,27 @@
               "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%<\/p>\n            <span class=\"f3-banner__title\">Ulti-MATE Garage 2.0<\/span>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"><\/path>\n<\/svg>\n<\/a>\n<\/div>",
               "button_text": ""
             }
+          },
+          "02f44e37-7b16-4c49-a9dc-8f4b8416ec63": {
+            "type": "megamenu",
+            "settings": {
+              "for_item": "Security safes",
+              "grid": 3,
+              "second_level_column": false,
+              "second_level_column_size": 20
+            }
+          },
+          "24931a2c-caed-4031-889c-f3764c1518d2": {
+            "type": "megamenu_custom_html",
+            "settings": {
+              "for_item": "Security safes",
+              "for_group": "",
+              "grid": 4,
+              "float": "right",
+              "title": "",
+              "url": "",
+              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/gun-safes\"><strong>Gun Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/depository-safes\"><strong>Depository Safes<\/strong><\/a>"
+            }
           }
         },
         "block_order": [
@@ -719,7 +740,9 @@
           "b12dd31a-9e8d-47e6-9e10-d8deac9be812",
           "13802903-f35f-41ab-a567-556cddfcf302",
           "532f2477-9b21-4209-be16-1454ab0636be",
-          "1550221074626"
+          "1550221074626",
+          "02f44e37-7b16-4c49-a9dc-8f4b8416ec63",
+          "24931a2c-caed-4031-889c-f3764c1518d2"
         ],
         "settings": {
           "header_layout": "header-layout-01",
