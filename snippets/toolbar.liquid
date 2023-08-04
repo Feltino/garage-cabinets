@@ -118,12 +118,26 @@
     }
   });
 
-  jQuery('.sort-by')
-  .val('{{ collection.sort_by | default: 'price-descending'  }}')
-       .bind('change', function() {
-    Shopify.queryParams.sort_by = jQuery(this).val();
+jQuery('.sort-by')
+  .val('{{ collection.sort_by | default: collection.default_sort_by  }}')
+  .bind('change', function() {
+    var selectedValue = jQuery(this).val();
+
+    // Check if the selected option is related to price sorting
+    if (selectedValue === 'price-ascending' || selectedValue === 'price-descending') {
+      // If it's already sorting by price, reverse the order
+      if (Shopify.queryParams.sort_by === selectedValue) {
+        selectedValue = selectedValue === 'price-ascending' ? 'price-descending' : 'price-ascending';
+      }
+      Shopify.queryParams.sort_by = selectedValue;
+    } else {
+      // For other sorting options, just set the selected value
+      Shopify.queryParams.sort_by = selectedValue;
+    }
+
     location.search = jQuery.param(Shopify.queryParams).replace(/\+/g, '%20');
   });
+
   jQuery(function() {
     $('.hidden-sidebar  #filter-sidebar').hide();
     $('.hidden-sidebar .filter-collection-left > a').click( function(){
