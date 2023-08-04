@@ -717,7 +717,7 @@
             "type": "megamenu",
             "settings": {
               "for_item": "Security safes",
-              "grid": 3,
+              "grid": 5,
               "second_level_column": false,
               "second_level_column_size": 20
             }
@@ -727,11 +727,11 @@
             "settings": {
               "for_item": "Security safes",
               "for_group": "",
-              "grid": 4,
+              "grid": 2,
               "float": "right",
               "title": "",
               "url": "",
-              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/gun-safes\"><strong>Gun Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/depository-safes\"><strong>Depository Safes<\/strong><\/a>"
+              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/cash-box-safes\"><strong>Cash Box Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/data-safes\"><strong>Data Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/floor-safes\"><strong>Floor Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/hotel-safes\"><strong>Hotel Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/wall-safes\"><strong>Wall Safes<\/strong><\/a>"
             }
           }
         },
