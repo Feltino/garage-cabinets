@@ -129,10 +129,10 @@ jQuery('.sort-by')
       if (Shopify.queryParams.sort_by === selectedValue) {
         selectedValue = selectedValue === 'price-ascending' ? 'price-descending' : 'price-ascending';
       }
-      Shopify.queryParams.sort_by = selectedValue;
+      Shopify.queryParams.sort_by = 'price-descending';
     } else {
       // For other sorting options, just set the selected value
-      Shopify.queryParams.sort_by = selectedValue;
+      Shopify.queryParams.sort_by = 'price-descending';
     }
 
     location.search = jQuery.param(Shopify.queryParams).replace(/\+/g, '%20');
