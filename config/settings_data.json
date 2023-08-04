@@ -733,6 +733,18 @@
               "url": "",
               "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/cash-box-safes\"><strong>Cash Box Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/data-safes\"><strong>Data Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/floor-safes\"><strong>Floor Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/hotel-safes\"><strong>Hotel Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/wall-safes\"><strong>Wall Safes<\/strong><\/a>"
             }
+          },
+          "a8229659-1a11-47dd-bccc-1b9d2176b150": {
+            "type": "megamenu_custom_html",
+            "settings": {
+              "for_item": "Security safes",
+              "for_group": "",
+              "grid": 2,
+              "float": "right",
+              "title": "",
+              "url": "",
+              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/office-safes\"><strong>Office Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/personal-home-safes\"><strong>Personal Home Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/security-safes\"><strong>Securit Safes<\/strong><\/a>"
+            }
           }
         },
         "block_order": [
@@ -742,7 +754,8 @@
           "532f2477-9b21-4209-be16-1454ab0636be",
           "1550221074626",
           "02f44e37-7b16-4c49-a9dc-8f4b8416ec63",
-          "24931a2c-caed-4031-889c-f3764c1518d2"
+          "24931a2c-caed-4031-889c-f3764c1518d2",
+          "a8229659-1a11-47dd-bccc-1b9d2176b150"
         ],
         "settings": {
           "header_layout": "header-layout-01",
