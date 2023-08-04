@@ -1,9 +1,3 @@
-{%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-
-{% if collection.handle == "all" %}
-    {% assign sort_by = 'price-descending' %}
-{% endif %}
-
 <div class="toolbar">
   {% paginate collection.products by product_per_page %}
   {% if section.settings.colection_title %}
@@ -125,7 +119,7 @@
   });
 
   jQuery('.sort-by')
-  .val('{{ collection.sort_by | 'price-descending'  }}')
+  .val('{{ collection.sort_by | default: 'price-descending' }}')
        .bind('change', function() {
     Shopify.queryParams.sort_by = jQuery(this).val();
     location.search = jQuery.param(Shopify.queryParams).replace(/\+/g, '%20');
