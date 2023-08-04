@@ -81,13 +81,13 @@
     {% assign product_per_page = 14 %}
     {% endif %}
     <div class="toolbar-right">
-{%if section.settings.colection_softby %}
+      {% if section.settings.colection_softby %}
       <div class="browse-tags">
         <label>{{ 'collection.toolbar.label_softby' |t }}</label>
         <select class="sort-by">
           <option value="manual">{{ 'collection.toolbar.manual' | t }}</option>
           <option value="price-ascending">{{ 'collection.toolbar.price_ascending' | t }}</option>
-          <option value="price-descending">{{ 'collection.toolbar.price_descending' | t }}</option>
+          <option value="price-descending" selected>{{ 'collection.toolbar.price_descending' | t }}</option>
           <option value="title-ascending">{{ 'collection.toolbar.title_ascending' | t }}</option>
           <option value="title-descending">{{ 'collection.toolbar.title_descending' | t }}</option>
           <option value="created-ascending">{{ 'collection.toolbar.created_ascending' | t }}</option>
@@ -112,49 +112,36 @@
       var scroll = jQuery("#filter-sidebar").scrollTop();
       if (scroll > 30) {
         jQuery(".continue-filter").addClass("fillter-ticky");
-      }else{
+      } else {
         jQuery(".continue-filter").removeClass("fillter-ticky");
       }
     }
   });
 
-jQuery('.sort-by')
-  .val('{{ collection.sort_by | default: 'price-descending'  }}')
-  .bind('change', function() {
-    var selectedValue = jQuery(this).val();
-
-    // Check if the selected option is related to price sorting
-    if (selectedValue === 'price-ascending' || selectedValue === 'price-descending') {
-      // If it's already sorting by price, reverse the order
-      if (Shopify.queryParams.sort_by === selectedValue) {
-        selectedValue = selectedValue === 'price-ascending' ? 'price-descending' : 'price-ascending';
-      }
-      Shopify.queryParams.sort_by = 'price-descending';
-    } else {
-      // For other sorting options, just set the selected value
-      Shopify.queryParams.sort_by = 'price-descending';
-    }
-
-    location.search = jQuery.param(Shopify.queryParams).replace(/\+/g, '%20');
-  });
-
+  jQuery('.sort-by')
+    .val('{{ collection.sort_by | default: collection.default_sort_by  }}')
+    .bind('change', function() {
+      Shopify.queryParams.sort_by = jQuery(this).val();
+      location.search = jQuery.param(Shopify.queryParams).replace(/\+/g, '%20');
+    });
+  
   jQuery(function() {
     $('.hidden-sidebar  #filter-sidebar').hide();
-    $('.hidden-sidebar .filter-collection-left > a').click( function(){
+    $('.hidden-sidebar .filter-collection-left > a').click(function() {
       $('.toolbar').toggleClass('active');
       $('#filter-sidebar').toggle(400);
     });
-    jQuery('.close-sibade').on('click', function(){
+    jQuery('.close-sibade').on('click', function() {
       jQuery('.wrapper-container').removeClass('show-fillter');
       jQuery('.toolbar').removeClass('active');
     });
-    $('.colection-left .filter-collection-left > a').click( function(){
+    $('.colection-left .filter-collection-left > a').click(function() {
       $('.toolbar').toggleClass('active');
-      if ( $('.wrapper-container').hasClass('show-fillter') ) {
+      if ($('.wrapper-container').hasClass('show-fillter')) {
         $('.wrapper-container').removeClass('show-fillter');
       } else {
         $('.wrapper-container').removeClass('show-fillter');
-        $('.wrapper-container').addClass('show-fillter');    
+        $('.wrapper-container').addClass('show-fillter');
       }
     });
 
@@ -166,20 +153,20 @@ jQuery('.sort-by')
 
     jQuery('body.template-collection .collection-view a.list').on('click', function() {
       jQuery('body.template-collection').find('.products-grid').addClass('product-list-item');
-      if( jQuery('body.template-collection .products-grid').hasClass('product-grid-item')){
+      if (jQuery('body.template-collection .products-grid').hasClass('product-grid-item')) {
         jQuery('body.template-collection').find('.products-grid').removeClass('product-grid-item');
 
-      }else{
+      } else {
         jQuery('body.template-collection').find('.products-grid').addClass('');
       }
 
     });
     jQuery('body.template-collection .collection-view a.grid').on('click', function() {
       jQuery('body.template-collection').find('.products-grid').addClass('product-grid-item');
-      if( jQuery('body.template-collection .products-grid').hasClass('product-list-item')){
+      if (jQuery('body.template-collection .products-grid').hasClass('product-list-item')) {
         jQuery('body.template-collection').find('.products-grid').removeClass('product-list-item');
 
-      }else{
+      } else {
         jQuery('body.template-collection').find('.products-grid').addClass('');
       }
     });
