@@ -119,7 +119,7 @@
   });
 
 jQuery('.sort-by')
-  .val('{{ collection.sort_by | default: collection.default_sort_by  }}')
+  .val('{{ collection.sort_by | default: price-descending  }}')
   .bind('change', function() {
     var selectedValue = jQuery(this).val();
 
