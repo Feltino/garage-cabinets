@@ -717,9 +717,9 @@
             "type": "megamenu",
             "settings": {
               "for_item": "Security safes",
-              "grid": 5,
-              "second_level_column": false,
-              "second_level_column_size": 20
+              "grid": 2,
+              "second_level_column": true,
+              "second_level_column_size": 50
             }
           },
           "24931a2c-caed-4031-889c-f3764c1518d2": {
