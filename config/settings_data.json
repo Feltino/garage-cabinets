@@ -794,54 +794,6 @@
       "collection-template": {
         "type": "collection-template",
         "blocks": {
-          "1553327415303": {
-            "type": "block_filter_size",
-            "settings": {
-              "show_tooltips": true,
-              "open_tabs": true,
-              "style_filter": "color",
-              "title": "Color",
-              "shop_by_tags_2_list_tags": "1-door, black, orange, Pink, Red, Blue, green, White"
-            }
-          },
-          "1553433843663": {
-            "type": "block_filter_material",
-            "settings": {
-              "show_tooltips": true,
-              "open_tabs": true,
-              "title": "Material"
-            }
-          },
-          "1544175805190": {
-            "type": "block_filter_size",
-            "settings": {
-              "show_tooltips": true,
-              "open_tabs": true,
-              "style_filter": "default",
-              "title": "Price",
-              "shop_by_tags_2_list_tags": "$0 - $49, $50 - $99, $100 - $149, $150 - $299, $200 - $500"
-            }
-          },
-          "1553333108111": {
-            "type": "block_filter_size",
-            "settings": {
-              "show_tooltips": true,
-              "open_tabs": true,
-              "style_filter": "button",
-              "title": "Size",
-              "shop_by_tags_2_list_tags": "X, XS, M, L, XL, temp slatwall"
-            }
-          },
-          "1544175890491": {
-            "type": "block_filter_size",
-            "settings": {
-              "show_tooltips": true,
-              "open_tabs": true,
-              "style_filter": "inrow",
-              "title": "Brand",
-              "shop_by_tags_2_list_tags": "Gucci, Nike, Zalo, PoloClub, Armani, Adidas, Brand"
-            }
-          },
           "1553306428261": {
             "type": "block_promobox",
             "settings": {
@@ -862,11 +814,6 @@
           }
         },
         "block_order": [
-          "1553327415303",
-          "1553433843663",
-          "1544175805190",
-          "1553333108111",
-          "1544175890491",
           "1553306428261",
           "1553306850346"
         ],
