@@ -11276,7 +11276,15 @@ h3.f3-banner__title{
   }
   .show-cart-wr .col-left{
     display:grid;
-    grid-template-column:1fr 1fr;
+    grid-template-columns:1fr 1fr;
+  }
+  .show-cart-wr .col-left .cart-messages {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  img.product-image-modal {
+    grid-column: 1/2;
+    grid-row: 2/5;
   }
   .show-cart-wr .col-left .product-popups-variant{
     display:none;
