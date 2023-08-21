@@ -56,7 +56,7 @@
           <option{% if active_value %} selected="selected"{% endif %} data-value="{{ value | handleize }}"{% if disabled_value %} disabled="disabled"{% endif %}>{{ value }}</option>
           {% capture select_dropdown_html %}
           {{ select_dropdown_html }}
-          <span{% if active_value %} class="selected"{% endif %} data-value="{{ value }}"{% if disabled_value %} disabled="disabled"{% endif %} {{ trigger_attr }}>{{ value }}</span>
+          <span{% if active_value %} class="selected"{% endif %} data-value="{{ value }}"{% if disabled_value %} disabled="disabled"{% endif %} {{ trigger_attr }}></span>
           {% endcapture %}
           {% endif -%}
           {% endfor -%}
@@ -83,7 +83,7 @@
                                                                             {% if materia == material_name %} 
                                                                             font-size:0;background-image: url(http:{{material_image | img_url: '160x160' }}); 
                                                                             {%endif %}
-                                                                            {% endfor %}">{{ value }}</div>
+                                                                            {% endfor %}"></div>
       {% endif %}
       {% endfor %}
     {% endif %}
