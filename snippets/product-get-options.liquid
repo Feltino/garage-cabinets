@@ -42,7 +42,7 @@
       {% for value in option.values %}
       {% include 'product-get-options-res-status' %}
       {% if hide_options_without_availability != true or disabled_value != true %}
-      <div class="option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }}>{{ value }}</div>
+      <div class="option-{{ value | handleize }} {% if disabled_value %} disabled{% endif %}{% if active_value %} active{% endif %}" data-js-option-value data-value="{{ value | handleize }}" {{ trigger_attr }}></div>
       {% endif -%}
       {% endfor -%}
     {% elsif options_type_select contains clear_name %}
