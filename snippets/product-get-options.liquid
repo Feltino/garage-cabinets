@@ -11,7 +11,6 @@
 {% endcapture %}
 <div class="product-options  {{ options_type_class }} {% unless trigger %} js-product-options{% endunless %}" data-js-product-options{% if options_type == 1 and settings.product_variant_change_on_hover %} data-js-options-onhover{% endif %}{% if change_history %} data-js-change-history{% endif %}>
   {% for option in product.options_with_values %}
-  <div class="variant-option-wapper">
     {% assign clear_name = option.name | escape | downcase %}
     {% if options_type_circle_color contains clear_name %}
     <div class="product-options-variant 1 {{ option.name | handleize }}" data-style="color" data-property="{{ option.name | handleize }}">
@@ -94,7 +93,6 @@
       {% endfor %}
     </div>
     {% endif %}
-  </div>
   {% endfor %}
 </div>
 {% endunless %}
