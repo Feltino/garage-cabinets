@@ -46,7 +46,7 @@
             <span class="">{{ link.title }}</span>
           </a>
         </h3>
-        <div class="level-1">
+        <div class="level level-1">
           <div class="back-nav-title">&lt;<span class="">{{ link.title }}</span></div>
           <ul>
             {% for child_link in linklists[link.handle].links %}
@@ -57,7 +57,7 @@
                   <span class="">{{ child_link.title }}</span>
                 </a>
               </h3>
-              <div class="level-2">
+              <div class="level level-2">
                 <div class="back-nav-title">&lt;<span class="">{{ child_link.title }}</span></div>
                 <ul>
                 {% for child_link1 in linklists[child_link.handle].links %}
@@ -68,7 +68,7 @@
                       <span class="">{{ child_link1.title }}</span>
                     </a>
                   </h3>
-                  <div class="level-3">
+                  <div class="level level-3">
                     <div class="back-nav-title">&lt;<span class="">{{ child_link1.title }}</span></div>
                     <ul>
                     {% for child_link2 in linklists[child_link1.handle].links %}
