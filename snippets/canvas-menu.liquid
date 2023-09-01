@@ -29,7 +29,7 @@
       {% else %}
       {% assign fullwidth = 'aligned-center' %}
       {% endif %}
-      <li class="parent dropdown {{ fullwidth }} {% if link.active %}active{% endif %}">
+      <li class="parent  {{ fullwidth }} {% if link.active %}active{% endif %}">
         <i class="cs-font clever-icon-plus"></i>
         <a class="dropdown-toggle has-category" href="{{ link.url }}" title="{{ link.title }}">
           <span class="menu-title">{{ link.title }}</span>
@@ -39,7 +39,7 @@
       </li>
       {% else %}
       {% if linklists[link.handle] != empty %}
-      <li class="parent dropdown {% if link.active %}active{% endif %}">
+      <li class="parent  {% if link.active %}active{% endif %}">
         <h3>
           <i class="cs-font clever-icon-plus"></i>
           <a class="dropdown-toggle has-category" href="{{ link.url }}" title="{{ link.title }}">
