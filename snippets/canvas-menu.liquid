@@ -187,7 +187,7 @@
  }),jQuery("#off-canvas-header > svg").click(function(){
   jQuery("#offcanvas").removeClass("active"),
   jQuery(".wrapper-container").removeClass("offcanvas-push")
-}),,jQuery(document).mouseup(function(a){
+}),jQuery(document).mouseup(function(a){
   var e=jQuery("body #offcanvas");
   e.is(a.target)||0!==e.has(a.target).length||(jQuery("body").removeClass("off-canvas-active"),jQuery("body #offcanvas").removeClass("active"),jQuery("body .wrapper-container").removeClass("offcanvas-push"))
 }),
