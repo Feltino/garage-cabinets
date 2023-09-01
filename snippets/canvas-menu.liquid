@@ -187,9 +187,7 @@
  }),jQuery("#off-canvas-header > svg").click(function(){
   jQuery("#offcanvas").removeClass("active"),
   jQuery(".wrapper-container").removeClass("offcanvas-push")
-}),jQuery("#off-canvas-header > svg").click(function(){
-  jQuery("body").removeClass("off-canvas-active")
-}),jQuery(document).mouseup(function(a){
+}),,jQuery(document).mouseup(function(a){
   var e=jQuery("body #offcanvas");
   e.is(a.target)||0!==e.has(a.target).length||(jQuery("body").removeClass("off-canvas-active"),jQuery("body #offcanvas").removeClass("active"),jQuery("body .wrapper-container").removeClass("offcanvas-push"))
 }),
@@ -204,8 +202,11 @@ jQuery("#offcanvasz .navbar-nav li h3 i").click(function(){
     jQuery(this).hasClass("clever-icon-plus")
     ?(jQuery(this).removeClass("clever-icon-plus"),jQuery(this).addClass("clever-icon-minus"),jQuery(this).removeClass("icon_plus"))
     :(jQuery(this).removeClass("clever-icon-minus"),jQuery(this).addClass("clever-icon-plus"),jQuery(this).addClass("icon_plus"))
-  });
-
+});
+jQuery("#off-canvas-header > svg").click(function(){
+  jQuery("body").removeClass("off-canvas-active");
+  jQuery('#offcanvas .navbar-nav li').removeClass('shown');
+});
 jQuery("#offcanvas .navbar-nav li h3 i").click(function(){
    jQuery(this).closest('li').addClass('shown');
 });
