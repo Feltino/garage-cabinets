@@ -127,6 +127,20 @@
       {% endif %}
       {% endif %}
       {% endfor %}
+      <div class="brator-slide-menu-info brator-header-menu-info">
+        <a href="/pages/about-us">
+            About Us
+        </a>
+        <a href="/pages/contact">
+            Contact Us
+        </a>
+        <a href="/pages/faq">
+            FAQ
+        </a>
+        <a href="/account/orders">Order Status</a>
+        <span>Call Us:</span>
+        <a class="phomeee" href="tel:+001 2233 456 ">+001 2233 456 </a>
+      </div>
       {% if shop.customer_accounts_enabled %}
       {% if customer %}
 
@@ -166,9 +180,10 @@
   jQuery("#offcanvas").hasClass("active") 
   ? (jQuery("body").removeClass("off-canvas-active"),jQuery("#offcanvas").removeClass("active"),jQuery(".wrapper-container").removeClass("offcanvas-push"))
   : (jQuery("body").addClass("off-canvas-active"),jQuery("#offcanvas").addClass("active"),jQuery(".wrapper-container").addClass("offcanvas-push"))
- }),jQuery("#off-canvas-button").click(function(){
-  jQuery("#offcanvas").removeClass("active"),jQuery(".wrapper-container").removeClass("offcanvas-push")
-}),jQuery("#off-canvas-button").click(function(){
+ }),jQuery("#off-canvas-header > svg").click(function(){
+  jQuery("#offcanvas").removeClass("active"),
+  jQuery(".wrapper-container").removeClass("offcanvas-push")
+}),jQuery("#off-canvas-header > svg").click(function(){
   jQuery("body").removeClass("off-canvas-active")
 }),jQuery(document).mouseup(function(a){
   var e=jQuery("body #offcanvas");
