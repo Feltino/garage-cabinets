@@ -2994,10 +2994,23 @@ nav.offcanvas-mainnav.containers {
   padding-right: 0;
   text-align: right;
 }
+#offcanvas .level-1 h3 i {
+  line-height:32px;
+}
 #offcanvas .navbar-nav ul {
-  width: 100% !important;
-  padding-left: 35px;
-  padding-top: 0;
+    width: 100%!important;
+    padding-left: 35px;
+    padding-top: 0;
+    position: absolute;
+    left: 0px;
+    background-color: white !important;
+    transform: translateX(100%);
+    transition: .5s all;
+    z-index: 129 !important;
+    display: unset;
+}
+li.active .level-1 {
+    transform: translateX(0px) !important;
 }
 #offcanvas .navbar-nav li {
   margin: 0;
