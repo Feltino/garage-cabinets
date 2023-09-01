@@ -141,38 +141,40 @@
         <span>Call Us:</span>
         <a class="phomeee" href="tel:+001 2233 456 ">+001 2233 456 </a>
       </div>
-      
+      {% comment %}
       {% if shop.customer_accounts_enabled %}
-      {% if customer %}
+        {% if customer %}
 
-      {% if settings.enable_wishlist %}
-      <li class="wishlist-menu">
-        <a href="/pages/wishlist" title="My Wishlist">{{ 'header.custom_link_wishlist' | t }}</a>
-      </li>
-      {% endif %}
-      <li><a href="/checkout"><span>{{ 'header.custom_link_checkout' | t }}</span></a></li>
-      <li>
-        <a href="/account/logout">{{ 'header.custom_link_logout' | t }}</a>
+          {% if settings.enable_wishlist %}
+          <li class="wishlist-menu">
+            <a href="/pages/wishlist" title="My Wishlist">{{ 'header.custom_link_wishlist' | t }}</a>
+          </li>
+          {% endif %}
+          <li><a href="/checkout"><span>{{ 'header.custom_link_checkout' | t }}</span></a></li>
+          <li>
+            <a href="/account/logout">{{ 'header.custom_link_logout' | t }}</a>
 
-        <a href="/account">{{ 'header.custom_link_account' | t }}</a>
-      </li>
-    </ul>
-    {% else %}
-    {% if settings.enable_wishlist %}
-    <li class="wishlist-menu">
-      <a href="/pages/wishlist" title="My Wishlist">{{ 'header.custom_link_wishlist' | t }}</a>
-    </li>
-    {% endif %}
-    <li class="checkout-mb"><a href="/checkout"><span>{{ 'header.custom_link_checkout' | t }}</span></a></li>
-    <li class="account-mb">
-      <a href="/account/login">{{ 'header.custom_link_login' | t }}</a>
-    </li>
-    <li class="reg-mb">
-      {% if shop.customer_accounts_optional %}
-      <a href="/account/register">{{ 'header.custom_link_create_account' | t }}</a>
-      {% endif %}
-    </li>
-    {% endif %}
+            <a href="/account">{{ 'header.custom_link_account' | t }}</a>
+          </li>
+         </ul>
+        {% else %}
+
+          {% if settings.enable_wishlist %}
+            <li class="wishlist-menu">
+              <a href="/pages/wishlist" title="My Wishlist">{{ 'header.custom_link_wishlist' | t }}</a>
+            </li>
+          {% endif %}
+          <li class="checkout-mb"><a href="/checkout"><span>{{ 'header.custom_link_checkout' | t }}</span></a></li>
+          <li class="account-mb">
+            <a href="/account/login">{{ 'header.custom_link_login' | t }}</a>
+          </li>
+          <li class="reg-mb">
+            {% if shop.customer_accounts_optional %}
+            <a href="/account/register">{{ 'header.custom_link_create_account' | t }}</a>
+            {% endif %}
+          </li>
+        {% endif %}
+        {% endcomment %}
     {% endif %}
   </nav>
 </section>
