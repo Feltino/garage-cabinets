@@ -69,7 +69,7 @@
                     </a>
                   </h3>
                   <div class="level level-3">
-                    <div class="back-nav-title">&lt;<span class="">{{ child_link1.title }}</span></div>
+                    <div class="back-nav-title">&lt; <span class="">{{ child_link1.title }}</span></div>
                     <ul>
                     {% for child_link2 in linklists[child_link1.handle].links %}
                     <li class="{% if child_link2.active %}active{% endif %}">
@@ -171,6 +171,9 @@ jQuery("#offcanvasz .navbar-nav li h3 i").click(function(){
   });
 
 jQuery("#offcanvas .navbar-nav li h3 i").click(function(){
-   jQuery(this).closest('li').toggleClass('active');
+   jQuery(this).closest('li').addClass('active');
+});
+jQuery("#offcanvas .navbar-nav .level .back-nav-title").click(function(){
+   jQuery(this).closest('li').removeClass('active');
 });
 </script>
