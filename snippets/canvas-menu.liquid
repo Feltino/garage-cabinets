@@ -150,7 +150,8 @@
 }),jQuery(document).mouseup(function(a){
   var e=jQuery("body #offcanvas");
   e.is(a.target)||0!==e.has(a.target).length||(jQuery("body").removeClass("off-canvas-active"),jQuery("body #offcanvas").removeClass("active"),jQuery("body .wrapper-container").removeClass("offcanvas-push"))
-}),jQuery("#offcanvas .navbar-nav ul").hide(),
+}),
+/*jQuery("#offcanvas .navbar-nav ul").hide(),*/
 jQuery("#offcanvasz .navbar-nav li h3 i").addClass("accordion-show"),
 jQuery("#offcanvasz .navbar-nav li h3 i").click(function(){
   jQuery(this).parent().next().is(":visible")
