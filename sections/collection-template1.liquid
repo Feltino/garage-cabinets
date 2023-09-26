@@ -33,6 +33,17 @@
     <li>{{ itr.text }}</li>
   {% endfor %}
   {{ subcollection }}
+
+  {% assign sub_collection_data = collection.metafields.custom.subcollection | split: '|' %}
+  {% for item in sub_collection_data %}
+    {% assign item_parts = item | split: ',' %}
+    <div class="sub-collection">
+      <img src="{{ item_parts[0] }}" alt="{{ item_parts[1] }}">
+      <p>{{ item_parts[1] }}</p>
+      <a href="{{ item_parts[2] }}">{{ item_parts[1] }}</a>
+    </div>
+  {% endfor %}
+
 </ul>
 
 <div class="product-grid-isotope-parent  {%if settings.colection_gutter %} colection_gutter {% endif %}  {%if settings.colection_boder %} colection_boder {% endif %} ">
