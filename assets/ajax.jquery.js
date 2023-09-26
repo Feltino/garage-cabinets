@@ -1406,7 +1406,7 @@ product_leftin: function(){
       var cart = '<li class="item" id="cart-item-{ID}"><a href="{URL}" title="{TITLE}" class="product-image"><img src="{IMAGE}" alt="{TITLE}"></a><div class="product-inner"><a href="javascript:void(0)" title="Remove Item" class="btn-remove"><i class="cs-font clever-icon-close"></i></a><p class="product-name"><a href="{URL}">{TITLE}</a></p><div class="cart-collateral"><span class="price">{PRICE}</span>Qty:  {QUANTITY}</div></div></li>';
       $(".cart-count").text(n.item_count);
       $(".minicart-wr").html(Shopify.formatMoney(n.total_price, window.money_format));
-      $(".summary .price").html(Shopify.formatMoney(n.total_price, window.money_format));
+      $(".summary .price").html(Shopify.formatMoney(n.total_price));
       $("#dropdown-cart .cart-list").html("");
       if (n.item_count > 0) {
         for (var i = 0; i < n.items.length; i++) {
@@ -1460,7 +1460,7 @@ product_leftin: function(){
 
       str = price.replace('.00', '');
       str = str.replace(',', '');
-      str = str.replace();
+      str = str.replace(window.money_format, '');
 
 
       cart_price = str.match(/\d+/g);
