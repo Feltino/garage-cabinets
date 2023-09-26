@@ -32,7 +32,7 @@
     <span class="test123">{{ feature.text }}</span>
   {% endif %}
 {% endfor %}
-{% assign metafield_object = collection.metafields.custom.subqcollection %}
+{% assign metafield_object = collection.metafields.custom.subqcollection  | split: ',' %}
 
 {% if metafield_object != nil %}
   {% assign metafield_value = metafield_object | metafield_value %}
