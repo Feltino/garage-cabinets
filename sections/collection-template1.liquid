@@ -24,6 +24,7 @@
 
 
   {{ collection.metafields.custom.subqcollection }}
+  {{collection.metafields.custom.subqcollection | metafield_tag }}
 {% assign metafield_object = collection.metafields.custom.subqcollection %}
 
 {% if metafield_object != nil %}
