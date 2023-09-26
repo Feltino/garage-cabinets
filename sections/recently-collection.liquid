@@ -59,16 +59,7 @@
     </div>
   </div>
 </section>
-{% if settings.enable_multilang %}
-<script>
-  function splitTitle(title) {
-    if (title.indexOf("|") < 0) 
-      return title;
-    var titleArr = title.split("|");
-    return titleArr[translator.current_lang - 1];
-  }
-</script>
-{% endif %}
+
 {% raw %}
 <script id="recently-viewed-product-grid-template" type="text/x-jquery-tmpl">
 
