@@ -1460,7 +1460,6 @@ product_leftin: function(){
 
       str = price.replace('.00', '');
       str = str.replace(',', '');
-      str = str.replace(window.money_format, '');
 
 
       cart_price = str.match(/\d+/g);
