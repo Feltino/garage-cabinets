@@ -23,9 +23,9 @@
   {% assign sub_collection_data = collection.metafields.custom.subcollection | split: '|' %}
   {% for item in sub_collection_data %}
     {% assign item_parts = item | split: ',' %}
-    {{ item_parts[0].text }}
-    {{ item_parts[1].text }}
-    {{ item_parts[2].text }}
+    {{ item_parts[0] | json }}
+    {{ item_parts[1] | json }}
+    {{ item_parts[2] | json }}
     <li class="sub-collection">
       <img src="{{ item_parts[0] }}" alt="{{ item_parts[1] }}">
       <p>{{ item_parts[1] }}</p>
