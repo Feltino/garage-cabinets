@@ -20,7 +20,7 @@
 
 
 <ul>
-  {% assign sub_collection_data = collection.metafields.custom.subcollection | split: '|' %}
+  {% assign sub_collection_data = collection.metafields.custom.subcollection_data | split: '|' %}
   {% for item in sub_collection_data %}
     {% assign item_parts = item | split: ',' %}
     {{ item_parts[0][0].text }}
