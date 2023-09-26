@@ -827,13 +827,24 @@
               "tabnew_collection": "accessories",
               "products_limit": 1
             }
+          },
+          "5a78d38b-7d92-4d92-b633-ec1f1d2b1499": {
+            "type": "block_filter_size",
+            "settings": {
+              "show_tooltips": true,
+              "open_tabs": true,
+              "style_filter": "default",
+              "title": "Shop By Tag",
+              "shop_by_tags_2_list_tags": "Image Color 1"
+            }
           }
         },
         "block_order": [
           "dfa9b017-0212-4782-bad5-6bd0d506d0a3",
           "c7824683-486f-4e16-88b2-89ffd4f91ed0",
           "1553306428261",
-          "1553306850346"
+          "1553306850346",
+          "5a78d38b-7d92-4d92-b633-ec1f1d2b1499"
         ],
         "settings": {
         }
