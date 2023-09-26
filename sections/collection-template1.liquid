@@ -40,6 +40,27 @@
 
   {{ collection.metafields.custom.subqcollection }}
 
+{% assign metafieldValue = collection.metafields.custom.subqcollection | json %}
+
+<h2>Products</h2>
+<ul>
+  {% for productId in metafieldValue.products %}
+    {% assign product = all_products[productId] %}
+    <li>
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Collections</h2>
+<ul>
+  {% for collectionId in metafieldValue.collections %}
+    {% assign collection = collections[collectionId] %}
+    <li>
+      <a href="{{ collection.url }}">{{ collection.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 </ul>
 
