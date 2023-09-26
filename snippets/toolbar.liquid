@@ -52,6 +52,12 @@
    {% endif %}
 
   </div>
+    {% if collection.metafields.custom.top_description %}
+      <p>{{ collection.metafields.custom.top_description }}</p>
+    {% endif %}
+    {% if collection.metafields.custom.sub_category_title %}
+      <p>{{ collection.metafields.custom.sub_category_title }}</p>
+    {% endif %}
   <div class="toolbar-mode">
     {% if section.settings.colection_view %}
     <div class="collection-view">
