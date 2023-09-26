@@ -24,10 +24,15 @@
 
 
   {{ collection.metafields.custom.subqcollection }}
-{% assign subqcollection_metafield = collection.metafields.custom.subqcollection | admin_metafield %}
-{% if subqcollection_metafield %}
-  {{ subqcollection_metafield.value }}
+{% assign metafield_object = collection.metafields.custom.subqcollection %}
+
+{% if metafield_object != nil %}
+  {% assign metafield_value = metafield_object | metafield_value %}
+  {{ metafield_value }}
+{% else %}
+  No value found for the metafield.
 {% endif %}
+
 
 {% assign metafieldValue = collection.metafields.custom.subqcollection | json %}
 
