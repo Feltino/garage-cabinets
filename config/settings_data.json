@@ -801,6 +801,16 @@
               "open_tabs": true
             }
           },
+          "820d00df-68ba-4ad0-88cc-f61f9a274c3d": {
+            "type": "block_filter_size",
+            "settings": {
+              "show_tooltips": false,
+              "open_tabs": true,
+              "style_filter": "default",
+              "title": "Brand",
+              "shop_by_tags_2_list_tags": "Proslat,"
+            }
+          },
           "1553306428261": {
             "type": "block_promobox",
             "settings": {
@@ -818,23 +828,13 @@
               "tabnew_collection": "accessories",
               "products_limit": 1
             }
-          },
-          "820d00df-68ba-4ad0-88cc-f61f9a274c3d": {
-            "type": "block_filter_size",
-            "settings": {
-              "show_tooltips": false,
-              "open_tabs": true,
-              "style_filter": "default",
-              "title": "Brand",
-              "shop_by_tags_2_list_tags": "Proslat,"
-            }
           }
         },
         "block_order": [
           "dfa9b017-0212-4782-bad5-6bd0d506d0a3",
+          "820d00df-68ba-4ad0-88cc-f61f9a274c3d",
           "1553306428261",
-          "1553306850346",
-          "820d00df-68ba-4ad0-88cc-f61f9a274c3d"
+          "1553306850346"
         ],
         "settings": {
         }
