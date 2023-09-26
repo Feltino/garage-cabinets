@@ -24,6 +24,10 @@
 
 
   {{ collection.metafields.custom.subqcollection }}
+{% assign subqcollection_metafield = collection.metafields.custom.subqcollection | admin_metafield %}
+{% if subqcollection_metafield %}
+  {{ subqcollection_metafield.value }}
+{% endif %}
 
 {% assign metafieldValue = collection.metafields.custom.subqcollection | json %}
 
