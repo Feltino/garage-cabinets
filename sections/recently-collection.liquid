@@ -59,7 +59,16 @@
     </div>
   </div>
 </section>
-
+{% if settings.enable_multilang %}
+<script>
+  function splitTitle(title) {
+    if (title.indexOf("|") < 0) 
+      return title;
+    var titleArr = title.split("|");
+    return titleArr[translator.current_lang - 1];
+  }
+</script>
+{% endif %}
 {% raw %}
 <script id="recently-viewed-product-grid-template" type="text/x-jquery-tmpl">
 
@@ -113,7 +122,7 @@
  </p>
       {{else}}
         <p class="regular-product">
-          <span >{{if price_varies}}<em{% if settings.enable_multilang %} data-translate="products.product.from"{% endif %}>{{ 'products.product.from' | t}}</em>{{/if}}{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
+          <span >{{if price_varies}}{{ 'products.product.from' | t}}</em>{{/if}}{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   </p>
       {{/if}}
   </div>
