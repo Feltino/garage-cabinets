@@ -24,8 +24,6 @@
   {% assign item_parts = item | split: ',' %}
   <div class="sub-collection">
   <p>{{ item_parts[0] }}</p>
-    <p>{{ item_parts[1] }}</p>
-    <p>{{ item_parts[2] }}</p>
   </div>
 {% endfor %}
 {% assign jsonString = collection.metafields.custom.subcollection%}
