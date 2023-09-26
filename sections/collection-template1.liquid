@@ -25,8 +25,8 @@
     {% assign item_parts = item | split: ',' %}
     <li class="sub-collection">
       <img src="{{ item_parts[0] }}" alt="{{ item_parts[1] }}">
-      <p>{{ item_parts[1].text }}</p>
-      <a href="{{ item_parts[2] }}">{{ item_parts[1] }}</a>
+      <p>{{ item_parts[1] }}</p>
+      <a href="{{ item_parts[2] }}">{{ item_parts[1].text }}</a>
     </li>
   {% endfor %}
 
