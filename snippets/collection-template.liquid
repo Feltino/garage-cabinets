@@ -77,40 +77,6 @@
   jQuery('body').addClass('colection-left');
   {% endif%}
 
-
-  theme.ProductOptions = function() {
-    function a() {
-        this.selectors = {
-            options: ".js-product-options",
-            options_attr: "[data-js-product-options]"
-        },
-        this.afterChange = [],
-        this.load()
-    }
-  a.prototype = $.extend({}, a.prototype, {
-    load: function() {
-        function a(a) {
-            var c = $(this);
-            if (!(c.hasClass("active") || c.hasClass("disabled"))) {
-                var d = c.parents(b.selectors.options);
-                var e = d.find("[data-js-option-value]");
-                
-                // Remove "active" class from all other elements
-                e.removeClass("active");
-
-                // Add "active" class to the clicked element
-                c.addClass("active");
-
-                // Rest of your code...
-            }
-        }
-
-        // Rest of your code...
-    },
-
-    // Rest of your code...
-});
-  }
  
 </script>
 
