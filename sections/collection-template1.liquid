@@ -28,7 +28,7 @@
     <a href="{{ item_parts[2] }}">{{ item_parts[1] }}</a>
   </div>
 {% endfor %}
-{% assign jsonString = collection.metafields.namespace.subcollection %}
+{% assign jsonString = collection.metafields.namespace.subcollection  | split: '|' %}
 {% assign parsedJson = jsonString | json %}
 
 {% assign textValue = parsedJson.text %}
