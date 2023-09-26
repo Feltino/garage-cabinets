@@ -25,6 +25,13 @@
 
   {{ collection.metafields.custom.subqcollection }}
   {{collection.metafields.custom.subqcollection | metafield_tag }}
+  {% assign feature_keys = collection.metafields.custom.subqcollection | split: ',' %}
+{% for feature_key in feature_keys %}
+  {% assign feature = shop.metaobjects['main_features'][feature_key] %}
+  {% if feature %}
+    <span class="test123">{{ feature.text }}</span>
+  {% endif %}
+{% endfor %}
 {% assign metafield_object = collection.metafields.custom.subqcollection %}
 
 {% if metafield_object != nil %}
