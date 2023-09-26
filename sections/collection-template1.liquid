@@ -23,9 +23,9 @@
 {% for item in sub_collection_data %}
   {% assign item_parts = item | split: ',' %}
   <div class="sub-collection">
-    <img src="{{ item_parts[0] }}" alt="{{ item_parts[1] }}">
+    <p>{{ item_parts[0] }}</p>
     <p>{{ item_parts[1] }}</p>
-    <a href="{{ item_parts[2] }}">{{ item_parts[1] }}</a>
+  <p>{{ item_parts[2] }}</p>
   </div>
 {% endfor %}
 {% assign jsonString = collection.metafields.custom.subcollection%}
