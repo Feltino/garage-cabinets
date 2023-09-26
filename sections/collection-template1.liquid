@@ -18,53 +18,6 @@
   {% include 'toolbar' %}
 </div>
 
-<ul>
-
-
-
-
-  {{ collection.metafields.custom.subqcollection }}
-  {{collection.metafields.custom.subqcollection | metafield_tag }}
-  {% assign feature_keys = collection.metafields.custom.subqcollection | split: ',' %}
-{% for feature_key in feature_keys %}
-  {% assign feature = shop.metaobjects['main_features'][feature_key] %}
-  {% if feature %}
-    <span class="test123">{{ feature.text }}</span>
-  {% endif %}
-{% endfor %}
-{% assign metafield_object = collection.metafields.custom.subqcollection  | split: ',' %}
-
-{% if metafield_object != nil %}
-  {% assign metafield_value = metafield_object | metafield_value %}
-  {{ metafield_value }}
-{% else %}
-  No value found for the metafield.
-{% endif %}
-
-
-{% assign metafieldValue = collection.metafields.custom.subqcollection | json %}
-
-<h2>Products</h2>
-<ul>
-  {% for productId in metafieldValue.products %}
-    {% assign product = all_products[productId] %}
-    <li>
-      <a href="{{ product.url }}">{{ product.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-<h2>Collections</h2>
-<ul>
-  {% for collectionId in metafieldValue.collections %}
-    {% assign collection = collections[collectionId] %}
-    <li>
-      <a href="{{ collection.url }}">{{ collection.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-</ul>
 
 <div class="product-grid-isotope-parent  {%if settings.colection_gutter %} colection_gutter {% endif %}  {%if settings.colection_boder %} colection_boder {% endif %} ">
       <div class="products-grid product-grid-item collection-grid row">
