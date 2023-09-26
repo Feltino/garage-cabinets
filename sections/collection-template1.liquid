@@ -24,8 +24,8 @@
   {% assign item_parts = item | split: ',' %}
   <div class="sub-collection">
     <p>{{ sub_collection_data[0].img }}</p>
-    <p>{{ item_parts[1].text }}</p>
-  <p>{{ item_parts[2].url }}</p>
+    <p>{{ sub_collection_data[1].text }}</p>
+  <p>{{ sub_collection_data[2].url }}</p>
   </div>
 {% endfor %}
 
