@@ -1440,7 +1440,7 @@ product_leftin: function(){
             }
         $('.ajax-success-cbox').find('.product-title').html(mt.translateText(n.items[0].product_title));
         $('.ajax-success-cbox').find('.product-image-modal').attr('src', n.items[0].image);
-        $('.ajax-success-cbox').find('.product-price-popup').html(Shopify.formatMoney(n.items[0].price, window.money_format));
+        $('.ajax-success-cbox').find('.product-price-popup').html(Shopify.formatMoney(n.items[0].price));
         $('.ajax-success-cbox').find('.product-qty-popup').html(n.items[0].quantity);
         $('.ajax-success-cbox').find('.product-popups-variant').html(n.items[0].variant_options.join(','));
         // console.log(n.items[0]);
