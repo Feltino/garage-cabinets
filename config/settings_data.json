@@ -794,6 +794,21 @@
       "collection-template": {
         "type": "collection-template",
         "blocks": {
+          "dfa9b017-0212-4782-bad5-6bd0d506d0a3": {
+            "type": "block_filter_categories",
+            "settings": {
+              "sidebar_categories_title": "Collections",
+              "open_tabs": true
+            }
+          },
+          "c7824683-486f-4e16-88b2-89ffd4f91ed0": {
+            "type": "block_filter_material",
+            "settings": {
+              "show_tooltips": true,
+              "open_tabs": true,
+              "title": "Brand"
+            }
+          },
           "1553306428261": {
             "type": "block_promobox",
             "settings": {
@@ -814,6 +829,8 @@
           }
         },
         "block_order": [
+          "dfa9b017-0212-4782-bad5-6bd0d506d0a3",
+          "c7824683-486f-4e16-88b2-89ffd4f91ed0",
           "1553306428261",
           "1553306850346"
         ],
