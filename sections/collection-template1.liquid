@@ -23,21 +23,17 @@
 {% for item in sub_collection_data %}
   {% assign item_parts = item | split: ',' %}
   <div class="sub-collection">
-    <p>{{ sub_collection_data[0].img }}</p>
-    <p>{{ sub_collection_data[1].text }}</p>
-  <p>{{ sub_collection_data[2].url }}</p>
+    <p>{{ item_parts[0] }}</p>
+    <p>{{ item_parts[1] }}</p>
+  <p>{{ item_parts[2] }}</p>
   </div>
 {% endfor %}
+{% assign jsonString = collection.metafields.custom.subcollection%}
+{% assign parsedJson = jsonString | json %}
 
-  {% assign sub_collection_data = collection.metafields.custom.subcollection | split: '|' %}
-{% for item in sub_collection_data %}
-  <div class="sub-collection">
-    <p>Image: {{ item.img }}</p>
-    <p>Text: {{ item.text }}</p>
-    <p>URL: {{ item.url }}</p>
-  </div>
-{% endfor %}
+{% assign textValue = parsedJson.text %}
 
+{{ textValue }}
 
 
 </ul>
