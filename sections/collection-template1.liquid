@@ -38,7 +38,9 @@
   </div>
 {% endfor %}
 
-{% assign metafieldValue = collection.metafields.custom.subqcollection | split: '|' %}
+  {{ collection.metafields.custom.subqcollection.dimension }}
+
+{% assign metafieldValue = collection.metafields.custom.subqcollection | json %}
 
 <h2>Products</h2>
 <ul>
