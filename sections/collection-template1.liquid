@@ -22,7 +22,7 @@
 
 
 {% assign sub_collection_data = collection.metafields.custom.subcollection | split: '|' %}
-{{sub_collection_data}}
+{{sub_collection_data | json}}
 {% for item in sub_collection_data %}
   <div class="sub-collection">
     <p>Image: {{ item.img }}</p>
