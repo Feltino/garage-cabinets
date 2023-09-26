@@ -17,31 +17,17 @@
 <div class="display-toolbar">
   {% include 'toolbar' %}
 </div>
-{% assign subcollection = collection.metafields.custom.subcollection | json %}
-{% assign collection_img = collection.metafields.custom.subcollection.sub_collection_img %}
-{% assign collection_text = collection.metafields.custom.subcollection.sub_collection_text %}
-{% assign collection_url = collection.metafields.custom.subcollection.sub_collection_url %}
 
-<div class="sub-collection">
-  <img src="{{ collection_img | asset_url }}" alt="{{ collection_text }}">
-  <p>{{ collection_text }}</p>
-  <a href="{{ collection_url }}">{{ collection_text }}</a>
-</div>
 
 <ul>
-  {% for itr in subcollection %}
-    <li>{{ itr.text }}</li>
-  {% endfor %}
-  {{ subcollection }}
-
   {% assign sub_collection_data = collection.metafields.custom.subcollection | split: '|' %}
   {% for item in sub_collection_data %}
     {% assign item_parts = item | split: ',' %}
-    <div class="sub-collection">
+    <li class="sub-collection">
       <img src="{{ item_parts[0] }}" alt="{{ item_parts[1] }}">
       <p>{{ item_parts[1] }}</p>
       <a href="{{ item_parts[2] }}">{{ item_parts[1] }}</a>
-    </div>
+    </li>
   {% endfor %}
 
 </ul>
