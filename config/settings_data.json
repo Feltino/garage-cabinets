@@ -141,7 +141,7 @@
     "display_spend_shipping": true,
     "product_bagde_image": true,
     "use_color_swatch": true,
-    "swatch_style": "color",
+    "swatch_style": "default",
     "sale_label_style": "text_label",
     "space_between_product": "30",
     "product_add_tocart": true,
