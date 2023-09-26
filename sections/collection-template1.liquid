@@ -17,6 +17,13 @@
 <div class="display-toolbar">
   {% include 'toolbar' %}
 </div>
+{% assign subcollection = collection.metafields.subcollection | json %}
+<ul>
+  {% for ingredient in ingredients %}
+    <li>{{ subcollection.text }}</li>
+  {% endfor %}
+</ul>
+
 <div class="product-grid-isotope-parent  {%if settings.colection_gutter %} colection_gutter {% endif %}  {%if settings.colection_boder %} colection_boder {% endif %} ">
       <div class="products-grid product-grid-item collection-grid row">
 
