@@ -122,7 +122,7 @@
  </p>
       {{else}}
         <p class="regular-product">
-          <span >{{if price_varies}}{{ 'products.product.from' | t}}</em>{{/if}}{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
+          <span >{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   </p>
       {{/if}}
   </div>
