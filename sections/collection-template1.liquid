@@ -30,7 +30,15 @@
     <p>URL: {{ item.url }}</p>
   </div>
 {% endfor %}
+{% for item in sub_collection_data %}
+  <div class="sub-collection">
+    <p>Image: {{ item.img }}</p>
+    <p>Text: {{ item.text }}</p>
+    <p>URL: {{ item.url }}</p>
+  </div>
+{% endfor %}
 
+  {{ collection.metafields.custom.subqcollection }}
 
 
 </ul>
