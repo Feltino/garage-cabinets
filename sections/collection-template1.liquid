@@ -18,6 +18,16 @@
   {% include 'toolbar' %}
 </div>
 {% assign subcollection = collection.metafields.subcollection | json %}
+{% assign collection_img = collection.metafields.subcollection.sub_collection_img %}
+{% assign collection_text = collection.metafields.subcollection.sub_collection_text %}
+{% assign collection_url = collection.metafields.subcollection.sub_collection_url %}
+
+<div class="sub-collection">
+  <img src="{{ collection_img | asset_url }}" alt="{{ collection_text }}">
+  <p>{{ collection_text }}</p>
+  <a href="{{ collection_url }}">{{ collection_text }}</a>
+</div>
+
 <ul>
   {% for subcollectio in subcollectios %}
     <li>{{ subcollections.text }}</li>
