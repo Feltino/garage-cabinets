@@ -162,7 +162,7 @@
     "designoption2": "button",
     "designoption3": "button",
     "product_colors": "1-door: #000000,\nblue: #0000FF,\nSpecialty-Cooking: #00ff00,\npurple: #800080,\nsilver: #c0c0c0,\nwhite: #ffffff,\nbrown: #7B3F00,\nlight-brown: #feb035,\ndark-turquoise: #23cddc,\norange: #fe9001,\ntan: #eacea7,\nviolet: #EE82EE,\npink: #FFC0CB,\ngray: #808080,\nred: #ff0000",
-    "material_name_1": "material1",
+    "material_name_1": "'proslat-fusionplus-16-ft-set-trio' :'Image Color 1'",
     "material_1": "shopify:\/\/shop_images\/newage-garage-cabinets-pro-series-4-ft-x-8-wall-mounted-steel-shelf-947.jpg",
     "material_name_2": "material2",
     "material_2": "",
@@ -820,7 +820,7 @@
               "products_limit": 1
             }
           },
-          "016a148b-89b4-4e82-95b7-641b2214480b": {
+          "ad55ab61-befb-4fb4-842f-e36f3b21d940": {
             "type": "block_filter_material",
             "settings": {
               "show_tooltips": true,
@@ -833,7 +833,7 @@
           "dfa9b017-0212-4782-bad5-6bd0d506d0a3",
           "1553306428261",
           "1553306850346",
-          "016a148b-89b4-4e82-95b7-641b2214480b"
+          "ad55ab61-befb-4fb4-842f-e36f3b21d940"
         ],
         "settings": {
         }
