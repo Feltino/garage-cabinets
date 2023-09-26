@@ -33,7 +33,14 @@
 
 {% assign textValue = parsedJson.text %}
 
-{{ textValue }}
+{% for item in textValue %}
+  {% assign item_parts = item | split: ',' %}
+  <div class="sub-collection">
+    <img src="{{ item_parts[0] }}" alt="{{ item_parts[1] }}">
+    <p>{{ item_parts[1] }}</p>
+    <a href="{{ item_parts[2] }}">{{ item_parts[1] }}</a>
+  </div>
+{% endfor %}
 
 
 </ul>
