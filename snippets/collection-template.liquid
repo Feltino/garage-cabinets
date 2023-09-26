@@ -77,6 +77,16 @@
   jQuery('body').addClass('colection-left');
   {% endif%}
 
+
+  theme.ProductOptions = function() {
+    function a() {
+        this.selectors = {
+            options: ".js-product-options",
+            options_attr: "[data-js-product-options]"
+        },
+        this.afterChange = [],
+        this.load()
+    }
   a.prototype = $.extend({}, a.prototype, {
     load: function() {
         function a(a) {
@@ -100,7 +110,7 @@
 
     // Rest of your code...
 });
-
+  }
  
 </script>
 
