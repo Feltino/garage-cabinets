@@ -18,9 +18,8 @@
   {% include 'toolbar' %}
 </div>
 
-collection.metafields.custom.subcollection
 <ul>
-  {% assign sub_collection_data = collection.metafields.custom.sub_collection_data | split: '|' %}
+  {% assign sub_collection_data = collection.metafields.custom.sub_collection | split: '|' %}
 {% for item in sub_collection_data %}
   {% assign item_parts = item | split: ',' %}
   <div class="sub-collection">
