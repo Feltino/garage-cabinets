@@ -1460,6 +1460,7 @@ product_leftin: function(){
 
       str = price.replace('.00', '');
       str = str.replace(',', '');
+      str = str.replace(window.money_format, '');
 
 
       cart_price = str.match(/\d+/g);
@@ -1493,7 +1494,7 @@ product_leftin: function(){
         var free_prices =  free_price.replace(window.money_format, '');
         var free_prices = free_prices.match(/\d+/g);
         var free_prices = parseFloat(free_prices).toFixed(2);
-        var strs = price.replace(window.money_format, '');
+        var strs = price.replace();
         var cart_price = strs.match(/\d+/g);
         var price_pase = parseFloat(cart_price).toFixed(2);
         
