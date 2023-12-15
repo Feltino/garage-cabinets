@@ -68,14 +68,15 @@ Refined tags
         </div>
       </div>
       {% when 'block_menu' %}
+        <h3>{{ block.settings.m_tt }}</h3>
           <nav>
             <ul>
-        {%- for link in block.settings.header_menu.links -%}
-
-              <li>
-                <a href="{{ link.url }}">{{ link.title }}</a>
-              </li>
-        {% endfor %}}
+              {%- for link in block.settings.header_menu.links -%}
+      
+                    <li>
+                      <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+              {% endfor %}
             </ul>
           </nav>
       {% when 'block_filter_size' %}
