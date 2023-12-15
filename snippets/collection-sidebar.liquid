@@ -188,7 +188,7 @@ Refined tags
       </div>
       {% when 'block_customhtml' %}
       <div class="sidebar-customhtml sticky-sidebar-wrapper">
-        <div class="content-customhtml sticky-sidebar ">
+        <div class="content-customhtml sticky-sidebar" id="sidebar">
           <h3>{{ block.settings.title }}</h3>
           <p>{{block.settings.custom_html }}</p>
           <a href="{{block.settings.url }}">{{block.settings.button_text }}</a>
@@ -248,18 +248,24 @@ Refined tags
 <script>
   document.addEventListener("DOMContentLoaded", function () {
   var sidebarWrapper = document.querySelector(".sticky-sidebar-wrapper");
-  var sidebar = document.querySelector(".sidebar-links");
-  var stickyTop = 150; // Adjust this value based on your design
+  var sidebar = document.getElementById("sidebar");
+  var stickyTop = 50; // Adjust this value based on your design
 
-  window.addEventListener("scroll", function () {
-    var scrollY = window.scrollY || window.pageYOffset;
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          sidebar.classList.remove("sticky-sidebar");
+        } else {
+          sidebar.classList.add("sticky-sidebar");
+        }
+      });
+    },
+    { threshold: [0] }
+  );
 
-    if (scrollY > stickyTop) {
-      sidebar.classList.add("sticky-sidebar");
-    } else {
-      sidebar.classList.remove("sticky-sidebar");
-    }
-  });
+  observer.observe(sidebarWrapper);
 });
+
 
 </script>
