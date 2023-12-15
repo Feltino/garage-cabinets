@@ -598,7 +598,6 @@ Check if the product is sold out and set a variable to be used below.
           <li {% if active %}class="active" {% assign active = false %} {% endif %}>
             <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
               {{ instructions.tabs-title-1  }}
-            {{ product.description | split: '<h5>' | first }}
             </a>
           </li>
           {% endif %}
@@ -646,7 +645,7 @@ Check if the product is sold out and set a variable to be used below.
 
           {% if section.settings.display_product_detail_description %}
           <div id="collapse-tab1" class="tab-pane in active">
-            {{ content }}
+           {{ product.description | split: '<h5>' | first }}
           </div>
           {% assign description = product.description %}
 {% capture description %}{{ description }}{% endcapture %}
