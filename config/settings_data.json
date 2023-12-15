@@ -1262,6 +1262,13 @@
               "footercol1": "shipping-returns"
             }
           },
+          "33627135-ab89-4ecf-bb05-7188dffb4379": {
+            "type": "menu",
+            "settings": {
+              "footer_heading": "general information",
+              "footercol1": "general-information"
+            }
+          },
           "1565230824271": {
             "type": "menu",
             "settings": {
@@ -1300,6 +1307,7 @@
           "1563434009132",
           "1565230801903",
           "1565230815191",
+          "33627135-ab89-4ecf-bb05-7188dffb4379",
           "1565230824271",
           "1563434026534",
           "1563765187696",
