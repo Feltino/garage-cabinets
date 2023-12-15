@@ -68,7 +68,7 @@ Refined tags
         </div>
       </div>
       {% when 'block_menu' %}
-        {{ block.settings.header_menu | link_to: block.settings.linkurl }}
+        {{ block.settings.header_menu.title | link_to: block.settings.header_menu.linkurl }}
       {% when 'block_filter_size' %}
       <div class="sidebar-custom sidebar-tag size {{ block.settings.style_filter}}">
         {% assign tags = shop_by_tags_2_list_tags | split: ',' %}
