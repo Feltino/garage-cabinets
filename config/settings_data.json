@@ -161,7 +161,7 @@
     "designoption1": "button",
     "designoption2": "button",
     "designoption3": "button",
-    "product_colors": "blue: #0000FF,\nSpecialty-Cooking: #00ff00,\npurple: #800080,\nsilver: #c0c0c0,\nwhite: #ffffff,\nbrown: #7B3F00,\nlight-brown: #feb035,\ndark-turquoise: #23cddc,\norange: #fe9001,\ntan: #eacea7,\nviolet: #EE82EE,\npink: #FFC0CB,\ngray: #808080,\nred: #ff0000",
+    "product_colors": "",
     "material_name_1": "Proslat",
     "material_name_2": "material2",
     "material_2": "",
