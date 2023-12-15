@@ -246,26 +246,16 @@ Refined tags
 
 </div>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-  var sidebarWrapper = document.querySelector(".sticky-sidebar-wrapper");
-  var sidebar = document.getElementById("sidebar");
-  var stickyTop = 50; // Adjust this value based on your design
+window.addEventListener('scroll', function() {
+      var stickyElement = document.querySelector('.mgt2');
+      var bounding = stickyElement.getBoundingClientRect();
 
-  var observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          sidebar.classList.remove("sticky-sidebar");
-        } else {
-          sidebar.classList.add("sticky-sidebar");
-        }
-      });
-    },
-    { threshold: [0] }
-  );
-
-  observer.observe(sidebarWrapper);
-});
+      if (bounding.top <= 0) {
+        stickyElement.classList.add('sticky');
+      } else {
+        stickyElement.classList.remove('sticky');
+      }
+    });
 
 
 </script>
