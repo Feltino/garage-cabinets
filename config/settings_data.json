@@ -806,9 +806,9 @@
             "settings": {
               "show_tooltips": false,
               "open_tabs": true,
-              "style_filter": "default",
+              "style_filter": "inrow",
               "title": "Brand",
-              "shop_by_tags_2_list_tags": "Aleko Products, Amazing Gates"
+              "shop_by_tags_2_list_tags": "Amazing%20Gates"
             }
           }
         },
