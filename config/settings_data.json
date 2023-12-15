@@ -801,6 +801,12 @@
               "open_tabs": true
             }
           },
+          "344558f0-b02b-4dec-95bd-7018bae50a21": {
+            "type": "block_menu",
+            "settings": {
+              "header_menu": "brands"
+            }
+          },
           "63a90d28-adcb-404d-ad2c-7a2060dbfd56": {
             "type": "block_customhtml",
             "settings": {
@@ -813,6 +819,7 @@
         },
         "block_order": [
           "dfa9b017-0212-4782-bad5-6bd0d506d0a3",
+          "344558f0-b02b-4dec-95bd-7018bae50a21",
           "63a90d28-adcb-404d-ad2c-7a2060dbfd56"
         ],
         "settings": {
