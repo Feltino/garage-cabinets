@@ -580,6 +580,14 @@ Check if the product is sold out and set a variable to be used below.
           <li><a data-toggle="tab" href="#{{ block.settings.for_group | handle }}">
             {{ block.settings.for_group }}
             </a></li>
+          {% assign description_parts = description | split: "<h5" %}
+              {% for part in description_parts %}
+                {% if part contains "</h5>" %}
+                  {% assign remove = part | split: ">" | first | append: ">" %}
+                  {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
+                  <li class="nav-item"><a class="nav-link" href="#tabs-{{ forloop.index }}" aria-controls="tabs-{{ forloop.index }}" role="tab" data-toggle="tab">{{ part | split: "</h5>" | first | strip_html | replace: remove, "" }}</a></li>
+                {% endif %}
+              {% endfor %}
           {% endfor %}
 
           {% assign instructions = product.metafields.meta %}
