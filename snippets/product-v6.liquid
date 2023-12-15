@@ -648,7 +648,7 @@ Check if the product is sold out and set a variable to be used below.
                         {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
 
                         {% if p != "" or fp contains "<img " or fp contains "<iframe " %}
-                          <div role="tabpanel" class="tab-pane" id="tabs-{{ forloop.index }}">
+                          <div role="tabpanel" class="tab-pane" id="collapse-tab{{ forloop.index }}">
                             {{ part | split: "</h5>" | last | replace: "<div", "<span" | replace: "</div", "</span" }}
                           </div>
                         {% endif %}
