@@ -54,30 +54,35 @@
         "tabs_type": "type_1"
       }
     },
-    "d4ddd800-6171-482d-b6f1-880c1a2f2739": {
-      "type": "l-first-screen",
+    "4dc22b54-fe55-457f-80cb-906e5411824e": {
+      "type": "grid-block-image",
+      "blocks": {
+        "template--21750965895469__4dc22b54-fe55-457f-80cb-906e5411824e-block-1": {
+          "type": "block",
+          "settings": {
+            "home4_collection_title_1": "Collection Title",
+            "home4_collection_subtitle_1": "Collection Sub Title",
+            "home4_collection_title_2": "Collection Title",
+            "home4_collection_subtitle_2": "Collection Sub Title",
+            "home4_collection_title_3": "Collection Title",
+            "home4_collection_subtitle_3": "Collection Sub Title"
+          }
+        }
+      },
+      "block_order": [
+        "template--21750965895469__4dc22b54-fe55-457f-80cb-906e5411824e-block-1"
+      ],
       "settings": {
-        "title": "First Section{{ metaobject.name.value }}{{ metaobject.name.value }}",
-        "button_link": "{{ metaobject.system.url }}",
-        "btn_title": "{{ metaobject.name.value }}",
-        "title2": "",
-        "button_link2": "",
-        "btn_title2": "",
-        "title3": "",
-        "button_link3": "",
-        "btn_title3": "",
-        "title4": "",
-        "button_link4": "",
-        "btn_title4": "",
-        "title5": "",
-        "button_link5": "",
-        "btn_title5": "",
-        "btn_title6": ""
+        "home_block_4": "0px 0px 0px 0px",
+        "enable_block_fullwidth": false,
+        "home4_collection_title": "Block Title{{ metaobject.name.value }}",
+        "home4_collection_button": "Button{{ metaobject.name.value }}",
+        "home4_collection": "#{{ metaobject.name.value }}"
       }
     }
   },
   "order": [
     "03df2330-8574-4bc2-993c-0151f7e71e85",
-    "d4ddd800-6171-482d-b6f1-880c1a2f2739"
+    "4dc22b54-fe55-457f-80cb-906e5411824e"
   ]
 }
