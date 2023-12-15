@@ -281,6 +281,43 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('.mtg2');
+  const sidebarBlock = document.querySelector('.sidebar-block');
+
+  elements.forEach(element => {
+    element.addEventListener('click', function() {
+      element.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  let lastScrollPosition = 0;
+
+  window.addEventListener('scroll', function() {
+    const currentScrollPosition = window.scrollY;
+    const sidebarBlockRect = sidebarBlock.getBoundingClientRect();
+
+    elements.forEach(element => {
+      const elementRect = element.getBoundingClientRect();
+
+      if (
+        elementRect.top >= sidebarBlockRect.top &&
+        elementRect.bottom <= sidebarBlockRect.bottom
+      ) {
+        if (currentScrollPosition > lastScrollPosition) {
+          // Прокрутка вниз: залиште елемент вгорі в межах блоку
+          element.style.position = 'fixed';
+          element.style.top = '0';
+        } else {
+          // Прокрутка вгору: поверніть елемент на місце
+          element.style.position = 'static';
+        }
+      }
+    });
+
+    lastScrollPosition = currentScrollPosition;
+  });
+});
 
 
 
