@@ -583,8 +583,9 @@ Check if the product is sold out and set a variable to be used below.
             {% if part contains "</h5>" %}
               {% assign remove = part | split: ">" | first | append: ">" %}
               {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
-              {{ forloop.index }}
+              {% if forloop.index %}
               <li class="nav-item"><a data-toggle="tab"  href="#collapse-tab{{ forloop.index }}" aria-controls="collapse-tab{{ forloop.index }}" role="tab" data-toggle="tab">{{ part | split: "</h5>" | first | strip_html | replace: remove, "" }}</a></li>
+            {% endif %}
             {% endif %}
           {% endfor %}
           {%- for block in section.blocks -%}
