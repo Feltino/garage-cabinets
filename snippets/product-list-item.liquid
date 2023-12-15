@@ -87,7 +87,7 @@ Set a class for sold-out and on-sale items
           </p>
           {% endif %}
         </div>
-        <div class="add-to-cart">
+        <div class="add-to-cart 1">
           {% assign variantCount = product.variants | size %}
           <form action="/cart/add" method="post" class="variants" id="product-actions-{{ product.id }}" enctype="multipart/form-data" style="padding:0px;">    
             {% if lable_out %}
