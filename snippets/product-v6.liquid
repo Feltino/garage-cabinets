@@ -576,6 +576,9 @@ Check if the product is sold out and set a variable to be used below.
             <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
           </li>
           {% endif %}
+          {% assign description = product.description %}
+{% capture description %}{{ description }}{% endcapture %}
+          {% assign description_parts = description | split: "<h5" %}
           {% for part in description_parts %}
             {% if part contains "</h5>" %}
               {% assign remove = part | split: ">" | first | append: ">" %}
