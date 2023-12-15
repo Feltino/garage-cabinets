@@ -11,7 +11,7 @@ Refined tags
 
 
 <div class="continue-filter"><span>Filter</span><span class="close-sibade"></span></div>
-<div class="sidebar-filter-wr sticky-sidebar-wrapper">
+<div class="sidebar-filter-wr ">
 
   <div class="filter-wr">
 
@@ -187,8 +187,8 @@ Refined tags
         </div>
       </div>
       {% when 'block_customhtml' %}
-      <div class="sidebar-customhtml sticky-sidebar">
-        <div class="content-customhtml">
+      <div class="sidebar-customhtml sticky-sidebar-wrapper">
+        <div class="content-customhtml sticky-sidebar ">
           <h3>{{ block.settings.title }}</h3>
           <p>{{block.settings.custom_html }}</p>
           <a href="{{block.settings.url }}">{{block.settings.button_text }}</a>
