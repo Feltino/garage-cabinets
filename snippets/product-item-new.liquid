@@ -114,7 +114,7 @@ Check if the product is sold out and set a variable to be used below.
 {%- if product.variants.size > 1 -%}
   <div class="add-to-cartS">
     <a href="{{ product.url }}" class="btn btn--status js-product-button-add-to-cart" data-js-product-button-add-to-cart{% unless current_variant.available %} disabled="disabled" data-button-status="sold-out"{% endunless %}>
-      <i class="cs-font clever-icon-arrow-right-5"></i><span class="text-button-cart">Select variant</span>
+      <span class="text-button-cart">Select variant</span>
     </a>
   </div>
 {%- else -%}
