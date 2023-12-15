@@ -70,7 +70,10 @@ Refined tags
       {% when 'block_menu' %}
         <div class="widget sidebar-links">
           <div class="title">
-        <h3>{{ block.settings.m_tt }}</h3>
+        <h3>{{ block.settings.m_tt }}
+                {% if block.settings.open_tabs %}
+          <span class="novetty_caret"><i class="cs-font clever-icon-down" aria-hidden="true"></i></span>
+          {% endif %}</h3>
           </div>
           <nav class="widget-content content">
             <ul>
