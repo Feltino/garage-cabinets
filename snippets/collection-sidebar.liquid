@@ -68,6 +68,7 @@ Refined tags
         </div>
       </div>
       {% when 'block_menu' %}
+        <div class="widget sidebar-links">
         <h3>{{ block.settings.m_tt }}</h3>
           <nav class="widget-content content">
             <ul>
@@ -79,6 +80,7 @@ Refined tags
               {% endfor %}
             </ul>
           </nav>
+        </div>
       {% when 'block_filter_size' %}
       <div class="sidebar-custom sidebar-tag size {{ block.settings.style_filter}}">
         {% assign tags = shop_by_tags_2_list_tags | split: ',' %}
