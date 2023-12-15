@@ -69,7 +69,9 @@ Refined tags
       </div>
       {% when 'block_menu' %}
         <div class="widget sidebar-links">
+          <div class="title">
         <h3>{{ block.settings.m_tt }}</h3>
+          </div>
           <nav class="widget-content content">
             <ul>
               {%- for link in block.settings.header_menu.links -%}
