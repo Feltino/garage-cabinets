@@ -797,9 +797,9 @@
           "344558f0-b02b-4dec-95bd-7018bae50a21": {
             "type": "block_menu",
             "settings": {
-              "m_tt": "Collections",
-              "open_tabs": true,
-              "header_menu": "demo-menu"
+              "m_tt": "PRODUCTS",
+              "open_tabs": false,
+              "header_menu": "main-menu-megamenu"
             }
           },
           "63a90d28-adcb-404d-ad2c-7a2060dbfd56": {
