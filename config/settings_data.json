@@ -887,7 +887,6 @@
             "settings": {
               "title": "About Me",
               "grid": 100,
-              "blog_image_aboutme": "shopify:\/\/shop_images\/blog-avt.jpg",
               "blog_aboutme_content": "Ciao is unique and modern looking Shopify Theme. It is the most Flexible Shopify Theme with powerful shop functionality.\nAll these amazing features are blended together in Ciao – your powerful, stylish and attractive responsive Shopify Theme.\nMake your business with our theme. We are sure that it will satisfy all your needs!"
             }
           },
@@ -896,7 +895,6 @@
             "settings": {
               "title": "",
               "grid": 1,
-              "blog_image_aboutme": "shopify:\/\/shop_images\/signature.png",
               "blog_aboutme_content": ""
             }
           },
@@ -931,24 +929,6 @@
       "article-template": {
         "type": "article-template",
         "blocks": {
-          "1554275312295": {
-            "type": "block_custom",
-            "settings": {
-              "title": "About Me",
-              "grid": 100,
-              "blog_image_aboutme": "shopify:\/\/shop_images\/blog-avt.jpg",
-              "blog_aboutme_content": "Ciao is unique and modern looking Shopify Theme. It is the most Flexible Shopify Theme with powerful shop functionality.\n\nAll these amazing features are blended together in Ciao – your powerful, stylish and attractive responsive Shopify Theme.\n\nMake your business with our theme. We are sure that it will satisfy all your needs!"
-            }
-          },
-          "1554275359371": {
-            "type": "block_custom",
-            "settings": {
-              "title": "",
-              "grid": 1,
-              "blog_image_aboutme": "shopify:\/\/shop_images\/signature.png",
-              "blog_aboutme_content": ""
-            }
-          },
           "1554275410634": {
             "type": "widget_article",
             "settings": {
@@ -963,14 +943,12 @@
           }
         },
         "block_order": [
-          "1554275312295",
-          "1554275359371",
           "1554275410634",
           "1554275406908"
         ],
         "settings": {
           "layout": "left_column",
-          "enable_author": true,
+          "enable_author": false,
           "enable_tags": false,
           "enable_uppercase": false,
           "enable_time": true,
