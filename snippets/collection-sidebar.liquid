@@ -258,12 +258,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let lastScrollPosition = 0;
 
-  window.addEventListener('scroll', function() {
-    const currentScrollPosition = window.scrollY;
-    const sidebarBlockRect = sidebarBlock.getBoundingClientRect();
+  sidebarBlock.addEventListener('scroll', function() {
+    const currentScrollPosition = sidebarBlock.scrollTop;
 
     elements.forEach(element => {
       const elementRect = element.getBoundingClientRect();
+      const sidebarBlockRect = sidebarBlock.getBoundingClientRect();
 
       if (
         elementRect.top >= sidebarBlockRect.top &&
@@ -283,6 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lastScrollPosition = currentScrollPosition;
   });
 });
+
 
 
 
