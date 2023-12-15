@@ -40,20 +40,20 @@ For information on adding more fields, visit:
             <div id="contact-form">
               <div class="row">
                 <div class="form-group col-lg-12 col-md-12">
-                  <input type="text" id="name" class="form-control" placeholder="{{ 'contact.form.name' | t }}" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.first_name }} {{ customer.last_name }}{% endif %}" name="contact[name]" />
+                  <input type="text" id="name" class="form-control" placeholder="Your Name" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.first_name }} {{ customer.last_name }}{% endif %}" name="contact[name]" />
                 </div>
 
                 <div class="form-group col-lg-12 col-md-12{% if form.errors contains 'email' %} error{% endif %}">
-                  <input required type="email" id="email" class="form-control" placeholder="{{ 'contact.form.email' | t }}" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" name="contact[email]" />
+                  <input required type="email" id="email" class="form-control" placeholder="Your Email" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" name="contact[email]" />
                 </div>
               </div>
               
               <div class="form-group">
-                <input type="text" id="phone" class="form-control" placeholder="{{ 'contact.form.phone' | t }}" value="{{ form.phone }}" name="contact[phone]" />
+                <input type="text" id="phone" class="form-control" placeholder="Phone Number" value="{{ form.phone }}" name="contact[phone]" />
               </div>
 
               <div class="form-group{% if form.errors contains 'body' %} error{% endif %}">
-                <textarea required id="message" class="form-control" placeholder="{{ 'contact.form.message' | t }}" cols="40" rows="7" name="contact[body]">{{ form.body }}</textarea>
+                <textarea required id="message" class="form-control" placeholder="Message" cols="40" rows="7" name="contact[body]">{{ form.body }}</textarea>
               </div>
 
               <div class="form-actions">
