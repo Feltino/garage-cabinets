@@ -631,7 +631,6 @@ Check if the product is sold out and set a variable to be used below.
 
                             {% unless description == blank %}
 
-                    {% if block.settings.multi-tab %}
                       {% assign description_parts = description | split: "<h5" %}
 
                       <li class="nav-item"><a class="nav-link active" href="#tabs-description" aria-controls="tabs-description" role="tab" data-toggle="tab">{{ 'products.product.description' | t }}</a></li>
@@ -647,7 +646,7 @@ Check if the product is sold out and set a variable to be used below.
                     {% else %}
                       <li class="nav-item"><a class="nav-link active" href="#tabs-description" aria-controls="tabs-description" role="tab" data-toggle="tab">{{ 'products.product.description' | t }}</a></li>
 
-                    {% endif %}
+
 
                   {% endunless %}
         </ul>
