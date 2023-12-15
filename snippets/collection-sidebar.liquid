@@ -248,8 +248,43 @@ Refined tags
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 new $.Zebra_Pin($('.mtg2'), {
-  contain: true
-})
+    //  class to add to the element when it is "sticky"
+    class_name: 'Zebra_Pin',
+
+    //  specifies whether the pinned element should be restrained to its parent element's boundaries or not.
+    contain: false,
+
+    //  specifies whether the element should be "hard" pinned (the element is pinned to its position from
+    //  the beginning), or become pinned only when it is about to be hidden.
+    //  default is FALSE
+    hard: false,
+
+    //  margin, in pixels, from the container element's (or the browser window's) top
+    //  this only works if the "hard" property is set to FALSE.
+    top_spacing: 0,
+
+    //  margin, in pixels, from the container element's bottom
+    //  this only works if the "hard" property is set to FALSE and it is used only if the "contain" property is TRUE
+    bottom_spacing: 0,
+
+    //  the value of zIndex CSS property to be set for pinned elements
+    z_index: 9999,
+
+    //  callback function to be executed when an element is pinned
+    //  the callback function receives 3 arguments:
+    //  -   the vertical position, relative to the document, where the event occurred
+    //  -   a reference to the pinned element
+    //  -   the index of the element - if the plugin was attached to multiple elements (0 based)
+    onPin: null,
+
+    //  callback function to be executed when an element is unpinned
+    //  the callback function receives 3 arguments:
+    //  -   the vertical position, relative to the document, where the event occurred
+    //  -   a reference to the unpinned element
+    //  -   the index of the element - if the plugin was attached to multiple elements (0 based)
+    onUnpin: null
+    
+});
 });
 
 
