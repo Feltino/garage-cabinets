@@ -804,6 +804,7 @@
           "344558f0-b02b-4dec-95bd-7018bae50a21": {
             "type": "block_menu",
             "settings": {
+              "m_tt": "Collections",
               "header_menu": "brands"
             }
           },
