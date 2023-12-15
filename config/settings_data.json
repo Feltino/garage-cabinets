@@ -1488,32 +1488,14 @@
           "82fa5b7a-39f3-408b-a2af-26f0fdc13321-1686054268efca1fad-0": {
             "type": "tabs",
             "settings": {
-              "hide_title": false,
-              "title": "Garage Cabinet Sets",
-              "tabnew_collection": "garage-cabinet-sets"
-            }
-          },
-          "600329a5-5054-40ef-8a90-f83841cfc2a2": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "Work Stations",
-              "tabnew_collection": "work-stations"
-            }
-          },
-          "d27d6c27-7067-4325-b388-407e5076eb46": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": false,
-              "title": "Tool Carts",
-              "tabnew_collection": "toolcarts"
+              "hide_title": true,
+              "title": "Best Sellers",
+              "tabnew_collection": "best-sellers"
             }
           }
         },
         "block_order": [
-          "82fa5b7a-39f3-408b-a2af-26f0fdc13321-1686054268efca1fad-0",
-          "600329a5-5054-40ef-8a90-f83841cfc2a2",
-          "d27d6c27-7067-4325-b388-407e5076eb46"
+          "82fa5b7a-39f3-408b-a2af-26f0fdc13321-1686054268efca1fad-0"
         ],
         "settings": {
           "banner_bg": "shopify:\/\/shop_images\/pattern_1.png",
