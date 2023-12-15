@@ -1527,59 +1527,29 @@
           "home_product_timeline": ""
         }
       },
-      "47ba4b42-47bb-4c1c-a9f9-1eece687e551": {
-        "type": "l-fifth-screen",
-        "blocks": {
-          "47ba4b42-47bb-4c1c-a9f9-1eece687e551-16860601053453a54f-0": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": true,
-              "title": "",
-              "tabnew_collection": "ulti-mate-garage-cabinets"
-            }
-          }
-        },
-        "block_order": [
-          "47ba4b42-47bb-4c1c-a9f9-1eece687e551-16860601053453a54f-0"
-        ],
-        "settings": {
-          "banner_bg": "shopify:\/\/shop_images\/pattern_2.png",
-          "sub": "$124.99",
-          "sub2": "$99.99",
-          "title": "Proslat Hook Kit 20 piece",
-          "btn_link": "",
-          "btn_title": "Shop Now",
-          "banner_img": "shopify:\/\/shop_images\/image_34__1_-removebg-preview.png",
-          "enable_full_width_load": false,
-          "slide_layouts": "slide_layout_1",
-          "color": "#ffffff",
-          "show_top_separator": false,
-          "grid": 4,
-          "max_count": 10,
-          "grid_responsive": "",
-          "margin_top": 10,
-          "reponsive_mt": "",
-          "margin_bottom": 10,
-          "reponsive_bt": "",
-          "enable_block_image": false,
-          "autoplay": true,
-          "speed": 5,
-          "arrows": true,
-          "bullets": true,
-          "home_product_title_1": "Ulti-Mate 2.0 Cabinets",
-          "subtitle": "",
-          "button": "",
-          "button_link": "",
-          "home_product_timeline": ""
-        }
-      },
       "b33f7da0-62e4-4b54-9396-f141b64b00f6": {
         "type": "l-sixth-screen",
         "settings": {
           "image": "shopify:\/\/shop_images\/bg_4.png",
           "title": "<p>RECEIVE A <strong>FREE GLADIATOR GEAR TRACK WITH 5 HOOKS <\/strong><\/p><p>ON ANY ULTI-MATE 2.0 CABINET SET OVER $1500.00<\/p>",
-          "button_link": "",
-          "btn_title": "Get Now"
+          "button_link": "shopify:\/\/collections\/ulti-mate-garage-cabinets",
+          "btn_title": "SHOP NOW"
+        }
+      },
+      "be19151f-1df9-4f44-8d6b-246f1670877b": {
+        "type": "l-seventh-screen",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/bg_5.png",
+          "title": "Newsletter",
+          "text": "Subscribe now to get daily updates"
+        }
+      },
+      "recently-collection": {
+        "type": "recently-collection",
+        "settings": {
+          "display_recently_viewed_products": true,
+          "recently_viewed_products_title": "Recently Viewed Products",
+          "number_of_recently_viewed_products": "8"
         }
       },
       "9137e314-d0cb-448b-85f6-b337666e75ac": {
@@ -1620,22 +1590,6 @@
           "button_link": "",
           "home_product_timeline": ""
         }
-      },
-      "be19151f-1df9-4f44-8d6b-246f1670877b": {
-        "type": "l-seventh-screen",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/bg_5.png",
-          "title": "Newsletter",
-          "text": "Subscribe now to get daily updates"
-        }
-      },
-      "recently-collection": {
-        "type": "recently-collection",
-        "settings": {
-          "display_recently_viewed_products": true,
-          "recently_viewed_products_title": "Recently Viewed Products",
-          "number_of_recently_viewed_products": "8"
-        }
       }
     },
     "content_for_index": [
@@ -1645,9 +1599,8 @@
       "98ab90bf-95e7-4fe7-aaab-1456ba30b8ad",
       "82fa5b7a-39f3-408b-a2af-26f0fdc13321",
       "b33f7da0-62e4-4b54-9396-f141b64b00f6",
-      "47ba4b42-47bb-4c1c-a9f9-1eece687e551",
-      "be19151f-1df9-4f44-8d6b-246f1670877b",
-      "9137e314-d0cb-448b-85f6-b337666e75ac"
+      "9137e314-d0cb-448b-85f6-b337666e75ac",
+      "be19151f-1df9-4f44-8d6b-246f1670877b"
     ]
   },
   "presets": {
