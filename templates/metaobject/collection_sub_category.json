@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "2f05f93a-7c9b-448c-a286-48de993e3cbf": {
+      "type": "home-blog",
+      "settings": {
+        "margin_top": 10,
+        "reponsive_mt": "",
+        "margin_bottom": 10,
+        "reponsive_bt": "",
+        "home_blog_text_align": "text_left",
+        "display_blog_image": true,
+        "display_blog_date": true,
+        "display_blog_intro": true,
+        "display_blog_author": true,
+        "display_blog_view_all": true,
+        "display_blog_readmore": true,
+        "blog_readmore": "Read More",
+        "defaulthome_blogslider2": "news",
+        "blog_title": "Latest News",
+        "blog_subtitle": "trending fashion style",
+        "blog_limit": "3"
+      }
+    }
+  },
+  "order": [
+    "2f05f93a-7c9b-448c-a286-48de993e3cbf"
+  ]
+}
