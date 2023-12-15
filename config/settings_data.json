@@ -798,7 +798,8 @@
             "type": "block_menu",
             "settings": {
               "m_tt": "Collections",
-              "header_menu": "brands"
+              "open_tabs": true,
+              "header_menu": "demo-menu"
             }
           },
           "63a90d28-adcb-404d-ad2c-7a2060dbfd56": {
