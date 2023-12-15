@@ -1003,10 +1003,10 @@
       "popups": {
         "type": "popups",
         "settings": {
-          "notify_product": true,
+          "notify_product": false,
           "notify_product_collection": "garagecabinets",
           "notify_product_limit": "4",
-          "notify_product_text_line_1": "Someone purched a",
+          "notify_product_text_line_1": "Someone purchased a",
           "notify_product_text_line_2": "{time} mins ago from {place}",
           "notification_products_range_min": 2,
           "notification_products_range_max": 20,
