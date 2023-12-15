@@ -8,7 +8,7 @@ Refined tags
 {% assign has_refined = true %}
 {% endif %}
 
-
+{{ "zebra_pin.min.js" | asset_url | script_tag }}
 
 <div class="continue-filter"><span>Filter</span><span class="close-sibade"></span></div>
 <div class="sidebar-filter-wr ">
@@ -247,41 +247,9 @@ Refined tags
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const elements = document.querySelectorAll('.mtg2');
-  const sidebarBlock = document.querySelector('.sidebar-block');
-
-  elements.forEach(element => {
-    element.addEventListener('click', function() {
-      element.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-
-  let lastScrollPosition = 0;
-
-  sidebarBlock.addEventListener('scroll', function() {
-    const currentScrollPosition = sidebarBlock.scrollTop;
-
-    elements.forEach(element => {
-      const elementRect = element.getBoundingClientRect();
-      const sidebarBlockRect = sidebarBlock.getBoundingClientRect();
-
-      if (
-        elementRect.top >= sidebarBlockRect.top &&
-        elementRect.bottom <= sidebarBlockRect.bottom
-      ) {
-        if (currentScrollPosition > lastScrollPosition) {
-          // Прокрутка вниз: залиште елемент вгорі в межах блоку
-          element.style.position = 'fixed';
-          element.style.top = '0';
-        } else {
-          // Прокрутка вгору: поверніть елемент на місце
-          element.style.position = 'static';
-        }
-      }
-    });
-
-    lastScrollPosition = currentScrollPosition;
-  });
+new $.Zebra_Pin($('.mtg2'), {
+  contain: true
+}),
 });
 
 
