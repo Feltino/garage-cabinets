@@ -637,6 +637,7 @@ Check if the product is sold out and set a variable to be used below.
           <div id="collapse-tab1" class="tab-pane in active">
             {{ content }}
           </div>
+          {% assign description_parts = description | split: "<h5" %}
           {% endif %}
                       {% for part in description_parts %}
                         {% assign fp = part | append: " " | split: "</h5>" | last %}
