@@ -806,9 +806,9 @@
             "settings": {
               "show_tooltips": false,
               "open_tabs": true,
-              "style_filter": "inrow",
+              "style_filter": "default",
               "title": "Brand",
-              "shop_by_tags_2_list_tags": "Amazing%20Gates"
+              "shop_by_tags_2_list_tags": "Brands,"
             }
           }
         },
