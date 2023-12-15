@@ -810,31 +810,11 @@
               "title": "Brand",
               "shop_by_tags_2_list_tags": "Proslat,"
             }
-          },
-          "1553306428261": {
-            "type": "block_promobox",
-            "settings": {
-              "title": "Ulti-MATE Garage",
-              "url": "https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-white",
-              "image": "shopify:\/\/shop_images\/ulti-mate-garage-2-0-series-red-metallic-19-piece-set-with-bamboo-worktop-215.jpg",
-              "custom_html": "",
-              "button_text": "View More"
-            }
-          },
-          "1553306850346": {
-            "type": "block_product",
-            "settings": {
-              "tabs_title_block": "FEATURED PRODUCTS",
-              "tabnew_collection": "accessories",
-              "products_limit": 1
-            }
           }
         },
         "block_order": [
           "dfa9b017-0212-4782-bad5-6bd0d506d0a3",
-          "820d00df-68ba-4ad0-88cc-f61f9a274c3d",
-          "1553306428261",
-          "1553306850346"
+          "820d00df-68ba-4ad0-88cc-f61f9a274c3d"
         ],
         "settings": {
         }
@@ -1245,7 +1225,7 @@
           "1563434009132": {
             "type": "custom_html",
             "settings": {
-              "custom_html": "<div class=\"footer-contact\">\n    <h3 class=\"module-title\">Contact Us<\/h3> \n        <p class=\"clever-address\"> \n            <span>5013 Berey Town, Landscape Street <br>Washington DC<\/span>\n        <\/p>\n        <p class=\"clever-email\"> \n            <span> sales@garagecabinetsonline.com <br>We reply within 24 hours<\/span>\n        <\/p>\n        <p class=\"clever-phone\"> \n            <span>1-800-960-8341 <br>Mon-Fri, 9am until 6pm<\/span>\n        <\/p> \n<!--                           Shopper Approved Seal -- footer.liquid -- 7\/8 -->\n           \n                            <a href=\"https:\/\/www.shopperapproved.com\/reviews\/garagecabinetsonline.com\/\" class=\"shopperlink\"><img src=\"\/\/www.shopperapproved.com\/newseals\/13966\/ee7500-mini-icon.gif\" style=\"border: 0\" alt=\"Customer Reviews\" oncontextmenu=\"var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved \\251 '+d.getFullYear()+'.'); return false;\"><\/a><script type=\"text\/javascript\">(function() { var js = window.document.createElement(\"script\"); js.src = '\/\/www.shopperapproved.com\/seals\/certificate.js'; js.type = \"text\/javascript\"; document.getElementsByTagName(\"head\")[0].appendChild(js); })();<\/script>\n       \n<\/div>"
+              "custom_html": "<div class=\"footer-contact\">\n    <h3 class=\"module-title\">Contact Us<\/h3> \n        <p class=\"clever-address\"> \n            <span>5013 Berey Town, Landscape Street <br>Washington DC<\/span>\n        <\/p>\n        <p class=\"clever-email\"> \n            <span> sales@garagecabinetsonline.com <br>We reply within 24 hours<\/span>\n        <\/p>\n        <p class=\"clever-phone\"> \n            <span>1-800-960-8341 <br>Mon-Fri, 9am until 6pm<\/span>\n        <\/p> \n<!--                           Shopper Approved Seal -- footer.liquid -- 7\/8 -->\n           \n                            <a href=\"https:\/\/www.shopperapproved.com\/reviews\/garagecabinetsonline.com\/\" class=\"shopperlink\"><img src=\"\/\/www.shopperapproved.com\/newseals\/13966\/ee7500-mini-icon.gif\" style=\"border: 0\" alt=\"Customer Reviews\" oncontextmenu=\"var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved \\251 '+d.getFullYear()+'.'); return false;\"><\/a><script type=\"text\/javascript\">(function() { var js = window.document.createElement(\"script\"); js.src = '\/\/www.shopperapproved.com\/seals\/certificate.js'; js.type = \"text\/javascript\"; document.getElementsByTagName(\"head\")[0].appendChild(js); })();<\/script>\n       \n<!--  \n<\/div>-->\n<\/div>"
             }
           },
           "1565230801903": {
