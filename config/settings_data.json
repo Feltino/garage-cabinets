@@ -150,7 +150,7 @@
     "product_collection_lable_sale": true,
     "product_collection_lable_new": true,
     "product_collection_countdown": true,
-    "enable_product_compare": false,
+    "enable_product_compare": true,
     "enable_quickview": false,
     "enable_wishlist": true,
     "display_product_reviews": true,
