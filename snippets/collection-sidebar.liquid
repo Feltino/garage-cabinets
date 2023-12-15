@@ -253,7 +253,10 @@ window.addEventListener('scroll', function() {
       if (bounding.top <= 0) {
         stickyElement.classList.add('sticky');
       } else {
-        stickyElement.classList.remove('sticky');
+        // Scrolling up
+        if (bounding.top > 0) {
+          stickyElement.classList.remove('sticky');
+        }
       }
     });
 
