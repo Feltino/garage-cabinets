@@ -14,7 +14,7 @@
         "display_blog_author": true,
         "display_blog_view_all": true,
         "display_blog_readmore": true,
-        "blog_readmore": "Read More",
+        "blog_readmore": "Read More{{ metaobject.name.value }}",
         "defaulthome_blogslider2": "news",
         "blog_title": "Latest News",
         "blog_subtitle": "trending fashion style",
