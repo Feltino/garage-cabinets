@@ -245,6 +245,63 @@ Refined tags
   </div>
 
 </div>
+<style>
+  .top {
+    border-bottom: 1px solid #eee;
+    display: block;
+    margin-bottom: 33px;
+}
+
+.top a {
+    background: #FFF;
+    padding-right: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.syntaxhighlighter {
+    padding: .5em 0;
+}
+
+.sticky-navigation,
+.sticky-navigation-highlight,
+.sticky-navigation-callbacks,
+.sticky-navigation-nocallbacks {
+    background: #FFF;
+    padding: 1em 0;
+}
+
+.sticky-navigation-highlight.Zebra_Pin,
+.sticky-navigation-callbacks.Zebra_Pin,
+.sticky-navigation-nocallbacks.Zebra_Pin {
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 12px 6px -6px rgba(0, 0, 0, .1);
+    transition: box-shadow .25s linear;
+}
+
+.sticky-navigation-nocallbacks.Zebra_Pin li:nth-child(3) {
+    display: none;
+}
+
+.sticky-navigation-callbacks li:nth-child(4),
+.sticky-navigation-nocallbacks.Zebra_Pin li:nth-child(4) {
+    background: #c09853;
+}
+
+.sticky-navigation-nocallbacks.Zebra_Pin li:nth-child(4) {
+    display: block !important;
+}
+
+.sticky-navigation-callbacks li:nth-child(4) a,
+.sticky-navigation-nocallbacks.Zebra_Pin li:nth-child(4) a {
+    color: #FFF;
+}
+  .recently-viewed-products, #shopify-section-footer {
+    z-index: 999999;
+    position: relative;
+    background-color: #fff;
+}
+</style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 new $.Zebra_Pin($('.mtg2'), {
