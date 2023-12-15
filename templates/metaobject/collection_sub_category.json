@@ -1,7 +1,83 @@
 {
   "sections": {
+    "03df2330-8574-4bc2-993c-0151f7e71e85": {
+      "type": "home-product-collections",
+      "blocks": {
+        "template--21750965895469__03df2330-8574-4bc2-993c-0151f7e71e85-tabs-1": {
+          "type": "tabs",
+          "settings": {
+            "hide_title": false,
+            "title": "",
+            "tabnew_collection": "accessories",
+            "enable_show_all": true,
+            "button": "Show All"
+          }
+        },
+        "template--21750965895469__03df2330-8574-4bc2-993c-0151f7e71e85-tabs-2": {
+          "type": "tabs",
+          "settings": {
+            "hide_title": false,
+            "title": "",
+            "tabnew_collection": "",
+            "enable_show_all": true,
+            "button": "Show All"
+          }
+        },
+        "template--21750965895469__03df2330-8574-4bc2-993c-0151f7e71e85-tabs-3": {
+          "type": "tabs",
+          "settings": {
+            "hide_title": false,
+            "title": "",
+            "tabnew_collection": "",
+            "enable_show_all": true,
+            "button": "Show All"
+          }
+        }
+      },
+      "block_order": [
+        "template--21750965895469__03df2330-8574-4bc2-993c-0151f7e71e85-tabs-1",
+        "template--21750965895469__03df2330-8574-4bc2-993c-0151f7e71e85-tabs-2",
+        "template--21750965895469__03df2330-8574-4bc2-993c-0151f7e71e85-tabs-3"
+      ],
+      "settings": {
+        "enable_full_width_load": false,
+        "grid": "3",
+        "max_count": 10,
+        "grid_responsive": "",
+        "margin_top": 10,
+        "reponsive_mt": "",
+        "margin_bottom": 10,
+        "reponsive_bt": "",
+        "home_product_title_1": "This is the heading",
+        "subtitle": "Latest Product & New Collection",
+        "enable_block_image": false,
+        "tabs_type": "type_1"
+      }
+    },
+    "d4ddd800-6171-482d-b6f1-880c1a2f2739": {
+      "type": "l-first-screen",
+      "settings": {
+        "title": "First Section{{ metaobject.name.value }}{{ metaobject.name.value }}",
+        "button_link": "{{ metaobject.system.url }}",
+        "btn_title": "{{ metaobject.name.value }}",
+        "title2": "",
+        "button_link2": "",
+        "btn_title2": "",
+        "title3": "",
+        "button_link3": "",
+        "btn_title3": "",
+        "title4": "",
+        "button_link4": "",
+        "btn_title4": "",
+        "title5": "",
+        "button_link5": "",
+        "btn_title5": "",
+        "btn_title6": ""
+      }
+    }
   },
   "order": [
-
+    "03df2330-8574-4bc2-993c-0151f7e71e85",
+    "d4ddd800-6171-482d-b6f1-880c1a2f2739"
   ]
 }
