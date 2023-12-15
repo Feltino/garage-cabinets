@@ -1519,7 +1519,7 @@
           "banner_bg": "shopify:\/\/shop_images\/pattern_1.png",
           "sub": "Save up to 30%",
           "title": "Ulti-MATE Garage 2.0",
-          "btn_link": "",
+          "btn_link": "shopify:\/\/collections\/ulti-mate-garage-cabinets",
           "btn_title": "Learn More",
           "banner_img": "shopify:\/\/shop_images\/Subtract_1.png",
           "enable_full_width_load": false,
@@ -1538,46 +1538,7 @@
           "speed": 5,
           "arrows": true,
           "bullets": true,
-          "home_product_title_1": "Best Seller",
-          "subtitle": "",
-          "button": "",
-          "button_link": "",
-          "home_product_timeline": ""
-        }
-      },
-      "e08eca36-2281-42cb-8b01-fe5e9ad79919": {
-        "type": "l-fourth-screen",
-        "blocks": {
-          "e08eca36-2281-42cb-8b01-fe5e9ad79919-168605932026cca879-0": {
-            "type": "tabs",
-            "settings": {
-              "hide_title": true,
-              "title": "",
-              "tabnew_collection": "gates"
-            }
-          }
-        },
-        "block_order": [
-          "e08eca36-2281-42cb-8b01-fe5e9ad79919-168605932026cca879-0"
-        ],
-        "settings": {
-          "enable_full_width_load": false,
-          "slide_layouts": "slide_layout_1",
-          "color": "#ffffff",
-          "show_top_separator": false,
-          "grid": 4,
-          "max_count": 10,
-          "grid_responsive": "",
-          "margin_top": 10,
-          "reponsive_mt": "",
-          "margin_bottom": 10,
-          "reponsive_bt": "",
-          "enable_block_image": false,
-          "autoplay": true,
-          "speed": 5,
-          "arrows": true,
-          "bullets": true,
-          "home_product_title_1": "Gates",
+          "home_product_title_1": "Favorite Products",
           "subtitle": "",
           "button": "",
           "button_link": "",
@@ -1701,11 +1662,10 @@
       "b91c0435-a80f-49f1-90fe-bd2dfa600bcc",
       "98ab90bf-95e7-4fe7-aaab-1456ba30b8ad",
       "82fa5b7a-39f3-408b-a2af-26f0fdc13321",
-      "e08eca36-2281-42cb-8b01-fe5e9ad79919",
-      "47ba4b42-47bb-4c1c-a9f9-1eece687e551",
       "b33f7da0-62e4-4b54-9396-f141b64b00f6",
-      "9137e314-d0cb-448b-85f6-b337666e75ac",
-      "be19151f-1df9-4f44-8d6b-246f1670877b"
+      "47ba4b42-47bb-4c1c-a9f9-1eece687e551",
+      "be19151f-1df9-4f44-8d6b-246f1670877b",
+      "9137e314-d0cb-448b-85f6-b337666e75ac"
     ]
   },
   "presets": {
