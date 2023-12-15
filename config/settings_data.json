@@ -1046,7 +1046,7 @@
         "type": "popups",
         "settings": {
           "notify_product": true,
-          "notify_product_collection": "",
+          "notify_product_collection": "garagecabinets",
           "notify_product_limit": "4",
           "notify_product_text_line_1": "Someone purched a",
           "notify_product_text_line_2": "{time} mins ago from {place}",
@@ -1063,7 +1063,7 @@
           "notification_cookies_button_close": "ACCEPT",
           "notification_cookies_delay": 2,
           "notification_cookies_show_once": true,
-          "notification_cookies_cookies_life": "1"
+          "notification_cookies_cookies_life": "31"
         }
       },
       "collection-template1": {
