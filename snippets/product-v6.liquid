@@ -628,7 +628,8 @@ Check if the product is sold out and set a variable to be used below.
           </li>
           {% endif %}
           <li class="nav-item"><a class="nav-link" href="#tabs-page-{{ block.id }}" aria-controls="tabs-page-{{ block.id }}" role="tab" data-toggle="tab">{{ block.settings.page_title }}</a></li>
-
+{% assign description = product.description %}
+{% capture description %}{{ description }}{% endcapture %}
                             {% unless description == blank %}
 
                       {% assign description_parts = description | split: "<h5" %}
