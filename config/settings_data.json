@@ -1276,7 +1276,7 @@
               "color": "#000000",
               "title": "",
               "color_sub": "#666666",
-              "text": "free shipping on order over $250"
+              "text": "free shipping on orders over $250"
             }
           },
           "1565318234376": {
@@ -1387,11 +1387,11 @@
         "settings": {
           "title": "YOUR #1 TRUSTED SOURCE FOR GARAGE CABINETS AND STORAGE",
           "image": "shopify:\/\/shop_images\/Group_50_1.png",
-          "title_box": "Original products",
-          "text_box": "In our store only original products.",
+          "title_box": "Authorized Dealer",
+          "text_box": "Authorized Dealer for over 10 years.",
           "image2": "shopify:\/\/shop_images\/Group_48_1.png",
-          "title_box2": "Fast and Free delivery",
-          "text_box2": "Get free shipping any order over $100.",
+          "title_box2": "Fast and Free Delivery",
+          "text_box2": "Get free shipping for orders over $250.",
           "image3": "shopify:\/\/shop_images\/Group_49_1.png",
           "title_box3": "Dedicated support",
           "text_box3": "Quality assistance from our experts."
