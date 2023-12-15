@@ -576,6 +576,13 @@ Check if the product is sold out and set a variable to be used below.
             <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
           </li>
           {% endif %}
+          {% for part in description_parts %}
+            {% if part contains "</h5>" %}
+              {% assign remove = part | split: ">" | first | append: ">" %}
+              {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
+              <li class="nav-item"><a data-toggle="tab"  href="#collapse-tab{{ forloop.index }}" aria-controls="collapse-tab{{ forloop.index }}" role="tab" data-toggle="tab">{{ part | split: "</h5>" | first | strip_html | replace: remove, "" }}</a></li>
+            {% endif %}
+          {% endfor %}
           {%- for block in section.blocks -%}
           <li><a data-toggle="tab" href="#{{ block.settings.for_group | handle }}">
             {{ block.settings.for_group }}
