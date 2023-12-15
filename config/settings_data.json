@@ -1540,8 +1540,8 @@
         "type": "l-seventh-screen",
         "settings": {
           "image": "shopify:\/\/shop_images\/bg_5.png",
-          "title": "Newsletter",
-          "text": "Subscribe now to get daily updates"
+          "title": "Special Deals Right in your Inbox",
+          "text": "Subscribe Now"
         }
       },
       "recently-collection": {
