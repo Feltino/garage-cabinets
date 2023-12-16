@@ -664,37 +664,25 @@ Check if the product is sold out and set a variable to be used below.
                       {% endfor %}
           {% if section.settings.display_product_reviews %}       
           <div id="collapse-tab6" class="tab-pane">
-<div id="shadowHost">
-    
-</div>
-<script>
-    // Wait for the document to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        // Create a shadow host
-        const shadowHost = document.getElementById('shadowHost');
+<div id="SA_wrapper_522gxfhBJYLW" class="SA__wrapper"></div>
+<<script>
+    // Your manual addition of the div
 
-        // Check if the shadow host element exists
-        if (shadowHost) {
-            // Attach a shadow DOM to the host
-            const shadowRoot = shadowHost.attachShadow({ mode: 'open' });
+    // Load the external script
+    var sa_interval = 5000;
+    function saLoadScript(src) {
+        var js = window.document.createElement('script');
+        js.src = src;
+        js.type = 'text/javascript';
+        document.getElementsByTagName("head")[0].appendChild(js);
+    }
 
-            // Your code goes here
-            const div = document.createElement('div');
-            div.id = 'SA_wrapper_522gxfhBJYLW';
-            div.classList.add('SA__wrapper');
-            shadowRoot.appendChild(div);
-
-            // Use a script element to load the external script
-            const script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3';
-
-            // Append the script to the shadow DOM
-            shadowRoot.appendChild(script);
-        } else {
-            console.error("Element with ID 'shadowHost' not found.");
-        }
-    });
+    if (typeof(shopper_first) == 'undefined') {
+        // Wait for the document to be fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            saLoadScript('https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3');
+        });
+    }
 </script>
           </div>
           {% endif %}
