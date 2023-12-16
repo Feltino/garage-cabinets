@@ -63,6 +63,9 @@ body a:hover {
   object-fit: contain;
   margin-left: auto;
 }
+.f-box__two .f-box__left {
+    margin: 20px 0 0 auto;
+}
 .f-box__bottom{
   margin-top:30px;
 }
