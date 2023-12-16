@@ -1479,6 +1479,13 @@
               "title": "Bull Outdoor",
               "url": "shopify:\/\/collections\/outdoor-kitchens"
             }
+          },
+          "79abef70-e039-4ca3-8716-0565d236bcce": {
+            "type": "slide",
+            "settings": {
+              "title": "Lynx",
+              "url": "shopify:\/\/collections\/lynx-grills"
+            }
           }
         },
         "block_order": [
@@ -1491,7 +1498,8 @@
           "1865dfc8-b612-4f1a-a600-1d890c81b837",
           "487e2e9c-5179-442d-923e-e840f3211b70",
           "e4bba8bf-f4e8-4db7-994c-07ee64dedf08",
-          "aa680e34-f5d5-4d48-8974-0b86c73ac43a"
+          "aa680e34-f5d5-4d48-8974-0b86c73ac43a",
+          "79abef70-e039-4ca3-8716-0565d236bcce"
         ],
         "settings": {
           "title": "Brands",
