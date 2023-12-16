@@ -29,7 +29,10 @@ Check if the product is sold out and set a variable to be used below.
     <a href="{{ collection.url }}">{{ collection.title }}</a>
     {% unless forloop.last %},{% endunless %}
 {% endfor %}
-
+            {% include 'rev' %}
+            {% include 'rev2' %}
+            {% include 'rev3' %}
+            {% include 'rev4' %}
 
 
         <span class="icon"></span>
@@ -664,10 +667,7 @@ Check if the product is sold out and set a variable to be used below.
                       {% endfor %}
           {% if section.settings.display_product_reviews %}       
           <div id="collapse-tab6" class="tab-pane">
-            {% include 'rev' %}
-            {% include 'rev2' %}
-            {% include 'rev3' %}
-            {% include 'rev4' %}
+
 
 
          </div>
