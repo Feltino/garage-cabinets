@@ -690,18 +690,6 @@ Check if the product is sold out and set a variable to be used below.
             script.type = 'text/javascript';
             script.src = 'https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3';
 
-            // Listen for the script load event
-            script.onload = function() {
-                // Script loaded successfully
-                console.log('External script loaded successfully');
-            };
-
-            // Listen for any script errors
-            script.onerror = function() {
-                // Error loading script
-                console.error('Error loading external script');
-            };
-
             // Append the script to the shadow DOM
             shadowRoot.appendChild(script);
         } else {
