@@ -1463,6 +1463,13 @@
               "title": "Collectibale Signs and CLocks",
               "url": "https:\/\/garagecabinetsonline.com\/collections\/vendors?q=Coyote"
             }
+          },
+          "e4bba8bf-f4e8-4db7-994c-07ee64dedf08": {
+            "type": "slide",
+            "settings": {
+              "title": "Blaze",
+              "url": "shopify:\/\/collections\/blaze-outdoor-products"
+            }
           }
         },
         "block_order": [
@@ -1473,7 +1480,8 @@
           "a0d47f5a-7938-47f4-bf5e-30d7868faa5f",
           "6fea4fbf-7ffd-4c1f-8091-c6813965dcf5",
           "1865dfc8-b612-4f1a-a600-1d890c81b837",
-          "487e2e9c-5179-442d-923e-e840f3211b70"
+          "487e2e9c-5179-442d-923e-e840f3211b70",
+          "e4bba8bf-f4e8-4db7-994c-07ee64dedf08"
         ],
         "settings": {
           "title": "Brands",
