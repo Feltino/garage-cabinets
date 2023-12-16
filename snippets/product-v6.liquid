@@ -633,6 +633,11 @@ Check if the product is sold out and set a variable to be used below.
             </a>
           </li>
           {% endif %}
+          {% if section.settings.display_product_reviews %}       
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
+          </li>
+          {% endif %}
         </ul>
 
         <div id="myTabContent" class="tab-content">
@@ -733,7 +738,6 @@ Check if the product is sold out and set a variable to be used below.
     .zoomContainer{display:none!important;}
   </style>
 
-
   <script>
     jQuery(document).ready(function(){
 
@@ -748,11 +752,10 @@ Check if the product is sold out and set a variable to be used below.
           jQuery(".thumbs").css("visibility", "visible")
         });
       }
-
+      
 
     });
   </script>
-
   <style>
     .product-shop.fix-prox {
       position: fixed;
