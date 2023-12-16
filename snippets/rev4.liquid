@@ -3196,17 +3196,11 @@ var SA_Slider = (function () {
             X = l.console && "function" == typeof l.console.warn,
             Y = ["container", "controlsContainer", "prevButton", "nextButton", "navContainer", "autoplayButton"],
             K = {};
-        if (
-            (Y.forEach(function (e) {
-                if ("string" == typeof t[e]) {
-                    var i = t[e],
-                        a = n.querySelector(i);
-                    if (((K[e] = i), !a || !a.nodeName)) return void (X && console.warn("Can't find", t[e]));
-                    t[e] = a;
-                }
-            }),
-            !(t.container.children.length < 1))
-        ) {
+        if (t.container && t.container.children && t.container.children.length >= 1) {
+    // Your code here
+} else {
+    console.error("Container or its children are undefined or empty.");
+}{
             var _ = t.responsive,
                 J = t.nested,
                 U = "carousel" === t.mode;
