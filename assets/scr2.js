@@ -5003,26 +5003,4 @@ var sa_filename='/widgets/13966/merchant/rotating-widget/522gxfhBJYLW/522gxfhBJY
                 </p>
             </div>
     </div>
-    `;// Ініціалізація слайдера Owl Carousel
-$("#SA_wrapper_522gxfhBJYLW .SA__reviews").owlCarousel({
-  items: 1,
-  loop: true,
-  nav: false,
-  dots: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  animateOut: 'fadeOut', // анімація при зникненні слайда
-  responsive: {
-    0: {
-      items: 1
-    }
-  }
-});
-
-// Перевірка і приховання елементів, які мають менше 25px висоти
-$("#SA_wrapper_522gxfhBJYLW .SA__widget_item .SA__widget_content p").each(function() {
-  if ($(this).height() < 25) {
-    $(this).closest('.SA__widget_item').addClass('SA_no');
-  }
-});
+    `;saInitSlider('0000','vertical','5','#SA_wrapper_522gxfhBJYLW .SA__reviews','slide');var SA_review_box_all=document.querySelectorAll("#SA_wrapper_522gxfhBJYLW .SA__container .SA__widget .SA__reviews .SA__widget_item .SA__widget_content");if(SA_review_box_all){SA_review_box_all.forEach(function(el){if(el.querySelector('p').scrollHeight<25){el.classList.add('SA_no');}})}
