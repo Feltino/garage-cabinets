@@ -665,6 +665,7 @@ Check if the product is sold out and set a variable to be used below.
           <div id="collapse-tab6" class="tab-pane">
 <div id="SA_wrapper_522gxfhBJYLW" class="SA__wrapper">
   {{ 'scr2.js' | shopify_asset_url | script_tag }}
+            <script src="{{ 'scr2.js' | asset_url}}" type="text/javascript"></script>
 </div>
             <span id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</span>
           </div>
