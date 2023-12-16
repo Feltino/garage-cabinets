@@ -1471,6 +1471,14 @@
               "title": "Blaze",
               "url": "shopify:\/\/collections\/blaze-outdoor-products"
             }
+          },
+          "aa680e34-f5d5-4d48-8974-0b86c73ac43a": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bull.png",
+              "title": "Bull Outdoor",
+              "url": "shopify:\/\/collections\/blaze-outdoor-products"
+            }
           }
         },
         "block_order": [
@@ -1482,7 +1490,8 @@
           "6fea4fbf-7ffd-4c1f-8091-c6813965dcf5",
           "1865dfc8-b612-4f1a-a600-1d890c81b837",
           "487e2e9c-5179-442d-923e-e840f3211b70",
-          "e4bba8bf-f4e8-4db7-994c-07ee64dedf08"
+          "e4bba8bf-f4e8-4db7-994c-07ee64dedf08",
+          "aa680e34-f5d5-4d48-8974-0b86c73ac43a"
         ],
         "settings": {
           "title": "Brands",
