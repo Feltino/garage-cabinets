@@ -1467,6 +1467,7 @@
           "e4bba8bf-f4e8-4db7-994c-07ee64dedf08": {
             "type": "slide",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Blaze.png",
               "title": "Blaze",
               "url": "shopify:\/\/collections\/blaze-outdoor-products"
             }
