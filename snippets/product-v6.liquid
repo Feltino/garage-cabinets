@@ -633,11 +633,7 @@ Check if the product is sold out and set a variable to be used below.
             </a>
           </li>
           {% endif %}
-          {% if section.settings.display_product_reviews %}       
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
-          </li>
-          {% endif %}
+          
         </ul>
 
         <div id="myTabContent" class="tab-content">
@@ -664,8 +660,19 @@ Check if the product is sold out and set a variable to be used below.
                       {% endfor %}
           {% if section.settings.display_product_reviews %}       
           <div id="collapse-tab6" class="tab-pane">
-<div id="SA_wrapper_522gxfhBJYLW" class="SA__wrapper"></div><script type="text/javascript">var sa_interval = 5000;function saLoadScript(src) { var js = window.document.createElement('script'); js.src = src; js.type = 'text/javascript'; document.getElementsByTagName("head")[0].appendChild(js); } if (typeof(shopper_first) == 'undefined') saLoadScript('https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3'); </script>
- 
+<div id="isolateThisCode">
+    <div id="SA_wrapper_522gxfhBJYLW" class="SA__wrapper"></div>
+    <script type="text/javascript">
+        var sa_interval = 5000;
+        function saLoadScript(src) {
+            var js = window.document.createElement('script');
+            js.src = src;
+            js.type = 'text/javascript';
+            document.getElementsByTagName("head")[0].appendChild(js);
+        }
+        if (typeof(shopper_first) == 'undefined') saLoadScript('https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3');
+    </script>
+</div>
           </div>
           {% endif %}
           {%- for block in section.blocks -%}
@@ -737,8 +744,7 @@ Check if the product is sold out and set a variable to be used below.
     {% endif %}
     .zoomContainer{display:none!important;}
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
 
   <script>
     jQuery(document).ready(function(){
@@ -754,27 +760,11 @@ Check if the product is sold out and set a variable to be used below.
           jQuery(".thumbs").css("visibility", "visible")
         });
       }
-      
-var slider = tns({
-    container: '#sa-reviews-479-iw',
-    items: 1,
-    responsive: {
-      640: {
-        edgePadding: 20,
-        gutter: 20,
-        items: 2
-      },
-      700: {
-        gutter: 30
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
+
 
     });
   </script>
+
   <style>
     .product-shop.fix-prox {
       position: fixed;
