@@ -571,11 +571,7 @@ Check if the product is sold out and set a variable to be used below.
           {% if section.settings.display_product_detail_description %}
           <li class="active"><a class="active" data-toggle="tab" href="#collapse-tab1">Description</a></li>
           {% endif %}
-          {% if section.settings.display_product_reviews %}       
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
-          </li>
-          {% endif %}
+          
           {% assign description = product.description %}
           {% capture description %}{{ description }}{% endcapture %}
           {% assign description_parts = description | split: "<h5" %}
@@ -635,6 +631,11 @@ Check if the product is sold out and set a variable to be used below.
             <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
               {{ instructions.tabs-title-5  }}
             </a>
+          </li>
+          {% endif %}
+          {% if section.settings.display_product_reviews %}       
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
           </li>
           {% endif %}
         </ul>
