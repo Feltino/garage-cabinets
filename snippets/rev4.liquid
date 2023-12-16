@@ -2850,6 +2850,42 @@
 </div>
 <script type="text/javascript">
   function saInitSlider(rotationSpeed, orientation, displayType, container, animation = 'slide') {
+    // ... (previous code)
+
+    // Initialize SASlider with SA_Slider function
+    let SASlider = SA_Slider({
+        items: displayType,
+        "container": container,
+        "loop": true,
+        "speed": 2000,
+        autoplay: playWidget,
+        autoplayHoverPause: true,
+        autoplayTimeout: rotationSpeed,
+        controls: false,
+        nav: false,
+        autoplayButtonOutput: false,
+        "axis": orientation,
+        preventActionWhenRunning: true,
+        gutter: 12,
+        mode: anim[animation]
+    });
+
+    // Extract containerId
+    let containerId = container.replace(" .SA__reviews", "");
+
+    // Add event listeners to previous and next buttons
+    document.querySelectorAll(containerId + " .SA__container .SA__widget .SA__prev")[0].addEventListener('click', function () {
+        SASlider.goTo('prev');
+    });
+
+    document.querySelectorAll(containerId + " .SA__container .SA__widget .SA__next")[0].addEventListener('click', function () {
+        SASlider.goTo('next');
+    });
+}
+
+// ... (the rest of the utility functions)
+
+  function saInitSlider(rotationSpeed, orientation, displayType, container, animation = 'slide') {
     var playWidget = true;
     const anim = { 'slide': 'carousel', 'fade': 'gallery' };
 
