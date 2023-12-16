@@ -664,32 +664,44 @@ Check if the product is sold out and set a variable to be used below.
                       {% endfor %}
           {% if section.settings.display_product_reviews %}       
           <div id="collapse-tab6" class="tab-pane">
+<div id="shadowHost">
+    <!-- Shadow DOM will be attached to this div -->
+</div>
+
 <script>
-    // Create a shadow host
-    const shadowHost = document.getElementById('shadowHost');
-    
-    // Attach a shadow DOM to the host
-    const shadowRoot = shadowHost.attachShadow({ mode: 'open' });
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        // Create a shadow host
+        const shadowHost = document.getElementById('shadowHost');
 
-    // Your code goes here
-    const div = document.createElement('div');
-    div.id = 'SA_wrapper_522gxfhBJYLW';
-    div.classList.add('SA__wrapper');
-    shadowRoot.appendChild(div);
+        // Check if the shadow host element exists
+        if (shadowHost) {
+            // Attach a shadow DOM to the host
+            const shadowRoot = shadowHost.attachShadow({ mode: 'open' });
 
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.innerHTML = `
-        var sa_interval = 5000;
-        function saLoadScript(src) {
-            var js = window.document.createElement('script');
-            js.src = src;
-            js.type = 'text/javascript';
-            document.getElementsByTagName("head")[0].appendChild(js);
+            // Your code goes here
+            const div = document.createElement('div');
+            div.id = 'SA_wrapper_522gxfhBJYLW';
+            div.classList.add('SA__wrapper');
+            shadowRoot.appendChild(div);
+
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.innerHTML = `
+                var sa_interval = 5000;
+                function saLoadScript(src) {
+                    var js = window.document.createElement('script');
+                    js.src = src;
+                    js.type = 'text/javascript';
+                    document.getElementsByTagName("head")[0].appendChild(js);
+                }
+                if (typeof(shopper_first) == 'undefined') saLoadScript('https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3');
+            `;
+            shadowRoot.appendChild(script);
+        } else {
+            console.error("Element with ID 'shadowHost' not found.");
         }
-        if (typeof(shopper_first) == 'undefined') saLoadScript('https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3');
-    `;
-    shadowRoot.appendChild(script);
+    });
 </script>
           </div>
           {% endif %}
