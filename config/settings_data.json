@@ -781,7 +781,7 @@
           "show_header_search": true,
           "show_header_account": true,
           "show_header_wishlist": false,
-          "show_header_compare": true,
+          "show_header_compare": false,
           "show_header_currency": false,
           "show_button_language": false,
           "language_app": "weglot",
