@@ -753,11 +753,27 @@ Check if the product is sold out and set a variable to be used below.
           jQuery(".thumbs").css("visibility", "visible")
         });
       }
-
+      
+var slider = tns({
+    container: '#sa-reviews-479-iw',
+    items: 1,
+    responsive: {
+      640: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 2
+      },
+      700: {
+        gutter: 30
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
 
     });
   </script>
-
   <style>
     .product-shop.fix-prox {
       position: fixed;
