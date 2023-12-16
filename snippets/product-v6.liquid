@@ -664,9 +664,22 @@ Check if the product is sold out and set a variable to be used below.
                       {% endfor %}
           {% if section.settings.display_product_reviews %}       
           <div id="collapse-tab6" class="tab-pane">
-<div id="isolateThisCode">
-    <div id="SA_wrapper_522gxfhBJYLW" class="SA__wrapper"></div>
-    <script type="text/javascript">
+<script>
+    // Create a shadow host
+    const shadowHost = document.getElementById('shadowHost');
+    
+    // Attach a shadow DOM to the host
+    const shadowRoot = shadowHost.attachShadow({ mode: 'open' });
+
+    // Your code goes here
+    const div = document.createElement('div');
+    div.id = 'SA_wrapper_522gxfhBJYLW';
+    div.classList.add('SA__wrapper');
+    shadowRoot.appendChild(div);
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.innerHTML = `
         var sa_interval = 5000;
         function saLoadScript(src) {
             var js = window.document.createElement('script');
@@ -675,8 +688,9 @@ Check if the product is sold out and set a variable to be used below.
             document.getElementsByTagName("head")[0].appendChild(js);
         }
         if (typeof(shopper_first) == 'undefined') saLoadScript('https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3');
-    </script>
-</div>
+    `;
+    shadowRoot.appendChild(script);
+</script>
           </div>
           {% endif %}
           {%- for block in section.blocks -%}
