@@ -43,7 +43,7 @@
       <div class="related-heading col-rel_heding">
       <h2><span> {{ collection.title }}</span></h2>
     </div>
-    {% for info in collection.metafields.custom.collection_subcategory_json.metafiled %}
+    {% for info in collection.metafields.custom.collection_subcategory_json.value %}
         <a href="{{ info.link }}">
           <img width="100" height="100" src="{{ info.image }}">
           <p>{{ info.text }}</p>
