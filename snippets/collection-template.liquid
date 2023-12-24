@@ -49,7 +49,7 @@
       {% assign metafield_value = metafield_json.children[0].value %}
       
       {{ metafield_value }}
-      {% assign paragraph = collection.metafields.custom.top_description %}
+      {% assign paragraph = collection.metafields.custom.top_description.value %}
       <p>
       {% for child in paragraph.children %}
         {{ child.value }}
