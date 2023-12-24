@@ -7045,11 +7045,16 @@ a.json__collection:hover{
 }
 .collection-title_custom{
   color: #000;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media (max-width:1024px){
+  .json_box {
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 @media (max-width: 768px){
   #shopify-section-footer .footer-center .col-md-3.col-12{
