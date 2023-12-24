@@ -9,6 +9,16 @@
     {{ collection.metafields.custom.top_description | metafield_tag }}
   </div>
   <div><h2 class="cols_title">{{ collection.metafields.custom.sub_category_title.value }}</h2></div>
+  <div class="json_box">
+      {% for info in collection.metafields.custom.collection_subcategory_json.value %}
+        <div class="json_border">
+          <a class="json__collection" href="{{ info.link }}">
+            <img width="160" src="{{ info.image }}" alt="">
+            <p>{{ info.text }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
   <div class="d-flex cols_box">
     {% if collection.metafields.custom.first_collection_name != blank %}
     <div class="col-item">
