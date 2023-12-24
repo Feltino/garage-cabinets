@@ -47,7 +47,9 @@
     {% assign sub_category_title = collection.metafields.custom.sub_category_title %}
     <div class="collection-title_custom">
       {{ top_description | metafield_tag }}
-      {{ sub_category_title | metafield_tag }}
+      {% if sub_category_title %}
+        {{ sub_category_title | metafield_tag }}
+      {% endif %}
     </div>
 
     <div class="json_box">
