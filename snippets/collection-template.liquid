@@ -55,6 +55,10 @@
         {{ child.value }}
       {% endfor %}
       </p>
+{% assign top_description = collection.metafields.custom.top_description %}
+<div>
+  {{ top_description | metafield_tag }}
+</div>
 
       {% for info in collection.metafields.custom.collection_subcategory_json.value %}
         <a class="json__collection" href="{{ info.link }}">
