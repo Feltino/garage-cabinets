@@ -45,9 +45,10 @@
     </div>
     {% for info in collection.metafields.custom.collection_subcategory_json.value %}
         <a href="{{ info.link }}">
-          <img width="100" height="100" src="{{ info.image }}">
+          <img src="{{ info.image }}" alt="">
           <p>{{ info.text }}</p>
         </a>
+      <a href="" data-mce-href="https://garage-cabinets-online.myshopify.com/collections/ulti-mate-2-0-series-black"><img src="" alt=""></a>
       {% endfor %}
   <div class="description">{{ collection.description }}</div>
     {% if collection_infinite_scrolling == 'auto_loadmore' %}
