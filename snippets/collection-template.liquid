@@ -49,6 +49,11 @@
           <p>{{ info.text }}</p>
         </a>
       {% endfor %}
+        {% for info in collection.metafields.custom.collection_subcategory_json.value %}
+   <h4 class="product-detail-heading">{{ info.name }}</h4>
+   <p>{{ info.height }}</p>
+   <p>{{ info.diameter }}</p>
+  {% endfor %}
   <div class="description">{{ collection.description }}</div>
     {% if collection_infinite_scrolling == 'auto_loadmore' %}
     {% paginate collection.products by product_per_page %}
