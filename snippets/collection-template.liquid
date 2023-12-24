@@ -44,6 +44,13 @@
       <h2><span> {{ collection.title }}</span></h2>
     </div>
   <div class="description">{{ collection.description }}</div>
+      {% for info in collection.metafields.custom.collection_subcategory_json.value %}
+       <p>{{ info.diameter }}</p>
+        <a href="{{ info.link }}">
+          <img src="{{ info.image }}">
+          <p>{{ info.text }}</p>
+        </a>
+      {% endfor %}
     {% if collection_infinite_scrolling == 'auto_loadmore' %}
     {% paginate collection.products by product_per_page %}
     <div class="component-pagination" style="display: none;">
