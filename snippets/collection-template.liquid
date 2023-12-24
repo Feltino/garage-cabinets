@@ -45,6 +45,10 @@
     </div>
     <div class="json_box">
       {{ collection.metafields.custom.top_description.children[0].value }}
+      {% assign metafield_json = collection.metafields.custom.top_description | json %}
+      {% assign metafield_value = metafield_json.children[0].value %}
+      
+      {{ metafield_value }}
       {% for info in collection.metafields.custom.collection_subcategory_json.value %}
         <a class="json__collection" href="{{ info.link }}">
           <img src="{{ info.image }}" alt="">
