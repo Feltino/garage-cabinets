@@ -50,7 +50,7 @@
           <p>{{ info.text }}</p>
         </a>
       {% endfor %}
-    <div>
+    </div>
   <div class="description">{{ collection.description }}</div>
     {% if collection_infinite_scrolling == 'auto_loadmore' %}
     {% paginate collection.products by product_per_page %}
