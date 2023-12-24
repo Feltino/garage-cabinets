@@ -44,7 +44,7 @@
       <h2><span> {{ collection.title }}</span></h2>
     </div>
     <div class="json_box">
-      {{ collection.metafields.custom.top_description.value }}
+      {{ collection.metafields.custom.top_description.value.value }}
       {% for info in collection.metafields.custom.collection_subcategory_json.value %}
         <a class="json__collection" href="{{ info.link }}">
           <img src="{{ info.image }}" alt="">
