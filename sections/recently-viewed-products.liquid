@@ -79,7 +79,7 @@
 
 
      {% form "product", product, id: null, class: "form-add-cart", data-js-product-form: '' %}
-
+    {% raw %}
       <div class="product-top">
       <div class="product-image 1">
         <a href="${url}" class="product-grid-image" data-js-product-image>
@@ -92,6 +92,13 @@
     <span>{{ 'product.out_of_stock' | t }}</span>
   </div>
 {% endif %}
+          {{/if}}
+          {{if !available}}
+           <div class="product-label">
+            <span>{{ 'product.out_of_stock' | t }}</span>
+  </div>
+          {{/if}}
+          {% endraw %}
 
        {% raw %}
 <!--div class="add-to-cartS">
