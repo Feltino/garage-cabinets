@@ -83,15 +83,14 @@
       <div class="product-top">
       <div class="product-image 1">
         <a href="${url}" class="product-grid-image" data-js-product-image>
-          <img src="${Shopify.Products.resizeImage(featured_image, "large")}" alt="${featured_image}"/>
+          <img src="${Shopify.Products.resizeImage(featured_image, "large")}" alt="${featured_image.alt}"/>
   </a>
 
 
-{% if product.available == false %}
-  <div class="product-label">
-    <span>{{ 'product.out_of_stock' | t }}</span>
+          {{if compare_at_price_min > price_min}} 
+            <div class="product-label">
+            <span  >Sale</span>
   </div>
-{% endif %}
           {{/if}}
           {{if !available}}
            <div class="product-label">
