@@ -83,7 +83,7 @@
       <div class="product-top">
       <div class="product-image 1">
         <a href="${url}" class="product-grid-image" data-js-product-image>
-          <img src="${Shopify.Products.resizeImage(featured_image, "large")}" alt="${featured_image.alt}"/>
+          <img src={{ product.featured_image | img_url: '100x100' }} alt="${featured_image.alt}"/>
   </a>
 
 
