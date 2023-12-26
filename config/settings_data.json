@@ -785,7 +785,7 @@
           "show_header_currency": false,
           "show_button_language": false,
           "language_app": "weglot",
-          "language_link_list": "main-menu-megamenu",
+          "language_link_list": "",
           "show_header_cart": true,
           "header_icon_carttype": "cart_type_2",
           "header_icon_cart": "clever-icon-cart-15"
