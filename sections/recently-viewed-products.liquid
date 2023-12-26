@@ -78,15 +78,15 @@
 
 
 
-     {% form "product", product, id: null, class: "form-add-cart", data-js-product-form: '' %}{{ image }}
-    {% raw %}
+     {% form "product", product, id: null, class: "form-add-cart", data-js-product-form: '' %}
+    
       <div class="product-top">
       <div class="product-image 1">
         <a href="${url}" class="product-grid-image" data-js-product-image>
           <img src="${Shopify.Products.resizeImage(featured_image, "large")}" alt="${featured_image.alt}"/>
   </a>
 
-
+{% raw %}
           {{if compare_at_price_min > price_min}} 
             <div class="product-label">
             <span  >Sale</span>
