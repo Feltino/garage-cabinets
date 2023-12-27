@@ -246,7 +246,7 @@ Check if the product is sold out and set a variable to be used below.
                             <span class="compare-price">{{ product.compare_at_price_max | money }}</span>
                             <span class="price on-sale" itemprop="price">{{ product.price | money }}</span>
                             {% else %}
-                            <span class="price" itemprop="price">{{ product.price | money }}</span>
+                            <span class="price" itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">{{ product.price | money }}</span>
                             {% endif %}
                           </div> 
                         </div>
