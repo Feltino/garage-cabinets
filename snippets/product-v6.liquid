@@ -243,7 +243,7 @@ Check if the product is sold out and set a variable to be used below.
                          <div class="prices-wr">
                           <div class="prices">
                             {% if product.compare_at_price > product.price %}                      
-                            <span class="compare-price" itemprop="price Specification.price" content="{{ product.compare_at_price_max | money }}">{{ product.compare_at_price_max | money }}</span>
+                            <span class="compare-price" itemprop="priceSpecification.price" content="{{ product.compare_at_price_max | money }}">{{ product.compare_at_price_max | money }}</span>
                             <span class="price on-sale" itemprop="price" content="{{ product.price | money }}">{{ product.price | money }}</span>
                             {% else %}
                             <span class="price" itemprop="price" content="{{ product.price | money }}">{{ product.price | money }}</span>
