@@ -241,7 +241,7 @@ Check if the product is sold out and set a variable to be used below.
                           <div><span class="pr-custom__nxt">on Orders<br> over $250</span></div>
                         </div>
                          <div class="prices-wr">
-                          <div class="prices" itemprop="price" content="{{ current_variant.price}}">
+                          <div class="prices">
                             {% if product.compare_at_price > product.price %}                      
                             <span class="compare-price">{{ product.compare_at_price_max | money }}</span>
                             <span class="price on-sale">{{ product.price | money }}</span>
