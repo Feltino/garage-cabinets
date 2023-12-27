@@ -195,7 +195,7 @@ Check if the product is sold out and set a variable to be used below.
 
 
               <div class="col-12 col-md-12 col-lg-6 product-shop">
-                <div itemprop="offers" itemtype="http://schema.org/Offer" class="shop-detail-content{% if section.settings.enable_payment_button %} buy-now{%endif%}">
+                <div class="shop-detail-content{% if section.settings.enable_payment_button %} buy-now{%endif%}">
                   <div class="fixed-product-wr">
                     <div class="product-label-wr">
                       {% if section.settings.display_sale %}
@@ -224,7 +224,7 @@ Check if the product is sold out and set a variable to be used below.
                       {% endif %}
                     </div>
                     <header class="product-title {% if collection.previous_product or collection.next_product and section.settings.display_prev_next_product and collection %}has-btn{% endif %}">
-                      <h1 itemprop="name">{{ product.title }}</h1>
+                      <h1 >{{ product.title }}</h1>
                     </header>
                     <div class="row">
                       <div class="col-12 col-md-6 col-lg-12 col-xl-6">
@@ -499,9 +499,9 @@ Check if the product is sold out and set a variable to be used below.
                     <img src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/Group_33_1.png?v=1686136964" alt="logo">
                   </div>
                   {% if product.available %}
-                  <link itemprop="availability" href="http://schema.org/InStock">
+                  <link >
                   {% else %}
-                  <link itemprop="availability" href="http://schema.org/OutOfStock">
+                  <link >
                   {% endif %} 
                 </div>
                 <div class="product_meta">
