@@ -118,9 +118,7 @@ Check if the product is sold out and set a variable to be used below.
         {% else %}
         <div class="col-main col-12">
           {% endif %}
-          <div itemscope itemtype="http://schema.org/Product" class="product">
-            <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
-            <meta itemprop="image" content="{{ product.featured_image.src | product_img_url: 'master' }}">
+          <div class="product">
 
             <div class="row product-img-box">
 
