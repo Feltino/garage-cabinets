@@ -1628,7 +1628,27 @@
       "b33f7da0-62e4-4b54-9396-f141b64b00f6",
       "9137e314-d0cb-448b-85f6-b337666e75ac",
       "be19151f-1df9-4f44-8d6b-246f1670877b"
-    ]
+    ],
+    "blocks": {
+      "1005670201854246023": {
+        "type": "shopify:\/\/apps\/seo-king\/blocks\/seo-king-404-redirect\/4aa30173-495d-4e49-b377-c5ee4024262f",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "16133342861412372001": {
+        "type": "shopify:\/\/apps\/seo-king\/blocks\/seo-king-404-monitor\/4aa30173-495d-4e49-b377-c5ee4024262f",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "18393503268697261835": {
+        "type": "shopify:\/\/apps\/seo-king\/blocks\/seo-king-jsonld-collections\/4aa30173-495d-4e49-b377-c5ee4024262f",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
