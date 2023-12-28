@@ -147,7 +147,7 @@
     "product_add_tocart": true,
     "product_collection_show_options": false,
     "product_collection_price": true,
-    "product_collection_lable_sale": true,
+    "product_collection_lable_sale": false,
     "product_collection_lable_new": true,
     "product_collection_countdown": true,
     "enable_product_compare": false,
