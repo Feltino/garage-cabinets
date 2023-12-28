@@ -742,7 +742,14 @@ Check if the product is sold out and set a variable to be used below.
 
   <script>
     jQuery(document).ready(function(){
-
+jQuery(".product-tabs li").on("click",function(){
+  var visible = jQuery(".product-tabs li.active").text().indexOf("Reviews")>=0;
+    if(visible)
+    jQuery(".SA__wrapper").show();
+    else 
+    jQuery(".SA__wrapper").hide();
+        
+});
       jQuery('#zt_list_product li').first().find('a').addClass('zoomGalleryActive');
 
       if (jQuery(window).width() > 767) {
