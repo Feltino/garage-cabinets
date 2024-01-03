@@ -17,7 +17,7 @@
             input.attr("autocomplete", "off").bind("keyup change", function () {
                 var term = $(this).val();
                 var form = $(this).closest("form");
-                var searchURL = "/search?type=product&q=title:" + term + "*";
+                var searchURL = "/search?type=product&q=" + term + "*";
                 $(".searchbox").addClass("s-loading");
                 var resultsList = form.find(".search-results");
                 if (term.length > 2 && term != $(this).attr("data-old-term")) {
