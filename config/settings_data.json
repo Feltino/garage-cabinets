@@ -1653,5 +1653,10 @@
   "presets": {
     "Default": {
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".QT4by:hover {background-color: #3c0def;}"
+    ]
   }
 }
