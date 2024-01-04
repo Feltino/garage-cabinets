@@ -119,12 +119,12 @@
       <div class="price-box">   
       {{if compare_at_price_min > price_min}} 
         <p class="sale">
-          <span class="old-price"> {{html Shopify.formatMoney(compare_at_price_min, window.money_format)}}</span>
-          <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
+          <span class="old-price"> {{html Shopify.formatMoney(compare_at_price_min, window.money_format)}} {{ Shopify.formatMoney(cart.total_price, "€{{amount}}") }}</span>
+          <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}} {{ Shopify.formatMoney(cart.total_price, "€{{amount}}") }}</span>
   </p>
       {{else}}
         <p class="regular-product">
-          <span >{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
+          <span >{{html Shopify.formatMoney(price_min, window.money_format)}} {{ Shopify.formatMoney(cart.total_price, "€{{amount}}") }}</span>
   </p>
       {{/if}}
   </div>
@@ -170,14 +170,6 @@
                                       }    
                                       }
                                       });
-  let currencySymbol = "{{ cart.currency.symbol }}";
-Shopify.onItemAdded = function (line_item) {
-  jQuery.getJSON('/cart.js', function(cart) {
-    let total = Shopify.formatMoney(cart.total_price).replace('$', currencySymbol);
-    $('#popup_total').html(total);
-  });
-};
-
 </script>
 
 {% if template contains 'product' %}
