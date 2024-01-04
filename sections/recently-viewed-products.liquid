@@ -170,6 +170,14 @@
                                       }    
                                       }
                                       });
+  let currencySymbol = "{{ cart.currency.symbol }}";
+Shopify.onItemAdded = function (line_item) {
+  jQuery.getJSON('/cart.js', function(cart) {
+    let total = Shopify.formatMoney(cart.total_price).replace('$', currencySymbol);
+    $('#popup_total').html(total);
+  });
+};
+
 </script>
 
 {% if template contains 'product' %}
