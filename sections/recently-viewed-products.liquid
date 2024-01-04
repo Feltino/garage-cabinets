@@ -121,11 +121,11 @@
         <p class="sale">
 
           <span class="old-price"> {{html Shopify.formatMoney(compare_at_price_min, window.money_format)}} </span>
-          <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}} {% endraw %}{{ price | money }} {% raw %}</span>
+          <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   </p>
       {{else}}
         <p class="regular-product">
-          <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}} {{ price | money }}</span>
+          <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   </p>
       {{/if}}
   </div>
