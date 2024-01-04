@@ -119,12 +119,12 @@
       <div class="price-box">   
       {{if compare_at_price_min > price_min}} 
         <p class="sale">
-          <span class="old-price"> {{Shopify.formatMoney(compare_at_price_min, window.money_format)}} </span>
-          <span class="special-price">{{Shopify.formatMoney(price_min, window.money_format)}}</span>
+          <span class="old-price"> {{html Shopify.formatMoney(compare_at_price_min, window.money_format)}} </span>
+          <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   </p>
       {{else}}
         <p class="regular-product">
-          <span >{{Shopify.formatMoney(price_min, window.money_format)}}</span>
+          <span >{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   </p>
       {{/if}}
   </div>
