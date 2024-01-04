@@ -151,26 +151,29 @@
 {% endraw %}
 
 <script>
-  Shopify.Products.showRecentlyViewed({ 
-    howManyToShow: {{ section.settings.number_of_recently_viewed_products }}, 
-    wrapperId: 'recently-viewed-products-grid', 
-    templateId: 'recently-viewed-product-grid-template',
-    onComplete: function() {
-    if (jQuery("#recently-viewed-products-grid").children().length > 0) {
-    jQuery(".recently-viewed-products").show();
-
-    {% if settings.enable_multilang %}
-    if (translator.current_lang == 2)
-    translator.doTranslate(".recently-viewed-products");
-    {% endif %}
-
-
-    if (jQuery(".spr-badge").length>0) {
-    return window.SPR.registerCallbacks(), window.SPR.initRatingHandler(), window.SPR.initDomEls(), window.SPR.loadProducts(), window.SPR.loadBadges();
-  }      
-                                      }    
-                                      }
-                                      });
+setTimeout(function(){
+    Shopify.Products.showRecentlyViewed(
+    { 
+        howManyToShow: {{ section.settings.number_of_recently_viewed_products }}, 
+        wrapperId: 'recently-viewed-products-grid', 
+        templateId: 'recently-viewed-product-grid-template',
+        onComplete: function() 
+        {
+            if (jQuery("#recently-viewed-products-grid").children().length > 0) 
+            {
+                jQuery(".recently-viewed-products").show();
+                {% if settings.enable_multilang %}
+                    if (translator.current_lang == 2)
+                        translator.doTranslate(".recently-viewed-products");
+                {% endif %}
+                if (jQuery(".spr-badge").length>0) 
+                {
+                    return window.SPR.registerCallbacks(), window.SPR.initRatingHandler(), window.SPR.initDomEls(), window.SPR.loadProducts(), window.SPR.loadBadges();
+                }      
+            }    
+        }
+    });
+},500);
 </script>
 
 {% if template contains 'product' %}
