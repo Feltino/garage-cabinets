@@ -7077,6 +7077,24 @@ a.json__collection:hover{
   opacity:1;
   background: #3c0def !important;
 }
+/* For Webkit browsers (e.g., Chrome, Safari) */
+.level.level-1::-webkit-scrollbar {
+  width: 4px; /* Adjust the width as needed */
+}
+
+.level.level-1::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scroll thumb */
+}
+
+/* For Firefox */
+html .level.level-1{
+  scrollbar-width: thin;
+}
+
+body .level.level-1{
+  scrollbar-color: #888 transparent; /* Color of the scroll thumb and track */
+}
+
 @media (max-width:1024px){
   .json_box {
     grid-template-columns: repeat(3,1fr);
