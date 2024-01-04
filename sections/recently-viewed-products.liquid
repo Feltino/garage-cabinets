@@ -117,11 +117,16 @@
           <!-- h3> <a class="product-title" href="${url}">${title}</a></h3 -->
         <span class="shopify-product-reviews-badge" data-id="${id}"></span>
       <div class="price-box">   
+      {{if compare_at_price_min > price_min}} 
         <p class="sale">
           <span class="old-price"> {{html Shopify.formatMoney(compare_at_price_min, window.money_format)}}</span>
           <span class="special-price">{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   </p>
-
+      {{else}}
+        <p class="regular-product">
+          <span >{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
+  </p>
+      {{/if}}
   </div>
     {% endraw %}
     {%- if show_options and show_custom_options -%}
