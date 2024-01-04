@@ -37,10 +37,10 @@ body .block_newsletter .input-group .input-group-btn input.btn{
   background-color:#F6802F;
   border: 1px solid #F6802F;
 }
-body .grid-item .product-inner .product-image .add-to-cartS button {
+/* body .grid-item .product-inner .product-image .add-to-cartS button {
     background: #1E5586 !important;
     border: none;
-}
+} */
 
 body .related-heading.col-rel_heding{
   margin-bottom: 30px;
