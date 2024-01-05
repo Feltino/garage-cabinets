@@ -429,13 +429,13 @@ body.main-brand .owl-carousel .owl-nav button.owl-next:hover {
   .f-box__four .f-box__title, 
   .f-box__five .f-box__title {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 27px;
   }
   .f-box__three .f-box__link, 
   .f-box__four .f-box__link, 
   .f-box__five .f-box__link {
-    font-size: 13px;
+    font-size: 10px;
   }
   .f2-box__sm{
     flex-direction:column;
@@ -464,6 +464,16 @@ body.main-brand .owl-carousel .owl-nav button.owl-next:hover {
   }
   .f-box__one .f-box__left {
     max-width: 100%;
+  }
+  .f-box__three .f-box__title, 
+  .f-box__four .f-box__title, 
+  .f-box__five .f-box__title {
+    font-size: 18px;
+  }
+  .f-box__three .f-box__link, 
+  .f-box__four .f-box__link, 
+  .f-box__five .f-box__link {
+    font-size: 13px;
   }
   .f-box__content {
     padding: 0 0 30px 0;
