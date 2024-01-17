@@ -129,6 +129,7 @@ body a:hover {
 .f2-box__image{
   max-height: 55px;
   margin-right: 20px;
+  object-fit: contain;
 }
 .f2-box__title{
   font-style: normal;
