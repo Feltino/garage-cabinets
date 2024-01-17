@@ -411,7 +411,7 @@ body.main-brand .owl-carousel .owl-nav button.owl-next:hover {
   }
   .f2-box__title,
   .f2-box__text{
-    text-align:center;
+    text-align:center !important;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
