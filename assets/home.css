@@ -405,6 +405,15 @@ body.main-brand .owl-carousel .owl-nav button.owl-next:hover {
     background: transparent !important;
     color: #fc6a21!important;
 }
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+  .f2-box__image {
+    margin-right: 0;
+  }
+  .f2-box__title,
+  .f2-box__text{
+    text-align:center;
+  }
+}
 @media (max-width:1440px){
   .f-box__two .f-box__left {
     max-height: 180px;
