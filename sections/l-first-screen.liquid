@@ -66,12 +66,25 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="f-box__six d-flex justify-content-center align-items-center">
-          {% if section.settings.logo != blank %}
-            <img class="f-box__logo" src="{{ section.settings.logo | img_url: "master" }}">
-          {% endif %}
-          <h2 class="f-box__title">{{ section.settings.btn_title6 }}</h2>
-        </div>
+        {% raw %}
+            {% if section.settings.link_to_btn != blank %}
+              <div class="f-box__six d-flex justify-content-center align-items-center">
+              <a href="{{ section.settings.link_to_btn }}">
+                {% if section.settings.logo != blank %}
+                  <img class="f-box__logo" src="{{ section.settings.logo | img_url: "master" }}">
+                {% endif %}
+                <h2 class="f-box__title">{{ section.settings.btn_title6 }}</h2>
+              </a>
+              </div>
+              {% elsif %}
+              <div class="f-box__six d-flex justify-content-center align-items-center">
+                {% if section.settings.logo != blank %}
+                  <img class="f-box__logo" src="{{ section.settings.logo | img_url: "master" }}">
+                {% endif %}
+                <h2 class="f-box__title">{{ section.settings.btn_title6 }}</h2>
+              </div>
+            {% endif %}
+          {% endraw %}
       </div>
     </div>
   </div>
@@ -265,6 +278,11 @@
       "type": "text",
       "id": "btn_title6",
       "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "link_to_btn",
+      "label": "Link"
     }
   ],
   "presets": [
