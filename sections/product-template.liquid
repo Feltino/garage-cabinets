@@ -24,11 +24,11 @@
           	clearInterval(soldState);
         } else {
           $('#product-add-to-cart').removeClass('disable');
-        	$('#product-add-to-cart span').text('{{'product.detail.add_cart' | t}}');
+        	$('#product-add-to-cart span').text('{{"product.detail.add_cart" | t}}');
         }
       }, 500);
       $('#product-add-to-cart').removeClass('disable');
-      $('#product-add-to-cart span').text('{{'product.detail.add_cart' | t}}');
+      $('#product-add-to-cart span').text('{{"product.detail.add_cart" | t}}');
     });
 
   });
@@ -116,7 +116,7 @@
     if (variant) {
       if (variant.available) {
         // We have a valid product variant, so enable the submit button
-        addToCart.removeClass('disabled').removeAttr('disabled').val('{{'product.detail.add_cart' | t}}');
+        addToCart.removeClass('disabled').removeAttr('disabled').val('{{"product.detail.add_cart" | t}}');
                                                                      $('#add-to-cart-form .clear_fix').removeClass("button-unva");
       } else {
         // Variant is sold out, disable the submit button
