@@ -220,11 +220,57 @@ Check if the product is sold out and set a variable to be used below.
                       </div>
                       {% endif %}
                     </div>
-                    <header class="product-title {% if collection.previous_product or collection.next_product and section.settings.display_prev_next_product and collection %}has-btn{% endif %}">
-                      <h1 >{{ product.title }}</h1>
-                    </header>
-                    <!-- Start of Judge.me code --><div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.badge }}</div><!-- End of Judge.me code -->
-          
+                   <div class="row">
+                      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+                        {% if section.settings.show_vendor %}
+                        <div class="prodcuct-vendor">Vendor: <span>{{ product.vendor }}</span></div>
+                        {% endif %}
+                        {% assign current_variant = product.selected_or_first_available_variant %}
+                        {% if section.settings.show_sku %}
+                        <div class="product-sku">SKU: <span class="variant-sku">{{ current_variant.sku }}</span></div>
+                        {% endif %}
+                        <div class="product-custom__deliver d-flex align-items-center">
+                          
+                          <img src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/Group_30_1.png?v=1686138312" alt="free-shipping">
+                          <div><span class="pr-custom__nxt">on Orders<br> over $250</span></div>
+                        </div>
+                         <div class="prices-wr">
+                          <div class="prices">
+                            {% if product.compare_at_price > product.price %}                      
+                            <span class="compare-price">{{ product.compare_at_price_max | money }}</span>
+                            <span class="price on-sale">{{ product.price | money }}</span>
+                            {% else %}
+                            <span class="price">{{ product.price | money }}</span>
+                            {% endif %}
+                          </div> 
+                        </div>
+                        <div class="product-custom__order">Order Today & Save! Price going up soon.</div>
+                        <p class="affirm-as-low-as affirm-mob" data-page-type="product" data-amount="{{ product.price}}"></p>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+                        <div class="producttop-meta">
+                            {% if section.settings.display_product_reviews %} 
+                            <div class="product-reviews">
+                              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                            </div>
+                            {% endif %}
+                            {% if section.settings.product_flash_sold_enable %}
+                            <div class="total-sold-pr">
+                              <i class="cs-font clever-icon-fire"></i>
+                              <span class="number-solid"></span> sold in last <span class="add-hours-solid"></span> hours
+                            </div>
+                            {% endif %}
+                          </div>
+                        <div class="product-custom">
+                          <img class="product-custom__img1" src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/image_75_1.png?v=1686135739" alt="logo">
+                          <div class="m-h3">
+                            <strong>YOUR #1 TRUSTED SOURCE FOR</strong>
+                            GARAGE CABINETS AND STORAGE
+                          </div>
+                          <img class="product-custom__img2" src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/Group_37_1.png?v=1686135931" alt="logo">
+                        </div>
+                        </div>
+                    </div>
                   </div>
 
                   {% assign instructions = product.metafields.meta %}
