@@ -563,81 +563,99 @@ Check if the product is sold out and set a variable to be used below.
   <div class="tab_pro_w">
     <div class="container">
       <div class="product-tabs ">
-        <ul class="nav nav-tabs" id="myTab">
+  
+
+        <div id="myTabContent" class="tab-content">
 
           {% if section.settings.display_product_detail_description %}
-          <li class="active"><a class="active" data-toggle="tab" href="#collapse-tab1">Description</a></li>
-          {% endif %}
-          
+          <div id="collapse-tab1" class="tab-pane in active">
+           {{ product.description | split: '<h5>' | first }}
+          </div>
           {% assign description = product.description %}
-          {% capture description %}{{ description }}{% endcapture %}
+{% capture description %}{{ description }}{% endcapture %}
+
           {% assign description_parts = description | split: "<h5" %}
-          {% for part in description_parts %}
-            {% if part contains "</h5>" %}
-              {% assign remove = part | split: ">" | first | append: ">" %}
-              {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
-              <li class="nav-item"><a data-toggle="tab"  href="#collapse-tab{{ forloop.index }}" aria-controls="collapse-tab{{ forloop.index }}" role="tab" data-toggle="tab">{{ part | split: "</h5>" | first | strip_html | replace: remove, "" }}</a></li>
-            {% endif %}
-          {% endfor %}
-          {%- for block in section.blocks -%}
-          <li><a data-toggle="tab" href="#{{ block.settings.for_group | handle }}">
-            {{ block.settings.for_group }}
-            </a></li>
-          {% endfor %}
+          {% endif %}
+                      {% for part in description_parts %}
+                        {% assign fp = part | append: " " | split: "</h5>" | last %}
+                        {% assign p = part | append: " " | split: "</h5>" | last | strip_html | replace: "&nbsp;", "" | replace: " ", "" | strip_newlines %}
+                        {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
 
-          {% assign instructions = product.metafields.meta %}
-          {% assign key = 'tabs-title-1' %}
-          {% if instructions.tabs-title-1 %}
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
-              {{ instructions.tabs-title-1  }}
-            </a>
-          </li>
-          {% endif %}
-          {% assign instructions = product.metafields.meta %}
-          {% assign key = 'tabs-title-2' %}
-          {% if instructions.tabs-title-2 %}
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
-              {{ instructions.tabs-title-2  }}
-            </a>
-          </li>
-          {% endif %}
-          {% assign instructions = product.metafields.meta %}
-          {% assign key = 'tabs-title-3' %}
-          {% if instructions.tabs-title-3 %}
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
-              {{ instructions.tabs-title-3  }}
-            </a>
-          </li>
-          {% endif %}
-          {% assign instructions = product.metafields.meta %}
-          {% assign key = 'tabs-title-4' %}
-          {% if instructions.tabs-title-4 %}
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
-              {{ instructions.tabs-title-4  }}
-            </a>
-          </li>
-          {% endif %}
-          {% assign instructions = product.metafields.meta %}
-          {% assign key = 'tabs-title-5' %}
-          {% if instructions.tabs-title-5 %}
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
-              {{ instructions.tabs-title-5  }}
-            </a>
-          </li>
-          {% endif %}
+                        {% if p != "" or fp contains "<img " or fp contains "<iframe " %}
+                          <div class="tab-pane" id="collapse-tab{{ forloop.index }}">
+                            {{ part | split: "</h5>" | last | replace: "<div", "<span" | replace: "</div", "</span" }}
+                          </div>
+                        {% endif %}
+                      {% endfor %}
           {% if section.settings.display_product_reviews %}       
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
-          </li>
+          <div id="collapse-tab6" class="tab-pane">
+{% comment %}
+            {% include 'rev' %}
+            {% include 'rev2' %}
+            {% include 'rev3' %}
+            {% include 'rev4' %}
+{% endcomment %}
+
+         </div>
           {% endif %}
-        </ul>
+          {%- for block in section.blocks -%}
+
+          <div id="{{ block.settings.for_group | handle }}" class="tab-pane">
+            {{ block.settings.tabs_content }}
+          </div>
+          {% endfor %}
 
 
+          {% if section.settings.product_customtabs_2 %}       
+          <div id="collapse-tab4" class="tab-pane">
+            {{ section.settings.product_customtabs_content_2 }}
+          </div>
+          {% endif %}
+
+          {% if section.settings.product_customtabs_3 %}       
+          <div id="collapse-tab5" class="tab-pane">
+            {{ section.settings.product_customtabs_content_3 }}
+          </div>
+          {% endif %}
+
+
+
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-content-1' %}
+          {% if instructions.tabs-content-1 %}
+          <div id="collapse-tab11" class="tab-pane">
+            {{instructions.tabs-content-1}}
+          </div>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-content-2' %}
+          {% if instructions.tabs-content-2 %}
+          <div id="collapse-tab12" class="tab-pane">
+            {{instructions.tabs-content-2}}
+          </div>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-content-3' %}
+          {% if instructions.tabs-content-3 %}
+          <div id="collapse-tab13" class="tab-pane">
+            {{instructions.tabs-content-3}}
+          </div>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-content-4' %}
+          {% if instructions.tabs-content-4 %}
+          <div id="collapse-tab14" class="tab-pane">
+            {{instructions.tabs-content-4}}
+          </div>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-content-5' %}
+          {% if instructions.tabs-content-5 %}
+          <div id="collapse-tab15" class="tab-pane">
+            {{instructions.tabs-content-5}}
+          </div>
+          {% endif %}
+        </div>
       </div>
 
     </div>
