@@ -194,33 +194,12 @@ Check if the product is sold out and set a variable to be used below.
               <div class="col-12 col-md-12 col-lg-6 product-shop">
                 <div class="shop-detail-content{% if section.settings.enable_payment_button %} buy-now{%endif%}">
                   <div class="fixed-product-wr">
-                    <div class="product-label-wr">
-                      {% if section.settings.display_sale %}
-                      {% include 'cleversoft-label' %}
-                      {% endif %}
 
-                      {% if lable_sale  %}
-                      <div class="product-label">
-                        {% if lable_sale %}
-                        Save {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max |round: 0 }}% Today
-                        {% endif %}
-                      </div>
-                      {% endif %}
-
-                      {% if section.settings.display_availability or section.settings.display_product_type or section.settings.display_vendor %}
-                      <div class="availability">
-                        {% if section.settings.display_availability %}
-                        <p class="product-inventory"> <label>{{'product.detail.availability_label' | t}}</label>
-                          <span>{% if product.selected_or_first_available_variant.inventory_management %}
-                            {% assign first_inventory = product.selected_or_first_available_variant.inventory_quantity %}
-                            {% if first_inventory > 0 %}{{'product.detail.instock_product' | t}} {% else %}{{'product.detail.outstock_product' | t}}{% endif %}
-                            {% else %}{{'product.detail.manystock_product' | t}}{% endif %}
-                          </span></p>
-                        {% endif %}
-                      </div>
-                      {% endif %}
-                    </div>
-                   <div class="row">
+                    <header class="product-title {% if collection.previous_product or collection.next_product and section.settings.display_prev_next_product and collection %}has-btn{% endif %}">
+                      <h1 >{{ product.title }}</h1>
+                    </header>
+                    <!-- Start of Judge.me code --><div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.badge }}</div><!-- End of Judge.me code -->
+                    <div class="row">
                       <div class="col-12 col-md-6 col-lg-12 col-xl-6">
                         {% if section.settings.show_vendor %}
                         <div class="prodcuct-vendor">Vendor: <span>{{ product.vendor }}</span></div>
