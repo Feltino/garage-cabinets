@@ -1,21 +1,5 @@
 
 
-{% assign lable_sale = false %}
-{% if product.compare_at_price_min > product.price_min %}
-{% assign lable_sale = true %}
-{% endif %}
-
-{% comment %}
-Check if the product is sold out and set a variable to be used below.
-{% endcomment %}
-
-{% assign lable_out = true %}
-{% if product.available  %}
-{% assign lable_out = false %}
-{% endif %}
-{% assign number_of_related_products = section.settings.number_of_related_products %}
-{% assign related_products_title = section.settings.related_products_title %}
-
 <div class="product-bg">
   <div class="breadcrumb-change">
     <div class="container">
@@ -110,7 +94,7 @@ Check if the product is sold out and set a variable to be used below.
       </div>
     </div>
   </div>
-
+  {% assign content = product.description | remove: "[disable-icon-new]" %}
   <div class="container">
     <div class="row pro-layout1 product-horizontal" id="product">
       {% if section.settings.enable_block_right %}
