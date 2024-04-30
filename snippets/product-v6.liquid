@@ -223,6 +223,7 @@ Check if the product is sold out and set a variable to be used below.
                     <header class="product-title {% if collection.previous_product or collection.next_product and section.settings.display_prev_next_product and collection %}has-btn{% endif %}">
                       <h1 >{{ product.title }}</h1>
                     </header>
+                    <!-- Start of Judge.me code --><div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.badge }}</div><!-- End of Judge.me code -->
                     <div class="row">
                       <div class="col-12 col-md-6 col-lg-12 col-xl-6">
                         {% if section.settings.show_vendor %}
