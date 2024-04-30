@@ -556,14 +556,85 @@ Check if the product is sold out and set a variable to be used below.
           </div>
         </div>
         {% if section.settings.enable_block_right %}
-        {% include 'block-productdetail-right' %}
         {% endif %}
       </div>
     </div>
   <div class="tab_pro_w">
     <div class="container">
       <div class="product-tabs ">
-  
+        <ul class="nav nav-tabs" id="myTab">
+
+          {% if section.settings.display_product_detail_description %}
+          <li class="active"><a class="active" data-toggle="tab" href="#collapse-tab1">Description</a></li>
+          {% endif %}
+          
+          {% assign description = product.description %}
+          {% capture description %}{{ description }}{% endcapture %}
+          {% assign description_parts = description | split: "<h5" %}
+          {% for part in description_parts %}
+            {% if part contains "</h5>" %}
+              {% assign remove = part | split: ">" | first | append: ">" %}
+              {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
+              <li class="nav-item"><a data-toggle="tab"  href="#collapse-tab{{ forloop.index }}" aria-controls="collapse-tab{{ forloop.index }}" role="tab" data-toggle="tab">{{ part | split: "</h5>" | first | strip_html | replace: remove, "" }}</a></li>
+            {% endif %}
+          {% endfor %}
+          {%- for block in section.blocks -%}
+          <li><a data-toggle="tab" href="#{{ block.settings.for_group | handle }}">
+            {{ block.settings.for_group }}
+            </a></li>
+          {% endfor %}
+
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-title-1' %}
+          {% if instructions.tabs-title-1 %}
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
+              {{ instructions.tabs-title-1  }}
+            </a>
+          </li>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-title-2' %}
+          {% if instructions.tabs-title-2 %}
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
+              {{ instructions.tabs-title-2  }}
+            </a>
+          </li>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-title-3' %}
+          {% if instructions.tabs-title-3 %}
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
+              {{ instructions.tabs-title-3  }}
+            </a>
+          </li>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-title-4' %}
+          {% if instructions.tabs-title-4 %}
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
+              {{ instructions.tabs-title-4  }}
+            </a>
+          </li>
+          {% endif %}
+          {% assign instructions = product.metafields.meta %}
+          {% assign key = 'tabs-title-5' %}
+          {% if instructions.tabs-title-5 %}
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab11" data-toggle="tab" class="text-uppercase">
+              {{ instructions.tabs-title-5  }}
+            </a>
+          </li>
+          {% endif %}
+          {% if section.settings.display_product_reviews %}       
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
+          </li>
+          {% endif %}
+        </ul>
 
         <div id="myTabContent" class="tab-content">
 
