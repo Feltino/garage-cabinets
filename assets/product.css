@@ -285,6 +285,9 @@ body .price-box .old-price{
 .product-shop .swatch {
     margin-top: 20px;
 }
+.jdgm-star {
+    font-family: 'JudgemeStar' !important;
+}
 @media (max-width:1440px){
   .product-custom__add-to-cart{
     display: flex;
