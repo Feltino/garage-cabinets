@@ -288,6 +288,10 @@ body .price-box .old-price{
 .jdgm-star {
     font-family: 'JudgemeStar' !important;
 }
+.related-products .text-button-added,
+.related-products .sold-out{
+  display:none !important;
+}
 @media (max-width:1440px){
   .product-custom__add-to-cart{
     display: flex;
