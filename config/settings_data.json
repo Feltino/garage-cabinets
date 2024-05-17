@@ -223,7 +223,7 @@
     "shipping_calculator_submit_button_label": "Calculate shipping",
     "shipping_calculator_submit_button_label_disabled": "Calculating...",
     "cart_notes": true,
-    "ajax_cart": true,
+    "ajax_cart": false,
     "ajax_bagde": true,
     "calculte_free_shipping": true,
     "calculte_agree_terms": false,
