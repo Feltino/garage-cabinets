@@ -773,6 +773,23 @@ Check if the product is sold out and set a variable to be used below.
       
 
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var addToCartButton = document.getElementById('product-add-to-cart');
+        
+        addToCartButton.addEventListener('click', function() {
+            var popupCart = document.querySelector('.wrapper-container');
+            var popupCart2 = document.querySelector('.js-popup-cart-ajax');
+        
+            if (!addToCartButton.disabled) {
+              setTimeout(function() {
+                  popupCart.classList.add('show-carts');
+                  popupCart.classList.add('show-cart');
+                  popupCart2.classList.add('active');
+              }, 500);
+            }
+        });
+    });
   </script>
   <style>
     .product-shop.fix-prox {
