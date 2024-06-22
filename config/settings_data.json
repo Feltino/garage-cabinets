@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/favicon.png",
@@ -1663,6 +1672,12 @@
       },
       "16936614187718193802": {
         "type": "shopify:\/\/apps\/multifeeds\/blocks\/app_embed\/f3e7ca1d-2d5a-45a7-97dd-2fd45843acef",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1041656249159682650": {
+        "type": "shopify:\/\/apps\/nabu-for-google-pixel\/blocks\/script-block\/1bff1da5-e804-4d5d-ad9c-7c3540bdf531",
         "disabled": false,
         "settings": {
         }
