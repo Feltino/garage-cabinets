@@ -6,7 +6,22 @@
   <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
   <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-
+<!–– useitbetter.com tag ––>
+<script type="text/javascript">
+  (function() {
+    var head = document.querySelector("head"), ur = document.createElement("script"), ud = document.createElement("script"), err = function(){document.documentElement.setAttribute('uib-triggers','failed');};      
+    ur.type = "text/javascript"; ur.async = true; ur.src = "https://uibcdn.com/sdk/50579/uResponses.min.js";
+    ud.type = "text/javascript"; ud.async = true; ud.src = "https://uibcdn.com/sdk/50579/udash.min.js";
+    ud.onload = function(){
+        uDash.init({ uProjectName: 'Garage-Cabinets-Online_2243',uProjectApiPass: '8ba9153e6cd0078b5f586a5809bf5f65',uPort: 50579 });
+    }
+    ud.onerror = err;
+    ur.onerror = err;
+    head.appendChild(ur);
+    head.appendChild(ud);
+  })();
+</script>
+<!–– end of useitbetter.com tag ––>
 
     <!-- Basic page needs ================================================== -->
     <meta charset="utf-8">
