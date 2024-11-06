@@ -307,9 +307,13 @@
     height:{{section.settings.height_button}}px;
     line-height:{{section.settings.height_button}}px;
   }
-  .affirm-iframe-widget {
-    display: none !important;
-}
+  @media (max-width:600px){
+    .affirm-iframe-widget,
+    .notification.popup-cookie{
+      display: none !important;
+    }
+  }
+  
 </style>
 <script>
   jQuery('.main-content > .container').removeClass('container');
