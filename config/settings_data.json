@@ -1,15 +1,15 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "layout_width_body": false,
     "body_rtl": false,
     "display_breadcrumb": true,
@@ -18,10 +18,10 @@
     "display_backgound_images": false,
     "breadcrumb_align": "left",
     "logo_password": "",
-    "block_home_image": "shopify:\/\/shop_images\/coming-soon.jpg",
+    "block_home_image": "shopify://shop_images/coming-soon.jpg",
     "home_block_title_7": "Coming Soon",
     "home_block_sub_title_7": "Our website is under construction, we are working very hard to give you the best experience with this one.<br>You will love Ciao as much as we do. It will morph perfectly on your needs!",
-    "home_block_countdown_7": "2021\/12\/31 10:30:00",
+    "home_block_countdown_7": "2021/12/31 10:30:00",
     "body_color": "#666666",
     "body_link_color": "#000000",
     "body_link_color_hover": "#fc6a21",
@@ -89,7 +89,7 @@
     "second_button_border_color_hover_3": "#ffffff",
     "second_button_text_color_hover_3": "#fff",
     "body_font_size": 14,
-    "fonts_name_0": "https:\/\/fonts.googleapis.com\/css?family=Nunito:300,400,600,700&display=swap",
+    "fonts_name_0": "https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap",
     "fonts_name_1": "'Nunito', sans-serif",
     "fonts_weight_1": "400",
     "fonts_name_2": "'Nunito', sans-serif",
@@ -137,7 +137,7 @@
     "product_visitors_stroke": 4,
     "product_visitors_interval_min": 2,
     "product_visitors_interval_max": 6,
-    "bagde_image": "shopify:\/\/shop_images\/paypal-product1.png",
+    "bagde_image": "shopify://shop_images/paypal-product1.png",
     "product_text_countdown_reset_time": 2,
     "product_text_countdown_delivery_time": 3,
     "percent_min_value": 4,
@@ -205,7 +205,7 @@
     "popup_newsletter_sub_title": "Sign up here to get the latest news, updates and special offers delivered directly to your inbox.",
     "popup_newsletter_message": "",
     "footer_newsletter_go": "Subcribe",
-    "mailing_list_form_action": "\/\/myshopify.us11.list-manage.com\/subscribe\/post?u=dc2f7ae277cf94bbd789185dd&amp;id=3526f8367b",
+    "mailing_list_form_action": "//myshopify.us11.list-manage.com/subscribe/post?u=dc2f7ae277cf94bbd789185dd&amp;id=3526f8367b",
     "footer_column_4_icon_link_1": "#",
     "footer_column_4_icon_link_2": "#",
     "footer_column_4_icon_link_3": "#",
@@ -217,7 +217,7 @@
     "age_verify": false,
     "age_verify_title": "PLEASE VERIFY YOUR AGE",
     "age_verify_subtitle": "This website contains adult material and is only suitable for those 18 years or older.<br>Click Enter only if you are at least 18 years of age.",
-    "age_verify_link": "https:\/\/themeforest.net\/user\/cleversoft\/portfolio",
+    "age_verify_link": "https://themeforest.net/user/cleversoft/portfolio",
     "show_multiple_currencies": true,
     "currency_format": "money_format",
     "supported_currencies_1": "USD",
@@ -241,7 +241,7 @@
     "might_like_title": "You might also like",
     "tabnew_collection": "",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/ezgif.com-resize_2.png",
+    "checkout_logo_image": "shopify://shop_images/ezgif.com-resize_2.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
@@ -680,7 +680,7 @@
               "float": "right",
               "title": "",
               "url": "",
-              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-garage-cabinets\"><strong>Ulti-MATE 2.0 Series<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-garage-cabinets\">Ulti-MATE 2.0 Series - Black<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-graphite-grey\">Ulti-MATE 2.0 Series - Graphite Grey<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-red\">Ulti-MATE 2.0 Series - Red<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-silver\">Ulti-MATE 2.0 Series - Silver<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-2-0-series-white\">Ulti-MATE 2.0 Series - White<\/a>"
+              "content": "<a href=\"https://garagecabinetsonline.com/collections/ulti-mate-garage-cabinets\"><strong>Ulti-MATE 2.0 Series</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/ulti-mate-garage-cabinets\">Ulti-MATE 2.0 Series - Black</a>\n<a href=\"https://garagecabinetsonline.com/collections/ulti-mate-2-0-series-graphite-grey\">Ulti-MATE 2.0 Series - Graphite Grey</a>\n<a href=\"https://garagecabinetsonline.com/collections/ulti-mate-2-0-series-red\">Ulti-MATE 2.0 Series - Red</a>\n<a href=\"https://garagecabinetsonline.com/collections/ulti-mate-2-0-series-silver\">Ulti-MATE 2.0 Series - Silver</a>\n<a href=\"https://garagecabinetsonline.com/collections/ulti-mate-2-0-series-white\">Ulti-MATE 2.0 Series - White</a>"
             }
           },
           "13802903-f35f-41ab-a567-556cddfcf302": {
@@ -692,7 +692,7 @@
               "float": "right",
               "title": "",
               "url": "",
-              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/proslat-cabinets\"><strong>Proslat Cabinets<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/proslat-fusion-series-cabinets\">Proslat Fusion Series<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/proslat-fusion-plus-series-cabinets\">Proslat FusionPlus Series<\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/gladiatorgarageworksorganizers\"><strong>Gladiator Garage Works<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/montezuma\"><strong>Montezuma<\/strong><\/a>"
+              "content": "<a href=\"https://garagecabinetsonline.com/collections/proslat-cabinets\"><strong>Proslat Cabinets</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/proslat-fusion-series-cabinets\">Proslat Fusion Series</a>\n<a href=\"https://garagecabinetsonline.com/collections/proslat-fusion-plus-series-cabinets\">Proslat FusionPlus Series</a>\n<a href=\"https://garagecabinetsonline.com/collections/gladiatorgarageworksorganizers\"><strong>Gladiator Garage Works</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/montezuma\"><strong>Montezuma</strong></a>"
             }
           },
           "532f2477-9b21-4209-be16-1454ab0636be": {
@@ -704,7 +704,7 @@
               "float": "right",
               "title": "",
               "url": "",
-              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/prepac-elite-storage\"><strong>Prepac Elite Storage<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/quantum-storage-cabinets\"><strong>Quantum Storage Systems<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/beta-tools\"><strong>Beta Tools<\/strong><\/a>"
+              "content": "<a href=\"https://garagecabinetsonline.com/collections/prepac-elite-storage\"><strong>Prepac Elite Storage</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/quantum-storage-cabinets\"><strong>Quantum Storage Systems</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/beta-tools\"><strong>Beta Tools</strong></a>"
             }
           },
           "1550221074626": {
@@ -716,9 +716,9 @@
               "float": "right",
               "stype": "style_4",
               "title": "",
-              "url": "shopify:\/\/collections\/laptop",
-              "image": "shopify:\/\/shop_images\/Garage_Cabinet_Sets_2.png",
-              "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%<\/p>\n            <span class=\"f3-banner__title\">Ulti-MATE Garage 2.0<\/span>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"><\/path>\n<\/svg>\n<\/a>\n<\/div>",
+              "url": "shopify://collections/laptop",
+              "image": "shopify://shop_images/Garage_Cabinet_Sets_2.png",
+              "custom_html": "<div class=\"l-home-bnr\">            <p class=\"f3-banner__sub\">Save up to 30%</p>\n            <span class=\"f3-banner__title\">Ulti-MATE Garage 2.0</span>\n            <a class=\"f3-banner__link\" href=\"\">Learn More <svg width=\"12\" height=\"12\" viewbox=\"0 0 12 12\" fill=\"\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4.0125 11L3.125 10.1125L7.2375 6L3.125 1.8875L4.0125 1L9.0125 6L4.0125 11Z\"></path>\n</svg>\n</a>\n</div>",
               "button_text": ""
             }
           },
@@ -740,7 +740,7 @@
               "float": "right",
               "title": "",
               "url": "",
-              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/cash-box-safes\"><strong>Cash Box Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/data-safes\"><strong>Data Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/floor-safes\"><strong>Floor Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/hotel-safes\"><strong>Hotel Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/wall-safes\"><strong>Wall Safes<\/strong><\/a>"
+              "content": "<a href=\"https://garagecabinetsonline.com/collections/cash-box-safes\"><strong>Cash Box Safes</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/data-safes\"><strong>Data Safes</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/floor-safes\"><strong>Floor Safes</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/hotel-safes\"><strong>Hotel Safes</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/wall-safes\"><strong>Wall Safes</strong></a>"
             }
           },
           "a8229659-1a11-47dd-bccc-1b9d2176b150": {
@@ -752,7 +752,7 @@
               "float": "right",
               "title": "",
               "url": "",
-              "content": "<a href=\"https:\/\/garagecabinetsonline.com\/collections\/office-safes\"><strong>Office Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/personal-home-safes\"><strong>Personal Home Safes<\/strong><\/a>\n<a href=\"https:\/\/garagecabinetsonline.com\/collections\/security-safes\"><strong>Securit Safes<\/strong><\/a>"
+              "content": "<a href=\"https://garagecabinetsonline.com/collections/office-safes\"><strong>Office Safes</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/personal-home-safes\"><strong>Personal Home Safes</strong></a>\n<a href=\"https://garagecabinetsonline.com/collections/security-safes\"><strong>Securit Safes</strong></a>"
             }
           }
         },
@@ -768,7 +768,7 @@
         ],
         "settings": {
           "header_layout": "header-layout-01",
-          "logo": "shopify:\/\/shop_images\/logo_1.png",
+          "logo": "shopify://shop_images/logo_1.png",
           "logo_height_a": 30,
           "enable_header_logosvg": false,
           "header_logo_svg": "",
@@ -784,7 +784,7 @@
           "enable_header_topbar": true,
           "header_topbar_left": "RECEIVE A FREE GLADIATOR GEAR TRACK WITH 5 HOOKS ON ANY ULTI-MATE 2.0 CABINET SET OVER $1500.00",
           "enable_custom_content": true,
-          "custom_content": "Have questions?<br><a hreft=\"tel:8009608341\"> Call us: 800-960-8341<\/a>",
+          "custom_content": "Have questions?<br><a hreft=\"tel:8009608341\"> Call us: 800-960-8341</a>",
           "header_topbar_menu": "",
           "menu": "main-menu-megamenu",
           "show_header_search": true,
@@ -824,8 +824,7 @@
           "344558f0-b02b-4dec-95bd-7018bae50a21",
           "b732ee9a-a062-4962-9b97-e5c0c2b3081c"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "product-template": {
         "type": "product-template",
@@ -855,7 +854,7 @@
           "enable_sizeguide": false,
           "enable_delivery": false,
           "delivery_lable": "Delivery & Return",
-          "delivery_content": "<h6>SHIPPING<\/h6>\n<ul>\n    <li>Complimentary ground shipping within 1 to 7 business days<\/li>\n    <li>In-store collection available within 1 to 7 business days<\/li>\n    <li>Next-day and Express delivery options also available<\/li>\n    <li>Purchases are delivered in an orange box tied with a Bolduc ribbon, with the exception of certain items<\/li>\n    <li>See the delivery FAQs for details on shipping methods, costs and delivery times<\/li>\n<\/ul>\n<h6>RETURNS AND EXCHANGES<\/h6>\n<ul>\n    <li>Easy and complimentary, within 14 days<\/li>\n    <li>See conditions and procedure in our return FAQs<\/li>\n<\/ul>",
+          "delivery_content": "<h6>SHIPPING</h6>\n<ul>\n    <li>Complimentary ground shipping within 1 to 7 business days</li>\n    <li>In-store collection available within 1 to 7 business days</li>\n    <li>Next-day and Express delivery options also available</li>\n    <li>Purchases are delivered in an orange box tied with a Bolduc ribbon, with the exception of certain items</li>\n    <li>See the delivery FAQs for details on shipping methods, costs and delivery times</li>\n</ul>\n<h6>RETURNS AND EXCHANGES</h6>\n<ul>\n    <li>Easy and complimentary, within 14 days</li>\n    <li>See conditions and procedure in our return FAQs</li>\n</ul>",
           "enable_ask_product": false,
           "contact_lable": "Ask about this product",
           "contact_title_1": "Have a question?",
@@ -948,10 +947,10 @@
         "settings": {
           "title_about": "Our story so far.",
           "enable_about_banner": true,
-          "bg_about_banner": "shopify:\/\/shop_images\/ciao-banner-3.jpg",
-          "sub_title_about_texts_1": "<p> A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.<\/p>\n<p>Your About Us page might include:<\/p>\n<ul>\n<li>Who you are<\/li>\n<li>Why you sell the items you sell<\/li>\n<li>Where you are located<\/li>\n<li>How long you have been in business<\/li>\n<li>How long you have been running your online shop<\/li>\n<li>Who are the people on your team<\/li>\n<li>Contact information<\/li>\n<li>Social links (Twitter, Facebook)<\/li>\n<\/ul>\n<p>To edit the content on this page, go to the Pages section of your Shopify admin.<\/p>",
+          "bg_about_banner": "shopify://shop_images/ciao-banner-3.jpg",
+          "sub_title_about_texts_1": "<p> A great About Us page helps builds trust between you and your customers. The more content you provide about you and your business, the more confident people will be when purchasing from your store.</p>\n<p>Your About Us page might include:</p>\n<ul>\n<li>Who you are</li>\n<li>Why you sell the items you sell</li>\n<li>Where you are located</li>\n<li>How long you have been in business</li>\n<li>How long you have been running your online shop</li>\n<li>Who are the people on your team</li>\n<li>Contact information</li>\n<li>Social links (Twitter, Facebook)</li>\n</ul>\n<p>To edit the content on this page, go to the Pages section of your Shopify admin.</p>",
           "enable_about_address": true,
-          "bg_image_address_1": "shopify:\/\/shop_images\/signature.png"
+          "bg_image_address_1": "shopify://shop_images/signature.png"
         }
       },
       "contact-template": {
@@ -966,13 +965,13 @@
           "1554193848046": {
             "type": "map",
             "settings": {
-              "google_map_code": "<iframe style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d14898.40075406182!2d105.80466186709666!3d21.008657867340695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6024b0c0cf%3A0xbf4151471f21d150!2zMTY5IE5ndXnhu4VuIE5n4buNYyBWxaksIFRydW5nIEhvw6AsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1431913415325\" width=\"100%\" height=\"400\" frameborder=\"0\"><\/iframe>"
+              "google_map_code": "<iframe style=\"border:0\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14898.40075406182!2d105.80466186709666!3d21.008657867340695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6024b0c0cf%3A0xbf4151471f21d150!2zMTY5IE5ndXnhu4VuIE5n4buNYyBWxaksIFRydW5nIEhvw6AsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1431913415325\" width=\"100%\" height=\"400\" frameborder=\"0\"></iframe>"
             }
           },
           "1554193851438": {
             "type": "block_text",
             "settings": {
-              "contact_info_1": "<div class=\"col-md-4 col-xs\">\n    <i class=\"cs-font clever-icon-phone-6\"><\/i>\n    <div class=\"content\">\n      <h5>Entrer en contact<\/h5>\n      <p>Téléphone: 703.172.3412<\/p>\n      <p>Télécopieur: 703.172.2341<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"col-md-4 col-xs\">\n    <i class=\"cs-font clever-icon-place-localizer\"><\/i>\n    <div class=\"content\">\n      <h5>Visitez notre site<\/h5>\n      <p>Tarup 5210, Odense kommune, Danmark<\/p>\n      <p>Du lundi au vendredi: 10h à 19h<\/p>\n    <\/div>\n  <\/div>\n  <div class=\"col-md-4 col-xs\">\n    <i class=\"cs-font clever-icon-clock-3\"><\/i>\n    <div class=\"content\">\n      <h5>Travailler avec nous?<\/h5>\n      <p>Etsy moustache seifies Brooklyn <br>SWAG artisan typographie.<\/p>\n    <\/div>\n  <\/div>"
+              "contact_info_1": "<div class=\"col-md-4 col-xs\">\n    <i class=\"cs-font clever-icon-phone-6\"></i>\n    <div class=\"content\">\n      <h5>Entrer en contact</h5>\n      <p>Téléphone: 703.172.3412</p>\n      <p>Télécopieur: 703.172.2341</p>\n    </div>\n  </div>\n  <div class=\"col-md-4 col-xs\">\n    <i class=\"cs-font clever-icon-place-localizer\"></i>\n    <div class=\"content\">\n      <h5>Visitez notre site</h5>\n      <p>Tarup 5210, Odense kommune, Danmark</p>\n      <p>Du lundi au vendredi: 10h à 19h</p>\n    </div>\n  </div>\n  <div class=\"col-md-4 col-xs\">\n    <i class=\"cs-font clever-icon-clock-3\"></i>\n    <div class=\"content\">\n      <h5>Travailler avec nous?</h5>\n      <p>Etsy moustache seifies Brooklyn <br>SWAG artisan typographie.</p>\n    </div>\n  </div>"
             }
           },
           "1554193854114": {
@@ -988,8 +987,7 @@
           "1554193851438",
           "1554193854114"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "product-related": {
         "type": "product-related",
@@ -1056,15 +1054,15 @@
           "1554180530658": {
             "type": "faq",
             "settings": {
-              "subtitlefaq": "I cannot upload the theme to my Shopify store \/ Shopify ?",
-              "contentfaq": "1\/ Download the package from themeforest.net (the file is in zip format) 2\/ Extract the file you've just downloaded. 3\/ Find this file from the extracted data: ione_theme_package_1_0_X.zip, then you just need to upload this file to your Shopify store."
+              "subtitlefaq": "I cannot upload the theme to my Shopify store / Shopify ?",
+              "contentfaq": "1/ Download the package from themeforest.net (the file is in zip format) 2/ Extract the file you've just downloaded. 3/ Find this file from the extracted data: ione_theme_package_1_0_X.zip, then you just need to upload this file to your Shopify store."
             }
           },
           "1554180550586": {
             "type": "faq",
             "settings": {
               "subtitlefaq": "What I have to do when I need your support?",
-              "contentfaq": "To save your time and reach our support quickly, please follow below steps: 1\/ Create a staff account for us (with Themes permission and Settings permission) http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members 2\/ Capture screenshot or video for the issue you get. 3\/ Specify which template and version you are using. 4\/ Describe clearly how to reproduce the issue. 5\/ Send all information (staff account, screenshot, video, template name and version, description of the issues, link) to hello@cleversoft.co"
+              "contentfaq": "To save your time and reach our support quickly, please follow below steps: 1/ Create a staff account for us (with Themes permission and Settings permission) http://docs.shopify.com/manual/settings/account/staff-members 2/ Capture screenshot or video for the issue you get. 3/ Specify which template and version you are using. 4/ Describe clearly how to reproduce the issue. 5/ Send all information (staff account, screenshot, video, template name and version, description of the issues, link) to hello@cleversoft.co"
             }
           },
           "1554180579279": {
@@ -1084,15 +1082,15 @@
           "1554180615142": {
             "type": "faq",
             "settings": {
-              "subtitlefaq": "Can I turn on\/off Lazy Loading Image \/ Item Animation \/ Fade Up on the page?",
-              "contentfaq": "Yes. You can turn on\/off the animation in the Setting page."
+              "subtitlefaq": "Can I turn on/off Lazy Loading Image / Item Animation / Fade Up on the page?",
+              "contentfaq": "Yes. You can turn on/off the animation in the Setting page."
             }
           },
           "1554180629841": {
             "type": "faq",
             "settings": {
-              "subtitlefaq": "Can I turn on\/off some blocks on the page?",
-              "contentfaq": "Yes. You can turn on\/off almost any blocks on the page (featured products, slideshow, banners, related products, recent products,...)."
+              "subtitlefaq": "Can I turn on/off some blocks on the page?",
+              "contentfaq": "Yes. You can turn on/off almost any blocks on the page (featured products, slideshow, banners, related products, recent products,...)."
             }
           },
           "1554180639632": {
@@ -1113,14 +1111,14 @@
             "type": "faq",
             "settings": {
               "subtitlefaq": "I notice that the images used in the theme are all portrait.",
-              "contentfaq": "That is not a problem. You just need to modify the width\/height ratio in theme settings."
+              "contentfaq": "That is not a problem. You just need to modify the width/height ratio in theme settings."
             }
           },
           "1554180667121": {
             "type": "faq",
             "settings": {
               "subtitlefaq": "Does the theme support image resizing and cropping?",
-              "contentfaq": "Yes. Normally, the theme will resize images to a default size (based on your width\/height ratio setting). We also have Crop setting if you don’t want to scale the image."
+              "contentfaq": "Yes. Normally, the theme will resize images to a default size (based on your width/height ratio setting). We also have Crop setting if you don’t want to scale the image."
             }
           },
           "1554180680506": {
@@ -1140,7 +1138,7 @@
           "1554180698274": {
             "type": "faq",
             "settings": {
-              "subtitlefaq": "Do you guys provide customer support during weekends \/ holidays?",
+              "subtitlefaq": "Do you guys provide customer support during weekends / holidays?",
               "contentfaq": "Normally we don't provide support during weekends, except for urgent cases. In these cases, you only need to mark “Urgent” in your email, we will get back to you ASAP."
             }
           },
@@ -1148,7 +1146,7 @@
             "type": "faq",
             "settings": {
               "subtitlefaq": "Does the theme support Variant Image?",
-              "contentfaq": "Yes, it does. Please check it out here to see how it works: https:\/\/cleversoft-ciao.myshopify.com\/collections\/fashion\/products\/printed-floral-shirts"
+              "contentfaq": "Yes, it does. Please check it out here to see how it works: https://cleversoft-ciao.myshopify.com/collections/fashion/products/printed-floral-shirts"
             }
           }
         },
@@ -1182,7 +1180,7 @@
           "block_home_image": "",
           "home_block_title_7": "Coming Soon",
           "home_block_sub_title_7": "Our website is under construction, we are working very hard to give you the best experience with this one.<br>You will love Ciao as much as we do. It will morph perfectly on your needs!",
-          "home_block_countdown_7": "2020\/12\/31 10:30:00"
+          "home_block_countdown_7": "2020/12/31 10:30:00"
         }
       },
       "footer": {
@@ -1191,7 +1189,7 @@
           "1563434009132": {
             "type": "custom_html",
             "settings": {
-              "custom_html": "<div class=\"\">\n    <h3 class=\"module-title\">Contact Us<\/h3> \n\n        <p class=\"\"> \n            <span> sales@garagecabinetsonline.com <br>We reply within 24 hours<\/span>\n        <\/p>\n        <p class=\"\"> \n            <span>1-800-960-8341 <br>Mon-Fri, 9am until 6pm<\/span>\n        <\/p> \n<!--                           Shopper Approved Seal -- footer.liquid -- 7\/8 -->\n           \n                            <a href=\"https:\/\/www.shopperapproved.com\/reviews\/garagecabinetsonline.com\/\" class=\"shopperlink\"><img src=\"\/\/www.shopperapproved.com\/newseals\/13966\/ee7500-mini-icon.gif\" style=\"border: 0\" alt=\"Customer Reviews\" oncontextmenu=\"var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved \\251 '+d.getFullYear()+'.'); return false;\"><\/a><script type=\"text\/javascript\">(function() { var js = window.document.createElement(\"script\"); js.src = '\/\/www.shopperapproved.com\/seals\/certificate.js'; js.type = \"text\/javascript\"; document.getElementsByTagName(\"head\")[0].appendChild(js); })();<\/script>\n       \n<!--  \n<\/div>-->\n<\/div>"
+              "custom_html": "<div class=\"\">\n    <h3 class=\"module-title\">Contact Us</h3> \n\n        <p class=\"\"> \n            <span> sales@garagecabinetsonline.com <br>We reply within 24 hours</span>\n        </p>\n        <p class=\"\"> \n            <span>1-800-960-8341 <br>Mon-Fri, 9am until 6pm</span>\n        </p> \n<!--                           Shopper Approved Seal -- footer.liquid -- 7/8 -->\n           \n                            \n                      <a href=\"https://www.shopperapproved.com/reviews/garagecabinetsonline.com\" class=\"shopperlink new-sa-seals placement-1893\"><img src=\"//www.shopperapproved.com/seal/13966/1893-sa-seal.gif\" style=\"border-radius: 4px;\" alt=\"Customer Reviews\" oncontextmenu=\"var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved \\251 '+d.getFullYear()+'.'); return false;\"></a><script type=\"text/javascript\"> (function() { var js = window.document.createElement(\"script\"); js.innerHTML = 'function openshopperapproved(o){ var e=\"Microsoft Internet Explorer\"!=navigator.appName?\"yes\":\"no\",n=screen.availHeight-90,r=940;return window.innerWidth<1400&&(r=620),window.open(this.href,\"shopperapproved\",\"location=\"+e+\",scrollbars=yes,width=\"+r+\",height=\"+n+\",menubar=no,toolbar=no\"),o.stopPropagation&&o.stopPropagation(),!1}!function(){for(var o=document.getElementsByClassName(\"shopperlink\"),e=0,n=o.length;e<n;e++)o[e].onclick=openshopperapproved}();'; js.type = \"text/javascript\"; document.getElementsByTagName(\"head\")[0].appendChild(js);var link = document.createElement('link');link.rel = 'stylesheet';link.type = 'text/css';link.href = \"//www.shopperapproved.com/seal/1893.css\";document.getElementsByTagName('head')[0].appendChild(link);})();</script>\n      \n<!--  \n</div>-->\n</div>"
             }
           },
           "1565230801903": {
@@ -1245,7 +1243,7 @@
             "type": "logo",
             "settings": {
               "margin_logo": "0px 0px 0px 0px",
-              "logo": "shopify:\/\/shop_images\/Mask_group-removebg-preview_1.png"
+              "logo": "shopify://shop_images/Mask_group-removebg-preview_1.png"
             }
           }
         },
@@ -1339,7 +1337,7 @@
               "color": "#000000",
               "title": "",
               "color_sub": "#666666",
-              "text": "24\/7 Support"
+              "text": "24/7 Support"
             }
           }
         },
@@ -1364,45 +1362,45 @@
       "bb6d85e2-7424-482b-afb7-8da7d223883a": {
         "type": "l-first-screen",
         "settings": {
-          "image": "shopify:\/\/shop_images\/bg_1.png",
-          "l_image": "shopify:\/\/shop_images\/ulti-mate-garage-2-0-series-black-metallic-6-piece-kit-931_800x-depositphotos-bgremover_1_1_1.png",
+          "image": "shopify://shop_images/bg_1.png",
+          "l_image": "shopify://shop_images/ulti-mate-garage-2-0-series-black-metallic-6-piece-kit-931_800x-depositphotos-bgremover_1_1_1.png",
           "title": "Ulti-MATE<br> Garage Cabinets",
-          "button_link": "shopify:\/\/collections\/ulti-mate-garage-cabinets",
+          "button_link": "shopify://collections/ulti-mate-garage-cabinets",
           "btn_title": "Browse Here",
-          "image2": "shopify:\/\/shop_images\/bg_2.png",
-          "l_image2": "shopify:\/\/shop_images\/img_NewAge_Cabinets.png",
+          "image2": "shopify://shop_images/bg_2.png",
+          "l_image2": "shopify://shop_images/img_NewAge_Cabinets.png",
           "title2": "NewAge<br> Garage Cabinets",
-          "button_link2": "shopify:\/\/collections\/newage-garage-cabinets",
+          "button_link2": "shopify://collections/newage-garage-cabinets",
           "btn_title2": "Browse Here",
-          "image3": "shopify:\/\/shop_images\/ezgif.com-jpg-to-webp-converter.webp",
+          "image3": "shopify://shop_images/ezgif.com-jpg-to-webp-converter.webp",
           "title3": "Design Your Own<br>Cabinet System",
-          "button_link3": "https:\/\/proslatdesigncenter.com\/fp\/GCO",
+          "button_link3": "https://proslatdesigncenter.com/fp/GCO",
           "btn_title3": "Virtual Designer",
-          "image4": "shopify:\/\/shop_images\/Luxury_Saunas_1.png",
+          "image4": "shopify://shop_images/Luxury_Saunas_1.png",
           "title4": "Proslat<br>Slatwalls",
-          "button_link4": "shopify:\/\/collections\/proslat",
+          "button_link4": "shopify://collections/proslat",
           "btn_title4": "Browse Here",
-          "image5": "shopify:\/\/shop_images\/Gladiator_Garage_Works_1.png",
+          "image5": "shopify://shop_images/Gladiator_Garage_Works_1.png",
           "title5": "Gladiator<br>Garage Works",
-          "button_link5": "shopify:\/\/collections\/garage-cabinets-gladiator-garage-works",
+          "button_link5": "shopify://collections/garage-cabinets-gladiator-garage-works",
           "btn_title5": "Browse Here",
-          "image6": "shopify:\/\/shop_images\/bg_3.png",
-          "logo": "shopify:\/\/shop_images\/image_60_1.png",
+          "image6": "shopify://shop_images/bg_3.png",
+          "logo": "shopify://shop_images/image_60_1.png",
           "btn_title6": "Pay over time",
-          "links_urls": "https:\/\/garagecabinetsonline.com\/pages\/garage-cabinets-financing-instant-approval-monthly-payments"
+          "links_urls": "https://garagecabinetsonline.com/pages/garage-cabinets-financing-instant-approval-monthly-payments"
         }
       },
       "b91c0435-a80f-49f1-90fe-bd2dfa600bcc": {
         "type": "l-second-screen",
         "settings": {
           "title": "YOUR #1 TRUSTED SOURCE FOR GARAGE CABINETS AND STORAGE",
-          "image": "shopify:\/\/shop_images\/Group_50_1.png",
+          "image": "shopify://shop_images/Group_50_1.png",
           "title_box": "Authorized Dealer",
           "text_box": "Authorized Dealer for over 10 years.",
-          "image2": "shopify:\/\/shop_images\/Group_48_1.png",
+          "image2": "shopify://shop_images/Group_48_1.png",
           "title_box2": "Fast and Free Delivery",
           "text_box2": "Get free shipping for orders over $250.",
-          "image3": "shopify:\/\/shop_images\/Group_49_1.png",
+          "image3": "shopify://shop_images/Group_49_1.png",
           "title_box3": "Dedicated support",
           "text_box3": "Quality assistance from our experts."
         }
@@ -1413,89 +1411,89 @@
           "a6da3e10-1944-4dc9-854b-6adfb1db892b": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NewAge_87354b18-4dff-4ff4-a945-45bf7f0030b5.png",
+              "image": "shopify://shop_images/NewAge_87354b18-4dff-4ff4-a945-45bf7f0030b5.png",
               "title": "NewAge",
-              "url": "shopify:\/\/collections\/newage-garage-cabinets"
+              "url": "shopify://collections/newage-garage-cabinets"
             }
           },
           "c2545e7f-752a-49be-bf3c-1bc5ad736966": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Ultimate.png",
+              "image": "shopify://shop_images/Ultimate.png",
               "title": "Ulti-Mate",
-              "url": "https:\/\/garagecabinetsonline.com\/collections\/ulti-mate-garage-cabinets"
+              "url": "https://garagecabinetsonline.com/collections/ulti-mate-garage-cabinets"
             }
           },
           "51d1c0f8-f730-4164-8d6d-b4062d731d99": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Proslat_e1e6e52f-a820-4a6a-9b0a-17e0fdd8be1e.png",
+              "image": "shopify://shop_images/Proslat_e1e6e52f-a820-4a6a-9b0a-17e0fdd8be1e.png",
               "title": "Proslat",
-              "url": "shopify:\/\/collections\/proslat-cabinets"
+              "url": "shopify://collections/proslat-cabinets"
             }
           },
           "17d1e410-b158-418c-917e-913e422ef54f": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Gladiator.png",
+              "image": "shopify://shop_images/Gladiator.png",
               "title": "Gladiator Garage Works",
-              "url": "shopify:\/\/collections\/gladiatorgarageworksorganizers"
+              "url": "shopify://collections/gladiatorgarageworksorganizers"
             }
           },
           "a0d47f5a-7938-47f4-bf5e-30d7868faa5f": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Swisstrax.png",
+              "image": "shopify://shop_images/Swisstrax.png",
               "title": "SwitchTrax",
-              "url": "shopify:\/\/collections\/swisstrax-garage-flooring"
+              "url": "shopify://collections/swisstrax-garage-flooring"
             }
           },
           "6fea4fbf-7ffd-4c1f-8091-c6813965dcf5": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/BetterLife.png",
+              "image": "shopify://shop_images/BetterLife.png",
               "title": "BetterLifeTechnology",
-              "url": "shopify:\/\/collections\/better-life-technology-garage-flooring"
+              "url": "shopify://collections/better-life-technology-garage-flooring"
             }
           },
           "1865dfc8-b612-4f1a-a600-1d890c81b837": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Neonetics.png",
+              "image": "shopify://shop_images/Neonetics.png",
               "title": "Neonetics",
-              "url": "shopify:\/\/collections\/neonetics"
+              "url": "shopify://collections/neonetics"
             }
           },
           "487e2e9c-5179-442d-923e-e840f3211b70": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Collectable.png",
+              "image": "shopify://shop_images/Collectable.png",
               "title": "Collectibale Signs and CLocks",
-              "url": "https:\/\/garagecabinetsonline.com\/collections\/vendors?q=Coyote"
+              "url": "https://garagecabinetsonline.com/collections/vendors?q=Coyote"
             }
           },
           "e4bba8bf-f4e8-4db7-994c-07ee64dedf08": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Blaze_fa5cbfbc-fc1e-4bae-b445-099976c44b31.png",
+              "image": "shopify://shop_images/Blaze_fa5cbfbc-fc1e-4bae-b445-099976c44b31.png",
               "title": "Blaze",
-              "url": "https:\/\/garagecabinetsonline.com\/collections\/vendors?q=Blaze%20Grills"
+              "url": "https://garagecabinetsonline.com/collections/vendors?q=Blaze%20Grills"
             }
           },
           "aa680e34-f5d5-4d48-8974-0b86c73ac43a": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Bull.png",
+              "image": "shopify://shop_images/Bull.png",
               "title": "Bull Outdoor",
-              "url": "shopify:\/\/collections\/outdoor-kitchens"
+              "url": "shopify://collections/outdoor-kitchens"
             }
           },
           "79abef70-e039-4ca3-8716-0565d236bcce": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Lynx.png",
+              "image": "shopify://shop_images/Lynx.png",
               "title": "Lynx",
-              "url": "shopify:\/\/collections\/lynx-grills"
+              "url": "shopify://collections/lynx-grills"
             }
           }
         },
@@ -1535,12 +1533,12 @@
           "82fa5b7a-39f3-408b-a2af-26f0fdc13321-1686054268efca1fad-0"
         ],
         "settings": {
-          "banner_bg": "shopify:\/\/shop_images\/pattern_1.png",
+          "banner_bg": "shopify://shop_images/pattern_1.png",
           "sub": "Save up to 30%",
           "title": "Ulti-MATE Garage 2.0",
-          "btn_link": "shopify:\/\/collections\/ulti-mate-garage-cabinets",
+          "btn_link": "shopify://collections/ulti-mate-garage-cabinets",
           "btn_title": "Learn More",
-          "banner_img": "shopify:\/\/shop_images\/Subtract_1.png",
+          "banner_img": "shopify://shop_images/Subtract_1.png",
           "enable_full_width_load": false,
           "slide_layouts": "slide_layout_1",
           "color": "#ffffff",
@@ -1567,16 +1565,16 @@
       "b33f7da0-62e4-4b54-9396-f141b64b00f6": {
         "type": "l-sixth-screen",
         "settings": {
-          "image": "shopify:\/\/shop_images\/bg_4.png",
-          "title": "<p>RECEIVE A <strong>FREE GLADIATOR GEAR TRACK WITH 5 HOOKS <\/strong><\/p><p>ON ANY ULTI-MATE 2.0 CABINET SET OVER $1500.00<\/p>",
-          "button_link": "shopify:\/\/collections\/ulti-mate-garage-cabinets",
+          "image": "shopify://shop_images/bg_4.png",
+          "title": "<p>RECEIVE A <strong>FREE GLADIATOR GEAR TRACK WITH 5 HOOKS </strong></p><p>ON ANY ULTI-MATE 2.0 CABINET SET OVER $1500.00</p>",
+          "button_link": "shopify://collections/ulti-mate-garage-cabinets",
           "btn_title": "SHOP NOW"
         }
       },
       "be19151f-1df9-4f44-8d6b-246f1670877b": {
         "type": "l-seventh-screen",
         "settings": {
-          "image": "shopify:\/\/shop_images\/bg_5.png",
+          "image": "shopify://shop_images/bg_5.png",
           "title": "Special Deals Right in your Inbox",
           "text": "Subscribe Now"
         }
@@ -1641,52 +1639,44 @@
     ],
     "blocks": {
       "1005670201854246023": {
-        "type": "shopify:\/\/apps\/seo-king\/blocks\/seo-king-404-redirect\/4aa30173-495d-4e49-b377-c5ee4024262f",
+        "type": "shopify://apps/seo-king/blocks/seo-king-404-redirect/4aa30173-495d-4e49-b377-c5ee4024262f",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "16133342861412372001": {
-        "type": "shopify:\/\/apps\/seo-king\/blocks\/seo-king-404-monitor\/4aa30173-495d-4e49-b377-c5ee4024262f",
+        "type": "shopify://apps/seo-king/blocks/seo-king-404-monitor/4aa30173-495d-4e49-b377-c5ee4024262f",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "18393503268697261835": {
-        "type": "shopify:\/\/apps\/seo-king\/blocks\/seo-king-jsonld-collections\/4aa30173-495d-4e49-b377-c5ee4024262f",
+        "type": "shopify://apps/seo-king/blocks/seo-king-jsonld-collections/4aa30173-495d-4e49-b377-c5ee4024262f",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "3577669850698438243": {
-        "type": "shopify:\/\/apps\/preorder-now-wod\/blocks\/app-embed\/fdf17d17-ef12-4a7b-8383-20cc1fc2a4b6",
+        "type": "shopify://apps/preorder-now-wod/blocks/app-embed/fdf17d17-ef12-4a7b-8383-20cc1fc2a4b6",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "16936614187718193802": {
-        "type": "shopify:\/\/apps\/multifeeds\/blocks\/app_embed\/f3e7ca1d-2d5a-45a7-97dd-2fd45843acef",
+        "type": "shopify://apps/multifeeds/blocks/app_embed/f3e7ca1d-2d5a-45a7-97dd-2fd45843acef",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "1041656249159682650": {
-        "type": "shopify:\/\/apps\/nabu-for-google-pixel\/blocks\/script-block\/1bff1da5-e804-4d5d-ad9c-7c3540bdf531",
+        "type": "shopify://apps/nabu-for-google-pixel/blocks/script-block/1bff1da5-e804-4d5d-ad9c-7c3540bdf531",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
   "presets": {
-    "Default": {
-    }
+    "Default": {}
   },
   "platform_customizations": {
     "custom_css": [
