@@ -161,31 +161,47 @@ Check if the product is sold out and set a variable to be used below.
                   {% endif %}
                 </div>
                 <script>
-                  $(document).ready(function() {
-                    jQuery('#zt_list_product .owl-wrapper .owl-item').first().find('a').addClass('zoomGalleryActive');
-                    jQuery("#zt_list_product").owlCarousel({
-                      loop:false,
-                      margin:1,
-                      responsiveClass:true,
-                      navText: ['<i class="cs-font clever-icon-prev1"></i>','<i class="cs-font clever-icon-next1"></i>'],
-                      responsive:{
-                        0:{
-                          items:3,
-                          nav:true
-                        },
-                        600:{
-                          items:4,
-                          nav:true
-                        },
-                        1000:{
-                          items:6,
-                          nav:true,
-                          loop:false
-                        }
-                      }
-                    })
+                 $(document).ready(function () {
+    // Add zoomGalleryActive class to the first item's anchor
+    jQuery('#zt_list_product .owl-wrapper .owl-item').first().find('a').addClass('zoomGalleryActive');
 
-                  })
+    // Initialize the OwlCarousel for #zt_list_product
+    jQuery("#zt_list_product").owlCarousel({
+        loop: false,
+        margin: 1,
+        responsiveClass: true,
+        nav: true, // Enable navigation arrows
+        navText: [
+            '<i class="cs-font clever-icon-prev"></i>',
+            '<i class="cs-font clever-icon-next"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 3,
+                nav: true
+            },
+            600: {
+                items: 4,
+                nav: true
+            },
+            1000: {
+                items: 6,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+
+    // Event listener for navigation arrows to update active image
+    jQuery("#zt_list_product").on('changed.owl.carousel', function (event) {
+        // Remove active class from all anchors
+        jQuery('#zt_list_product .owl-item a').removeClass('zoomGalleryActive');
+
+        // Add active class to the currently visible item's anchor
+        jQuery('#zt_list_product .owl-item.active').first().find('a').addClass('zoomGalleryActive');
+    });
+});
+
                 </script> 
                 {% endif %}
               </div>
