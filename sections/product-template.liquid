@@ -215,28 +215,22 @@
   /*end of variant image*/
 
   };
-  $(document).ready(function () {
-    jQuery('#product_owl').each(function () {
-        jQuery(this).owlCarousel({
-            singleItem: true, // Deprecated in newer versions; use `items: 1`
-            items: 1, // Ensures one image at a time
-            lazyLoad: true,
-            dots: false,
-            nav: true, // Updated property from `navigation`
-            navText: [
-                '<i class="cs-font clever-icon-prev1"></i>',
-                '<i class="cs-font clever-icon-next1"></i>'
-            ],
-            onInitialized: function () {
-                console.log("Carousel initialized");
-            },
-            onChanged: function () {
-                console.log("Carousel moved");
-            }
-        });
-    });
-});
+  $(document).ready(function() {
+    jQuery('#product_owl').each(function() {
+      jQuery(this).owlCarousel({
+        singleItem:true,
+        lazyLoad : true,
+        dots:false,
+        navigation : true,
+        navigationText : ['<i class="cs-font clever-icon-prev"></i>','<i class="cs-font clever-icon-next"></i>'],
+        afterInit: function (elem) {
 
+        },
+        afterMove: function (elem) {
+        }
+      }); 
+    });
+  });
   jQuery(function($) {
     {% if product.available and product.variants.size > 1 %}
     new Shopify.OptionSelectors('product-selectors', {
