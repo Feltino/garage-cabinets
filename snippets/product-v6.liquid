@@ -137,7 +137,19 @@ Check if the product is sold out and set a variable to be used below.
                     <a href="{{ featured_image | img_url: 'master' }}" class="zoom" id="placeholder" >
                       <img id="product-featured-image" src="{{ featured_image | img_url: 'master' }}" alt="{{ featured_image.alt | escape }}" data-zoom-image="{{ featured_image.src | img_url: 'master' }}"/>
                     </a>
-
+                    <!-- Mobile -->
+                    {% if product.images.size > 0 %}
+                      <div id="video-thumbnails" class="thumbs owl-carousel">
+                        {% for image in product.images %}
+                        <div class="image-item">
+                          <a href="#" data-image="{{ image.src | product_img_url: 'master' }}" data-zoom-image="{{ image.src | product_img_url: 'master' }}" class="thumbnail-link">
+                            <img src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
+                          </a>
+                        </div>
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+                    <!-- End Mobile -->
                     <div class="product-video-wr">
                       {% include 'product-360'%}
                       {% if instructions.degree-360-preview %}
@@ -184,7 +196,44 @@ Check if the product is sold out and set a variable to be used below.
                         }
                       }
                     })
-
+                    // Initialize carousel for thumbnails in .video-wr
+                    jQuery("#video-thumbnails").owlCarousel({
+                      loop: false,
+                      margin: 1,
+                      responsiveClass: true,
+                      navText: [
+                        '<i class="cs-font clever-icon-prev"></i>',
+                        '<i class="cs-font clever-icon-next"></i>'
+                      ],
+                      responsive: {
+                        0: {
+                          items: 3,
+                          nav: true
+                        },
+                        600: {
+                          items: 4,
+                          nav: true
+                        },
+                        1000: {
+                          items: 6,
+                          nav: true,
+                          loop: false
+                        }
+                      }
+                    });
+                
+                    // Change main image in .video-wr when thumbnail is clicked
+                    jQuery("#video-thumbnails").on("click", ".thumbnail-link", function(e) {
+                      e.preventDefault();
+                      var newImage = jQuery(this).data("image");
+                      var zoomImage = jQuery(this).data("zoom-image");
+                
+                      jQuery(".video-wr #product-featured-image").attr("src", newImage).attr("data-zoom-image", zoomImage);
+                      jQuery(".video-wr #placeholder").attr("href", zoomImage);
+                
+                      jQuery("#video-thumbnails .thumbnail-link").removeClass("zoomGalleryActive");
+                      jQuery(this).addClass("zoomGalleryActive");
+                    });
                   })
                 </script> 
                 {% endif %}
