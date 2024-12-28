@@ -23,9 +23,15 @@ Check if the product is sold out and set a variable to be used below.
         <a href="/" title="Back to the frontpage">Home</a>  
         {% if template contains 'product' %}  
         <span class="icon">/</span>
-        {% for collection in product.collections %}
-        <a href="{{ collection.url }}"> {{ collection.title }}<span>,</span> </a>
-        {% endfor %}
+{% assign collection_count = product.collections.size %}
+{% assign reversed_collections = product.collections | reverse %}
+{% for collection in reversed_collections limit:3 %}
+    <a href="{{ collection.url }}">{{ collection.title }}</a>
+    {% unless forloop.last %},{% endunless %}
+{% endfor %}
+
+
+
         <span class="icon"></span>
         {{ product.title }}
         {% elsif template contains 'collection' and collection.handle %}
@@ -112,10 +118,7 @@ Check if the product is sold out and set a variable to be used below.
         {% else %}
         <div class="col-main col-12">
           {% endif %}
-          <div itemscope itemtype="http://schema.org/Product" class="product">
-            <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
-            <meta itemprop="image" content="{{ product.featured_image.src | product_img_url: 'master' }}">
-            <meta itemprop="shop-currency" content="{{ shop.currency }}">
+          <div class="product">
 
             <div class="row product-img-box">
 
@@ -189,7 +192,7 @@ Check if the product is sold out and set a variable to be used below.
 
 
               <div class="col-12 col-md-12 col-lg-6 product-shop">
-                <div itemprop="offers" itemtype="http://schema.org/Offer" class="shop-detail-content{% if section.settings.enable_payment_button %} buy-now{%endif%}">
+                <div class="shop-detail-content{% if section.settings.enable_payment_button %} buy-now{%endif%}">
                   <div class="fixed-product-wr">
                     <div class="product-label-wr">
                       {% if section.settings.display_sale %}
@@ -199,7 +202,7 @@ Check if the product is sold out and set a variable to be used below.
                       {% if lable_sale  %}
                       <div class="product-label">
                         {% if lable_sale %}
-                        -{{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max |round: 0 }}%
+                        Save {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max |round: 0 }}% Today
                         {% endif %}
                       </div>
                       {% endif %}
@@ -218,37 +221,59 @@ Check if the product is sold out and set a variable to be used below.
                       {% endif %}
                     </div>
                     <header class="product-title {% if collection.previous_product or collection.next_product and section.settings.display_prev_next_product and collection %}has-btn{% endif %}">
-                      <h1 itemprop="name">{{ product.title }}</h1>
+                      <h1 >{{ product.title }}</h1>
                     </header>
-                    <div class="producttop-meta">
-                      {% if section.settings.display_product_reviews %} 
-                      <div class="product-reviews">
-                        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-                      </div>
-                      {% endif %}
-                      {% if section.settings.product_flash_sold_enable %}
-                      <div class="total-sold-pr">
-                        <i class="cs-font clever-icon-fire"></i>
-                        <span class="number-solid"></span> sold in last <span class="add-hours-solid"></span> hours
-                      </div>
-                      {% endif %}
-                    </div>
-                    {% if section.settings.show_vendor %}
-                    <div class="prodcuct-vendor">Vendor: <span>{{ product.vendor }}</span></div>
-                    {% endif %}
-                    {% assign current_variant = product.selected_or_first_available_variant %}
-                    {% if section.settings.show_sku %}
-                    <div class="product-sku">SKU: <span class="variant-sku">{{ current_variant.sku }}</span></div>
-                    {% endif %}
-                    <div class="prices-wr">
-                      <div class="prices">
-                        {% if product.compare_at_price > product.price %}                      
-                        <span class="compare-price">{{ product.compare_at_price_max | money }}</span>
-                        <span class="price on-sale" itemprop="price">{{ product.price | money }}</span>
-                        {% else %}
-                        <span class="price" itemprop="price">{{ product.price | money }}</span>
+                    <!-- Start of Judge.me code --><div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.badge }}</div><!-- End of Judge.me code -->
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+                        {% if section.settings.show_vendor %}
+                        <div class="prodcuct-vendor">Vendor: <span>{{ product.vendor }}</span></div>
                         {% endif %}
-                      </div> 
+                        {% assign current_variant = product.selected_or_first_available_variant %}
+                        {% if section.settings.show_sku %}
+                        <div class="product-sku">SKU: <span class="variant-sku">{{ current_variant.sku }}</span></div>
+                        {% endif %}
+                        <div class="product-custom__deliver d-flex align-items-center">
+                          
+                          <img src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/Group_30_1.png?v=1686138312" alt="free-shipping">
+                          <div><span class="pr-custom__nxt">on Orders<br> over $250</span></div>
+                        </div>
+                         <div class="prices-wr">
+                          <div class="prices">
+                            {% if product.compare_at_price > product.price %}                      
+                            <span class="compare-price">{{ product.compare_at_price_max | money }}</span>
+                            <span class="price on-sale">{{ product.price | money }}</span>
+                            {% else %}
+                            <span class="price">{{ product.price | money }}</span>
+                            {% endif %}
+                          </div> 
+                        </div>
+                        <div class="product-custom__order">Order Today & Save! Price going up soon.</div>
+                        <p class="affirm-as-low-as affirm-mob" data-page-type="product" data-amount="{{ product.price}}"></p>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+                        <div class="producttop-meta">
+                            {% if section.settings.display_product_reviews %} 
+                            <div class="product-reviews">
+                              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                            </div>
+                            {% endif %}
+                            {% if section.settings.product_flash_sold_enable %}
+                            <div class="total-sold-pr">
+                              <i class="cs-font clever-icon-fire"></i>
+                              <span class="number-solid"></span> sold in last <span class="add-hours-solid"></span> hours
+                            </div>
+                            {% endif %}
+                          </div>
+                        <div class="product-custom">
+                          <img class="product-custom__img1" src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/image_75_1.png?v=1686135739" alt="logo">
+                          <div class="m-h3">
+                            <strong>YOUR #1 TRUSTED SOURCE FOR</strong>
+                            GARAGE CABINETS AND STORAGE
+                          </div>
+                          <img class="product-custom__img2" src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/Group_37_1.png?v=1686135931" alt="logo">
+                        </div>
+                        </div>
                     </div>
                   </div>
 
@@ -267,7 +292,7 @@ Check if the product is sold out and set a variable to be used below.
                   {% if instructions.progress-bar %}
 
 
-                  <h3 class="progress-title">Hurry! Only <span>{{inventory_solid}}</span> left in Stock.</h3>
+                  <div class="progress-title">Hurry! Only <span>{{inventory_solid}}</span> left in Stock.</div>
                   <div class="progressbar"><div style="" class="less-than-ten"></div></div>
                   <!--                   <div class="text-number">
 <div class="text-left">Sold: {{instructions.progress-bar}}</div>
@@ -275,8 +300,19 @@ Check if the product is sold out and set a variable to be used below.
 </div> -->
 
                   {%endif %}
-
-                  <div class="form-wr">
+                  <div class="row">
+                    
+                    <div class="col-12">
+                      <p class="affirm-as-low-as affirm-desk" data-page-type="product" data-amount="{{ product.price}}"></p>
+                      <div class="product-question d-flex align-items-center">
+                        <img src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/Group_22_1.png?v=1686139321">
+                        <span>Have a Question? Ask a Specialist</span>
+                        <a href="tel:18009608341">1-800-960-8341</a>
+                        <p>Always a Human to Call</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="form-wr">
                     {% form 'product', product, id: "add-to-cart-form" %}
                     {% assign variantCount = product.variants | size %}
                     {% assign variantCounts = product.options | size %}
@@ -317,7 +353,7 @@ Check if the product is sold out and set a variable to be used below.
                       {% endif %}
                     </div>
 
-                    <div class="clear_fix">
+                    <div class="clear_fix product-custom__add-to-cart">
                       {% if product.available %} 
                       {% if section.settings.show_quantity_selector %}
                       <div class="wrap-qty">
@@ -408,6 +444,21 @@ Check if the product is sold out and set a variable to be used below.
                     </div>
                     {% endif %}  
                   </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 pr_c_m">
+                      <div class="product-custom-dealer">
+                        <div class="d-flex flex-column justify-content-center align-items-center pr_c_m-item">
+                          <img src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/ant-design_safety-certificate-outlined_1.png?v=1686140000" alt="logo">
+                          <p class="text-center">100% Satisfaction<br> Guarantee</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center pr_c_m-item">
+                          <img src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/solar_user-check-broken_1.png?v=1686140042" alt="logo">
+                          <p class="text-center">Authorized<br> Dealer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   {% if section.settings.show_text_countdown %}
                   <div class="pr-view-countdown">
                     <div class="text-countdowns auto-countdown" >
@@ -441,10 +492,14 @@ Check if the product is sold out and set a variable to be used below.
                     {%endif %}
                   </div>
                   {% endif %}
+                  <div class="product-custom__guarante">
+                    <h4>Guarantee <span>SAFE</span> Checkout</h4>
+                    <img src="https://cdn.shopify.com/s/files/1/0091/8988/3964/files/Group_33_1.png?v=1686136964" alt="logo">
+                  </div>
                   {% if product.available %}
-                  <link itemprop="availability" href="http://schema.org/InStock">
+                  <link >
                   {% else %}
-                  <link itemprop="availability" href="http://schema.org/OutOfStock">
+                  <link >
                   {% endif %} 
                 </div>
                 <div class="product_meta">
@@ -505,7 +560,7 @@ Check if the product is sold out and set a variable to be used below.
         {% endif %}
       </div>
     </div>
-  </div>
+  
   <div class="tab_pro_w">
     <div class="container">
       <div class="product-tabs ">
@@ -514,11 +569,17 @@ Check if the product is sold out and set a variable to be used below.
           {% if section.settings.display_product_detail_description %}
           <li class="active"><a class="active" data-toggle="tab" href="#collapse-tab1">Description</a></li>
           {% endif %}
-          {% if section.settings.display_product_reviews %}       
-          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
-            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
-          </li>
-          {% endif %}
+          
+          {% assign description = product.description %}
+          {% capture description %}{{ description }}{% endcapture %}
+          {% assign description_parts = description | split: "<h5" %}
+          {% for part in description_parts %}
+            {% if part contains "</h5>" %}
+              {% assign remove = part | split: ">" | first | append: ">" %}
+              {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
+              <li class="nav-item"><a data-toggle="tab"  href="#collapse-tab{{ forloop.index }}" aria-controls="collapse-tab{{ forloop.index }}" role="tab" data-toggle="tab">{{ part | split: "</h5>" | first | strip_html | replace: remove, "" }}</a></li>
+            {% endif %}
+          {% endfor %}
           {%- for block in section.blocks -%}
           <li><a data-toggle="tab" href="#{{ block.settings.for_group | handle }}">
             {{ block.settings.for_group }}
@@ -570,21 +631,45 @@ Check if the product is sold out and set a variable to be used below.
             </a>
           </li>
           {% endif %}
+          {% if section.settings.display_product_reviews %}       
+          <li {% if active %}class="active" {% assign active = false %} {% endif %}>
+            <a href="#collapse-tab6" data-toggle="tab" class="text-uppercase">Reviews</a>
+          </li>
+          {% endif %}
         </ul>
 
         <div id="myTabContent" class="tab-content">
 
           {% if section.settings.display_product_detail_description %}
           <div id="collapse-tab1" class="tab-pane in active">
-            {{ content }}
+           {{ product.description | split: '<h5>' | first }}
           </div>
-          {% endif %}
+          {% assign description = product.description %}
+{% capture description %}{{ description }}{% endcapture %}
 
+          {% assign description_parts = description | split: "<h5" %}
+          {% endif %}
+                      {% for part in description_parts %}
+                        {% assign fp = part | append: " " | split: "</h5>" | last %}
+                        {% assign p = part | append: " " | split: "</h5>" | last | strip_html | replace: "&nbsp;", "" | replace: " ", "" | strip_newlines %}
+                        {% capture ind %}{{ forloop.index | plus: 0}}{% endcapture %}
+
+                        {% if p != "" or fp contains "<img " or fp contains "<iframe " %}
+                          <div class="tab-pane" id="collapse-tab{{ forloop.index }}">
+                            {{ part | split: "</h5>" | last | replace: "<div", "<span" | replace: "</div", "</span" }}
+                          </div>
+                        {% endif %}
+                      {% endfor %}
           {% if section.settings.display_product_reviews %}       
           <div id="collapse-tab6" class="tab-pane">
+{% comment %}
+            {% include 'rev' %}
+            {% include 'rev2' %}
+            {% include 'rev3' %}
+            {% include 'rev4' %}
+{% endcomment %}
 
-            <span id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</span>
-          </div>
+         </div>
           {% endif %}
           {%- for block in section.blocks -%}
 
@@ -648,6 +733,11 @@ Check if the product is sold out and set a variable to be used below.
 
     </div>
   </div>
+
+<div id="SA_wrapper_522gxfhBJYLW" class="SA__wrapper"></div>
+ </div>
+</div>
+    <script type="text/javascript">var sa_interval = 5000;function saLoadScript(src) { var js = window.document.createElement('script'); js.src = src; js.type = 'text/javascript'; document.getElementsByTagName("head")[0].appendChild(js); } if (typeof(shopper_first) == 'undefined') saLoadScript('https://www.shopperapproved.com/widgets/13966/merchant/rotating-widget/522gxfhBJYLW.js?v=3'); </script>                    
   <style>
 
     {% if section.settings.enable_product_image_zoom %}
@@ -656,10 +746,19 @@ Check if the product is sold out and set a variable to be used below.
     .zoomContainer{display:none!important;}
   </style>
 
-
   <script>
-    jQuery(document).ready(function(){
-
+  function showhideSA(){
+    var visible = jQuery(".product-tabs li a.active.show").text().indexOf("Reviews")>=0;
+    if(visible)
+    jQuery(".SA__wrapper").show();
+    else 
+    jQuery(".SA__wrapper").hide();
+  }      
+    jQuery(document).ready(function() {      
+      showhideSA();
+      jQuery(".product-tabs li").on("click",function(){
+        setTimeout(showhideSA, 100);
+      });
       jQuery('#zt_list_product li').first().find('a').addClass('zoomGalleryActive');
 
       if (jQuery(window).width() > 767) {
@@ -671,9 +770,27 @@ Check if the product is sold out and set a variable to be used below.
           jQuery(".thumbs").css("visibility", "visible")
         });
       }
+      
+
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var addToCartButton = document.getElementById('product-add-to-cart');
+        
+        addToCartButton.addEventListener('click', function() {
+            var popupCart = document.querySelector('.wrapper-container');
+            var popupCart2 = document.querySelector('.js-popup-cart-ajax');
+        
+            if (!addToCartButton.disabled) {
+              setTimeout(function() {
+                  popupCart.classList.add('show-carts');
+                  popupCart.classList.add('show-cart');
+                  popupCart2.classList.add('active');
+              }, 500);
+            }
+        });
     });
   </script>
-
   <style>
     .product-shop.fix-prox {
       position: fixed;
@@ -682,4 +799,44 @@ Check if the product is sold out and set a variable to be used below.
       margin-top: 0!important;
     }
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Product",
+      "name": {{ product.title | json }},
+      "url": {{ request.origin | append: product.url | json }},
+      "image": "{{ product.featured_image.src | product_img_url: 'master' }}",
+      "description": {{ product.description | strip_html | json }},
+      {% if product.selected_or_first_available_variant.sku != blank -%}
+        "sku": {{ product.selected_or_first_available_variant.sku | json }},
+      {%- endif %}
+      "brand": {
+        "@type": "Brand",
+        "name": {{ product.vendor | json }}
+      },
+      "offers": [
+        {%- for variant in product.variants -%}
+          {
+            "@type" : "Offer",
+            {%- if variant.sku != blank -%}
+              "sku": {{ variant.sku | json }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 12 -%}
+              "gtin12": {{ variant.barcode }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 13 -%}
+              "gtin13": {{ variant.barcode }},
+            {%- endif -%}
+            {%- if variant.barcode.size == 14 -%}
+              "gtin14": {{ variant.barcode }},
+            {%- endif -%}
+            "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+            "price" : {{ variant.price | divided_by: 100.00 | json }},
+            "priceCurrency" : {{ cart.currency.iso_code | json }},
+            "url" : {{ request.origin | append: variant.url | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]
+    }
+  </script>
   <!--   // update -->
