@@ -196,7 +196,26 @@ Check if the product is sold out and set a variable to be used below.
                         }
                       }
                     })
-                    // Initialize carousel for thumbnails in .video-wr
+                   
+                    });
+                
+                    // Change main image in .video-wr when thumbnail is clicked
+                   jQuery("#video-thumbnails").on("click", ".thumbnail-link", function(e) {
+    e.preventDefault();
+    var newImage = jQuery(this).data("image");
+    var zoomImage = jQuery(this).data("zoom-image");
+
+    // Update both #product-featured-image and #product-featured-image1
+    jQuery(".video-wr #product-featured-image, .video-wr #product-featured-image1")
+        .attr("src", newImage)
+        .attr("data-zoom-image", zoomImage);
+
+    jQuery(".video-wr #placeholder").attr("href", zoomImage);
+
+    jQuery("#video-thumbnails .thumbnail-link").removeClass("zoomGalleryActive");
+    jQuery(this).addClass("zoomGalleryActive");
+});
+                   // Initialize carousel for thumbnails in .video-wr
                     jQuery("#video-thumbnails").owlCarousel({
                       loop: false,
                       margin: 1,
@@ -220,24 +239,6 @@ Check if the product is sold out and set a variable to be used below.
                           loop: false
                         }
                       }
-                    });
-                
-                    // Change main image in .video-wr when thumbnail is clicked
-                   jQuery("#video-thumbnails").on("click", ".thumbnail-link", function(e) {
-    e.preventDefault();
-    var newImage = jQuery(this).data("image");
-    var zoomImage = jQuery(this).data("zoom-image");
-
-    // Update both #product-featured-image and #product-featured-image1
-    jQuery(".video-wr #product-featured-image, .video-wr #product-featured-image1")
-        .attr("src", newImage)
-        .attr("data-zoom-image", zoomImage);
-
-    jQuery(".video-wr #placeholder").attr("href", zoomImage);
-
-    jQuery("#video-thumbnails .thumbnail-link").removeClass("zoomGalleryActive");
-    jQuery(this).addClass("zoomGalleryActive");
-});
 
                 </script> 
                   <style>
