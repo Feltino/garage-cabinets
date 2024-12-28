@@ -229,8 +229,8 @@ Check if the product is sold out and set a variable to be used below.
                 
                       jQuery(".video-wr #product-featured-image").attr("src", newImage).attr("data-zoom-image", zoomImage);
                       jQuery(".video-wr #placeholder").attr("href", zoomImage);
-                      jQuery("#product-featured-image1").attr("src", newImage);
-                      jQuery("#product-featured-image1").attr("href", zoomImage);
+                      jQuery("[id='product-featured-image']").attr("src", newImage);
+                      jQuery("[id='product-featured-image']").attr("href", zoomImage);
                       jQuery("#video-thumbnails .thumbnail-link").removeClass("zoomGalleryActive");
                       jQuery(this).addClass("zoomGalleryActive");
                     });
