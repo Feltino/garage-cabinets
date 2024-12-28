@@ -165,6 +165,24 @@ Check if the product is sold out and set a variable to be used below.
                       margin:1,
                       responsiveClass:true,
                       navText: ['<i class="cs-font clever-icon-prev"></i>','<i class="cs-font clever-icon-next"></i>'],
+                       items: 1,            // Display 1 item at a time
+    loop: true,          // Enable looping
+    margin: 10,          // Margin between items
+    nav: true,           // Show navigation arrows
+    dots: false,         // Disable pagination dots
+    autoplay: true,      // Enable auto-play
+    autoplayTimeout: 3000,  // Set autoplay timeout
+    autoplayHoverPause: true,  // Pause autoplay when hovered
+    rtl: false,           // Optional: for right-to-left support
+    mouseDrag: false,     // Optional: disable mouse drag
+    touchDrag: false,     // Optional: disable touch drag
+    // Make carousel vertical
+    stagePadding: 0,
+    center: true,        // Optional: center the item
+    onInitialized: function(event) {
+      // Adjust the direction of carousel movement to vertical
+      $(event.target).addClass('owl-vertical');
+    }
                       responsive:{
                         0:{
                           items:3,
