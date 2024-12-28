@@ -139,7 +139,7 @@ Check if the product is sold out and set a variable to be used below.
                     </a>
                     <!-- Mobile -->
                     {% if product.images.size > 0 %}
-                      <div id="video-thumbnails" class="thumbs owl-carousel">
+                      <div class="thumbs owl-carousel">
                         {% for image in product.images %}
                         <div class="image-item">
                             <img id="product-featured-image1" src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
