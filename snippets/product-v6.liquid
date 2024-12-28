@@ -139,7 +139,7 @@ Check if the product is sold out and set a variable to be used below.
                     </a>
                     <!-- Mobile -->
                     {% if product.images.size > 0 %}
-                      <div id="video-thumbnails" class="thumbs owl-carousel">
+                      <div id="video-thumbnails1" class="thumbs owl-carousel">
                         {% for image in product.images %}
                         <div class="image-item" id="placeholder">
                             <img id="product-featured-image1" src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}"  alt="{{ featured_image.alt | escape }}" data-zoom-image="{{ featured_image.src | img_url: 'master' }}">
@@ -196,7 +196,7 @@ Check if the product is sold out and set a variable to be used below.
                       }
                     })
                     // Initialize carousel for thumbnails in .video-wr
-                    jQuery("#video-thumbnails").owlCarousel({
+                    jQuery("#video-thumbnails1").owlCarousel({
                       loop: false,
                       margin: 1,
                       responsiveClass: true,
