@@ -183,6 +183,17 @@
         return arr[0];
     }
 
+  if (variant && variant.featured_image) {
+    var originalImage = jQuery("#product-featured-image1");
+    var newImage = variant.featured_image;
+    var element = originalImage[0];
+
+    function removeExtent(str){
+      var arr = str.split("v=");
+      if(arr[0])
+        return arr[0];
+    }
+
     Shopify.Image.switchImage(newImage, element, function (newImageSizedSrc, newImage, element) {
       jQuery('#zt_list_product img').each(function() {
 
