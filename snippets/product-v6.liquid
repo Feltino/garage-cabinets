@@ -142,7 +142,9 @@ Check if the product is sold out and set a variable to be used below.
                       <div id="video-thumbnails" class="thumbs owl-carousel">
                         {% for image in product.images %}
                         <div class="image-item">
+                          <a href="{{ featured_image | img_url: 'master' }}" class="zoom nt_hid_mob" id="placeholder" >
                             <img id="product-featured-image1" src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
+                          </a>
                         </div>
                         {% endfor %}
                       </div>
@@ -227,7 +229,6 @@ Check if the product is sold out and set a variable to be used below.
                       var zoomImage = jQuery(this).data("zoom-image");
                 
                       jQuery(".video-wr #product-featured-image").attr("src", newImage).attr("data-zoom-image", zoomImage);
-                      jQuery("[id='product-featured-image1']").attr("href", zoomImage);
                       jQuery(".video-wr #placeholder").attr("href", zoomImage);
                 
                       jQuery("#video-thumbnails .thumbnail-link").removeClass("zoomGalleryActive");
