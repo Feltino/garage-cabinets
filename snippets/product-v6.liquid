@@ -135,7 +135,7 @@ Check if the product is sold out and set a variable to be used below.
                   <div class="video-wr">
                     {% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
                     <a href="{{ featured_image | img_url: 'master' }}" class="zoom nt_hid_mob" id="placeholder" >
-                      <img id="product-featured-image1" src="{{ featured_image | img_url: 'master' }}" alt="{{ featured_image.alt | escape }}" data-zoom-image="{{ featured_image.src | img_url: 'master' }}"/>
+                      <img id="product-featured-image" src="{{ featured_image | img_url: 'master' }}" alt="{{ featured_image.alt | escape }}" data-zoom-image="{{ featured_image.src | img_url: 'master' }}"/>
                     </a>
                     <!-- Mobile -->
                     {% if product.images.size > 0 %}
@@ -143,7 +143,7 @@ Check if the product is sold out and set a variable to be used below.
                         {% for image in product.images %}
                         <div class="image-item">
                           <a href="#" data-image="{{ image.src | product_img_url: 'master' }}" data-zoom-image="{{ image.src | product_img_url: 'master' }}" class="thumbnail-link">
-                            <img id="product-featured-image" src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
+                            <img id="product-featured-image1" src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
                           </a>
                         </div>
                         {% endfor %}
