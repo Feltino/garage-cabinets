@@ -173,7 +173,7 @@
   }
   {% endif %}
 if (variant && variant.featured_image) {
-    var originalImages = jQuery("#product-featured-image, #product-featured-image1");
+    var originalImages = jQuery("[id='product-featured-image']");
     var newImage = variant.featured_image;
 
     function removeExtent(str) {
@@ -190,6 +190,7 @@ if (variant && variant.featured_image) {
         }
     });
 }
+
 
 
 
