@@ -142,9 +142,7 @@ Check if the product is sold out and set a variable to be used below.
                       <div id="video-thumbnails" class="thumbs owl-carousel">
                         {% for image in product.images %}
                         <div class="image-item">
-                          <a href="#" data-image="{{ image.src | product_img_url: 'master' }}" data-zoom-image="{{ image.src | product_img_url: 'master' }}" class="thumbnail-link">
                             <img id="product-featured-image1" src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
-                          </a>
                         </div>
                         {% endfor %}
                       </div>
