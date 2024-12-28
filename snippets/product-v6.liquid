@@ -196,11 +196,34 @@ Check if the product is sold out and set a variable to be used below.
                         }
                       }
                     })
-                   
-                    });
-                
-                    // Change main image in .video-wr when thumbnail is clicked
-                   jQuery("#video-thumbnails").on("click", ".thumbnail-link", function(e) {
+                    // Initialize carousel for thumbnails in .video-wr
+jQuery("#video-thumbnails").owlCarousel({
+    loop: false,
+    margin: 1,
+    responsiveClass: true,
+    navText: [
+        '<i class="cs-font clever-icon-prev"></i>',
+        '<i class="cs-font clever-icon-next"></i>'
+    ],
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        600: {
+            items: 1,
+            nav: true
+        },
+        1000: {
+            items: 6,
+            nav: true,
+            loop: false
+        }
+    }
+});
+
+// Use delegated event listener after carousel is initialized
+jQuery(document).on("click", "#video-thumbnails .thumbnail-link", function(e) {
     e.preventDefault();
     var newImage = jQuery(this).data("image");
     var zoomImage = jQuery(this).data("zoom-image");
@@ -215,30 +238,7 @@ Check if the product is sold out and set a variable to be used below.
     jQuery("#video-thumbnails .thumbnail-link").removeClass("zoomGalleryActive");
     jQuery(this).addClass("zoomGalleryActive");
 });
-                   // Initialize carousel for thumbnails in .video-wr
-                    jQuery("#video-thumbnails").owlCarousel({
-                      loop: false,
-                      margin: 1,
-                      responsiveClass: true,
-                      navText: [
-                        '<i class="cs-font clever-icon-prev"></i>',
-                        '<i class="cs-font clever-icon-next"></i>'
-                      ],
-                      responsive: {
-                        0: {
-                          items: 1,
-                          nav: true
-                        },
-                        600: {
-                          items: 1,
-                          nav: true
-                        },
-                        1000: {
-                          items: 6,
-                          nav: true,
-                          loop: false
-                        }
-                      }
+
 
                 </script> 
                   <style>
