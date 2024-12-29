@@ -318,6 +318,10 @@ body .price-box .old-price{
   #zt_list_product .owl-nav {
     top:50% !important;
   }
+  
+  #product .owl-carousel .owl-nav button.owl-next {
+    left:unset !important;
+  }
 }
 @media (max-width:580px){
   .product-custom {
