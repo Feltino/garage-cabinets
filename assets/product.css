@@ -315,6 +315,9 @@ body .price-box .old-price{
   .video-wr{
     display: none;
   }
+  #zt_list_product .owl-nav {
+    top:50% !important;
+  }
 }
 @media (max-width:580px){
   .product-custom {
