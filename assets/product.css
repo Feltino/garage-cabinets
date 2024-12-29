@@ -310,6 +310,12 @@ body .price-box .old-price{
     text-align: center;
   }
 }
+
+@media (max-width:599px){
+  .video-wr{
+    display: none;
+  }
+}
 @media (max-width:580px){
   .product-custom {
     align-items: flex-start;
