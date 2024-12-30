@@ -186,18 +186,17 @@ Check if the product is sold out and set a variable to be used below.
                     })
 
                     var allItems = Array.from(document.querySelectorAll('#zt_list_product .image-item'));
-                    var galleryMap = {};
+                    window.galleryMap = {};
                     for(var i =0; i<allItems.length;i++)
                     {
                       var variants = JSON.parse(allItems[i].dataset.variant);    
                       variants.forEach(variant=>{
-                        if(!galleryMap[variant.id]){
-                          galleryMap[variant.id] = i;
+                        if(!window.galleryMap[variant.id]){
+                          window.galleryMap[variant.id] = i;
                         }
                       });
-                      //galleryMap[] = allItems[i].
                     }
-                      console.log(galleryMap);
+                    console.log(galleryMap);
                   })
                 </script> 
                 {% endif %}
