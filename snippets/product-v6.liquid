@@ -188,10 +188,16 @@ Check if the product is sold out and set a variable to be used below.
                     var allItems = Array.from(document.querySelectorAll('#zt_list_product .image-item'));
                     var galleryMap = {};
                     for(var i =0; i<allItems.length;i++)
-                      {
-                      console.log(i, allItems[i],allItems[i].dataset.variant);
+                    {
+                      var variants = JSON.parse(allItems[i].dataset.variant);    
+                      variants.forEach(variant=>{
+                        if(!galleryMap[variant.id]){
+                          galleryMap[variant.id] = i;
+                        }
+                      });
                       //galleryMap[] = allItems[i].
                     }
+                      console.log(galleryMap);
                   })
                 </script> 
                 {% endif %}
