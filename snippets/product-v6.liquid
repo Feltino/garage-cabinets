@@ -165,7 +165,8 @@ Check if the product is sold out and set a variable to be used below.
                     var allItems = Array.from(document.querySelectorAll('#zt_list_product .owl-wrapper .owl-item'));
                     var galleryMap = {};
                     for(var i =0; i<allItems.length;i++)
-                      galleryMap[] = allItems[i].
+                      console.log(allItems[i],allItems.querySelector(".image-item").dataset.variant);
+                      //galleryMap[] = allItems[i].
                     });
                     jQuery('#zt_list_product .owl-wrapper .owl-item').first().find('a').addClass('zoomGalleryActive');
                     jQuery("#zt_list_product").owlCarousel({
