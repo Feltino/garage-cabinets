@@ -151,7 +151,7 @@ Check if the product is sold out and set a variable to be used below.
 
                   <div id="zt_list_product" class="thumbs owl-carousel">
                     {% for image in product.images %}
-                    <div class="image-item" data-variant="{{ image.variants | json }}">
+                    <div class="image-item" data-variant='{{ image.variants | json }}'>
                       <a data-image="{{ image.src | product_img_url: 'master' }}" data-zoom-image="{{ image.src | product_img_url: 'master' }}">
                         <img src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
                       </a>
