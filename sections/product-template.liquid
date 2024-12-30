@@ -211,6 +211,10 @@
         }
       });
     });        
+    var carouselIndex = window.galleryMap[variant.id];
+    if(carouselIndex >= 0){
+      $(".owl-carousel").trigger('to.owl.carousel', [carouselIndex, 300, true]); // Navigate to slide index 5 without looping
+    }
   }
   // =======CUSTOM======
   //changeslide();
