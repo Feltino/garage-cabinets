@@ -288,6 +288,28 @@ Check if the product is sold out and set a variable to be used below.
                         </div>
                     </div>
                   </div>
+                  {% if product.vendor == "NewAge Garage Cabinets" and product.price > 80000 %}
+                    <div class="sale5">
+                      <b><u>Newage Cabinet Sets Deal Alert</u><br/>Additional 5% Off Applied at Checkout</b>
+                    </div>
+                    <style>
+                      .sale5{
+                          font-size: 24px;
+                          color: red;
+                          background: lightyellow;
+                          border: 1px red dotted;
+                          padding: 10px;
+                          margin-bottom: 20px;
+                          text-align: center;
+                      }
+                      @media (max-width: 600px) {
+                        .sale5 {
+                          font-size: 18px;
+                        }
+                      }
+                    </style>
+                  {% endif %}
+
 
                   {% assign instructions = product.metafields.meta %}
                   {% if instructions.short-description %}
