@@ -205,6 +205,27 @@ Check if the product is sold out and set a variable to be used below.
 
               <div class="col-12 col-md-12 col-lg-6 product-shop">
                 <div class="shop-detail-content{% if section.settings.enable_payment_button %} buy-now{%endif%}">
+                  {% if product.vendor == "NewAge Garage Cabinets" and product.price > 80000 %}
+                    <div class="sale5">
+                      <b><u>Newage Cabinet Sets Deal Alert</u><br/>Additional 5% Off Applied at Checkout</b>
+                    </div>
+                    <style>
+                      .sale5{
+                          font-size: 24px;
+                          color: red;
+                          background: lightyellow;
+                          border: 1px red dotted;
+                          padding: 10px;
+                          margin-top: 20px;
+                          text-align: center;
+                      }
+                      @media (max-width: 600px) {
+                        .sale5 {
+                          font-size: 18px;
+                        }
+                      }
+                    </style>
+                  {% endif %}
                   <div class="fixed-product-wr">
                     <div class="product-label-wr">
                       {% if section.settings.display_sale %}
@@ -288,27 +309,7 @@ Check if the product is sold out and set a variable to be used below.
                         </div>
                     </div>
                   </div>
-                  {% if product.vendor == "NewAge Garage Cabinets" and product.price > 80000 %}
-                    <div class="sale5">
-                      <b><u>Newage Cabinet Sets Deal Alert</u><br/>Additional 5% Off Applied at Checkout</b>
-                    </div>
-                    <style>
-                      .sale5{
-                          font-size: 24px;
-                          color: red;
-                          background: lightyellow;
-                          border: 1px red dotted;
-                          padding: 10px;
-                          margin-top: 20px;
-                          text-align: center;
-                      }
-                      @media (max-width: 600px) {
-                        .sale5 {
-                          font-size: 18px;
-                        }
-                      }
-                    </style>
-                  {% endif %}
+                  
 
 
                   {% assign instructions = product.metafields.meta %}
