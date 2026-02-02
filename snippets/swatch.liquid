@@ -1,9 +1,7 @@
 {% comment %}
 Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
 {% endcomment %}
-
 {% assign file_extension = 'png' %}
-
 {% if swatch == blank %}
 <div class="swatch error">
   <p>You must include the snippet swatch.liquid with the name of a product option.</p> 
@@ -11,12 +9,10 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   <p>Example: <code>{% raw %}{% include 'swatch' with 'Color' %}{% endraw %}</code></p>
 </div>
 {% else %}
-
 {% assign found_option = false %}
 {% assign is_color = false %}
 {% assign option_index = 0 %}
 {% assign is_material = false %}
-
 {% for option in product.options %}
 {% if option == swatch %}
 {% assign found_option = true %}
@@ -37,7 +33,6 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
 {% endif %}
 {% endif %}
 {% endfor %}
-
 {% unless found_option %}
 <div class="swatch error">
   <p>You included the snippet swatch.liquid with the name of a product option — <code>'{{ swatch }}'</code> — that does not belong to your product.</p>
@@ -47,13 +42,11 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
 </div>
 {% else %}
 <div class="swatch clearfix {% if is_color %}color {% else %} size {% endif %} sw-{{ option_index }} swatch-{{settings.designoption1 }}" data-option-index="{{ option_index }}">
-
   <div class="label-heading">{{ swatch }}: <span class="value-variant"></span></div>
-  <div class="1 sw_box">
+  <div class="sw_box">
   {% assign values = '' %}
   {% for variant in product.variants %}
   {% assign value = variant.options[option_index] %}
-
   {% unless values contains value %}
   {% assign values = values | join: ',' %}	
   {% assign values = values | append: ',' | append: value %} 
@@ -62,10 +55,9 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   {%- assign _tag = value | downcase | strip -%}
   {%- assign _tag = ',' | append: _tag | append: ':' -%}
   {%- capture curcol -%}{%- if colors contains _tag -%}{{ colors | split: _tag | last | split: ',' | first | strip }}{%- else -%}{%- endif -%}{%- endcapture -%}
-
   {%- assign s = 'background-color:' | append: curcol | append: '' -%}
-
-  <div data-value="{{ value | escape }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if forloop.first %} active{% endif %}
+  {% comment %} FIX: Check if this value matches the selected variant option, not just loop.first {% endcomment %}
+  <div data-value="{{ value | escape }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if value == product.selected_or_first_available_variant.options[option_index] %} active{% endif %}
                                                                                 {% for i in (1..10) %}
                                                                                 {% capture material_name %}material_name_{{ i }}{% endcapture %} 
                                                                                 {% assign material_name = settings[material_name] %}  
@@ -80,15 +72,12 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
                                                                                 {%- if colors contains _tag -%}
                                                                                 font-size-none
                                                                                 {%endif %}
-
                                                                                 ">
     {% if is_color %}
     <span class="tooltip">{{ value | handle }}</span>
     {% endif %}
-
-    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
-
-
+    {% comment %} FIX: Check if this value matches the selected variant option, not just loop.first {% endcomment %}
+    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if value == product.selected_or_first_available_variant.options[option_index] %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
     <label for="swatch-{{ option_index }}-{{ value  | handle }}" style="  {% unless variant.featured_image.src == blank %}  font-size:0;  background-size: cover;background-image: url({{ variant.featured_image.src | img_url:'118x150'  }});{% endunless %}
                                                                         {% for i in (1..10) %}
                                                                         {% capture material_name %}material_name_{{ i }}{% endcapture %} 
@@ -105,38 +94,14 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
                                                                         font-size:0;{{s}}; 
                                                                         {%endif %}
                                                                         ">
-
       {{ value }}
-
       <img class="crossed-out" src="{{ 'soldout-1.png' | asset_url }}" />
     </label>
-
-    <!--         {% if is_color %}
-<label for="swatch-{{ option_index }}-{{ value | handle }}" style="{% if settings.designoption1 =='product_image' %}    background-size: cover;background-image: url({{ variant.featured_image.src | img_url:'118x150'  }});{%endif %}
-{% if settings.designoption1 =='color' %}  background-color: #{{ value | split: ' ' | last | handle }}; background-color: {{ value | split: ' ' | last | handle }}; {%endif %}
-{% if settings.designoption1 =='materia_image' %} {% for i in (1..10) %}{% capture material_name %}material_name_{{ i }}{% endcapture %} {% assign material_name = settings[material_name] %}  {% assign material_name = material_name |strip %}  {% capture material_image %}material_{{ i }}{% endcapture %} {% assign material_image = settings[material_image] %} {% if value == material_name %} background-image: url(http:{{material_image | img_url: '160x160' }});  {% endif %}{% endfor %}{% endif %}">
-{% if settings.designoption1 =='text' %}{{ value }}{% endif %}
-<img class="crossed-out" src="{{ 'soldout-1.png' | asset_url }}" />
-</label>
-{% elsif is_material %}
-<label for="swatch-{{ option_index }}-{{ value | handle }}" style="{% if settings.designoption1 =='product_image' %}    background-size: cover;background-image: url({{ variant.featured_image.src | img_url:'118x150'  }});{%endif %}
-{% if settings.designoption1 =='color' %}  background-color: #{{ value | split: ' ' | last | handle }}; background-color: {{ value | split: ' ' | last | handle }}; {%endif %}
-{% if settings.designoption1 =='materia_image' %} {% for i in (1..10) %}{% capture material_name %}material_name_{{ i }}{% endcapture %} {% assign material_name = settings[material_name] %}  {% assign material_name = material_name |strip %}  {% capture material_image %}material_{{ i }}{% endcapture %} {% assign material_image = settings[material_image] %} {% if value == material_name %} background-image: url(http:{{material_image | img_url: '160x160' }});  {% endif %}{% endfor %}{% endif %}">
-{% if settings.designoption1 =='text' %}{{ value }}{% endif %}
-<img class="crossed-out" src="{{ 'soldout-1.png' | asset_url }}" />
-</label>
-{% else %}
-<label for="swatch-{{ option_index }}-{{ value | handle }}">
-{{ value }}
-<img class="crossed-out" src="{{ 'soldout-1.png' | asset_url }}" />
-</label>
-{% endif %} -->
   </div>
   {% endunless %}
   {% if variant.available %}
   <script>
     jQuery('.swatch[data-option-index="{{ option_index }}"] .{{ value | handle }}').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
-
   </script>
   {% endif %}
   {% endfor %}
@@ -149,7 +114,5 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   </script>
   </div>
 </div>
-
 {% endunless %}
-
 {% endif %}
