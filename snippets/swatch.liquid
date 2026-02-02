@@ -49,7 +49,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
 <div class="swatch clearfix {% if is_color %}color {% else %} size {% endif %} sw-{{ option_index }} swatch-{{settings.designoption1 }}" data-option-index="{{ option_index }}">
 
   <div class="label-heading">{{ swatch }}: <span class="value-variant"></span></div>
-  <div class="sw_box">
+  <div class="1 sw_box">
   {% assign values = '' %}
   {% for variant in product.variants %}
   {% assign value = variant.options[option_index] %}
