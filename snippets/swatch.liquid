@@ -114,5 +114,12 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   </script>
   </div>
 </div>
+<script>
+  jQuery(document).ready(function(){
+    setTimeout(function(){
+      jQuery('.swatch-element.active input').trigger('change');
+    }, 500);
+  });
+</script>
 {% endunless %}
 {% endif %}
