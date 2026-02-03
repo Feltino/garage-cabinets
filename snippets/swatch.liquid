@@ -56,8 +56,16 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   {%- assign _tag = ',' | append: _tag | append: ':' -%}
   {%- capture curcol -%}{%- if colors contains _tag -%}{{ colors | split: _tag | last | split: ',' | first | strip }}{%- else -%}{%- endif -%}{%- endcapture -%}
   {%- assign s = 'background-color:' | append: curcol | append: '' -%}
-  {% comment %} FIX: Check if this value matches the selected variant option, not just loop.first {% endcomment %}
-  <div data-value="{{ value | escape }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if value == product.selected_or_first_available_variant.options[option_index] %} active{% endif %}
+  
+  {% comment %} 
+    FIX START: Define strict current_variant logic
+  {% endcomment %}
+  {% assign current_variant = product.selected_variant %}
+  {% if current_variant == blank %}
+    {% assign current_variant = product.selected_or_first_available_variant %}
+  {% endif %}
+  {% comment %} FIX END {% endcomment %}
+  <div data-value="{{ value | escape }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if value == current_variant.options[option_index] %} active{% endif %}
                                                                                 {% for i in (1..10) %}
                                                                                 {% capture material_name %}material_name_{{ i }}{% endcapture %} 
                                                                                 {% assign material_name = settings[material_name] %}  
@@ -76,8 +84,8 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
     {% if is_color %}
     <span class="tooltip">{{ value | handle }}</span>
     {% endif %}
-    {% comment %} FIX: Check if this value matches the selected variant option, not just loop.first {% endcomment %}
-    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if value == product.selected_or_first_available_variant.options[option_index] %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
+    
+    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if value == current_variant.options[option_index] %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
     <label for="swatch-{{ option_index }}-{{ value  | handle }}" style="  {% unless variant.featured_image.src == blank %}  font-size:0;  background-size: cover;background-image: url({{ variant.featured_image.src | img_url:'118x150'  }});{% endunless %}
                                                                         {% for i in (1..10) %}
                                                                         {% capture material_name %}material_name_{{ i }}{% endcapture %} 
