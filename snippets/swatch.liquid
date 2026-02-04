@@ -65,7 +65,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
 
   {%- assign s = 'background-color:' | append: curcol | append: '' -%}
 
-  <div data-value="{{ value | escape }}" data-variant-id="{{ variant.id }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if forloop.first %} active{% endif %}
+  <div data-value="{{ value | escape }}" data-variant-id="{{ variant.id }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if value == product.selected_or_first_available_variant.options[option_index] %} active{% endif %}
                                                                                 {% for i in (1..10) %}
                                                                                 {% capture material_name %}material_name_{{ i }}{% endcapture %} 
                                                                                 {% assign material_name = settings[material_name] %}  
@@ -86,7 +86,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
     <span class="tooltip">{{ value | handle }}</span>
     {% endif %}
 
-    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}" data-variant-id="{{ variant.id }}"{% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
+    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}" data-variant-id="{{ variant.id }}"{% if value == product.selected_or_first_available_variant.options[option_index] %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
 
 
     <label for="swatch-{{ option_index }}-{{ value  | handle }}" style="  {% unless variant.featured_image.src == blank %}  font-size:0;  background-size: cover;background-image: url({{ variant.featured_image.src | img_url:'118x150'  }});{% endunless %}
