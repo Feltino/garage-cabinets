@@ -283,15 +283,18 @@
                                          $('.selector-wrapper').hide();
     {% endif %}
     // Auto-select first available variant on page load. Otherwise the product looks sold out.
-    {% assign found_one_in_stock = false %}
-    {% for variant in product.variants %}
-    {% if variant.available and found_one_in_stock == false %}
-    {% assign found_one_in_stock = true %}
-    {% for option in product.options %}
-    $('.single-option-selector:eq({{ forloop.index0 }})').val({{ variant.options[forloop.index0] | json }}).trigger('change');
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
+    // MODIFIED: Only do this if NO variant is specified in the URL.
+    if (window.location.search.indexOf('variant') === -1) {
+      {% assign found_one_in_stock = false %}
+      {% for variant in product.variants %}
+      {% if variant.available and found_one_in_stock == false %}
+      {% assign found_one_in_stock = true %}
+      {% for option in product.options %}
+      $('.single-option-selector:eq({{ forloop.index0 }})').val({{ variant.options[forloop.index0] | json }}).trigger('change');
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    }
     {% if section.settings.display_product_reviews %}  
     var reviewsTimeout = setInterval(function() {
       if (jQuery(".spr-badge-caption").length>0) {
