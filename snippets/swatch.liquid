@@ -65,7 +65,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
 
   {%- assign s = 'background-color:' | append: curcol | append: '' -%}
 
-  <div data-value="{{ value | escape }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if forloop.first %} active{% endif %}
+  <div data-value="{{ value | escape }}" data-variant-id="{{ variant.id }}" data-index="{{ option_index }}" class="swatch-element {{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %} {% if forloop.first %} active{% endif %}
                                                                                 {% for i in (1..10) %}
                                                                                 {% capture material_name %}material_name_{{ i }}{% endcapture %} 
                                                                                 {% assign material_name = settings[material_name] %}  
@@ -86,7 +86,7 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
     <span class="tooltip">{{ value | handle }}</span>
     {% endif %}
 
-    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
+    <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}" data-variant-id="{{ variant.id }}"{% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
 
 
     <label for="swatch-{{ option_index }}-{{ value  | handle }}" style="  {% unless variant.featured_image.src == blank %}  font-size:0;  background-size: cover;background-image: url({{ variant.featured_image.src | img_url:'118x150'  }});{% endunless %}
@@ -141,10 +141,45 @@ Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
   {% endif %}
   {% endfor %}
   <script>
-    jQuery('.sw-0 .value-variant').append(jQuery('.sw-0 .swatch-element.active input').attr('value'));
-    jQuery('.sw-0 .swatch-element').click(function(){
-      jQuery('.sw-0 .value-variant').empty();
-      jQuery('.sw-0 .value-variant').append(jQuery(this).attr('data-value'));
+    jQuery(document).ready(function() {
+      // Function to get URL parameter
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+
+      // Check if variant parameter exists in URL
+      var urlVariantId = getUrlParameter('variant');
+      
+      if (urlVariantId) {
+        // Find the swatch element with matching variant ID
+        var targetSwatch = jQuery('.sw-{{ option_index }} .swatch-element[data-variant-id="' + urlVariantId + '"]');
+        
+        if (targetSwatch.length) {
+          // Remove active class from all swatches
+          jQuery('.sw-{{ option_index }} .swatch-element').removeClass('active');
+          
+          // Add active class to target swatch
+          targetSwatch.addClass('active');
+          
+          // Check the corresponding radio button
+          targetSwatch.find('input[type="radio"]').prop('checked', true);
+          
+          // Update the displayed value
+          jQuery('.sw-{{ option_index }} .value-variant').empty().append(targetSwatch.attr('data-value'));
+        }
+      } else {
+        // Default behavior - show first variant
+        jQuery('.sw-{{ option_index }} .value-variant').append(jQuery('.sw-{{ option_index }} .swatch-element.active input').attr('value'));
+      }
+      
+      // Handle swatch clicks
+      jQuery('.sw-{{ option_index }} .swatch-element').click(function(){
+        jQuery('.sw-{{ option_index }} .value-variant').empty();
+        jQuery('.sw-{{ option_index }} .value-variant').append(jQuery(this).attr('data-value'));
+      });
     });
   </script>
   </div>
