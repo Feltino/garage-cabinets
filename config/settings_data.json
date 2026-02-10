@@ -849,7 +849,7 @@
           "show_visitors": false,
           "show_text_countdown": false,
           "height_button": 40,
-          "product_conditions": false,
+          "product_conditions": true,
           "product_conditions_title": "This is a Plus Shipping Item and I will be contacted w/ shipping costs",
           "enable_sizeguide": false,
           "enable_delivery": false,
