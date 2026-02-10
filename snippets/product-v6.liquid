@@ -887,41 +887,53 @@ Check if the product is sold out and set a variable to be used below.
   </script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const addToCartButton = document.querySelector('#product-add-to-cart');
-      const shippingCheckbox = document.querySelector('.button-check');
+    (function() {
+      const style = document.createElement('style');
+      style.textContent = `
+        .button-check.error-state a:before {
+          border: 2px solid #d9534f !important;
+          box-shadow: 0 0 4px rgba(217, 83, 79, 0.5);
+        }
+        #shipping-error-msg {
+          color: #d9534f;
+          font-size: 14px;
+          margin-top: 8px;
+          font-weight: 500;
+          display: none;
+        }
+      `;
+      document.head.appendChild(style);
 
-      if (addToCartButton && shippingCheckbox) {
-        const errorMessage = document.createElement('div');
-        errorMessage.id = 'shipping-error-msg';
-        errorMessage.textContent = 'Please check the box to agree with shipping costs before adding to cart.';
-        errorMessage.style.color = '#d9534f';
-        errorMessage.style.fontSize = '14px';
-        errorMessage.style.marginTop = '5px';
-        errorMessage.style.display = 'none';
-        
-        shippingCheckbox.parentNode.insertBefore(errorMessage, shippingCheckbox.nextSibling);
+      document.addEventListener('DOMContentLoaded', function() {
+        const addToCartButton = document.querySelector('#product-add-to-cart');
+        const shippingCheckbox = document.querySelector('.button-check');
 
-        addToCartButton.addEventListener('click', function(e) {
-          if (!shippingCheckbox.classList.contains('active')) {
-            e.preventDefault();
-            e.stopImmediatePropagation();
+        if (addToCartButton && shippingCheckbox) {
+          const errorMessage = document.createElement('div');
+          errorMessage.id = 'shipping-error-msg';
+          errorMessage.textContent = 'Please check the box to agree with shipping costs before adding to cart.';
+          
+          shippingCheckbox.parentNode.insertBefore(errorMessage, shippingCheckbox.nextSibling);
 
-            errorMessage.style.display = 'block';
-            shippingCheckbox.style.outline = '2px solid #d9534f';
-            shippingCheckbox.style.borderRadius = '4px';
-            
-            shippingCheckbox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
-        }, true);
+          addToCartButton.addEventListener('click', function(e) {
+            if (!shippingCheckbox.classList.contains('active')) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
 
-        shippingCheckbox.addEventListener('click', function() {
-          errorMessage.style.display = 'none';
-          shippingCheckbox.style.outline = 'none';
-        });
-      }
-    });
+              errorMessage.style.display = 'block';
+              shippingCheckbox.classList.add('error-state');
+              
+              shippingCheckbox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }, true);
 
+          shippingCheckbox.addEventListener('click', function() {
+            errorMessage.style.display = 'none';
+            shippingCheckbox.classList.remove('error-state');
+          });
+        }
+      });
+    })();
 
   </script>
   <!--   // update -->
