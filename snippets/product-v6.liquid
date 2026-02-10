@@ -911,7 +911,7 @@ Check if the product is sold out and set a variable to be used below.
         if (addToCartButton && shippingCheckbox) {
           const errorMessage = document.createElement('div');
           errorMessage.id = 'shipping-error-msg';
-          errorMessage.textContent = 'Please check the box to agree with shipping costs before adding to cart.';
+          errorMessage.textContent = 'Please check the box before adding to cart';
           
           shippingCheckbox.parentNode.insertBefore(errorMessage, shippingCheckbox.nextSibling);
 
