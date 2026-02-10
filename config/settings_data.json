@@ -850,7 +850,7 @@
           "show_text_countdown": false,
           "height_button": 40,
           "product_conditions": false,
-          "product_conditions_title": "I agree with terms and conditions",
+          "product_conditions_title": "This is a Plus Shipping Item and I will be contacted w/ shipping costs",
           "enable_sizeguide": false,
           "enable_delivery": false,
           "delivery_lable": "Delivery & Return",
@@ -1650,11 +1650,6 @@
       },
       "18393503268697261835": {
         "type": "shopify://apps/seo-king/blocks/seo-king-jsonld-collections/4aa30173-495d-4e49-b377-c5ee4024262f",
-        "disabled": false,
-        "settings": {}
-      },
-      "3577669850698438243": {
-        "type": "shopify://apps/preorder-now-wod/blocks/app-embed/fdf17d17-ef12-4a7b-8383-20cc1fc2a4b6",
         "disabled": false,
         "settings": {}
       },
