@@ -355,13 +355,6 @@ Check if the product is sold out and set a variable to be used below.
                         <p>Always a Human to Call</p>
                       </div>
                     </div>
-                    {% if section.settings.product_conditions and product.metafields.custom.free_shipping %}
-                      <div class="col-12">
-                        <div class="button-check">
-                          <a>{{section.settings.product_conditions_title }}</a>
-                        </div>
-                      </div>
-                    {% endif %}
                     <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="form-wr">
                     {% form 'product', product, id: "add-to-cart-form" %}
@@ -444,6 +437,11 @@ Check if the product is sold out and set a variable to be used below.
                     {% if section.settings.enable_payment_button %}
 
                     <div class="product-dynamic-checkout">
+                      {% if section.settings.product_conditions and product.metafields.custom.free_shipping %}
+                      <div class="button-check">
+                        <a>{{section.settings.product_conditions_title }}</a>
+                      </div>
+                      {% endif %}
                       <div class="checkout-button disabled" >
                         {{ form | payment_button }}
                       </div>
