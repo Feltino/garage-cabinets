@@ -1628,6 +1628,7 @@
       },
       "sa_rotating_widget_PUhwaX": {
         "type": "sa-rotating-widget",
+        "disabled": true,
         "name": "Shopper Approved Widget",
         "settings": {}
       }
