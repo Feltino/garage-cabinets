@@ -1625,12 +1625,6 @@
           "button_link": "",
           "home_product_timeline": ""
         }
-      },
-      "sa_rotating_widget_PUhwaX": {
-        "type": "sa-rotating-widget",
-        "disabled": true,
-        "name": "Shopper Approved Widget",
-        "settings": {}
       }
     },
     "content_for_index": [
@@ -1641,7 +1635,6 @@
       "82fa5b7a-39f3-408b-a2af-26f0fdc13321",
       "b33f7da0-62e4-4b54-9396-f141b64b00f6",
       "9137e314-d0cb-448b-85f6-b337666e75ac",
-      "sa_rotating_widget_PUhwaX",
       "be19151f-1df9-4f44-8d6b-246f1670877b"
     ],
     "blocks": {
