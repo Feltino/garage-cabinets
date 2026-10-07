@@ -9,7 +9,7 @@
 {% assign full_domain = canonical_url | split: '://' | last | split: '/' | first %}
 {% assign path = canonical_url | remove_first: protocol_part | remove_first: full_domain %}
 
-{% if 1==2 %}{% else %}
+{% if renamed_variable_1['2'] %}{% else %}
 <link rel="alternate" hreflang="{{ original_language }}" href="{{ canonical_url }}">
 {% if sub_domains %}
   {% assign main_domain = full_domain | split: "www." | last %}
@@ -22,4 +22,13 @@
   {% endfor %}
 {% endif %}
 <link rel="stylesheet" href="https://cdn.weglot.com/weglot_shopify.min.css" type="text/css" media="all">
-{% endif %}
+{% endif %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% if 1==2 %}"
+  to: "{% if renamed_variable_1['2'] %}"
+  position: 550..582
+{%- endcomment -%}

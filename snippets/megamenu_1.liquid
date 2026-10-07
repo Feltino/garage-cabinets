@@ -9,7 +9,7 @@
       {% if link.levels > 0 %}
       {% for sub_link in link.links %}
       <div class="widget-inner{% if sub_link.levels > 0 %} {% endif %} col-lg-{{ megamenu.grid }} ">
-        {% include 'menu-labels' with link: link sub_link: sub_link %}
+        {% include 'menu-labels' with link, link: link, sub_link: sub_link %}
         <a href="{{ sub_link.url }}" class="menu-title">
           <span>{{ sub_link.title }}</span>
           {{ labels }}{% if sub_link.levels > 0 %} <i class="cs-font clever-icon-arrow-right-2"></i>{% endif %}</a>
@@ -43,7 +43,7 @@
             {% assign links_html = null %}
             {% for sub_sub_link in sub_link.links %}
             {% capture links_html %}
-            {% include 'menu-labels' with link: link sub_link: sub_link sub_sub_link: sub_sub_link %}
+            {% include 'menu-labels' with link, link: link, sub_link: sub_link, sub_sub_link: sub_sub_link %}
             <li class="">
               <a href="{{ sub_sub_link.url }}" class="">
                 <span>{{ sub_sub_link.title }}</span>
@@ -81,7 +81,7 @@
       {% assign sub_links_html = null %}
       {% for sub_link in link.links %}
       {% capture links_html %}
-      {% include 'menu-labels' with link: link sub_link: sub_link %}
+      {% include 'menu-labels' with link, link: link, sub_link: sub_link %}
       <div class="widget-inner {% if sub_link.levels > 0 %} {% endif %}">
         <a href="{{ sub_link.url }}" class="">
           <span>{{ sub_link.title }}</span>
@@ -90,7 +90,7 @@
         <div class="nav-links">
           <ul>
             {% for sub_sub_link in sub_link.links %}
-            {% include 'menu-labels' with link: link sub_link: sub_link sub_sub_link: sub_sub_link %}
+            {% include 'menu-labels' with link, link: link, sub_link: sub_link, sub_sub_link: sub_sub_link %}
             <li ><a href="{{ sub_sub_link.url }}" class="">{{ sub_sub_link.title }}
               <span>{{ sub_sub_link.title }}</span>
               {{ labels }}</a></li>
@@ -114,4 +114,26 @@
     </div>
     {% endif %}
   </div>
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'menu-labels' with link: link sub_link: sub_link %}"
+  to: "{% include 'menu-labels' with link, link: link, sub_link: sub_link %}"
+  position: 586..655
+- from: "{% include 'menu-labels' with link: link sub_link: sub_link sub_sub_link:
+    sub_sub_link %}"
+  to: "{% include 'menu-labels' with link, link: link, sub_link: sub_link, sub_sub_link:
+    sub_sub_link %}"
+  position: 2333..2430
+- from: "{% include 'menu-labels' with link: link sub_link: sub_link %}"
+  to: "{% include 'menu-labels' with link, link: link, sub_link: sub_link %}"
+  position: 3582..3651
+- from: "{% include 'menu-labels' with link: link sub_link: sub_link sub_sub_link:
+    sub_sub_link %}"
+  to: "{% include 'menu-labels' with link, link: link, sub_link: sub_link, sub_sub_link:
+    sub_sub_link %}"
+  position: 4082..4179
+{%- endcomment -%}

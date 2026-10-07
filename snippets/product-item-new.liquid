@@ -162,7 +162,7 @@ Check if the product is sold out and set a variable to be used below.
       {% endif %}
       {%- if show_options and show_custom_options -%}
       <div class="product-collection__options ">
-        {% include 'product-get-options' with hide_options_without_availability: hide_options_without_availability %}
+        {% include 'product-get-options' with hide_options_without_availability, hide_options_without_availability: hide_options_without_availability %}
       </div>
       {%- endif -%}
       {%- if show_button_add_to_cart or show_options -%}
@@ -173,4 +173,15 @@ Check if the product is sold out and set a variable to be used below.
     </div>
     {% endform %}
   </div>
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product-get-options' with hide_options_without_availability:
+    hide_options_without_availability %}"
+  to: "{% include 'product-get-options' with hide_options_without_availability, hide_options_without_availability:
+    hide_options_without_availability %}"
+  position: 8359..8503
+{%- endcomment -%}

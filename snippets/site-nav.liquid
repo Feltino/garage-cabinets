@@ -21,7 +21,7 @@
       <ul>
         {% for sub_link in link.links %}
         <li class="{% if sub_link.levels > 0 %} menu-dropdown {%endif %}">
-          {% include 'menu-labels' with link: link sub_link: sub_link %}
+          {% include 'menu-labels' with link, link: link, sub_link: sub_link %}
           <a href="{{ sub_link.url }}" class="">
             <span>{{ sub_link.title }}</span>
             {{ labels }}{% if sub_link.levels > 0 %} <i class="cs-font clever-icon-arrow-right"></i>{% endif %}</a>
@@ -29,7 +29,7 @@
           <div class="dropdown-sub level2">
             <ul>
               {% for sub_sub_link in sub_link.links %}
-              {% include 'menu-labels' with link: link sub_link: sub_link sub_sub_link: sub_sub_link %}
+              {% include 'menu-labels' with link, link: link, sub_link: sub_link, sub_sub_link: sub_sub_link %}
               <li class="menu__item"><a href="{{ sub_sub_link.url }}" class="">
                 <span>{{ sub_sub_link.title }}</span>
                 {{ labels }}</a></li>
@@ -44,7 +44,7 @@
     {% endif %}
     {% endcapture %}
     <li class="  level-top {% if link.levels > 0 %}menu-dropdown{% if megamenu != null %} megamenu-dropdow{% endif %}{% endif %}">
-      {% include 'menu-labels' with link: link %}
+      {% include 'menu-labels' with link, link: link %}
       <a href="{{ link.url }}" class="">
         <span>{{ link.title }}</span>
         {{ labels }}{% if link.levels > 0 %}<i class="cs-font clever-icon-down"></i>{% endif %}</a>
@@ -56,4 +56,21 @@
   </ul>
 </div>  
 
-<!-- End Menu -->
+<!-- End Menu -->{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'menu-labels' with link: link sub_link: sub_link %}"
+  to: "{% include 'menu-labels' with link, link: link, sub_link: sub_link %}"
+  position: 745..814
+- from: "{% include 'menu-labels' with link: link sub_link: sub_link sub_sub_link:
+    sub_sub_link %}"
+  to: "{% include 'menu-labels' with link, link: link, sub_link: sub_link, sub_sub_link:
+    sub_sub_link %}"
+  position: 1195..1292
+- from: "{% include 'menu-labels' with link: link %}"
+  to: "{% include 'menu-labels' with link, link: link %}"
+  position: 1781..1830
+{%- endcomment -%}

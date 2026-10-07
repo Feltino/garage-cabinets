@@ -1,166 +1,109 @@
+{% raw %}Liquid syntax error (snippets/product-grid-countdown line 116): Expected end_of_string but found string in "{{ render 'icon-arrow' }}"{% endraw %}{%- comment -%}
 
-{% assign lable_sale = false %}
-{% if product.compare_at_price_min > product.price_min %}
-{% assign lable_sale = true %}
-{% endif %}
-{% comment %}
-Check if the product is sold out and set a variable to be used below.
-{% endcomment %}
-{% assign lable_out = true %}
-{% if product.available  %}
-{% assign lable_out = false %}
-{% endif %}
-{% assign id = product.id %}
-{% assign title = product.title %}
-{% assign description = product.description %}
-{% assign type = product.type %}
-{% assign vendor = product.vendor %}
-{% assign metafields = product.metafields %}
-{% if select_current_variant_by_id %}
-{% for variant in product.variants %}
-{% if variant.id == select_current_variant_by_id %}
-{% assign current_variant = variant %}
-{% break %}
-{% endif %}
-{% endfor %}
-{% else %}
-{% assign current_variant = product.selected_or_first_available_variant %}
-{% endif -%}
-{% assign current_variant_id = current_variant.id %}
-{% assign current_variant_metafields = current_variant.metafields %}
-{% assign url = current_variant.url %}
-{% assign quantity = current_variant.inventory_quantity %}
-{% assign sku = current_variant.sku %}
-{% assign barcode = current_variant.barcode %}
-{% assign price = current_variant.price %}
-{% assign compare_at_price = current_variant.compare_at_price %}
-{% assign available = current_variant.available -%}
-{% assign show_button_add_to_cart = show_button_add_to_cart | default: settings.product_add_tocart %}
-{% if product.selected_variant.id == product.selected_or_first_available_variant.id and current_variant.image != blank %}
-{% assign image = current_variant.image %}
-{% assign hover_image = null %}
-{% else -%}
-{% assign image = product.images[0] %}
-{% assign hover_image = product.images[1] %}
-{% endif -%}
-{% assign select_current_variant_by_id = null %}
-{% assign image_size = image_size | default: '600x' %}
-{% assign show_options = show_options | default: settings.product_collection_show_options %}
-{% assign show_custom_options = show_custom_options | default: settings.product_collection_show_options %}
-{% assign show_custom_options = show_custom_options | default: settings.product_collection_show_options %}
-{% assign img_hover_url = hover_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-<div class="grid-item product-item {% if settings.enable_quickview %} quickview-popup{% endif %} {% if settings.enable_product_compare %}product-compares{% endif %} {% if settings.enable_wishlist %}check-wishlist {% endif %}" {% include 'product-get-attributes' %} true >
-  <div class="product-inner">
-    {% include 'wishlist-product' %}
-    {% if settings.enable_product_compare %}
-    <div class="compare-wr">
-      <a class="btn add-to-compare add-product-compare" data-handle-product="{{product.handle}}" href="javascript:void(0);" title="Compare"><i class="cs-font clever-icon-law-1"></i><span>Add to Compare<em>Added to Compare</em></span></a>
-    </div>
-    {% endif %} 
-    {% form "product", product, id: null, class: "form-add-cart", data-js-product-form: '' %}
-    <div class="product-image  js-product-images-navigation">
-      {% if settings.product_collection_lable_sale %}
-      {% if lable_sale or lable_out %}
-      <div class="product-label">
-        {% if lable_sale %}
-        {% if settings.sale_label_style =='percentage_label'%}
-        -{{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max |round: 0 }}%
-        {% elsif settings.sale_label_style == 'text_label' %}
-        Sale
-        {% endif %}
-        {% endif %}
-        {% if lable_out %}
-        <span>{{ 'product.out_of_stock' | t }}</span>
-        {% endif %}
-      </div>
-      {% endif %}
-      {% endif %}
-      {% if settings.product_collection_lable_new %}
-      {% include 'cleversoft-label' %}
-      {% endif %}
-      <a href="{{ product.url | within: collection }}" class="grid-image cursor-default" data-js-product-image>
-        {% if number_colum_layout == 'slide' %}
-         {%- assign img_url = product.featured_image.src | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img class="lazyload  feature-images"
-                     srcset="{{  product.featured_image.src | img_url: size }} 1x, {{ article.image.src | img_url: size, scale: 2 }} 2x"
-                     data-src="{{ img_url }}"
-                     data-widths="[180, 360, 540]"
-                     data-aspectratio="{{ product.featured_image.src.aspect_ratio }}"
-                     data-sizes="auto"
-                     alt="{{ image.alt | escape }}">
-        {% else %}
-        {%- assign img_url = product.featured_image.src | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img class="lazyload  feature-images"
-                   
-                     data-src="{{ img_url }}"
-                     data-widths="[180, 360, 540]"
-                     data-aspectratio="{{ product.featured_image.src.aspect_ratio }}"
-                     data-sizes="auto"
-                     alt="{{ image.alt | escape }}">
-        {% endif %}
-        {% if settings.product_image_hover %}
-        <span class="product-image-hover" data-idproduct="{{ product.id }}">
-          {% for image in product.images %}
-          {% if forloop.first != true %}
-          <img alt="{{ product.title }}" src="{{ image.src | product_img_url: 'master' }}">
-          {% break %}
-          {% endif %}
-          {% endfor %}
-        </span>
-        {% endif %}
-      </a>
-      {% include 'add-to-link' %}
-      {%- if show_button_add_to_cart -%}
-      <div class="add-to-cartS">
-        <button type="submit" class="btn btn--status js-product-button-add-to-cart" name="add" data-js-product-button-add-to-cart{% unless current_variant.available %} disabled="disabled" data-button-status="sold-out"{% endunless %}>
-          {{ render 'icon-arrow' }}<span class="text-button-cart">{{ 'products.product.add_to_cart.title' | t }}</span>
-          <span class="text-button-added" data-button-content="added">{{ 'products.product.add_to_cart.added' | t }}</span>
-          <span class="sold-out" data-button-content="sold-out">{{ 'products.product.add_to_cart.sold_out' | t }}</span>
-        </button>
-      </div>
-      {%- endif -%}
+This file has been rewritten to preserve the original behavior.
 
-    </div>
-    <div class="product-content">
-      <h3>
-        <a class="product-title" href="{{ product.url | within: collection }}">
-          {{ product.title }}
-        </a>
-      </h3>
-      {% if settings.display_product_reviews %} 
-      <div class="product-reviews">
-        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-      </div>
-      {% endif %}
-      {% assign content = product.description | remove: "[disable-icon-new]" %}
-      <p class="short-description">{{ content | strip_html | truncatewords: 35 }}</p>
-      {% if settings.product_collection_price %}
-      <div class="price-box">
-        {%- if show_sale_separator != null -%}
-        {%- assign show_sale_separator_status = show_sale_separator -%}
-        {%- else -%}
-        {%- assign show_sale_separator_status = settings.price_show_sale_separator -%}
-        {%- endif -%}
-        {%- if compare_at_price > price -%}
-        <span class="price-sale " data-js-product-price{% if show_sale_separator_status %} data-js-show-sale-separator{% endif %}><span class="old-price">{{ compare_at_price | money }}</span>
-          {% if show_sale_separator_status %}{{ 'products.product.price_sale_separator' | t }}{% endif %}<span class="special-price">{{ price | money }}</span></span>
-        {%- else -%}
-        <span class="regular-product" data-js-product-price{% if show_sale_separator_status %} data-js-show-sale-separator{% endif %}><span>{{ price | money }}</span></span>
-        {%- endif -%}
-      </div>
-      {% endif %}
-      {%- if show_options and show_custom_options -%}
-      <div class="product-collection__options ">
-        {% include 'product-get-options' with hide_options_without_availability: hide_options_without_availability %}
-      </div>
-      {%- endif -%}
-      {%- if show_button_add_to_cart or show_options -%}
-      <div class="product-collection__variants{% if show_options == false or show_custom_options %} d-none{% endif %}">
-        {% include 'product-get-variants' %}
-      </div>
-      {%- endif -%}
-    </div>
-    {% endform %}
-    {% include 'cleversoft-countdown' %}
-  </div>
-</div>
+---
+Changes:
+- from: "\n{% assign lable_sale = false %}\n{% if product.compare_at_price_min > product.price_min
+    %}\n{% assign lable_sale = true %}\n{% endif %}\n{% comment %}\nCheck if the product
+    is sold out and set a variable to be used below.\n{% endcomment %}\n{% assign
+    lable_out = true %}\n{% if product.available  %}\n{% assign lable_out = false
+    %}\n{% endif %}\n{% assign id = product.id %}\n{% assign title = product.title
+    %}\n{% assign description = product.description %}\n{% assign type = product.type
+    %}\n{% assign vendor = product.vendor %}\n{% assign metafields = product.metafields
+    %}\n{% if select_current_variant_by_id %}\n{% for variant in product.variants
+    %}\n{% if variant.id == select_current_variant_by_id %}\n{% assign current_variant
+    = variant %}\n{% break %}\n{% endif %}\n{% endfor %}\n{% else %}\n{% assign current_variant
+    = product.selected_or_first_available_variant %}\n{% endif -%}\n{% assign current_variant_id
+    = current_variant.id %}\n{% assign current_variant_metafields = current_variant.metafields
+    %}\n{% assign url = current_variant.url %}\n{% assign quantity = current_variant.inventory_quantity
+    %}\n{% assign sku = current_variant.sku %}\n{% assign barcode = current_variant.barcode
+    %}\n{% assign price = current_variant.price %}\n{% assign compare_at_price = current_variant.compare_at_price
+    %}\n{% assign available = current_variant.available -%}\n{% assign show_button_add_to_cart
+    = show_button_add_to_cart | default: settings.product_add_tocart %}\n{% if product.selected_variant.id
+    == product.selected_or_first_available_variant.id and current_variant.image !=
+    blank %}\n{% assign image = current_variant.image %}\n{% assign hover_image =
+    null %}\n{% else -%}\n{% assign image = product.images[0] %}\n{% assign hover_image
+    = product.images[1] %}\n{% endif -%}\n{% assign select_current_variant_by_id =
+    null %}\n{% assign image_size = image_size | default: '600x' %}\n{% assign show_options
+    = show_options | default: settings.product_collection_show_options %}\n{% assign
+    show_custom_options = show_custom_options | default: settings.product_collection_show_options
+    %}\n{% assign show_custom_options = show_custom_options | default: settings.product_collection_show_options
+    %}\n{% assign img_hover_url = hover_image | img_url: '1x1' | replace: '_1x1.',
+    '_{width}x.' %}\n<div class=\"grid-item product-item {% if settings.enable_quickview
+    %} quickview-popup{% endif %} {% if settings.enable_product_compare %}product-compares{%
+    endif %} {% if settings.enable_wishlist %}check-wishlist {% endif %}\" {% include
+    'product-get-attributes' %} true >\n  <div class=\"product-inner\">\n    {% include
+    'wishlist-product' %}\n    {% if settings.enable_product_compare %}\n    <div
+    class=\"compare-wr\">\n      <a class=\"btn add-to-compare add-product-compare\"
+    data-handle-product=\"{{product.handle}}\" href=\"javascript:void(0);\" title=\"Compare\"><i
+    class=\"cs-font clever-icon-law-1\"></i><span>Add to Compare<em>Added to Compare</em></span></a>\n
+    \   </div>\n    {% endif %} \n    {% form \"product\", product, id: null, class:
+    \"form-add-cart\", data-js-product-form: '' %}\n    <div class=\"product-image
+    \ js-product-images-navigation\">\n      {% if settings.product_collection_lable_sale
+    %}\n      {% if lable_sale or lable_out %}\n      <div class=\"product-label\">\n
+    \       {% if lable_sale %}\n        {% if settings.sale_label_style =='percentage_label'%}\n
+    \       -{{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max
+    |round: 0 }}%\n        {% elsif settings.sale_label_style == 'text_label' %}\n
+    \       Sale\n        {% endif %}\n        {% endif %}\n        {% if lable_out
+    %}\n        <span>{{ 'product.out_of_stock' | t }}</span>\n        {% endif %}\n
+    \     </div>\n      {% endif %}\n      {% endif %}\n      {% if settings.product_collection_lable_new
+    %}\n      {% include 'cleversoft-label' %}\n      {% endif %}\n      <a href=\"{{
+    product.url | within: collection }}\" class=\"grid-image cursor-default\" data-js-product-image>\n
+    \       {% if number_colum_layout == 'slide' %}\n         {%- assign img_url =
+    product.featured_image.src | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}\n
+    \               <img class=\"lazyload  feature-images\"\n                     srcset=\"{{
+    \ product.featured_image.src | img_url: size }} 1x, {{ article.image.src | img_url:
+    size, scale: 2 }} 2x\"\n                     data-src=\"{{ img_url }}\"\n                     data-widths=\"[180,
+    360, 540]\"\n                     data-aspectratio=\"{{ product.featured_image.src.aspect_ratio
+    }}\"\n                     data-sizes=\"auto\"\n                     alt=\"{{
+    image.alt | escape }}\">\n        {% else %}\n        {%- assign img_url = product.featured_image.src
+    | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}\n                <img class=\"lazyload
+    \ feature-images\"\n                   \n                     data-src=\"{{ img_url
+    }}\"\n                     data-widths=\"[180, 360, 540]\"\n                     data-aspectratio=\"{{
+    product.featured_image.src.aspect_ratio }}\"\n                     data-sizes=\"auto\"\n
+    \                    alt=\"{{ image.alt | escape }}\">\n        {% endif %}\n
+    \       {% if settings.product_image_hover %}\n        <span class=\"product-image-hover\"
+    data-idproduct=\"{{ product.id }}\">\n          {% for image in product.images
+    %}\n          {% if forloop.first != true %}\n          <img alt=\"{{ product.title
+    }}\" src=\"{{ image.src | product_img_url: 'master' }}\">\n          {% break
+    %}\n          {% endif %}\n          {% endfor %}\n        </span>\n        {%
+    endif %}\n      </a>\n      {% include 'add-to-link' %}\n      {%- if show_button_add_to_cart
+    -%}\n      <div class=\"add-to-cartS\">\n        <button type=\"submit\" class=\"btn
+    btn--status js-product-button-add-to-cart\" name=\"add\" data-js-product-button-add-to-cart{%
+    unless current_variant.available %} disabled=\"disabled\" data-button-status=\"sold-out\"{%
+    endunless %}>\n          {{ render 'icon-arrow' }}<span class=\"text-button-cart\">{{
+    'products.product.add_to_cart.title' | t }}</span>\n          <span class=\"text-button-added\"
+    data-button-content=\"added\">{{ 'products.product.add_to_cart.added' | t }}</span>\n
+    \         <span class=\"sold-out\" data-button-content=\"sold-out\">{{ 'products.product.add_to_cart.sold_out'
+    | t }}</span>\n        </button>\n      </div>\n      {%- endif -%}\n\n    </div>\n
+    \   <div class=\"product-content\">\n      <h3>\n        <a class=\"product-title\"
+    href=\"{{ product.url | within: collection }}\">\n          {{ product.title }}\n
+    \       </a>\n      </h3>\n      {% if settings.display_product_reviews %} \n
+    \     <div class=\"product-reviews\">\n        <span class=\"shopify-product-reviews-badge\"
+    data-id=\"{{ product.id }}\"></span>\n      </div>\n      {% endif %}\n      {%
+    assign content = product.description | remove: \"[disable-icon-new]\" %}\n      <p
+    class=\"short-description\">{{ content | strip_html | truncatewords: 35 }}</p>\n
+    \     {% if settings.product_collection_price %}\n      <div class=\"price-box\">\n
+    \       {%- if show_sale_separator != null -%}\n        {%- assign show_sale_separator_status
+    = show_sale_separator -%}\n        {%- else -%}\n        {%- assign show_sale_separator_status
+    = settings.price_show_sale_separator -%}\n        {%- endif -%}\n        {%- if
+    compare_at_price > price -%}\n        <span class=\"price-sale \" data-js-product-price{%
+    if show_sale_separator_status %} data-js-show-sale-separator{% endif %}><span
+    class=\"old-price\">{{ compare_at_price | money }}</span>\n          {% if show_sale_separator_status
+    %}{{ 'products.product.price_sale_separator' | t }}{% endif %}<span class=\"special-price\">{{
+    price | money }}</span></span>\n        {%- else -%}\n        <span class=\"regular-product\"
+    data-js-product-price{% if show_sale_separator_status %} data-js-show-sale-separator{%
+    endif %}><span>{{ price | money }}</span></span>\n        {%- endif -%}\n      </div>\n
+    \     {% endif %}\n      {%- if show_options and show_custom_options -%}\n      <div
+    class=\"product-collection__options \">\n        {% include 'product-get-options'
+    with hide_options_without_availability: hide_options_without_availability %}\n
+    \     </div>\n      {%- endif -%}\n      {%- if show_button_add_to_cart or show_options
+    -%}\n      <div class=\"product-collection__variants{% if show_options == false
+    or show_custom_options %} d-none{% endif %}\">\n        {% include 'product-get-variants'
+    %}\n      </div>\n      {%- endif -%}\n    </div>\n    {% endform %}\n    {% include
+    'cleversoft-countdown' %}\n  </div>\n</div>"
+  to: '{% raw %}Liquid syntax error (snippets/product-grid-countdown line 116): Expected
+    end_of_string but found string in "{{ render ''icon-arrow'' }}"{% endraw %}'
+  position: 0..155
+{%- endcomment -%}
